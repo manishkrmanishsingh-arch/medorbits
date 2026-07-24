@@ -1,0 +1,372 @@
+/* ==========================================================
+   MedOrbit Responsive Animation CSS
+   Mobile • Tablet • Desktop
+========================================================== */
+
+/* Smooth Scroll */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Transition */
+
+*,
+*::before,
+*::after {
+    transition:
+        background-color .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease,
+        transform .3s ease,
+        opacity .3s ease;
+}
+
+/* Scroll Progress */
+
+#scroll-progress{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:4px;
+    background:linear-gradient(90deg,#0056b3,#00b4ff);
+    z-index:99999;
+}
+
+/* Fade */
+
+.fade-hidden{
+    opacity:0;
+    transform:translateY(40px);
+}
+
+.fade-show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* Reveal */
+
+.reveal{
+    opacity:0;
+    transform:translateY(60px);
+}
+
+.reveal.visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* Slide Left */
+
+.slide-left{
+    opacity:0;
+    transform:translateX(-80px);
+}
+
+.slide-left.show{
+    opacity:1;
+    transform:translateX(0);
+}
+
+/* Slide Right */
+
+.slide-right{
+    opacity:0;
+    transform:translateX(80px);
+}
+
+.slide-right.show{
+    opacity:1;
+    transform:translateX(0);
+}
+
+/* Zoom */
+
+.zoom-in{
+    opacity:0;
+    transform:scale(.85);
+}
+
+.zoom-in.show{
+    opacity:1;
+    transform:scale(1);
+}
+
+/* Hero Animation */
+
+.hero>*{
+    animation:heroFade 1s ease forwards;
+}
+
+@keyframes heroFade{
+
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* Floating */
+
+.float{
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+/* Pulse */
+
+.pulse{
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.05);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/* Shine Button */
+
+.btn,
+.button{
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+.btn::before,
+.button::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:70%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.35);
+
+    transform:skewX(-25deg);
+
+}
+
+.btn:hover::before,
+.button:hover::before{
+
+    animation:shine .7s linear;
+
+}
+
+@keyframes shine{
+
+    100%{
+
+        left:150%;
+
+    }
+
+}
+
+/* Cards */
+
+.card,
+.course-card,
+.program-card,
+.country-card,
+.service-card,
+.testimonial-card{
+
+    transition:.35s;
+
+}
+
+.card:hover,
+.course-card:hover,
+.program-card:hover,
+.country-card:hover,
+.service-card:hover,
+.testimonial-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+/* Images */
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+    display:block;
+
+}
+
+.image-hover{
+
+    overflow:hidden;
+
+}
+
+.image-hover img{
+
+    transition:.5s;
+
+}
+
+.image-hover:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* Back To Top */
+
+#backToTop{
+
+    transition:.4s;
+
+}
+
+/* Loading */
+
+.loading{
+
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.fade-hidden,
+.reveal,
+.slide-left,
+.slide-right,
+.zoom-in{
+
+transform:none;
+
+}
+
+.card:hover,
+.course-card:hover,
+.program-card:hover,
+.country-card:hover{
+
+transform:none;
+
+box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+}
+
+.hero>*{
+
+animation-duration:.8s;
+
+}
+
+}
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+#scroll-progress{
+
+height:3px;
+
+}
+
+.float{
+
+animation:none;
+
+}
+
+.btn:hover::before,
+.button:hover::before{
+
+animation:none;
+
+}
+
+}
+
+/* Large Desktop */
+
+@media(min-width:1200px){
+
+.hero{
+
+overflow:hidden;
+
+}
+
+.hero img{
+
+animation:float 5s ease-in-out infinite;
+
+}
+
+}
