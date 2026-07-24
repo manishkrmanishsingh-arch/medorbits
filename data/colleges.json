@@ -1,0 +1,1156 @@
+{
+  "metadata": {
+    "title": "MedOrbit College Database – MBBS Part 1",
+    "version": "1.0.0",
+    "updated": "2026-07-24",
+    "recordCount": 60,
+    "scope": [
+      "20 government/public medical institutions in India",
+      "20 private/deemed medical institutions in India",
+      "20 international medical institutions"
+    ],
+    "disclaimer": "displayOrder is a curated website ordering, not an official universal ranking. Verify recognition, seat availability, fees, admissions rules and official URLs before publishing or counselling students."
+  },
+  "colleges": [
+    {
+      "id": 1,
+      "group": "india-government-mbbs",
+      "displayOrder": 1,
+      "name": "All India Institute of Medical Sciences, New Delhi",
+      "country": "India",
+      "stateOrRegion": "Delhi",
+      "city": "New Delhi",
+      "ownership": "Government/Public",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / INI-CET / NEET PG",
+      "officialWebsite": "https://www.aiims.edu",
+      "note": "AIIMS"
+    },
+    {
+      "id": 2,
+      "group": "india-government-mbbs",
+      "displayOrder": 2,
+      "name": "Postgraduate Institute of Medical Education and Research",
+      "country": "India",
+      "stateOrRegion": "Chandigarh",
+      "city": "Chandigarh",
+      "ownership": "Government/Public",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / INI-CET / NEET PG",
+      "officialWebsite": "https://pgimer.edu.in",
+      "note": "PGIMER"
+    },
+    {
+      "id": 3,
+      "group": "india-government-mbbs",
+      "displayOrder": 3,
+      "name": "Jawaharlal Institute of Postgraduate Medical Education and Research",
+      "country": "India",
+      "stateOrRegion": "Puducherry",
+      "city": "Puducherry",
+      "ownership": "Government/Public",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / INI-CET / NEET PG",
+      "officialWebsite": "https://jipmer.edu.in",
+      "note": "JIPMER"
+    },
+    {
+      "id": 4,
+      "group": "india-government-mbbs",
+      "displayOrder": 4,
+      "name": "National Institute of Mental Health and Neuro Sciences",
+      "country": "India",
+      "stateOrRegion": "Karnataka",
+      "city": "Bengaluru",
+      "ownership": "Government/Public",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / INI-CET / NEET PG",
+      "officialWebsite": "https://nimhans.ac.in",
+      "note": "NIMHANS"
+    },
+    {
+      "id": 5,
+      "group": "india-government-mbbs",
+      "displayOrder": 5,
+      "name": "Banaras Hindu University – Institute of Medical Sciences",
+      "country": "India",
+      "stateOrRegion": "Uttar Pradesh",
+      "city": "Varanasi",
+      "ownership": "Government/Public",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / INI-CET / NEET PG",
+      "officialWebsite": "https://www.bhu.ac.in",
+      "note": "BHU IMS"
+    },
+    {
+      "id": 6,
+      "group": "india-government-mbbs",
+      "displayOrder": 6,
+      "name": "King George's Medical University",
+      "country": "India",
+      "stateOrRegion": "Uttar Pradesh",
+      "city": "Lucknow",
+      "ownership": "Government/Public",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / INI-CET / NEET PG",
+      "officialWebsite": "https://www.kgmu.org",
+      "note": "KGMU"
+    },
+    {
+      "id": 7,
+      "group": "india-government-mbbs",
+      "displayOrder": 7,
+      "name": "Sanjay Gandhi Postgraduate Institute of Medical Sciences",
+      "country": "India",
+      "stateOrRegion": "Uttar Pradesh",
+      "city": "Lucknow",
+      "ownership": "Government/Public",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / INI-CET / NEET PG",
+      "officialWebsite": "https://sgpgims.org.in",
+      "note": "SGPGIMS"
+    },
+    {
+      "id": 8,
+      "group": "india-government-mbbs",
+      "displayOrder": 8,
+      "name": "Madras Medical College",
+      "country": "India",
+      "stateOrRegion": "Tamil Nadu",
+      "city": "Chennai",
+      "ownership": "Government/Public",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / INI-CET / NEET PG",
+      "officialWebsite": "https://www.mmc.ac.in",
+      "note": "MMC"
+    },
+    {
+      "id": 9,
+      "group": "india-government-mbbs",
+      "displayOrder": 9,
+      "name": "Vardhman Mahavir Medical College and Safdarjung Hospital",
+      "country": "India",
+      "stateOrRegion": "Delhi",
+      "city": "New Delhi",
+      "ownership": "Government/Public",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / INI-CET / NEET PG",
+      "officialWebsite": "https://vmmc-sjh.mohfw.gov.in",
+      "note": "VMMC"
+    },
+    {
+      "id": 10,
+      "group": "india-government-mbbs",
+      "displayOrder": 10,
+      "name": "Maulana Azad Medical College",
+      "country": "India",
+      "stateOrRegion": "Delhi",
+      "city": "New Delhi",
+      "ownership": "Government/Public",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / INI-CET / NEET PG",
+      "officialWebsite": "https://mamc.delhi.gov.in",
+      "note": "MAMC"
+    },
+    {
+      "id": 11,
+      "group": "india-government-mbbs",
+      "displayOrder": 11,
+      "name": "Institute of Post Graduate Medical Education & Research and SSKM Hospital",
+      "country": "India",
+      "stateOrRegion": "West Bengal",
+      "city": "Kolkata",
+      "ownership": "Government/Public",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / INI-CET / NEET PG",
+      "officialWebsite": "https://ipgmer.gov.in",
+      "note": "IPGMER"
+    },
+    {
+      "id": 12,
+      "group": "india-government-mbbs",
+      "displayOrder": 12,
+      "name": "Medical College, Kolkata",
+      "country": "India",
+      "stateOrRegion": "West Bengal",
+      "city": "Kolkata",
+      "ownership": "Government/Public",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / INI-CET / NEET PG",
+      "officialWebsite": "https://www.medicalcollegekolkata.in",
+      "note": "MCK"
+    },
+    {
+      "id": 13,
+      "group": "india-government-mbbs",
+      "displayOrder": 13,
+      "name": "Seth GS Medical College and KEM Hospital",
+      "country": "India",
+      "stateOrRegion": "Maharashtra",
+      "city": "Mumbai",
+      "ownership": "Government/Public",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / INI-CET / NEET PG",
+      "officialWebsite": "https://www.kem.edu",
+      "note": "KEM"
+    },
+    {
+      "id": 14,
+      "group": "india-government-mbbs",
+      "displayOrder": 14,
+      "name": "Grant Government Medical College and Sir J.J. Group of Hospitals",
+      "country": "India",
+      "stateOrRegion": "Maharashtra",
+      "city": "Mumbai",
+      "ownership": "Government/Public",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / INI-CET / NEET PG",
+      "officialWebsite": "https://ggmcjjh.com",
+      "note": "GGMC"
+    },
+    {
+      "id": 15,
+      "group": "india-government-mbbs",
+      "displayOrder": 15,
+      "name": "Bangalore Medical College and Research Institute",
+      "country": "India",
+      "stateOrRegion": "Karnataka",
+      "city": "Bengaluru",
+      "ownership": "Government/Public",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / INI-CET / NEET PG",
+      "officialWebsite": "https://bmcribengaluru.karnataka.gov.in",
+      "note": "BMCRI"
+    },
+    {
+      "id": 16,
+      "group": "india-government-mbbs",
+      "displayOrder": 16,
+      "name": "Government Medical College and Hospital, Chandigarh",
+      "country": "India",
+      "stateOrRegion": "Chandigarh",
+      "city": "Chandigarh",
+      "ownership": "Government/Public",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / INI-CET / NEET PG",
+      "officialWebsite": "https://gmch.gov.in",
+      "note": "GMCH"
+    },
+    {
+      "id": 17,
+      "group": "india-government-mbbs",
+      "displayOrder": 17,
+      "name": "Sawai Man Singh Medical College",
+      "country": "India",
+      "stateOrRegion": "Rajasthan",
+      "city": "Jaipur",
+      "ownership": "Government/Public",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / INI-CET / NEET PG",
+      "officialWebsite": "https://education.rajasthan.gov.in/smsmcjaipur",
+      "note": "SMS Medical College"
+    },
+    {
+      "id": 18,
+      "group": "india-government-mbbs",
+      "displayOrder": 18,
+      "name": "All India Institute of Medical Sciences, Jodhpur",
+      "country": "India",
+      "stateOrRegion": "Rajasthan",
+      "city": "Jodhpur",
+      "ownership": "Government/Public",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / INI-CET / NEET PG",
+      "officialWebsite": "https://www.aiimsjodhpur.edu.in",
+      "note": "AIIMS Jodhpur"
+    },
+    {
+      "id": 19,
+      "group": "india-government-mbbs",
+      "displayOrder": 19,
+      "name": "All India Institute of Medical Sciences, Bhubaneswar",
+      "country": "India",
+      "stateOrRegion": "Odisha",
+      "city": "Bhubaneswar",
+      "ownership": "Government/Public",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / INI-CET / NEET PG",
+      "officialWebsite": "https://aiimsbhubaneswar.nic.in",
+      "note": "AIIMS Bhubaneswar"
+    },
+    {
+      "id": 20,
+      "group": "india-government-mbbs",
+      "displayOrder": 20,
+      "name": "All India Institute of Medical Sciences, Rishikesh",
+      "country": "India",
+      "stateOrRegion": "Uttarakhand",
+      "city": "Rishikesh",
+      "ownership": "Government/Public",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / INI-CET / NEET PG",
+      "officialWebsite": "https://aiimsrishikesh.edu.in",
+      "note": "AIIMS Rishikesh"
+    },
+    {
+      "id": 21,
+      "group": "india-private-mbbs",
+      "displayOrder": 1,
+      "name": "Christian Medical College, Vellore",
+      "country": "India",
+      "stateOrRegion": "Tamil Nadu",
+      "city": "Vellore",
+      "ownership": "Private/Deemed",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / NEET SS",
+      "officialWebsite": "https://www.cmch-vellore.edu",
+      "note": "Private minority institution"
+    },
+    {
+      "id": 22,
+      "group": "india-private-mbbs",
+      "displayOrder": 2,
+      "name": "Amrita School of Medicine",
+      "country": "India",
+      "stateOrRegion": "Kerala",
+      "city": "Kochi",
+      "ownership": "Private/Deemed",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / NEET SS",
+      "officialWebsite": "https://www.amrita.edu/school/medicine/",
+      "note": "Deemed university"
+    },
+    {
+      "id": 23,
+      "group": "india-private-mbbs",
+      "displayOrder": 3,
+      "name": "Kasturba Medical College, Manipal",
+      "country": "India",
+      "stateOrRegion": "Karnataka",
+      "city": "Manipal",
+      "ownership": "Private/Deemed",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / NEET SS",
+      "officialWebsite": "https://manipal.edu/kmc-manipal.html",
+      "note": "Deemed university"
+    },
+    {
+      "id": 24,
+      "group": "india-private-mbbs",
+      "displayOrder": 4,
+      "name": "Kasturba Medical College, Mangalore",
+      "country": "India",
+      "stateOrRegion": "Karnataka",
+      "city": "Mangaluru",
+      "ownership": "Private/Deemed",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / NEET SS",
+      "officialWebsite": "https://manipal.edu/kmc-mangalore.html",
+      "note": "Deemed university"
+    },
+    {
+      "id": 25,
+      "group": "india-private-mbbs",
+      "displayOrder": 5,
+      "name": "Sri Ramachandra Medical College and Research Institute",
+      "country": "India",
+      "stateOrRegion": "Tamil Nadu",
+      "city": "Chennai",
+      "ownership": "Private/Deemed",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / NEET SS",
+      "officialWebsite": "https://www.sriramachandra.edu.in",
+      "note": "Deemed university"
+    },
+    {
+      "id": 26,
+      "group": "india-private-mbbs",
+      "displayOrder": 6,
+      "name": "St. John's Medical College",
+      "country": "India",
+      "stateOrRegion": "Karnataka",
+      "city": "Bengaluru",
+      "ownership": "Private/Deemed",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / NEET SS",
+      "officialWebsite": "https://www.stjohns.in",
+      "note": "Private minority institution"
+    },
+    {
+      "id": 27,
+      "group": "india-private-mbbs",
+      "displayOrder": 7,
+      "name": "Jamia Hamdard – Hamdard Institute of Medical Sciences and Research",
+      "country": "India",
+      "stateOrRegion": "Delhi",
+      "city": "New Delhi",
+      "ownership": "Private/Deemed",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / NEET SS",
+      "officialWebsite": "https://www.himsr.co.in",
+      "note": "Deemed university"
+    },
+    {
+      "id": 28,
+      "group": "india-private-mbbs",
+      "displayOrder": 8,
+      "name": "JSS Medical College",
+      "country": "India",
+      "stateOrRegion": "Karnataka",
+      "city": "Mysuru",
+      "ownership": "Private/Deemed",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / NEET SS",
+      "officialWebsite": "https://www.jssuni.edu.in",
+      "note": "Deemed university"
+    },
+    {
+      "id": 29,
+      "group": "india-private-mbbs",
+      "displayOrder": 9,
+      "name": "Kalinga Institute of Medical Sciences",
+      "country": "India",
+      "stateOrRegion": "Odisha",
+      "city": "Bhubaneswar",
+      "ownership": "Private/Deemed",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / NEET SS",
+      "officialWebsite": "https://kims.kiit.ac.in",
+      "note": "Deemed university"
+    },
+    {
+      "id": 30,
+      "group": "india-private-mbbs",
+      "displayOrder": 10,
+      "name": "SRM Medical College Hospital and Research Centre",
+      "country": "India",
+      "stateOrRegion": "Tamil Nadu",
+      "city": "Chennai",
+      "ownership": "Private/Deemed",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / NEET SS",
+      "officialWebsite": "https://medical.srmist.edu.in",
+      "note": "Deemed university"
+    },
+    {
+      "id": 31,
+      "group": "india-private-mbbs",
+      "displayOrder": 11,
+      "name": "Dr. D. Y. Patil Medical College, Hospital and Research Centre, Pune",
+      "country": "India",
+      "stateOrRegion": "Maharashtra",
+      "city": "Pune",
+      "ownership": "Private/Deemed",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / NEET SS",
+      "officialWebsite": "https://medical.dpu.edu.in",
+      "note": "Deemed university"
+    },
+    {
+      "id": 32,
+      "group": "india-private-mbbs",
+      "displayOrder": 12,
+      "name": "Mahatma Gandhi Medical College and Research Institute",
+      "country": "India",
+      "stateOrRegion": "Puducherry",
+      "city": "Puducherry",
+      "ownership": "Private/Deemed",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / NEET SS",
+      "officialWebsite": "https://mgmcri.ac.in",
+      "note": "Deemed university"
+    },
+    {
+      "id": 33,
+      "group": "india-private-mbbs",
+      "displayOrder": 13,
+      "name": "Saveetha Medical College and Hospital",
+      "country": "India",
+      "stateOrRegion": "Tamil Nadu",
+      "city": "Chennai",
+      "ownership": "Private/Deemed",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / NEET SS",
+      "officialWebsite": "https://www.smc.saveetha.com",
+      "note": "Deemed university"
+    },
+    {
+      "id": 34,
+      "group": "india-private-mbbs",
+      "displayOrder": 14,
+      "name": "Bharati Vidyapeeth Medical College, Pune",
+      "country": "India",
+      "stateOrRegion": "Maharashtra",
+      "city": "Pune",
+      "ownership": "Private/Deemed",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / NEET SS",
+      "officialWebsite": "https://www.bharatividyapeeth.edu",
+      "note": "Deemed university"
+    },
+    {
+      "id": 35,
+      "group": "india-private-mbbs",
+      "displayOrder": 15,
+      "name": "Siksha 'O' Anusandhan – Institute of Medical Sciences and SUM Hospital",
+      "country": "India",
+      "stateOrRegion": "Odisha",
+      "city": "Bhubaneswar",
+      "ownership": "Private/Deemed",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / NEET SS",
+      "officialWebsite": "https://www.ims.ac.in",
+      "note": "Deemed university"
+    },
+    {
+      "id": 36,
+      "group": "india-private-mbbs",
+      "displayOrder": 16,
+      "name": "M. S. Ramaiah Medical College",
+      "country": "India",
+      "stateOrRegion": "Karnataka",
+      "city": "Bengaluru",
+      "ownership": "Private/Deemed",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / NEET SS",
+      "officialWebsite": "https://www.msrmc.ac.in",
+      "note": "Private"
+    },
+    {
+      "id": 37,
+      "group": "india-private-mbbs",
+      "displayOrder": 17,
+      "name": "KLE Academy of Higher Education and Research – Jawaharlal Nehru Medical College",
+      "country": "India",
+      "stateOrRegion": "Karnataka",
+      "city": "Belagavi",
+      "ownership": "Private/Deemed",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / NEET SS",
+      "officialWebsite": "https://www.jnmc.edu",
+      "note": "Deemed university"
+    },
+    {
+      "id": 38,
+      "group": "india-private-mbbs",
+      "displayOrder": 18,
+      "name": "PSG Institute of Medical Sciences and Research",
+      "country": "India",
+      "stateOrRegion": "Tamil Nadu",
+      "city": "Coimbatore",
+      "ownership": "Private/Deemed",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / NEET SS",
+      "officialWebsite": "https://psgimsr.ac.in",
+      "note": "Private"
+    },
+    {
+      "id": 39,
+      "group": "india-private-mbbs",
+      "displayOrder": 19,
+      "name": "D. Y. Patil Medical College, Navi Mumbai",
+      "country": "India",
+      "stateOrRegion": "Maharashtra",
+      "city": "Navi Mumbai",
+      "ownership": "Private/Deemed",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / NEET SS",
+      "officialWebsite": "https://dypatil.edu/schools/medicine",
+      "note": "Deemed university"
+    },
+    {
+      "id": 40,
+      "group": "india-private-mbbs",
+      "displayOrder": 20,
+      "name": "MGM Medical College, Navi Mumbai",
+      "country": "India",
+      "stateOrRegion": "Maharashtra",
+      "city": "Navi Mumbai",
+      "ownership": "Private/Deemed",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / NEET SS",
+      "officialWebsite": "https://www.mgmmcnm.edu.in",
+      "note": "Deemed university"
+    },
+    {
+      "id": 41,
+      "group": "international-medicine",
+      "displayOrder": 1,
+      "name": "University of Oxford – Medical Sciences Division",
+      "country": "United Kingdom",
+      "stateOrRegion": "England",
+      "city": "Oxford",
+      "ownership": "Public",
+      "courses": [
+        "Medicine / MBBS-equivalent",
+        "Postgraduate Medicine"
+      ],
+      "primaryEntrance": "Varies by country and institution",
+      "officialWebsite": "https://www.medsci.ox.ac.uk",
+      "note": "Verify programme eligibility, licensing rules, medium of instruction and WDOMS listing before applying."
+    },
+    {
+      "id": 42,
+      "group": "international-medicine",
+      "displayOrder": 2,
+      "name": "University of Cambridge – School of Clinical Medicine",
+      "country": "United Kingdom",
+      "stateOrRegion": "England",
+      "city": "Cambridge",
+      "ownership": "Public",
+      "courses": [
+        "Medicine / MBBS-equivalent",
+        "Postgraduate Medicine"
+      ],
+      "primaryEntrance": "Varies by country and institution",
+      "officialWebsite": "https://www.medschl.cam.ac.uk",
+      "note": "Verify programme eligibility, licensing rules, medium of instruction and WDOMS listing before applying."
+    },
+    {
+      "id": 43,
+      "group": "international-medicine",
+      "displayOrder": 3,
+      "name": "Harvard Medical School",
+      "country": "United States",
+      "stateOrRegion": "Massachusetts",
+      "city": "Boston",
+      "ownership": "Private",
+      "courses": [
+        "Medicine / MBBS-equivalent",
+        "Postgraduate Medicine"
+      ],
+      "primaryEntrance": "Varies by country and institution",
+      "officialWebsite": "https://hms.harvard.edu",
+      "note": "Verify programme eligibility, licensing rules, medium of instruction and WDOMS listing before applying."
+    },
+    {
+      "id": 44,
+      "group": "international-medicine",
+      "displayOrder": 4,
+      "name": "Johns Hopkins University School of Medicine",
+      "country": "United States",
+      "stateOrRegion": "Maryland",
+      "city": "Baltimore",
+      "ownership": "Private",
+      "courses": [
+        "Medicine / MBBS-equivalent",
+        "Postgraduate Medicine"
+      ],
+      "primaryEntrance": "Varies by country and institution",
+      "officialWebsite": "https://www.hopkinsmedicine.org/som",
+      "note": "Verify programme eligibility, licensing rules, medium of instruction and WDOMS listing before applying."
+    },
+    {
+      "id": 45,
+      "group": "international-medicine",
+      "displayOrder": 5,
+      "name": "Karolinska Institutet",
+      "country": "Sweden",
+      "stateOrRegion": "Stockholm County",
+      "city": "Stockholm",
+      "ownership": "Public",
+      "courses": [
+        "Medicine / MBBS-equivalent",
+        "Postgraduate Medicine"
+      ],
+      "primaryEntrance": "Varies by country and institution",
+      "officialWebsite": "https://ki.se/en",
+      "note": "Verify programme eligibility, licensing rules, medium of instruction and WDOMS listing before applying."
+    },
+    {
+      "id": 46,
+      "group": "international-medicine",
+      "displayOrder": 6,
+      "name": "University of Toronto – Temerty Faculty of Medicine",
+      "country": "Canada",
+      "stateOrRegion": "Ontario",
+      "city": "Toronto",
+      "ownership": "Public",
+      "courses": [
+        "Medicine / MBBS-equivalent",
+        "Postgraduate Medicine"
+      ],
+      "primaryEntrance": "Varies by country and institution",
+      "officialWebsite": "https://temertymedicine.utoronto.ca",
+      "note": "Verify programme eligibility, licensing rules, medium of instruction and WDOMS listing before applying."
+    },
+    {
+      "id": 47,
+      "group": "international-medicine",
+      "displayOrder": 7,
+      "name": "National University of Singapore – Yong Loo Lin School of Medicine",
+      "country": "Singapore",
+      "stateOrRegion": "Singapore",
+      "city": "Singapore",
+      "ownership": "Public",
+      "courses": [
+        "Medicine / MBBS-equivalent",
+        "Postgraduate Medicine"
+      ],
+      "primaryEntrance": "Varies by country and institution",
+      "officialWebsite": "https://medicine.nus.edu.sg",
+      "note": "Verify programme eligibility, licensing rules, medium of instruction and WDOMS listing before applying."
+    },
+    {
+      "id": 48,
+      "group": "international-medicine",
+      "displayOrder": 8,
+      "name": "University of Melbourne – Faculty of Medicine, Dentistry and Health Sciences",
+      "country": "Australia",
+      "stateOrRegion": "Victoria",
+      "city": "Melbourne",
+      "ownership": "Public",
+      "courses": [
+        "Medicine / MBBS-equivalent",
+        "Postgraduate Medicine"
+      ],
+      "primaryEntrance": "Varies by country and institution",
+      "officialWebsite": "https://mdhs.unimelb.edu.au",
+      "note": "Verify programme eligibility, licensing rules, medium of instruction and WDOMS listing before applying."
+    },
+    {
+      "id": 49,
+      "group": "international-medicine",
+      "displayOrder": 9,
+      "name": "Monash University – Faculty of Medicine, Nursing and Health Sciences",
+      "country": "Australia",
+      "stateOrRegion": "Victoria",
+      "city": "Melbourne",
+      "ownership": "Public",
+      "courses": [
+        "Medicine / MBBS-equivalent",
+        "Postgraduate Medicine"
+      ],
+      "primaryEntrance": "Varies by country and institution",
+      "officialWebsite": "https://www.monash.edu/medicine",
+      "note": "Verify programme eligibility, licensing rules, medium of instruction and WDOMS listing before applying."
+    },
+    {
+      "id": 50,
+      "group": "international-medicine",
+      "displayOrder": 10,
+      "name": "University of Sydney – Faculty of Medicine and Health",
+      "country": "Australia",
+      "stateOrRegion": "New South Wales",
+      "city": "Sydney",
+      "ownership": "Public",
+      "courses": [
+        "Medicine / MBBS-equivalent",
+        "Postgraduate Medicine"
+      ],
+      "primaryEntrance": "Varies by country and institution",
+      "officialWebsite": "https://www.sydney.edu.au/medicine-health",
+      "note": "Verify programme eligibility, licensing rules, medium of instruction and WDOMS listing before applying."
+    },
+    {
+      "id": 51,
+      "group": "international-medicine",
+      "displayOrder": 11,
+      "name": "Tbilisi State Medical University",
+      "country": "Georgia",
+      "stateOrRegion": "Tbilisi",
+      "city": "Tbilisi",
+      "ownership": "Public",
+      "courses": [
+        "Medicine / MBBS-equivalent",
+        "Postgraduate Medicine"
+      ],
+      "primaryEntrance": "Varies by country and institution",
+      "officialWebsite": "https://tsmu.edu",
+      "note": "Verify programme eligibility, licensing rules, medium of instruction and WDOMS listing before applying."
+    },
+    {
+      "id": 52,
+      "group": "international-medicine",
+      "displayOrder": 12,
+      "name": "Kazan Federal University – Institute of Fundamental Medicine and Biology",
+      "country": "Russia",
+      "stateOrRegion": "Tatarstan",
+      "city": "Kazan",
+      "ownership": "Public",
+      "courses": [
+        "Medicine / MBBS-equivalent",
+        "Postgraduate Medicine"
+      ],
+      "primaryEntrance": "Varies by country and institution",
+      "officialWebsite": "https://kpfu.ru/eng",
+      "note": "Verify programme eligibility, licensing rules, medium of instruction and WDOMS listing before applying."
+    },
+    {
+      "id": 53,
+      "group": "international-medicine",
+      "displayOrder": 13,
+      "name": "Sechenov University",
+      "country": "Russia",
+      "stateOrRegion": "Moscow",
+      "city": "Moscow",
+      "ownership": "Public",
+      "courses": [
+        "Medicine / MBBS-equivalent",
+        "Postgraduate Medicine"
+      ],
+      "primaryEntrance": "Varies by country and institution",
+      "officialWebsite": "https://www.sechenov.ru/eng",
+      "note": "Verify programme eligibility, licensing rules, medium of instruction and WDOMS listing before applying."
+    },
+    {
+      "id": 54,
+      "group": "international-medicine",
+      "displayOrder": 14,
+      "name": "Pirogov Russian National Research Medical University",
+      "country": "Russia",
+      "stateOrRegion": "Moscow",
+      "city": "Moscow",
+      "ownership": "Public",
+      "courses": [
+        "Medicine / MBBS-equivalent",
+        "Postgraduate Medicine"
+      ],
+      "primaryEntrance": "Varies by country and institution",
+      "officialWebsite": "https://rsmu.ru",
+      "note": "Verify programme eligibility, licensing rules, medium of instruction and WDOMS listing before applying."
+    },
+    {
+      "id": 55,
+      "group": "international-medicine",
+      "displayOrder": 15,
+      "name": "Astana Medical University",
+      "country": "Kazakhstan",
+      "stateOrRegion": "Astana",
+      "city": "Astana",
+      "ownership": "Public",
+      "courses": [
+        "Medicine / MBBS-equivalent",
+        "Postgraduate Medicine"
+      ],
+      "primaryEntrance": "Varies by country and institution",
+      "officialWebsite": "https://amu.edu.kz/en",
+      "note": "Verify programme eligibility, licensing rules, medium of instruction and WDOMS listing before applying."
+    },
+    {
+      "id": 56,
+      "group": "international-medicine",
+      "displayOrder": 16,
+      "name": "Al-Farabi Kazakh National University – Faculty of Medicine and Health Care",
+      "country": "Kazakhstan",
+      "stateOrRegion": "Almaty",
+      "city": "Almaty",
+      "ownership": "Public",
+      "courses": [
+        "Medicine / MBBS-equivalent",
+        "Postgraduate Medicine"
+      ],
+      "primaryEntrance": "Varies by country and institution",
+      "officialWebsite": "https://www.kaznu.kz/en",
+      "note": "Verify programme eligibility, licensing rules, medium of instruction and WDOMS listing before applying."
+    },
+    {
+      "id": 57,
+      "group": "international-medicine",
+      "displayOrder": 17,
+      "name": "Tashkent Medical Academy",
+      "country": "Uzbekistan",
+      "stateOrRegion": "Tashkent",
+      "city": "Tashkent",
+      "ownership": "Public",
+      "courses": [
+        "Medicine / MBBS-equivalent",
+        "Postgraduate Medicine"
+      ],
+      "primaryEntrance": "Varies by country and institution",
+      "officialWebsite": "https://tma.uz/en",
+      "note": "Verify programme eligibility, licensing rules, medium of instruction and WDOMS listing before applying."
+    },
+    {
+      "id": 58,
+      "group": "international-medicine",
+      "displayOrder": 18,
+      "name": "B.P. Koirala Institute of Health Sciences",
+      "country": "Nepal",
+      "stateOrRegion": "Koshi Province",
+      "city": "Dharan",
+      "ownership": "Public",
+      "courses": [
+        "Medicine / MBBS-equivalent",
+        "Postgraduate Medicine"
+      ],
+      "primaryEntrance": "Varies by country and institution",
+      "officialWebsite": "https://www.bpkihs.edu",
+      "note": "Verify programme eligibility, licensing rules, medium of instruction and WDOMS listing before applying."
+    },
+    {
+      "id": 59,
+      "group": "international-medicine",
+      "displayOrder": 19,
+      "name": "Kathmandu University School of Medical Sciences",
+      "country": "Nepal",
+      "stateOrRegion": "Bagmati Province",
+      "city": "Dhulikhel",
+      "ownership": "Private/Public university",
+      "courses": [
+        "Medicine / MBBS-equivalent",
+        "Postgraduate Medicine"
+      ],
+      "primaryEntrance": "Varies by country and institution",
+      "officialWebsite": "https://kusms.edu.np",
+      "note": "Verify programme eligibility, licensing rules, medium of instruction and WDOMS listing before applying."
+    },
+    {
+      "id": 60,
+      "group": "international-medicine",
+      "displayOrder": 20,
+      "name": "Dhaka Medical College",
+      "country": "Bangladesh",
+      "stateOrRegion": "Dhaka Division",
+      "city": "Dhaka",
+      "ownership": "Public",
+      "courses": [
+        "Medicine / MBBS-equivalent",
+        "Postgraduate Medicine"
+      ],
+      "primaryEntrance": "Varies by country and institution",
+      "officialWebsite": "https://dmc.gov.bd",
+      "note": "Verify programme eligibility, licensing rules, medium of instruction and WDOMS listing before applying."
+    }
+  ]
+}
