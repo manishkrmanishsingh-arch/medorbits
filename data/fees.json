@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "updated": "2026-07-24"
+  },
+  "fees": [
+    {
+      "id": 1,
+      "collegeName": "All India Institute of Medical Sciences, New Delhi",
+      "course": "MBBS",
+      "country": "India",
+      "state": "Delhi",
+      "city": "New Delhi",
+      "ownership": "Government",
+      "currency": "INR",
+      "tuitionPerYear": 1628,
+      "hostelPerYear": 4228,
+      "messPerYear": 45000,
+      "admissionFee": 25,
+      "securityDeposit": 100,
+      "otherCharges": 2000,
+      "durationYears": 5.5,
+      "estimatedTotal": 275000,
+      "feeDisplay": "Approximately ₹2.75 lakh including estimated living costs",
+      "officialWebsite": "https://www.aiims.edu",
+      "lastVerified": "2026-07-24",
+      "note": "Indicative estimate. Verify the latest official fee notice."
+    },
+    {
+      "id": 2,
+      "collegeName": "Example Private Medical College",
+      "course": "MBBS",
+      "country": "India",
+      "state": "Uttar Pradesh",
+      "city": "Noida",
+      "ownership": "Private",
+      "currency": "INR",
+      "tuitionPerYear": 1200000,
+      "hostelPerYear": 180000,
+      "messPerYear": 60000,
+      "admissionFee": 50000,
+      "securityDeposit": 100000,
+      "otherCharges": 75000,
+      "durationYears": 5.5,
+      "estimatedTotal": 8250000,
+      "feeDisplay": "Approximately ₹82.5 lakh",
+      "officialWebsite": "https://example.com",
+      "lastVerified": "2026-07-24",
+      "note": "Replace this sample with verified college information."
+    }
+  ]
+}
