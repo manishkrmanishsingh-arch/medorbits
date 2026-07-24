@@ -1,0 +1,643 @@
+{
+  "metadata": {
+    "title": "MedOrbit Courses Database",
+    "version": "1.0.0",
+    "updated": "2026-07-24",
+    "recordCount": 30
+  },
+  "courses": [
+    {
+      "id": 1,
+      "slug": "mbbs",
+      "name": "MBBS",
+      "fullName": "Bachelor of Medicine and Bachelor of Surgery",
+      "category": "Medical",
+      "level": "Undergraduate",
+      "duration": "5.5 Years",
+      "entranceExams": [
+        "NEET UG"
+      ],
+      "eligibility": "10+2 with Physics, Chemistry, Biology and English",
+      "careerOptions": [
+        "Doctor",
+        "Medical Officer",
+        "General Physician",
+        "Clinical Researcher"
+      ],
+      "page": "mbbs.html",
+      "icon": "images/icons/mbbs.png"
+    },
+    {
+      "id": 2,
+      "slug": "mbbs-abroad",
+      "name": "MBBS Abroad",
+      "fullName": "Undergraduate Medical Education Abroad",
+      "category": "Medical",
+      "level": "Undergraduate",
+      "duration": "5 to 6 Years",
+      "entranceExams": [
+        "NEET UG",
+        "Country-specific requirements"
+      ],
+      "eligibility": "10+2 with Physics, Chemistry, Biology and English",
+      "careerOptions": [
+        "Doctor",
+        "Medical Practitioner",
+        "Researcher"
+      ],
+      "page": "mnbs-abroad.html",
+      "icon": "images/icons/mbbs-abroad.png"
+    },
+    {
+      "id": 3,
+      "slug": "bds",
+      "name": "BDS",
+      "fullName": "Bachelor of Dental Surgery",
+      "category": "Dental",
+      "level": "Undergraduate",
+      "duration": "5 Years",
+      "entranceExams": [
+        "NEET UG"
+      ],
+      "eligibility": "10+2 with Physics, Chemistry, Biology and English",
+      "careerOptions": [
+        "Dentist",
+        "Dental Surgeon",
+        "Orthodontic Assistant"
+      ],
+      "page": "bds.html",
+      "icon": "images/icons/bds.png"
+    },
+    {
+      "id": 4,
+      "slug": "bams",
+      "name": "BAMS",
+      "fullName": "Bachelor of Ayurvedic Medicine and Surgery",
+      "category": "AYUSH",
+      "level": "Undergraduate",
+      "duration": "5.5 Years",
+      "entranceExams": [
+        "NEET UG"
+      ],
+      "eligibility": "10+2 with Physics, Chemistry, Biology",
+      "careerOptions": [
+        "Ayurvedic Doctor",
+        "Medical Officer",
+        "Wellness Consultant"
+      ],
+      "page": "bams.html",
+      "icon": "images/icons/bams.png"
+    },
+    {
+      "id": 5,
+      "slug": "bhms",
+      "name": "BHMS",
+      "fullName": "Bachelor of Homoeopathic Medicine and Surgery",
+      "category": "AYUSH",
+      "level": "Undergraduate",
+      "duration": "5.5 Years",
+      "entranceExams": [
+        "NEET UG"
+      ],
+      "eligibility": "10+2 with Physics, Chemistry, Biology",
+      "careerOptions": [
+        "Homoeopathic Doctor",
+        "Medical Officer",
+        "Research Associate"
+      ],
+      "page": "bhms.html",
+      "icon": "images/icons/bhms.png"
+    },
+    {
+      "id": 6,
+      "slug": "bums",
+      "name": "BUMS",
+      "fullName": "Bachelor of Unani Medicine and Surgery",
+      "category": "AYUSH",
+      "level": "Undergraduate",
+      "duration": "5.5 Years",
+      "entranceExams": [
+        "NEET UG"
+      ],
+      "eligibility": "10+2 with Physics, Chemistry, Biology",
+      "careerOptions": [
+        "Unani Doctor",
+        "Medical Officer",
+        "Researcher"
+      ],
+      "page": "bums.html",
+      "icon": "images/icons/bums.png"
+    },
+    {
+      "id": 7,
+      "slug": "bnys",
+      "name": "BNYS",
+      "fullName": "Bachelor of Naturopathy and Yogic Sciences",
+      "category": "AYUSH",
+      "level": "Undergraduate",
+      "duration": "5.5 Years",
+      "entranceExams": [
+        "Institute or state-specific entrance"
+      ],
+      "eligibility": "10+2 with Physics, Chemistry, Biology",
+      "careerOptions": [
+        "Naturopathy Doctor",
+        "Yoga Consultant",
+        "Wellness Specialist"
+      ],
+      "page": "bnys.html",
+      "icon": "images/icons/bnys.png"
+    },
+    {
+      "id": 8,
+      "slug": "bsc-nursing",
+      "name": "B.Sc. Nursing",
+      "fullName": "Bachelor of Science in Nursing",
+      "category": "Nursing",
+      "level": "Undergraduate",
+      "duration": "4 Years",
+      "entranceExams": [
+        "NEET UG",
+        "University or state entrance"
+      ],
+      "eligibility": "10+2 with Physics, Chemistry, Biology and English",
+      "careerOptions": [
+        "Registered Nurse",
+        "Nursing Officer",
+        "Clinical Nurse"
+      ],
+      "page": "nursing.html",
+      "icon": "images/icons/nursing.png"
+    },
+    {
+      "id": 9,
+      "slug": "gnm",
+      "name": "GNM",
+      "fullName": "General Nursing and Midwifery",
+      "category": "Nursing",
+      "level": "Diploma",
+      "duration": "3 Years",
+      "entranceExams": [
+        "State or institute entrance"
+      ],
+      "eligibility": "10+2, preferably with Science",
+      "careerOptions": [
+        "Staff Nurse",
+        "Community Health Nurse",
+        "Midwife"
+      ],
+      "page": "gnm.html",
+      "icon": "images/icons/gnm.png"
+    },
+    {
+      "id": 10,
+      "slug": "anm",
+      "name": "ANM",
+      "fullName": "Auxiliary Nursing and Midwifery",
+      "category": "Nursing",
+      "level": "Diploma",
+      "duration": "2 Years",
+      "entranceExams": [
+        "State or institute entrance"
+      ],
+      "eligibility": "10+2",
+      "careerOptions": [
+        "Auxiliary Nurse",
+        "Community Health Worker",
+        "Midwife"
+      ],
+      "page": "anm.html",
+      "icon": "images/icons/anm.png"
+    },
+    {
+      "id": 11,
+      "slug": "bpharm",
+      "name": "B.Pharm",
+      "fullName": "Bachelor of Pharmacy",
+      "category": "Pharmacy",
+      "level": "Undergraduate",
+      "duration": "4 Years",
+      "entranceExams": [
+        "CUET",
+        "State CET",
+        "University entrance"
+      ],
+      "eligibility": "10+2 with Physics, Chemistry and Biology or Mathematics",
+      "careerOptions": [
+        "Pharmacist",
+        "Drug Safety Associate",
+        "Production Executive"
+      ],
+      "page": "pharmacy.html",
+      "icon": "images/icons/bpharm.png"
+    },
+    {
+      "id": 12,
+      "slug": "dpharm",
+      "name": "D.Pharm",
+      "fullName": "Diploma in Pharmacy",
+      "category": "Pharmacy",
+      "level": "Diploma",
+      "duration": "2 Years",
+      "entranceExams": [
+        "State or institute entrance"
+      ],
+      "eligibility": "10+2 with Physics, Chemistry and Biology or Mathematics",
+      "careerOptions": [
+        "Pharmacist",
+        "Medical Store Manager",
+        "Pharmacy Assistant"
+      ],
+      "page": "dpharm.html",
+      "icon": "images/icons/dpharm.png"
+    },
+    {
+      "id": 13,
+      "slug": "pharmd",
+      "name": "Pharm.D",
+      "fullName": "Doctor of Pharmacy",
+      "category": "Pharmacy",
+      "level": "Professional Doctorate",
+      "duration": "6 Years",
+      "entranceExams": [
+        "State CET",
+        "University entrance"
+      ],
+      "eligibility": "10+2 with Physics, Chemistry and Biology or Mathematics",
+      "careerOptions": [
+        "Clinical Pharmacist",
+        "Drug Safety Specialist",
+        "Hospital Pharmacist"
+      ],
+      "page": "pharmd.html",
+      "icon": "images/icons/pharmd.png"
+    },
+    {
+      "id": 14,
+      "slug": "bpt",
+      "name": "BPT",
+      "fullName": "Bachelor of Physiotherapy",
+      "category": "Allied Health",
+      "level": "Undergraduate",
+      "duration": "4.5 Years",
+      "entranceExams": [
+        "University or state entrance"
+      ],
+      "eligibility": "10+2 with Physics, Chemistry and Biology",
+      "careerOptions": [
+        "Physiotherapist",
+        "Sports Therapist",
+        "Rehabilitation Specialist"
+      ],
+      "page": "bpt.html",
+      "icon": "images/icons/bpt.png"
+    },
+    {
+      "id": 15,
+      "slug": "bot",
+      "name": "BOT",
+      "fullName": "Bachelor of Occupational Therapy",
+      "category": "Allied Health",
+      "level": "Undergraduate",
+      "duration": "4.5 Years",
+      "entranceExams": [
+        "University or state entrance"
+      ],
+      "eligibility": "10+2 with Physics, Chemistry and Biology",
+      "careerOptions": [
+        "Occupational Therapist",
+        "Rehabilitation Specialist"
+      ],
+      "page": "bot.html",
+      "icon": "images/icons/bot.png"
+    },
+    {
+      "id": 16,
+      "slug": "bmlt",
+      "name": "BMLT",
+      "fullName": "Bachelor of Medical Laboratory Technology",
+      "category": "Allied Health",
+      "level": "Undergraduate",
+      "duration": "3 to 4 Years",
+      "entranceExams": [
+        "University or state entrance"
+      ],
+      "eligibility": "10+2 with Science",
+      "careerOptions": [
+        "Medical Laboratory Technologist",
+        "Lab Supervisor",
+        "Research Technician"
+      ],
+      "page": "bmlt.html",
+      "icon": "images/icons/bmlt.png"
+    },
+    {
+      "id": 17,
+      "slug": "btech",
+      "name": "B.Tech",
+      "fullName": "Bachelor of Technology",
+      "category": "Engineering",
+      "level": "Undergraduate",
+      "duration": "4 Years",
+      "entranceExams": [
+        "JEE Main",
+        "JEE Advanced",
+        "State CET",
+        "University entrance"
+      ],
+      "eligibility": "10+2 with Physics, Chemistry and Mathematics",
+      "careerOptions": [
+        "Engineer",
+        "Software Developer",
+        "Consultant",
+        "Researcher"
+      ],
+      "page": "engineering.html",
+      "icon": "images/icons/btech.png"
+    },
+    {
+      "id": 18,
+      "slug": "be",
+      "name": "B.E.",
+      "fullName": "Bachelor of Engineering",
+      "category": "Engineering",
+      "level": "Undergraduate",
+      "duration": "4 Years",
+      "entranceExams": [
+        "JEE Main",
+        "State CET",
+        "University entrance"
+      ],
+      "eligibility": "10+2 with Physics, Chemistry and Mathematics",
+      "careerOptions": [
+        "Engineer",
+        "Project Engineer",
+        "Technical Consultant"
+      ],
+      "page": "engineering.html",
+      "icon": "images/icons/be.png"
+    },
+    {
+      "id": 19,
+      "slug": "bca",
+      "name": "BCA",
+      "fullName": "Bachelor of Computer Applications",
+      "category": "Computer Applications",
+      "level": "Undergraduate",
+      "duration": "3 Years",
+      "entranceExams": [
+        "CUET",
+        "University entrance"
+      ],
+      "eligibility": "10+2",
+      "careerOptions": [
+        "Software Developer",
+        "Web Developer",
+        "System Analyst"
+      ],
+      "page": "bca.html",
+      "icon": "images/icons/bca.png"
+    },
+    {
+      "id": 20,
+      "slug": "bsc-data-science",
+      "name": "B.Sc. Data Science",
+      "fullName": "Bachelor of Science in Data Science",
+      "category": "Computer Science",
+      "level": "Undergraduate",
+      "duration": "3 to 4 Years",
+      "entranceExams": [
+        "CUET",
+        "University entrance"
+      ],
+      "eligibility": "10+2, usually with Mathematics",
+      "careerOptions": [
+        "Data Analyst",
+        "Junior Data Scientist",
+        "Business Analyst"
+      ],
+      "page": "data-science.html",
+      "icon": "images/icons/data-science.png"
+    },
+    {
+      "id": 21,
+      "slug": "bba",
+      "name": "BBA",
+      "fullName": "Bachelor of Business Administration",
+      "category": "Management",
+      "level": "Undergraduate",
+      "duration": "3 Years",
+      "entranceExams": [
+        "CUET",
+        "IPMAT",
+        "University entrance"
+      ],
+      "eligibility": "10+2",
+      "careerOptions": [
+        "Business Executive",
+        "Marketing Executive",
+        "Operations Associate"
+      ],
+      "page": "bba.html",
+      "icon": "images/icons/bba.png"
+    },
+    {
+      "id": 22,
+      "slug": "mba",
+      "name": "MBA",
+      "fullName": "Master of Business Administration",
+      "category": "Management",
+      "level": "Postgraduate",
+      "duration": "2 Years",
+      "entranceExams": [
+        "CAT",
+        "XAT",
+        "CMAT",
+        "MAT",
+        "GMAT"
+      ],
+      "eligibility": "Bachelor's degree",
+      "careerOptions": [
+        "Business Manager",
+        "Consultant",
+        "Marketing Manager",
+        "Financial Analyst"
+      ],
+      "page": "mba.html",
+      "icon": "images/icons/mba.png"
+    },
+    {
+      "id": 23,
+      "slug": "pgdm",
+      "name": "PGDM",
+      "fullName": "Post Graduate Diploma in Management",
+      "category": "Management",
+      "level": "Postgraduate Diploma",
+      "duration": "2 Years",
+      "entranceExams": [
+        "CAT",
+        "XAT",
+        "CMAT",
+        "MAT",
+        "GMAT"
+      ],
+      "eligibility": "Bachelor's degree",
+      "careerOptions": [
+        "Manager",
+        "Consultant",
+        "Business Analyst"
+      ],
+      "page": "pgdm.html",
+      "icon": "images/icons/pgdm.png"
+    },
+    {
+      "id": 24,
+      "slug": "llb",
+      "name": "LL.B.",
+      "fullName": "Bachelor of Laws",
+      "category": "Law",
+      "level": "Undergraduate",
+      "duration": "3 Years",
+      "entranceExams": [
+        "CUET PG",
+        "University entrance"
+      ],
+      "eligibility": "Bachelor's degree",
+      "careerOptions": [
+        "Lawyer",
+        "Legal Associate",
+        "Legal Advisor"
+      ],
+      "page": "llb.html",
+      "icon": "images/icons/llb.png"
+    },
+    {
+      "id": 25,
+      "slug": "ba-llb",
+      "name": "B.A. LL.B.",
+      "fullName": "Bachelor of Arts and Bachelor of Laws",
+      "category": "Law",
+      "level": "Integrated Undergraduate",
+      "duration": "5 Years",
+      "entranceExams": [
+        "CLAT",
+        "AILET",
+        "University entrance"
+      ],
+      "eligibility": "10+2",
+      "careerOptions": [
+        "Lawyer",
+        "Legal Consultant",
+        "Judicial Services Aspirant"
+      ],
+      "page": "ba-llb.html",
+      "icon": "images/icons/ba-llb.png"
+    },
+    {
+      "id": 26,
+      "slug": "bcom",
+      "name": "B.Com",
+      "fullName": "Bachelor of Commerce",
+      "category": "Commerce",
+      "level": "Undergraduate",
+      "duration": "3 Years",
+      "entranceExams": [
+        "CUET",
+        "University entrance"
+      ],
+      "eligibility": "10+2",
+      "careerOptions": [
+        "Accountant",
+        "Financial Analyst",
+        "Tax Associate"
+      ],
+      "page": "bcom.html",
+      "icon": "images/icons/bcom.png"
+    },
+    {
+      "id": 27,
+      "slug": "mca",
+      "name": "MCA",
+      "fullName": "Master of Computer Applications",
+      "category": "Computer Applications",
+      "level": "Postgraduate",
+      "duration": "2 Years",
+      "entranceExams": [
+        "NIMCET",
+        "CUET PG",
+        "University entrance"
+      ],
+      "eligibility": "Relevant bachelor's degree",
+      "careerOptions": [
+        "Software Engineer",
+        "Application Developer",
+        "System Architect"
+      ],
+      "page": "mca.html",
+      "icon": "images/icons/mca.png"
+    },
+    {
+      "id": 28,
+      "slug": "mtech",
+      "name": "M.Tech",
+      "fullName": "Master of Technology",
+      "category": "Engineering",
+      "level": "Postgraduate",
+      "duration": "2 Years",
+      "entranceExams": [
+        "GATE",
+        "University entrance"
+      ],
+      "eligibility": "Relevant engineering bachelor's degree",
+      "careerOptions": [
+        "Senior Engineer",
+        "Research Engineer",
+        "Technical Consultant"
+      ],
+      "page": "mtech.html",
+      "icon": "images/icons/mtech.png"
+    },
+    {
+      "id": 29,
+      "slug": "md",
+      "name": "MD",
+      "fullName": "Doctor of Medicine",
+      "category": "Medical",
+      "level": "Postgraduate",
+      "duration": "3 Years",
+      "entranceExams": [
+        "NEET PG",
+        "INI-CET"
+      ],
+      "eligibility": "MBBS with internship and registration",
+      "careerOptions": [
+        "Specialist Doctor",
+        "Consultant Physician",
+        "Medical Faculty"
+      ],
+      "page": "md.html",
+      "icon": "images/icons/md.png"
+    },
+    {
+      "id": 30,
+      "slug": "ms",
+      "name": "MS",
+      "fullName": "Master of Surgery",
+      "category": "Medical",
+      "level": "Postgraduate",
+      "duration": "3 Years",
+      "entranceExams": [
+        "NEET PG",
+        "INI-CET"
+      ],
+      "eligibility": "MBBS with internship and registration",
+      "careerOptions": [
+        "Surgeon",
+        "Consultant Surgeon",
+        "Medical Faculty"
+      ],
+      "page": "ms.html",
+      "icon": "images/icons/ms.png"
+    }
+  ]
+}
