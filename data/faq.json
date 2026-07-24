@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "title": "MedOrbit FAQ Database",
+    "version": "1.0.0",
+    "updated": "2026-07-24"
+  },
+  "faqs": [
+    {
+      "id": 1,
+      "category": "MBBS India",
+      "question": "What is the eligibility for MBBS in India?",
+      "answer": "You must qualify NEET UG and meet the eligibility criteria prescribed by NMC and the respective counselling authority."
+    },
+    {
+      "id": 2,
+      "category": "MBBS India",
+      "question": "Is NEET compulsory for MBBS admission?",
+      "answer": "Yes, NEET UG is mandatory for MBBS admission in India."
+    },
+    {
+      "id": 3,
+      "category": "MBBS Abroad",
+      "question": "Can I study MBBS abroad after qualifying NEET?",
+      "answer": "Yes. Indian students generally need a valid NEET score and must comply with current NMC regulations for foreign medical education."
+    },
+    {
+      "id": 4,
+      "category": "MBBS Abroad",
+      "question": "Which countries are popular for MBBS abroad?",
+      "answer": "Russia, Georgia, Kazakhstan, Uzbekistan, Nepal, Bangladesh, Kyrgyzstan and several other countries are popular destinations."
+    },
+    {
+      "id": 5,
+      "category": "Fees",
+      "question": "Do colleges provide hostel facilities?",
+      "answer": "Most medical colleges provide hostel accommodation, subject to availability."
+    },
+    {
+      "id": 6,
+      "category": "Counselling",
+      "question": "Do you assist with counselling?",
+      "answer": "Yes. MedOrbit provides guidance on counselling, documentation and admission procedures."
+    },
+    {
+      "id": 7,
+      "category": "Documents",
+      "question": "What documents are required for admission?",
+      "answer": "Typical documents include NEET score card, admit card, Class 10 and 12 marksheets, ID proof, photographs and other documents required by the institution or counselling authority."
+    },
+    {
+      "id": 8,
+      "category": "Scholarships",
+      "question": "Are scholarships available?",
+      "answer": "Scholarships depend on the institution, government schemes and eligibility criteria."
+    },
+    {
+      "id": 9,
+      "category": "BDS",
+      "question": "Is NEET required for BDS?",
+      "answer": "Yes, NEET UG is required for admission to BDS in India."
+    },
+    {
+      "id": 10,
+      "category": "Nursing",
+      "question": "Which nursing courses are available?",
+      "answer": "Common options include B.Sc. Nursing, GNM and ANM, depending on eligibility and institution."
+    },
+    {
+      "id": 11,
+      "category": "Pharmacy",
+      "question": "What pharmacy courses are available?",
+      "answer": "Popular options include D.Pharm, B.Pharm and Pharm.D."
+    },
+    {
+      "id": 12,
+      "category": "Engineering",
+      "question": "Which entrance exams are accepted for engineering?",
+      "answer": "Depending on the institution, admissions may use JEE Main, state entrance exams or university-level entrance tests."
+    },
+    {
+      "id": 13,
+      "category": "MBA",
+      "question": "Which entrance exams are accepted for MBA?",
+      "answer": "Common exams include CAT, XAT, MAT, CMAT and GMAT depending on the institution."
+    },
+    {
+      "id": 14,
+      "category": "Support",
+      "question": "How can I contact MedOrbit?",
+      "answer": "Use the enquiry form, WhatsApp or the contact information available on the MedOrbit website."
+    },
+    {
+      "id": 15,
+      "category": "General",
+      "question": "Does MedOrbit guarantee admission?",
+      "answer": "No. Admissions are subject to eligibility, counselling outcomes, seat availability and institutional policies."
+    }
+  ]
+}
