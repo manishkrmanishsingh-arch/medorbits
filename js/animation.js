@@ -237,7 +237,7 @@ document.addEventListener("DOMContentLoaded", () => {
             topBtn.classList.remove("show");
 
         }
-
+<script src="js/animations.js"></script>
     });
 
 });
