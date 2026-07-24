@@ -73,6 +73,5 @@ opacity:1;
 to{
 transform:translate(-50%,-50%) scale(18);
 opacity:0;
-<script src="js/animations.js"></script>
 }
 }
