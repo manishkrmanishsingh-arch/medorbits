@@ -1,0 +1,487 @@
+/* ==========================================================
+   MedOrbit Global Responsive CSS
+   Mobile • Tablet • Laptop • Desktop
+========================================================== */
+
+/* Large Desktop */
+
+@media (min-width: 1400px){
+
+.container{
+max-width:1320px;
+margin:auto;
+}
+
+header,
+.hero,
+.section,
+.page-section,
+.page-banner,
+.page-cta,
+footer{
+padding-left:8%;
+padding-right:8%;
+}
+
+}
+
+/* Standard Desktop */
+
+@media (max-width: 1199px){
+
+.container{
+max-width:1100px;
+width:92%;
+margin:auto;
+}
+
+.hero-content h1{
+font-size:46px;
+}
+
+.section-title,
+.page-title{
+font-size:34px;
+}
+
+}
+
+/* Tablet Landscape */
+
+@media (max-width: 992px){
+
+header{
+padding:16px 5%;
+}
+
+.logo{
+font-size:25px;
+}
+
+nav a{
+margin-left:16px;
+font-size:14px;
+}
+
+.hero{
+padding:70px 5%;
+gap:35px;
+}
+
+.hero-content h1{
+font-size:40px;
+}
+
+.hero-content p{
+font-size:17px;
+}
+
+.section,
+.page-section{
+padding:65px 5%;
+}
+
+.stats{
+grid-template-columns:repeat(2,1fr);
+}
+
+.two-column{
+grid-template-columns:1fr;
+}
+
+.footer-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* Tablet Portrait and Mobile */
+
+@media (max-width: 768px){
+
+body{
+font-size:15px;
+}
+
+header{
+padding:14px 20px;
+flex-wrap:wrap;
+}
+
+.logo{
+font-size:23px;
+}
+
+.menu-toggle{
+display:flex;
+flex-direction:column;
+gap:5px;
+cursor:pointer;
+}
+
+.menu-toggle span{
+width:27px;
+height:3px;
+background:#fff;
+border-radius:5px;
+}
+
+nav{
+position:absolute;
+top:100%;
+left:0;
+width:100%;
+background:#0056b3;
+display:none;
+flex-direction:column;
+padding:15px 20px 25px;
+box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+nav.active{
+display:flex;
+}
+
+nav a{
+display:block;
+margin:0;
+padding:12px 0;
+border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+.hero{
+min-height:auto;
+padding:60px 20px;
+flex-direction:column;
+text-align:center;
+}
+
+.hero-content h1{
+font-size:34px;
+}
+
+.hero-content p{
+font-size:16px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.hero-buttons{
+justify-content:center;
+}
+
+.hero-image{
+width:100%;
+}
+
+.section,
+.page-section{
+padding:55px 20px;
+}
+
+.section-title,
+.page-title{
+font-size:29px;
+}
+
+.section-subtitle,
+.page-subtitle{
+font-size:15px;
+margin-bottom:35px;
+}
+
+.course-grid,
+.country-grid,
+.why-grid,
+.testimonial-grid,
+.blog-grid,
+.page-grid,
+.info-grid{
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.stats{
+grid-template-columns:1fr 1fr;
+}
+
+.form-row{
+grid-template-columns:1fr;
+}
+
+.page-banner{
+padding:55px 20px;
+}
+
+.page-banner h1{
+font-size:32px;
+}
+
+.page-banner p{
+font-size:15px;
+}
+
+.cta,
+.page-cta{
+padding:55px 20px;
+}
+
+.cta h2,
+.page-cta h2{
+font-size:29px;
+}
+
+.table-responsive{
+width:100%;
+overflow-x:auto;
+-webkit-overflow-scrolling:touch;
+}
+
+.page-table{
+min-width:700px;
+}
+
+.footer-grid{
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+}
+
+/* Mobile */
+
+@media (max-width: 576px){
+
+.container{
+width:94%;
+}
+
+header{
+padding:13px 15px;
+}
+
+.logo{
+font-size:21px;
+}
+
+.hero{
+padding:50px 15px;
+}
+
+.hero-content h1{
+font-size:29px;
+}
+
+.hero-content p{
+font-size:15px;
+}
+
+.hero-buttons{
+flex-direction:column;
+width:100%;
+}
+
+.hero-buttons a,
+.btn-primary,
+.btn-secondary,
+.page-btn,
+.submit-btn,
+.reset-btn{
+width:100%;
+text-align:center;
+}
+
+.section,
+.page-section{
+padding:48px 15px;
+}
+
+.section-title,
+.page-title{
+font-size:26px;
+}
+
+.section-subtitle,
+.page-subtitle{
+font-size:14px;
+}
+
+.course-grid,
+.country-grid,
+.why-grid,
+.testimonial-grid,
+.blog-grid,
+.page-grid,
+.info-grid,
+.stats,
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+.course-card,
+.country-card,
+.why-box,
+.testimonial,
+.blog-card,
+.page-card,
+.info-box,
+.stat-box{
+padding:22px;
+}
+
+.page-card img,
+.blog-card img{
+height:190px;
+}
+
+.page-banner{
+padding:48px 15px;
+}
+
+.page-banner h1{
+font-size:28px;
+}
+
+.breadcrumb{
+padding:12px 15px;
+font-size:13px;
+overflow-x:auto;
+white-space:nowrap;
+}
+
+.form-section{
+padding:45px 15px;
+}
+
+.form-container{
+padding:20px;
+}
+
+.form-title{
+font-size:25px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+font-size:16px;
+padding:13px;
+}
+
+.cta,
+.page-cta{
+padding:48px 15px;
+}
+
+.cta h2,
+.page-cta h2{
+font-size:26px;
+}
+
+.footer{
+padding:45px 15px 20px;
+}
+
+}
+
+/* Small Mobile */
+
+@media (max-width: 390px){
+
+.logo{
+font-size:19px;
+}
+
+.hero-content h1{
+font-size:26px;
+}
+
+.section-title,
+.page-title{
+font-size:24px;
+}
+
+.hero,
+.section,
+.page-section,
+.page-banner,
+.page-cta,
+.cta{
+padding-left:12px;
+padding-right:12px;
+}
+
+.course-card,
+.country-card,
+.why-box,
+.testimonial,
+.blog-card,
+.page-card,
+.info-box,
+.stat-box{
+padding:18px;
+}
+
+.btn-primary,
+.btn-secondary,
+.page-btn,
+.submit-btn,
+.reset-btn{
+padding:13px 18px;
+font-size:15px;
+}
+
+.page-table{
+min-width:620px;
+}
+
+}
+
+/* Landscape Mobile */
+
+@media (max-height: 500px) and (orientation: landscape){
+
+.hero{
+min-height:auto;
+padding-top:40px;
+padding-bottom:40px;
+}
+
+nav{
+max-height:80vh;
+overflow-y:auto;
+}
+
+}
+
+/* Touch Devices */
+
+@media (hover: none){
+
+.card:hover,
+.course-card:hover,
+.country-card:hover,
+.why-box:hover,
+.testimonial:hover,
+.blog-card:hover,
+.page-card:hover,
+.info-box:hover{
+transform:none;
+}
+
+}
+
+/* Reduced Motion Accessibility */
+
+@media (prefers-reduced-motion: reduce){
+
+*,
+*::before,
+*::after{
+animation-duration:.01ms !important;
+animation-iteration-count:1 !important;
+scroll-behavior:auto !important;
+transition-duration:.01ms !important;
+}
+
+}
