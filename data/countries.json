@@ -1,0 +1,204 @@
+{
+  "metadata": {
+    "title": "MedOrbit Countries Database",
+    "version": "1.0.0"
+  },
+  "countries": [
+    {
+      "id": 1,
+      "name": "India",
+      "code": "IN",
+      "currency": "INR",
+      "language": "English, Hindi",
+      "requiresNEET": true,
+      "popularCourses": [
+        "MBBS",
+        "BDS",
+        "BAMS",
+        "BHMS",
+        "BUMS",
+        "Nursing",
+        "Pharmacy",
+        "Engineering",
+        "MBA"
+      ],
+      "flag": "images/flags/india.png"
+    },
+    {
+      "id": 2,
+      "name": "Russia",
+      "code": "RU",
+      "currency": "RUB",
+      "language": "Russian, English",
+      "requiresNEET": true,
+      "popularCourses": [
+        "MBBS"
+      ],
+      "flag": "images/flags/russia.png"
+    },
+    {
+      "id": 3,
+      "name": "Georgia",
+      "code": "GE",
+      "currency": "GEL",
+      "language": "Georgian, English",
+      "requiresNEET": true,
+      "popularCourses": [
+        "MBBS"
+      ],
+      "flag": "images/flags/georgia.png"
+    },
+    {
+      "id": 4,
+      "name": "Kazakhstan",
+      "code": "KZ",
+      "currency": "KZT",
+      "language": "Kazakh, Russian, English",
+      "requiresNEET": true,
+      "popularCourses": [
+        "MBBS"
+      ],
+      "flag": "images/flags/kazakhstan.png"
+    },
+    {
+      "id": 5,
+      "name": "Uzbekistan",
+      "code": "UZ",
+      "currency": "UZS",
+      "language": "Uzbek, English",
+      "requiresNEET": true,
+      "popularCourses": [
+        "MBBS"
+      ],
+      "flag": "images/flags/uzbekistan.png"
+    },
+    {
+      "id": 6,
+      "name": "Kyrgyzstan",
+      "code": "KG",
+      "currency": "KGS",
+      "language": "Kyrgyz, Russian",
+      "requiresNEET": true,
+      "popularCourses": [
+        "MBBS"
+      ],
+      "flag": "images/flags/kyrgyzstan.png"
+    },
+    {
+      "id": 7,
+      "name": "Nepal",
+      "code": "NP",
+      "currency": "NPR",
+      "language": "Nepali, English",
+      "requiresNEET": true,
+      "popularCourses": [
+        "MBBS"
+      ],
+      "flag": "images/flags/nepal.png"
+    },
+    {
+      "id": 8,
+      "name": "Bangladesh",
+      "code": "BD",
+      "currency": "BDT",
+      "language": "Bengali, English",
+      "requiresNEET": true,
+      "popularCourses": [
+        "MBBS"
+      ],
+      "flag": "images/flags/bangladesh.png"
+    },
+    {
+      "id": 9,
+      "name": "Philippines",
+      "code": "PH",
+      "currency": "PHP",
+      "language": "English, Filipino",
+      "requiresNEET": true,
+      "popularCourses": [
+        "MBBS/MD"
+      ],
+      "flag": "images/flags/philippines.png"
+    },
+    {
+      "id": 10,
+      "name": "United Kingdom",
+      "code": "GB",
+      "currency": "GBP",
+      "language": "English",
+      "requiresNEET": false,
+      "popularCourses": [
+        "Medicine",
+        "MBA",
+        "Engineering"
+      ],
+      "flag": "images/flags/uk.png"
+    },
+    {
+      "id": 11,
+      "name": "United States",
+      "code": "US",
+      "currency": "USD",
+      "language": "English",
+      "requiresNEET": false,
+      "popularCourses": [
+        "Medicine",
+        "MBA",
+        "Engineering"
+      ],
+      "flag": "images/flags/usa.png"
+    },
+    {
+      "id": 12,
+      "name": "Canada",
+      "code": "CA",
+      "currency": "CAD",
+      "language": "English, French",
+      "requiresNEET": false,
+      "popularCourses": [
+        "Medicine",
+        "MBA",
+        "Engineering"
+      ],
+      "flag": "images/flags/canada.png"
+    },
+    {
+      "id": 13,
+      "name": "Australia",
+      "code": "AU",
+      "currency": "AUD",
+      "language": "English",
+      "requiresNEET": false,
+      "popularCourses": [
+        "Medicine",
+        "MBA",
+        "Engineering"
+      ],
+      "flag": "images/flags/australia.png"
+    },
+    {
+      "id": 14,
+      "name": "China",
+      "code": "CN",
+      "currency": "CNY",
+      "language": "Chinese, English",
+      "requiresNEET": true,
+      "popularCourses": [
+        "MBBS"
+      ],
+      "flag": "images/flags/china.png"
+    },
+    {
+      "id": 15,
+      "name": "Armenia",
+      "code": "AM",
+      "currency": "AMD",
+      "language": "Armenian, English",
+      "requiresNEET": true,
+      "popularCourses": [
+        "MBBS"
+      ],
+      "flag": "images/flags/armenia.png"
+    }
+  ]
+}
