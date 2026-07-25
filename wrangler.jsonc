@@ -3150,3 +3150,43 @@
 
   </div>
 </section>
+
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "medorbit-ai-notice-agent",
+  "main": "src/index.js",
+  "compatibility_date": "2026-07-25",
+
+  "triggers": {
+    "crons": [
+      "0 */3 * * *"
+    ]
+  },
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "medorbit-notices",
+      "database_id": "PASTE_YOUR_D1_DATABASE_ID"
+    }
+  ],
+
+  "r2_buckets": [
+    {
+      "binding": "DOCUMENTS",
+      "bucket_name": "medorbit-documents"
+    }
+  ],
+
+  "ai": {
+    "binding": "AI"
+  },
+
+  "vars": {
+    "SITE_URL": "https://medorbits.in",
+    "ADMIN_EMAIL": "info@medorbits.in",
+    "WHATSAPP_NUMBER_PRIMARY": "918135956947",
+    "WHATSAPP_NUMBER_SECONDARY": "919142102309",
+    "AUTO_PUBLISH_SCORE": "90"
+  }
+}
