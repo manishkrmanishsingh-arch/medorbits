@@ -1,4 +1,3 @@
-<script src="js/animations.js" defer></script>
 /* =========================================================
    MedOrbit Smooth Animations
    File: js/animations.js
