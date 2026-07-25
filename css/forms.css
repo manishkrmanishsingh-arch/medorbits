@@ -3391,3 +3391,260 @@
 <a href="forms.html?form=employerForm">
   Post a Job
 </a>
+
+/* ==========================================================
+   FORM UTILITY CLASSES
+========================================================== */
+
+/* Form States */
+
+.form-hidden{
+display:none!important;
+}
+
+.form-visible{
+display:block!important;
+}
+
+.form-disabled{
+opacity:.6;
+pointer-events:none;
+cursor:not-allowed;
+}
+
+.form-readonly{
+background:#f5f7fa;
+cursor:default;
+}
+
+/* Required */
+
+.required{
+color:#dc3545;
+font-weight:700;
+}
+
+/* Optional */
+
+.optional{
+color:#6c757d;
+font-size:13px;
+}
+
+/* Success */
+
+.form-success{
+
+background:#e8f8ec;
+
+border-left:5px solid #28a745;
+
+padding:15px 18px;
+
+border-radius:8px;
+
+color:#146c2e;
+
+margin:20px 0;
+
+}
+
+/* Error */
+
+.form-error{
+
+background:#fff0f0;
+
+border-left:5px solid #dc3545;
+
+padding:15px 18px;
+
+border-radius:8px;
+
+color:#b42318;
+
+margin:20px 0;
+
+}
+
+/* Warning */
+
+.form-warning{
+
+background:#fff8e6;
+
+border-left:5px solid #ff9800;
+
+padding:15px 18px;
+
+border-radius:8px;
+
+color:#9a6700;
+
+margin:20px 0;
+
+}
+
+/* Information */
+
+.form-info{
+
+background:#eef6ff;
+
+border-left:5px solid #0056b3;
+
+padding:15px 18px;
+
+border-radius:8px;
+
+color:#0056b3;
+
+margin:20px 0;
+
+}
+
+/* Form Divider */
+
+.form-divider{
+
+margin:40px 0;
+
+height:1px;
+
+background:#e5edf5;
+
+}
+
+/* Loader */
+
+.form-loader{
+
+display:none;
+
+width:32px;
+
+height:32px;
+
+border:4px solid #dce5ef;
+
+border-top:4px solid #0056b3;
+
+border-radius:50%;
+
+margin:auto;
+
+animation:formSpin .8s linear infinite;
+
+}
+
+@keyframes formSpin{
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+/* ==========================================================
+   ACCESSIBILITY
+========================================================== */
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus{
+
+outline:none;
+
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible{
+
+box-shadow:0 0 0 4px rgba(0,86,179,.15);
+
+}
+
+/* ==========================================================
+   PRINT
+========================================================== */
+
+@media print{
+
+button,
+.submit-btn,
+.reset-btn,
+.loader{
+
+display:none!important;
+
+}
+
+.form-container{
+
+box-shadow:none;
+
+border:1px solid #999;
+
+}
+
+}
+
+/* ==========================================================
+   END OF FORM STYLES
+------------------------------------------------------------
+Project      : MedOrbit
+File         : forms.css
+Version      : 1.0.0
+
+Supported Forms
+✓ MBBS Admission
+✓ BDS Admission
+✓ Nursing Admission
+✓ AYUSH Admission
+✓ Pharmacy Admission
+✓ Study Abroad
+✓ Scholarship Application
+✓ Career Counselling
+✓ Private Job Application
+✓ Employer Registration
+✓ Student Registration
+✓ Contact & Inquiry
+✓ Document Upload
+✓ Feedback Form
+✓ Brochure Request
+
+Features
+• Responsive Layout
+• Mobile Friendly
+• Multi-step Ready
+• Validation Support
+• File Upload
+• Progress Bar
+• Success & Error States
+• Loading Animation
+• Accessibility Ready
+• Print Friendly
+
+Supported Devices
+Desktop
+Laptop
+Tablet
+Mobile
+
+Supported Browsers
+Google Chrome
+Microsoft Edge
+Mozilla Firefox
+Safari
+Opera
+
+© 2026 MedOrbit
+All Rights Reserved.
+
+Built with HTML5 • CSS3 • JavaScript
+========================================================== */
