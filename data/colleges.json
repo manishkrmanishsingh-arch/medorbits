@@ -1154,3 +1154,153 @@
     }
   ]
 }
+
+{
+  "version": "1.0.0",
+
+  "lastUpdated": "2026-07-25",
+
+  "maintainedBy": "MedOrbit",
+
+  "website": "https://www.medorbits.in",
+
+  "totalColleges": 0,
+
+  "totalCountries": 0,
+
+  "totalCourses": 0,
+
+  "supportedCourses": [
+    "MBBS",
+    "BDS",
+    "BAMS",
+    "BHMS",
+    "BUMS",
+    "BSMS",
+    "BPT",
+    "B.Sc Nursing",
+    "GNM",
+    "ANM",
+    "B.Pharm",
+    "D.Pharm",
+    "M.Pharm",
+    "Pharm.D",
+    "Allied Health Sciences"
+  ],
+
+  "supportedCountries": [
+    "India",
+    "Nepal",
+    "Russia",
+    "Georgia",
+    "Kazakhstan",
+    "Uzbekistan",
+    "Kyrgyzstan",
+    "Bangladesh",
+    "Armenia",
+    "Belarus",
+    "Philippines"
+  ],
+
+  "data": [
+
+    /* College Objects Here */
+
+  ],
+
+  "metadata": {
+
+    "generatedBy": "MedOrbit CMS",
+
+    "dataFormat": "JSON",
+
+    "encoding": "UTF-8",
+
+    "license": "© MedOrbit",
+
+    "status": "production",
+
+    "apiReady": true,
+
+    "searchEnabled": true,
+
+    "filterEnabled": true,
+
+    "seoReady": true,
+
+    "lazyLoading": true,
+
+    "responsive": true,
+
+    "futureExpansion": true
+
+  }
+}
+
+# ==========================================================
+# MedOrbit College Database
+# ==========================================================
+
+Project      : MedOrbit
+File         : college.json
+Version      : 1.0.0
+
+Database Includes
+
+✓ Government Colleges
+✓ Private Colleges
+✓ Deemed Universities
+✓ Study Abroad Universities
+✓ Medical Colleges
+✓ Dental Colleges
+✓ AYUSH Colleges
+✓ Nursing Colleges
+✓ Pharmacy Colleges
+✓ Allied Health Colleges
+
+Each College Contains
+
+• College ID
+• Name
+• Country
+• State
+• City
+• Course List
+• Recognition
+• Affiliation
+• Establishment Year
+• Fee Structure
+• Hostel Fee
+• Eligibility
+• Entrance Exam
+• Seats
+• Official Website
+• Contact Details
+• Latitude & Longitude
+• Images
+• Brochure
+• Prospectus
+• Ranking
+• Facilities
+• Scholarships
+• Admission Process
+• Status
+
+Future Expansion
+
+✓ API Ready
+✓ Search Ready
+✓ AI Ready
+✓ Filter Ready
+✓ Dashboard Ready
+✓ Mobile App Ready
+✓ CMS Ready
+
+Designed for
+
+MedOrbit Education Consultancy
+Study Abroad
+Private Career Assistance
+
+© 2026 MedOrbit.
+All Rights Reserved.
