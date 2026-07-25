@@ -1,320 +1,3393 @@
-/* ==========================================
-   MedOrbit Responsive Forms CSS
-========================================== */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-.form-section{
-width:100%;
-padding:70px 8%;
-background:#f8fbff;
-}
+  <title>Apply for MedOrbit Services</title>
 
-.form-container{
-max-width:850px;
-margin:auto;
-background:#fff;
-padding:35px;
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
+  <meta
+    name="description"
+    content="Apply for education counselling, admission assistance, study abroad, private jobs, airport jobs, resume submission and employer hiring through MedOrbit."
+  >
 
-.form-title{
-font-size:32px;
-font-weight:700;
-color:#0056b3;
-text-align:center;
-margin-bottom:10px;
-}
+  <style>
+    :root {
+      --primary: #063f78;
+      --primary-dark: #042d57;
+      --accent: #0d79c7;
+      --gold: #d7a72b;
+      --success: #16803d;
+      --danger: #c93535;
+      --warning: #9a6700;
 
-.form-subtitle{
-text-align:center;
-color:#666;
-margin-bottom:35px;
-line-height:1.6;
-}
+      --background: #f4f8fc;
+      --surface: #ffffff;
+      --soft-blue: #eef6ff;
+      --soft-gold: #fff9e8;
+      --soft-green: #ebf8ef;
+      --soft-red: #fff0f0;
 
-.form-row{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
-margin-bottom:20px;
-}
+      --text: #182436;
+      --muted: #647184;
+      --border: #dbe4ed;
 
-.form-group{
-display:flex;
-flex-direction:column;
-}
+      --radius-small: 10px;
+      --radius-medium: 16px;
+      --radius-large: 24px;
 
-.form-group label{
-font-size:15px;
-font-weight:600;
-margin-bottom:8px;
-color:#222;
-}
+      --shadow-small:
+        0 8px 24px rgba(20, 54, 88, 0.06);
 
-.form-group input,
-.form-group select,
-.form-group textarea{
-width:100%;
-padding:14px 16px;
-border:1px solid #d8d8d8;
-border-radius:8px;
-font-size:15px;
-outline:none;
-background:#fff;
-transition:.3s;
-}
+      --shadow-large:
+        0 20px 55px rgba(20, 54, 88, 0.11);
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus{
-border-color:#0056b3;
-box-shadow:0 0 0 4px rgba(0,86,179,.12);
-}
+      --transition:
+        220ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
 
-.form-group textarea{
-resize:vertical;
-min-height:140px;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-.form-group input::placeholder,
-.form-group textarea::placeholder{
-color:#999;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-.form-full{
-grid-column:1/-1;
-}
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
 
-.form-check{
-display:flex;
-align-items:flex-start;
-gap:10px;
-margin:20px 0;
-}
+      color: var(--text);
+      background: var(--background);
 
-.form-check input{
-margin-top:5px;
-}
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
 
-.form-check label{
-font-size:14px;
-line-height:1.6;
-color:#555;
-}
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
 
-.submit-btn{
-width:100%;
-padding:15px;
-border:none;
-background:#0056b3;
-color:#fff;
-font-size:17px;
-font-weight:600;
-border-radius:8px;
-cursor:pointer;
-transition:.3s;
-}
+    button {
+      cursor: pointer;
+    }
 
-.submit-btn:hover{
-background:#00418a;
-transform:translateY(-2px);
-}
+    a {
+      color: inherit;
+    }
 
-.submit-btn:active{
-transform:scale(.98);
-}
+    .container {
+      width: min(1180px, calc(100% - 2rem));
+      margin-inline: auto;
+    }
 
-.reset-btn{
-width:100%;
-padding:15px;
-border:2px solid #0056b3;
-background:#fff;
-color:#0056b3;
-font-size:16px;
-font-weight:600;
-border-radius:8px;
-cursor:pointer;
-transition:.3s;
-margin-top:12px;
-}
+    /* ==========================================
+       Header
+    ========================================== */
 
-.reset-btn:hover{
-background:#0056b3;
-color:#fff;
-}
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
 
-input:invalid:focus,
-textarea:invalid:focus,
-select:invalid:focus{
-border-color:#e63946;
-box-shadow:0 0 0 4px rgba(230,57,70,.12);
-}
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid var(--border);
 
-input:valid,
-textarea:valid,
-select:valid{
-border-color:#28a745;
-}
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
 
-.required{
-color:#e63946;
-margin-left:4px;
-}
+    .header-inner {
+      min-height: 74px;
 
-.file-upload{
-border:2px dashed #0056b3;
-padding:30px;
-text-align:center;
-border-radius:10px;
-background:#f5f9ff;
-cursor:pointer;
-transition:.3s;
-}
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-.file-upload:hover{
-background:#edf5ff;
-}
+      gap: 24px;
+    }
 
-.file-upload input{
-display:none;
-}
+    .logo {
+      color: var(--primary);
 
-.form-note{
-font-size:13px;
-color:#777;
-margin-top:6px;
-}
+      font-family: "Times New Roman", Times, serif;
+      font-size: 31px;
+      font-weight: 700;
 
-.success-message{
-display:none;
-padding:15px;
-background:#e8f8ec;
-border-left:5px solid #28a745;
-color:#1d7a34;
-margin-bottom:20px;
-border-radius:6px;
-}
+      text-decoration: none;
+      white-space: nowrap;
+    }
 
-.error-message{
-display:none;
-padding:15px;
-background:#ffecec;
-border-left:5px solid #dc3545;
-color:#b00020;
-margin-bottom:20px;
-border-radius:6px;
-}
+    .logo span {
+      color: var(--gold);
+    }
 
-.loader{
-display:none;
-width:25px;
-height:25px;
-border:3px solid #ddd;
-border-top:3px solid #0056b3;
-border-radius:50%;
-animation:spin .8s linear infinite;
-margin:auto;
-}
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
 
-@keyframes spin{
-100%{
-transform:rotate(360deg);
-}
-}
+    .header-nav a {
+      color: #344359;
 
-/* Tablet */
+      font-size: 14px;
+      font-weight: 700;
 
-@media(max-width:992px){
+      text-decoration: none;
+      transition: color var(--transition);
+    }
 
-.form-section{
-padding:60px 5%;
-}
+    .header-nav a:hover {
+      color: var(--accent);
+    }
 
-.form-container{
-padding:30px;
-}
+    .header-button {
+      min-height: 42px;
+      padding: 0 16px;
 
-}
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
 
-/* Mobile */
+      color: #ffffff !important;
+      background: var(--primary);
 
-@media(max-width:768px){
+      border-radius: 10px;
+    }
 
-.form-row{
-grid-template-columns:1fr;
-gap:16px;
-}
+    .menu-button {
+      display: none;
 
-.form-container{
-padding:25px;
-}
+      width: 44px;
+      height: 44px;
 
-.form-title{
-font-size:28px;
-}
+      color: var(--primary);
+      background: #ffffff;
 
-.submit-btn,
-.reset-btn{
-font-size:16px;
-}
+      border: 1px solid var(--border);
+      border-radius: 10px;
 
-}
+      font-size: 21px;
+    }
 
-/* Small Mobile */
+    /* ==========================================
+       Hero
+    ========================================== */
 
-@media(max-width:480px){
+    .form-hero {
+      position: relative;
+      overflow: hidden;
 
-.form-section{
-padding:45px 15px;
-}
+      padding:
+        clamp(4rem, 8vw, 6.5rem)
+        0;
 
-.form-container{
-padding:20px;
-border-radius:10px;
-}
+      color: #ffffff;
 
-.form-title{
-font-size:24px;
-}
+      background:
+        radial-gradient(
+          circle at 10% 20%,
+          rgba(215, 167, 43, 0.18),
+          transparent 32%
+        ),
+        linear-gradient(
+          125deg,
+          var(--primary-dark),
+          #086cae
+        );
+    }
 
-.form-subtitle{
-font-size:14px;
-}
+    .form-hero::before,
+    .form-hero::after {
+      content: "";
 
-.form-group input,
-.form-group select,
-.form-group textarea{
-padding:12px;
-font-size:14px;
-}
+      position: absolute;
+      border-radius: 50%;
 
-.submit-btn,
-.reset-btn{
-padding:14px;
-}
+      background: rgba(255, 255, 255, 0.07);
+      pointer-events: none;
+    }
 
-.form-check{
-align-items:flex-start;
-}
+    .form-hero::before {
+      width: 420px;
+      height: 420px;
 
-.form-check label{
-font-size:13px;
-}
+      top: -180px;
+      right: -170px;
+    }
 
-}
+    .form-hero::after {
+      width: 280px;
+      height: 280px;
 
-/* Large Screens */
+      left: -150px;
+      bottom: -150px;
+    }
 
-@media(min-width:1400px){
+    .hero-content {
+      position: relative;
+      z-index: 2;
 
-.form-container{
-max-width:950px;
-}
+      max-width: 850px;
+    }
 
-}
+    .eyebrow {
+      margin-bottom: 0.75rem;
+
+      color: #ffd875;
+
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .form-hero h1 {
+      margin-bottom: 1rem;
+
+      font-family: "Times New Roman", Times, serif;
+      font-size: clamp(2.5rem, 6vw, 4.7rem);
+      line-height: 1.05;
+
+      text-wrap: balance;
+    }
+
+    .form-hero p {
+      max-width: 780px;
+
+      color: #e5eff8;
+
+      font-size: clamp(1rem, 2vw, 1.12rem);
+      line-height: 1.75;
+    }
+
+    /* ==========================================
+       Form layout
+    ========================================== */
+
+    .forms-section {
+      padding:
+        clamp(3rem, 7vw, 5.5rem)
+        0;
+    }
+
+    .forms-layout {
+      display: grid;
+      grid-template-columns:
+        minmax(245px, 0.34fr)
+        minmax(0, 1fr);
+
+      gap: clamp(1.25rem, 3vw, 2rem);
+      align-items: start;
+    }
+
+    /* ==========================================
+       Form selector
+    ========================================== */
+
+    .form-selector {
+      position: sticky;
+      top: 94px;
+
+      padding: 1.1rem;
+
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-medium);
+
+      box-shadow: var(--shadow-large);
+    }
+
+    .form-selector h2 {
+      margin-bottom: 0.3rem;
+
+      color: var(--primary-dark);
+
+      font-family: "Times New Roman", Times, serif;
+      font-size: 1.65rem;
+    }
+
+    .form-selector > p {
+      margin-bottom: 1rem;
+
+      color: var(--muted);
+
+      font-size: 0.84rem;
+      line-height: 1.55;
+    }
+
+    .form-selector-list {
+      display: grid;
+      gap: 0.55rem;
+    }
+
+    .form-selector-button {
+      width: 100%;
+      min-height: 52px;
+      padding: 0.7rem 0.8rem;
+
+      display: flex;
+      align-items: center;
+
+      gap: 0.7rem;
+
+      color: #425168;
+      background: #ffffff;
+
+      border: 1px solid transparent;
+      border-radius: 11px;
+
+      font-size: 0.84rem;
+      font-weight: 800;
+      text-align: left;
+
+      transition:
+        color var(--transition),
+        background-color var(--transition),
+        border-color var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
+    }
+
+    .form-selector-button:hover {
+      color: var(--primary);
+      background: var(--soft-blue);
+
+      transform: translateX(3px);
+    }
+
+    .form-selector-button.active {
+      color: #ffffff;
+      background: var(--primary);
+
+      border-color: var(--primary);
+
+      box-shadow:
+        0 9px 22px rgba(6, 63, 120, 0.2);
+    }
+
+    .selector-icon {
+      width: 2.1rem;
+      height: 2.1rem;
+      flex: 0 0 2.1rem;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 8px;
+
+      background: rgba(6, 63, 120, 0.08);
+      font-size: 1rem;
+    }
+
+    .form-selector-button.active .selector-icon {
+      background: rgba(255, 255, 255, 0.18);
+    }
+
+    /* ==========================================
+       Main form card
+    ========================================== */
+
+    .form-panel {
+      min-width: 0;
+
+      padding:
+        clamp(1.25rem, 4vw, 2.25rem);
+
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-medium);
+
+      box-shadow: var(--shadow-large);
+    }
+
+    .service-form {
+      display: none;
+
+      animation:
+        formReveal 350ms ease both;
+    }
+
+    .service-form.active {
+      display: block;
+    }
+
+    @keyframes formReveal {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .form-header {
+      margin-bottom: 1.6rem;
+      padding-bottom: 1.2rem;
+
+      border-bottom: 1px solid var(--border);
+    }
+
+    .form-header-label {
+      margin-bottom: 0.4rem;
+
+      color: var(--accent);
+
+      font-size: 0.75rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .form-header h2 {
+      margin-bottom: 0.5rem;
+
+      color: var(--primary-dark);
+
+      font-family: "Times New Roman", Times, serif;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      line-height: 1.15;
+    }
+
+    .form-header p {
+      max-width: 760px;
+
+      color: var(--muted);
+
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    /* ==========================================
+       Progress
+    ========================================== */
+
+    .form-progress {
+      margin-bottom: 1.7rem;
+    }
+
+    .progress-information {
+      margin-bottom: 0.5rem;
+
+      display: flex;
+      justify-content: space-between;
+
+      gap: 1rem;
+
+      color: var(--muted);
+
+      font-size: 0.76rem;
+      font-weight: 700;
+    }
+
+    .progress-track {
+      height: 8px;
+
+      overflow: hidden;
+
+      background: #e9eff5;
+      border-radius: 999px;
+    }
+
+    .progress-bar {
+      width: 25%;
+      height: 100%;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--primary),
+          var(--accent)
+        );
+
+      border-radius: inherit;
+
+      transition:
+        width 350ms ease;
+    }
+
+    /* ==========================================
+       Form sections
+    ========================================== */
+
+    .form-section-card {
+      margin-bottom: 1.5rem;
+      padding: clamp(1rem, 2.5vw, 1.35rem);
+
+      background:
+        linear-gradient(
+          145deg,
+          #ffffff,
+          #fbfdff
+        );
+
+      border: 1px solid var(--border);
+      border-radius: 14px;
+
+      box-shadow: var(--shadow-small);
+    }
+
+    .form-section-card:last-of-type {
+      margin-bottom: 1rem;
+    }
+
+    .form-section-title {
+      margin-bottom: 1rem;
+      padding-left: 0.7rem;
+
+      color: var(--primary-dark);
+      border-left: 4px solid var(--gold);
+
+      font-size: 1rem;
+      font-weight: 900;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: 1rem 1.1rem;
+    }
+
+    .form-group {
+      min-width: 0;
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .form-group label,
+    .choice-title {
+      margin-bottom: 0.45rem;
+
+      color: #344054;
+
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .required {
+      color: var(--danger);
+      margin-left: 0.15rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      min-width: 0;
+      min-height: 50px;
+
+      padding: 0.75rem 0.85rem;
+
+      color: #263449;
+      background: #ffffff;
+
+      border: 1px solid #d7e0e9;
+      border-radius: 10px;
+
+      outline: none;
+
+      font-size: 0.9rem;
+      line-height: 1.45;
+
+      transition:
+        border-color var(--transition),
+        box-shadow var(--transition),
+        background-color var(--transition),
+        transform var(--transition);
+    }
+
+    .form-group textarea {
+      min-height: 125px;
+      resize: vertical;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: #929cac;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+
+      box-shadow:
+        0 0 0 4px rgba(13, 121, 199, 0.11);
+
+      transform: translateY(-1px);
+    }
+
+    .form-group input:user-invalid,
+    .form-group select:user-invalid,
+    .form-group textarea:user-invalid {
+      border-color: var(--danger);
+
+      box-shadow:
+        0 0 0 4px rgba(201, 53, 53, 0.09);
+    }
+
+    .form-help {
+      margin-top: 0.35rem;
+
+      color: #7a8797;
+
+      font-size: 0.73rem;
+      line-height: 1.45;
+    }
+
+    /* ==========================================
+       Choice cards
+    ========================================== */
+
+    .choice-grid {
+      display: grid;
+      grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+      gap: 0.65rem;
+    }
+
+    .choice-option {
+      position: relative;
+    }
+
+    .choice-option input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .choice-option label {
+      min-height: 50px;
+      padding: 0.65rem 0.7rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: #46566c;
+      background: #ffffff;
+
+      border: 1px solid var(--border);
+      border-radius: 10px;
+
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-align: center;
+
+      cursor: pointer;
+
+      transition:
+        color var(--transition),
+        background-color var(--transition),
+        border-color var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
+    }
+
+    .choice-option label:hover {
+      color: var(--primary);
+      background: var(--soft-blue);
+
+      border-color: #b7cde0;
+
+      transform: translateY(-2px);
+    }
+
+    .choice-option input:checked + label {
+      color: #ffffff;
+      background: var(--primary);
+
+      border-color: var(--primary);
+
+      box-shadow:
+        0 7px 18px rgba(6, 63, 120, 0.18);
+    }
+
+    /* ==========================================
+       Upload field
+    ========================================== */
+
+    .file-upload {
+      position: relative;
+
+      padding: 1.5rem;
+
+      text-align: center;
+
+      background: #f5faff;
+
+      border: 2px dashed #9fbed9;
+      border-radius: 12px;
+
+      transition:
+        border-color var(--transition),
+        background-color var(--transition),
+        transform var(--transition);
+    }
+
+    .file-upload:hover,
+    .file-upload.dragging {
+      background: #eef7ff;
+      border-color: var(--primary);
+
+      transform: translateY(-2px);
+    }
+
+    .file-upload input {
+      position: absolute;
+      inset: 0;
+
+      width: 100%;
+      height: 100%;
+
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .upload-icon {
+      display: block;
+      margin-bottom: 0.45rem;
+
+      font-size: 1.9rem;
+    }
+
+    .file-upload strong {
+      display: block;
+
+      color: var(--primary-dark);
+
+      font-size: 0.9rem;
+    }
+
+    .file-upload small {
+      display: block;
+      margin-top: 0.25rem;
+
+      color: var(--muted);
+
+      font-size: 0.73rem;
+    }
+
+    .selected-files {
+      margin-top: 0.55rem;
+
+      color: var(--success);
+
+      font-size: 0.76rem;
+      font-weight: 800;
+
+      overflow-wrap: anywhere;
+    }
+
+    /* ==========================================
+       Consent
+    ========================================== */
+
+    .consent-box {
+      margin: 1.2rem 0;
+      padding: 1rem;
+
+      display: flex;
+      align-items: flex-start;
+
+      gap: 0.65rem;
+
+      background: #f8fafc;
+
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    .consent-box input {
+      width: 1.05rem;
+      height: 1.05rem;
+      flex: 0 0 1.05rem;
+
+      margin-top: 0.18rem;
+
+      accent-color: var(--primary);
+    }
+
+    .consent-box label {
+      color: #59677a;
+
+      font-size: 0.77rem;
+      line-height: 1.6;
+    }
+
+    /* ==========================================
+       Buttons
+    ========================================== */
+
+    .form-actions {
+      display: flex;
+      align-items: center;
+
+      gap: 0.75rem;
+    }
+
+    .submit-button,
+    .reset-button {
+      min-height: 51px;
+      padding: 0.75rem 1.35rem;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 10px;
+
+      font-size: 0.88rem;
+      font-weight: 900;
+
+      transition:
+        transform var(--transition),
+        background-color var(--transition),
+        color var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+    }
+
+    .submit-button {
+      position: relative;
+      flex: 1;
+
+      color: #ffffff;
+      background: var(--primary);
+
+      border: 1px solid var(--primary);
+
+      box-shadow:
+        0 9px 22px rgba(6, 63, 120, 0.2);
+    }
+
+    .submit-button:hover {
+      background: var(--primary-dark);
+
+      transform: translateY(-2px);
+
+      box-shadow:
+        0 13px 28px rgba(6, 63, 120, 0.25);
+    }
+
+    .reset-button {
+      color: var(--primary);
+      background: #ffffff;
+
+      border: 1px solid #b7cadd;
+    }
+
+    .reset-button:hover {
+      color: #ffffff;
+      background: var(--primary);
+
+      border-color: var(--primary);
+    }
+
+    .submit-button:active,
+    .reset-button:active {
+      transform: scale(0.98);
+    }
+
+    .submit-button:disabled {
+      cursor: wait;
+      opacity: 0.75;
+    }
+
+    /* ==========================================
+       Messages
+    ========================================== */
+
+    .form-message {
+      display: none;
+
+      margin-bottom: 1rem;
+      padding: 0.9rem 1rem;
+
+      border-radius: 10px;
+
+      font-size: 0.81rem;
+      font-weight: 800;
+      line-height: 1.55;
+    }
+
+    .form-message.success {
+      display: block;
+
+      color: var(--success);
+      background: var(--soft-green);
+
+      border: 1px solid #bee2c8;
+    }
+
+    .form-message.error {
+      display: block;
+
+      color: #a82222;
+      background: var(--soft-red);
+
+      border: 1px solid #efc3c3;
+    }
+
+    /* ==========================================
+       Safety notice
+    ========================================== */
+
+    .safety-notice {
+      margin: 1rem 0;
+      padding: 1rem;
+
+      color: #6a5413;
+      background: var(--soft-gold);
+
+      border: 1px solid #ead996;
+      border-radius: 11px;
+
+      font-size: 0.76rem;
+      line-height: 1.65;
+    }
+
+    .safety-notice strong {
+      color: #4b3900;
+    }
+
+    /* ==========================================
+       Footer
+    ========================================== */
+
+    .site-footer {
+      padding: 2.2rem 0;
+
+      color: #d9e4ee;
+      background: #071f38;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      gap: 1rem;
+
+      font-size: 0.8rem;
+    }
+
+    /* ==========================================
+       Responsive
+    ========================================== */
+
+    @media screen and (max-width: 960px) {
+      .forms-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .form-selector {
+        position: static;
+      }
+
+      .form-selector-list {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+      }
+
+      .form-selector-button:hover {
+        transform: translateY(-2px);
+      }
+    }
+
+    @media screen and (max-width: 760px) {
+      .menu-button {
+        display: block;
+      }
+
+      .header-nav {
+        display: none;
+
+        position: absolute;
+        top: 74px;
+        left: 1rem;
+        right: 1rem;
+
+        padding: 1rem;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        background: #ffffff;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+
+        box-shadow: var(--shadow-large);
+      }
+
+      .header-nav.open {
+        display: flex;
+      }
+
+      .header-nav a {
+        padding: 0.65rem;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-group.full-width {
+        grid-column: auto;
+      }
+
+      .choice-grid {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media screen and (max-width: 520px) {
+      .container {
+        width: min(100% - 1rem, 1180px);
+      }
+
+      .form-hero {
+        padding: 3.5rem 0;
+      }
+
+      .form-panel,
+      .form-selector {
+        border-radius: 14px;
+      }
+
+      .form-selector-list,
+      .choice-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-actions {
+        flex-direction: column;
+      }
+
+      .submit-button,
+      .reset-button {
+        width: 100%;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (hover: none) and (pointer: coarse) {
+      .form-selector-button:hover,
+      .choice-option label:hover,
+      .submit-button:hover,
+      .reset-button:hover,
+      .file-upload:hover {
+        transform: none;
+      }
+
+      .submit-button,
+      .reset-button {
+        min-height: 53px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a href="index.html" class="logo">
+        Med<span>Orbit</span>
+      </a>
+
+      <button
+        type="button"
+        class="menu-button"
+        id="menuButton"
+        aria-label="Open navigation"
+      >
+        ☰
+      </button>
+
+      <nav class="header-nav" id="headerNavigation">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="colleges.html">Colleges</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="contact.html" class="header-button">
+          Contact
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="form-hero">
+      <div class="container">
+
+        <div class="hero-content">
+          <p class="eyebrow">
+            MedOrbit Application Centre
+          </p>
+
+          <h1>
+            Select a service and submit your details
+          </h1>
+
+          <p>
+            Apply for education counselling, admission assistance, study
+            abroad, private employment, airport jobs, resume support or
+            employer recruitment through one organised application centre.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="forms-section">
+      <div class="container">
+
+        <div class="forms-layout">
+
+          <aside class="form-selector">
+
+            <h2>Select a Form</h2>
+
+            <p>
+              Choose the service that best matches your requirement.
+            </p>
+
+            <div class="form-selector-list">
+
+              <button
+                type="button"
+                class="form-selector-button active"
+                data-target-form="generalForm"
+              >
+                <span class="selector-icon">💬</span>
+                General Enquiry
+              </button>
+
+              <button
+                type="button"
+                class="form-selector-button"
+                data-target-form="educationForm"
+              >
+                <span class="selector-icon">🎓</span>
+                Education Counselling
+              </button>
+
+              <button
+                type="button"
+                class="form-selector-button"
+                data-target-form="admissionForm"
+              >
+                <span class="selector-icon">📝</span>
+                Admission Assistance
+              </button>
+
+              <button
+                type="button"
+                class="form-selector-button"
+                data-target-form="studyAbroadForm"
+              >
+                <span class="selector-icon">🌍</span>
+                Study Abroad
+              </button>
+
+              <button
+                type="button"
+                class="form-selector-button"
+                data-target-form="jobForm"
+              >
+                <span class="selector-icon">💼</span>
+                Private Job Assistance
+              </button>
+
+              <button
+                type="button"
+                class="form-selector-button"
+                data-target-form="airportForm"
+              >
+                <span class="selector-icon">✈️</span>
+                Airport Job Assistance
+              </button>
+
+              <button
+                type="button"
+                class="form-selector-button"
+                data-target-form="resumeForm"
+              >
+                <span class="selector-icon">📄</span>
+                Submit Resume
+              </button>
+
+              <button
+                type="button"
+                class="form-selector-button"
+                data-target-form="employerForm"
+              >
+                <span class="selector-icon">🏢</span>
+                Employer Hiring
+              </button>
+
+            </div>
+
+          </aside>
+
+          <div class="form-panel">
+
+            <!-- General enquiry -->
+
+            <form
+              class="service-form active"
+              id="generalForm"
+              data-form-title="General Enquiry"
+            >
+
+              <div class="form-header">
+                <p class="form-header-label">Start Here</p>
+
+                <h2>General Enquiry Form</h2>
+
+                <p>
+                  Use this form when you need assistance but are unsure which
+                  MedOrbit service is suitable.
+                </p>
+              </div>
+
+              <div class="form-progress">
+                <div class="progress-information">
+                  <span>Basic information</span>
+                  <span>25% complete</span>
+                </div>
+
+                <div class="progress-track">
+                  <div class="progress-bar"></div>
+                </div>
+              </div>
+
+              <div class="form-message"></div>
+
+              <div class="form-section-card">
+
+                <h3 class="form-section-title">
+                  Contact Information
+                </h3>
+
+                <div class="form-grid">
+
+                  <div class="form-group">
+                    <label for="generalName">
+                      Full Name
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="text"
+                      id="generalName"
+                      name="fullName"
+                      placeholder="Enter your full name"
+                      autocomplete="name"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="generalPhone">
+                      Mobile Number
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="tel"
+                      id="generalPhone"
+                      name="phone"
+                      placeholder="Enter mobile number"
+                      autocomplete="tel"
+                      inputmode="tel"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="generalEmail">
+                      Email Address
+                    </label>
+
+                    <input
+                      type="email"
+                      id="generalEmail"
+                      name="email"
+                      placeholder="Enter email address"
+                      autocomplete="email"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="generalService">
+                      Assistance Required
+                      <span class="required">*</span>
+                    </label>
+
+                    <select
+                      id="generalService"
+                      name="service"
+                      required
+                    >
+                      <option value="">Select service</option>
+                      <option>Education Counselling</option>
+                      <option>Admission Assistance</option>
+                      <option>Study Abroad</option>
+                      <option>Private Job Assistance</option>
+                      <option>Airport Job Assistance</option>
+                      <option>Employer Hiring</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label for="generalMessage">
+                      Message
+                      <span class="required">*</span>
+                    </label>
+
+                    <textarea
+                      id="generalMessage"
+                      name="message"
+                      placeholder="Explain how MedOrbit can assist you"
+                      required
+                    ></textarea>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="consent-box">
+                <input
+                  type="checkbox"
+                  id="generalConsent"
+                  required
+                >
+
+                <label for="generalConsent">
+                  I agree that MedOrbit may contact me regarding this enquiry.
+                </label>
+              </div>
+
+              <div class="form-actions">
+
+                <button
+                  type="reset"
+                  class="reset-button"
+                >
+                  Reset
+                </button>
+
+                <button
+                  type="submit"
+                  class="submit-button"
+                >
+                  Submit Enquiry
+                </button>
+
+              </div>
+
+            </form>
+
+            <!-- Education counselling -->
+
+            <form
+              class="service-form"
+              id="educationForm"
+              data-form-title="Education Counselling"
+            >
+
+              <div class="form-header">
+                <p class="form-header-label">Student Guidance</p>
+
+                <h2>Education Counselling Form</h2>
+
+                <p>
+                  Share your academic details and career interests for
+                  personalised course and college guidance.
+                </p>
+              </div>
+
+              <div class="form-message"></div>
+
+              <div class="form-section-card">
+
+                <h3 class="form-section-title">
+                  Student Details
+                </h3>
+
+                <div class="form-grid">
+
+                  <div class="form-group">
+                    <label>
+                      Student Name
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="text"
+                      name="studentName"
+                      placeholder="Enter student name"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Mobile Number
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="tel"
+                      name="studentPhone"
+                      placeholder="Enter mobile number"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Email Address</label>
+
+                    <input
+                      type="email"
+                      name="studentEmail"
+                      placeholder="Enter email address"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Current City and State</label>
+
+                    <input
+                      type="text"
+                      name="studentLocation"
+                      placeholder="Example: Noida, Uttar Pradesh"
+                    >
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="form-section-card">
+
+                <h3 class="form-section-title">
+                  Academic Details
+                </h3>
+
+                <div class="form-grid">
+
+                  <div class="form-group">
+                    <label>
+                      Current Qualification
+                      <span class="required">*</span>
+                    </label>
+
+                    <select
+                      name="qualification"
+                      required
+                    >
+                      <option value="">Select qualification</option>
+                      <option>10th Appearing</option>
+                      <option>10th Passed</option>
+                      <option>12th Appearing</option>
+                      <option>12th Passed</option>
+                      <option>Diploma</option>
+                      <option>Undergraduate</option>
+                      <option>Graduate</option>
+                      <option>Postgraduate</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Stream</label>
+
+                    <select name="stream">
+                      <option value="">Select stream</option>
+                      <option>PCB</option>
+                      <option>PCM</option>
+                      <option>Commerce</option>
+                      <option>Arts and Humanities</option>
+                      <option>Vocational</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Percentage or CGPA</label>
+
+                    <input
+                      type="text"
+                      name="academicScore"
+                      placeholder="Example: 78% or 8.2 CGPA"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Preferred Course
+                      <span class="required">*</span>
+                    </label>
+
+                    <select
+                      name="preferredCourse"
+                      required
+                    >
+                      <option value="">Select course</option>
+                      <option>MBBS</option>
+                      <option>BDS</option>
+                      <option>BAMS</option>
+                      <option>BHMS</option>
+                      <option>Nursing</option>
+                      <option>B.Pharm</option>
+                      <option>Pharm.D</option>
+                      <option>Paramedical</option>
+                      <option>Engineering</option>
+                      <option>Management</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Entrance Examination</label>
+
+                    <select name="entranceExam">
+                      <option value="">Select exam</option>
+                      <option>NEET UG</option>
+                      <option>NEET PG</option>
+                      <option>JEE Main</option>
+                      <option>CUET</option>
+                      <option>CAT</option>
+                      <option>MAT</option>
+                      <option>IELTS</option>
+                      <option>TOEFL</option>
+                      <option>No Examination</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Score or Rank</label>
+
+                    <input
+                      type="text"
+                      name="entranceScore"
+                      placeholder="Enter score or rank"
+                    >
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label>Career Interests</label>
+
+                    <textarea
+                      name="careerInterests"
+                      placeholder="Mention your preferred field, course or career goal"
+                    ></textarea>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="consent-box">
+                <input
+                  type="checkbox"
+                  id="educationConsent"
+                  required
+                >
+
+                <label for="educationConsent">
+                  I confirm that the information provided is correct and
+                  consent to counselling communication.
+                </label>
+              </div>
+
+              <div class="form-actions">
+                <button
+                  type="reset"
+                  class="reset-button"
+                >
+                  Reset
+                </button>
+
+                <button
+                  type="submit"
+                  class="submit-button"
+                >
+                  Request Counselling
+                </button>
+              </div>
+
+            </form>
+
+            <!-- Admission assistance -->
+
+            <form
+              class="service-form"
+              id="admissionForm"
+              data-form-title="Admission Assistance"
+            >
+
+              <div class="form-header">
+                <p class="form-header-label">Admissions</p>
+
+                <h2>Admission Assistance Form</h2>
+
+                <p>
+                  Submit your eligibility, course preferences and counselling
+                  status for admission guidance.
+                </p>
+              </div>
+
+              <div class="form-message"></div>
+
+              <div class="form-section-card">
+
+                <h3 class="form-section-title">
+                  Applicant Information
+                </h3>
+
+                <div class="form-grid">
+
+                  <div class="form-group">
+                    <label>
+                      Applicant Name
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="text"
+                      name="applicantName"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Date of Birth
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="date"
+                      name="dateOfBirth"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Mobile Number
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="tel"
+                      name="applicantPhone"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Email Address</label>
+
+                    <input
+                      type="email"
+                      name="applicantEmail"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Category</label>
+
+                    <select name="category">
+                      <option>General</option>
+                      <option>OBC</option>
+                      <option>SC</option>
+                      <option>ST</option>
+                      <option>EWS</option>
+                      <option>PwD</option>
+                      <option>NRI</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>State of Domicile</label>
+
+                    <input
+                      type="text"
+                      name="domicile"
+                      placeholder="Enter state"
+                    >
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="form-section-card">
+
+                <h3 class="form-section-title">
+                  Admission Preference
+                </h3>
+
+                <div class="form-grid">
+
+                  <div class="form-group">
+                    <label>
+                      Preferred Course
+                      <span class="required">*</span>
+                    </label>
+
+                    <select
+                      name="admissionCourse"
+                      required
+                    >
+                      <option value="">Select course</option>
+                      <option>MBBS</option>
+                      <option>BDS</option>
+                      <option>BAMS</option>
+                      <option>BHMS</option>
+                      <option>Nursing</option>
+                      <option>Pharmacy</option>
+                      <option>Paramedical</option>
+                      <option>Engineering</option>
+                      <option>Management</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Academic Session</label>
+
+                    <select name="academicSession">
+                      <option>2026–27</option>
+                      <option>2027–28</option>
+                      <option>Next Available Session</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Preferred State or Country</label>
+
+                    <input
+                      type="text"
+                      name="preferredDestination"
+                      placeholder="Example: West Bengal, Nepal or Russia"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Approximate Budget</label>
+
+                    <select name="budget">
+                      <option value="">Select budget</option>
+                      <option>Below ₹3 lakh</option>
+                      <option>₹3–₹7 lakh</option>
+                      <option>₹7–₹15 lakh</option>
+                      <option>₹15–₹30 lakh</option>
+                      <option>Above ₹30 lakh</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Entrance Exam</label>
+
+                    <input
+                      type="text"
+                      name="entranceExam"
+                      placeholder="Example: NEET UG"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Score or Rank</label>
+
+                    <input
+                      type="text"
+                      name="scoreRank"
+                      placeholder="Enter score or rank"
+                    >
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label>Counselling Status</label>
+
+                    <select name="counsellingStatus">
+                      <option>Not Registered</option>
+                      <option>Registered</option>
+                      <option>Choice Filling Completed</option>
+                      <option>Seat Allotted</option>
+                      <option>Need Complete Assistance</option>
+                    </select>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="form-section-card">
+
+                <h3 class="form-section-title">
+                  Documents
+                </h3>
+
+                <div class="file-upload">
+                  <input
+                    type="file"
+                    name="admissionDocuments"
+                    accept=".pdf,.jpg,.jpeg,.png"
+                    multiple
+                  >
+
+                  <span class="upload-icon">📎</span>
+
+                  <strong>
+                    Upload scorecard or academic documents
+                  </strong>
+
+                  <small>
+                    PDF, JPG or PNG format
+                  </small>
+
+                  <div class="selected-files"></div>
+                </div>
+
+              </div>
+
+              <div class="consent-box">
+                <input
+                  type="checkbox"
+                  id="admissionConsent"
+                  required
+                >
+
+                <label for="admissionConsent">
+                  I understand that admission depends on eligibility,
+                  official counselling rules and seat availability.
+                </label>
+              </div>
+
+              <div class="form-actions">
+                <button
+                  type="reset"
+                  class="reset-button"
+                >
+                  Reset
+                </button>
+
+                <button
+                  type="submit"
+                  class="submit-button"
+                >
+                  Submit Admission Request
+                </button>
+              </div>
+
+            </form>
+
+            <!-- Study abroad -->
+
+            <form
+              class="service-form"
+              id="studyAbroadForm"
+              data-form-title="Study Abroad"
+            >
+
+              <div class="form-header">
+                <p class="form-header-label">
+                  International Education
+                </p>
+
+                <h2>Study Abroad Enquiry Form</h2>
+
+                <p>
+                  Share your preferred country, programme, academic profile
+                  and approximate budget.
+                </p>
+              </div>
+
+              <div class="form-message"></div>
+
+              <div class="form-section-card">
+
+                <h3 class="form-section-title">
+                  Student and Academic Details
+                </h3>
+
+                <div class="form-grid">
+
+                  <div class="form-group">
+                    <label>
+                      Student Name
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="text"
+                      name="abroadStudentName"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Mobile Number
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="tel"
+                      name="abroadPhone"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Email Address</label>
+
+                    <input
+                      type="email"
+                      name="abroadEmail"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Highest Qualification</label>
+
+                    <select name="abroadQualification">
+                      <option>12th Passed</option>
+                      <option>Diploma</option>
+                      <option>Graduate</option>
+                      <option>Postgraduate</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Preferred Country
+                      <span class="required">*</span>
+                    </label>
+
+                    <select
+                      name="preferredCountry"
+                      required
+                    >
+                      <option value="">Select country</option>
+                      <option>Nepal</option>
+                      <option>Russia</option>
+                      <option>Georgia</option>
+                      <option>Kazakhstan</option>
+                      <option>Uzbekistan</option>
+                      <option>Kyrgyzstan</option>
+                      <option>Germany</option>
+                      <option>Poland</option>
+                      <option>United States</option>
+                      <option>United Kingdom</option>
+                      <option>Canada</option>
+                      <option>Australia</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Preferred Course
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="text"
+                      name="abroadCourse"
+                      placeholder="Example: MBBS or MBA"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>English Test</label>
+
+                    <select name="englishTest">
+                      <option>Not Taken</option>
+                      <option>IELTS</option>
+                      <option>TOEFL</option>
+                      <option>PTE</option>
+                      <option>Duolingo</option>
+                      <option>Not Required</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>English Test Score</label>
+
+                    <input
+                      type="text"
+                      name="englishScore"
+                      placeholder="Enter test score"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Maximum Total Budget</label>
+
+                    <select name="abroadBudget">
+                      <option value="">Select budget</option>
+                      <option>Below ₹10 lakh</option>
+                      <option>₹10–₹20 lakh</option>
+                      <option>₹20–₹40 lakh</option>
+                      <option>₹40–₹70 lakh</option>
+                      <option>Above ₹70 lakh</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Expected Intake</label>
+
+                    <select name="intake">
+                      <option>2026</option>
+                      <option>2027</option>
+                      <option>Next Available Intake</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label>Additional Information</label>
+
+                    <textarea
+                      name="abroadMessage"
+                      placeholder="Mention passport status, academic gap or other requirements"
+                    ></textarea>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="consent-box">
+                <input
+                  type="checkbox"
+                  id="abroadConsent"
+                  required
+                >
+
+                <label for="abroadConsent">
+                  I understand that university admission and visa approval
+                  depend on official eligibility and immigration rules.
+                </label>
+              </div>
+
+              <div class="form-actions">
+                <button
+                  type="reset"
+                  class="reset-button"
+                >
+                  Reset
+                </button>
+
+                <button
+                  type="submit"
+                  class="submit-button"
+                >
+                  Request Study-Abroad Guidance
+                </button>
+              </div>
+
+            </form>
+
+            <!-- Private job -->
+
+            <form
+              class="service-form"
+              id="jobForm"
+              data-form-title="Private Job Assistance"
+            >
+
+              <div class="form-header">
+                <p class="form-header-label">
+                  Private Employment
+                </p>
+
+                <h2>Private Job Assistance Form</h2>
+
+                <p>
+                  Apply for opportunities ranging from cleaning, delivery and
+                  factory work to healthcare, technical and corporate roles.
+                </p>
+              </div>
+
+              <div class="form-message"></div>
+
+              <div class="form-section-card">
+
+                <h3 class="form-section-title">
+                  Candidate Details
+                </h3>
+
+                <div class="form-grid">
+
+                  <div class="form-group">
+                    <label>
+                      Candidate Name
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="text"
+                      name="jobCandidateName"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Mobile Number
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="tel"
+                      name="jobPhone"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Email Address</label>
+
+                    <input
+                      type="email"
+                      name="jobEmail"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Current Location
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="text"
+                      name="jobLocation"
+                      placeholder="City and state"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Highest Education</label>
+
+                    <select name="jobEducation">
+                      <option>No Formal Education</option>
+                      <option>Below 10th</option>
+                      <option>10th Pass</option>
+                      <option>12th Pass</option>
+                      <option>ITI</option>
+                      <option>Diploma</option>
+                      <option>Graduate</option>
+                      <option>Postgraduate</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Work Experience</label>
+
+                    <select name="jobExperience">
+                      <option>Fresher</option>
+                      <option>Less than 1 year</option>
+                      <option>1–3 years</option>
+                      <option>3–5 years</option>
+                      <option>More than 5 years</option>
+                    </select>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="form-section-card">
+
+                <h3 class="form-section-title">
+                  Preferred Job Category
+                </h3>
+
+                <div class="choice-grid">
+
+                  <div class="choice-option">
+                    <input
+                      type="radio"
+                      name="jobCategory"
+                      id="cleaningJob"
+                      value="Cleaning and Sanitation"
+                      required
+                    >
+
+                    <label for="cleaningJob">
+                      Cleaning and Sanitation
+                    </label>
+                  </div>
+
+                  <div class="choice-option">
+                    <input
+                      type="radio"
+                      name="jobCategory"
+                      id="housekeepingJob"
+                      value="Housekeeping"
+                    >
+
+                    <label for="housekeepingJob">
+                      Housekeeping
+                    </label>
+                  </div>
+
+                  <div class="choice-option">
+                    <input
+                      type="radio"
+                      name="jobCategory"
+                      id="helperJob"
+                      value="Helper and Labour"
+                    >
+
+                    <label for="helperJob">
+                      Helper and Labour
+                    </label>
+                  </div>
+
+                  <div class="choice-option">
+                    <input
+                      type="radio"
+                      name="jobCategory"
+                      id="driverJob"
+                      value="Driver and Delivery"
+                    >
+
+                    <label for="driverJob">
+                      Driver and Delivery
+                    </label>
+                  </div>
+
+                  <div class="choice-option">
+                    <input
+                      type="radio"
+                      name="jobCategory"
+                      id="warehouseJob"
+                      value="Warehouse and Factory"
+                    >
+
+                    <label for="warehouseJob">
+                      Warehouse and Factory
+                    </label>
+                  </div>
+
+                  <div class="choice-option">
+                    <input
+                      type="radio"
+                      name="jobCategory"
+                      id="securityJob"
+                      value="Security"
+                    >
+
+                    <label for="securityJob">
+                      Security
+                    </label>
+                  </div>
+
+                  <div class="choice-option">
+                    <input
+                      type="radio"
+                      name="jobCategory"
+                      id="retailJob"
+                      value="Retail and Sales"
+                    >
+
+                    <label for="retailJob">
+                      Retail and Sales
+                    </label>
+                  </div>
+
+                  <div class="choice-option">
+                    <input
+                      type="radio"
+                      name="jobCategory"
+                      id="healthcareJob"
+                      value="Hospital and Healthcare"
+                    >
+
+                    <label for="healthcareJob">
+                      Hospital and Healthcare
+                    </label>
+                  </div>
+
+                  <div class="choice-option">
+                    <input
+                      type="radio"
+                      name="jobCategory"
+                      id="officeJob"
+                      value="Office and Corporate"
+                    >
+
+                    <label for="officeJob">
+                      Office and Corporate
+                    </label>
+                  </div>
+
+                  <div class="choice-option">
+                    <input
+                      type="radio"
+                      name="jobCategory"
+                      id="technicalJob"
+                      value="IT and Technical"
+                    >
+
+                    <label for="technicalJob">
+                      IT and Technical
+                    </label>
+                  </div>
+
+                  <div class="choice-option">
+                    <input
+                      type="radio"
+                      name="jobCategory"
+                      id="managementJob"
+                      value="Management"
+                    >
+
+                    <label for="managementJob">
+                      Management
+                    </label>
+                  </div>
+
+                  <div class="choice-option">
+                    <input
+                      type="radio"
+                      name="jobCategory"
+                      id="otherJob"
+                      value="Other"
+                    >
+
+                    <label for="otherJob">
+                      Other Private Job
+                    </label>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="form-section-card">
+
+                <h3 class="form-section-title">
+                  Work Preference
+                </h3>
+
+                <div class="form-grid">
+
+                  <div class="form-group">
+                    <label>Preferred Work Location</label>
+
+                    <input
+                      type="text"
+                      name="preferredWorkLocation"
+                      placeholder="City, state or anywhere in India"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Expected Monthly Salary</label>
+
+                    <input
+                      type="number"
+                      name="expectedSalary"
+                      min="0"
+                      placeholder="Amount in ₹"
+                    >
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label>Skills and Experience</label>
+
+                    <textarea
+                      name="jobSkills"
+                      placeholder="Mention skills, driving licence, previous work and availability"
+                    ></textarea>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="consent-box">
+                <input
+                  type="checkbox"
+                  id="jobConsent"
+                  required
+                >
+
+                <label for="jobConsent">
+                  I understand that MedOrbit provides job assistance and does
+                  not guarantee selection, salary or appointment.
+                </label>
+              </div>
+
+              <div class="form-actions">
+                <button
+                  type="reset"
+                  class="reset-button"
+                >
+                  Reset
+                </button>
+
+                <button
+                  type="submit"
+                  class="submit-button"
+                >
+                  Submit Job Profile
+                </button>
+              </div>
+
+            </form>
+
+            <!-- Airport -->
+
+            <form
+              class="service-form"
+              id="airportForm"
+              data-form-title="Airport Job Assistance"
+            >
+
+              <div class="form-header">
+                <p class="form-header-label">
+                  Aviation Employment
+                </p>
+
+                <h2>Airport and Aviation Job Form</h2>
+
+                <p>
+                  Submit details for private airport, airline, cargo,
+                  passenger-service and ground-handling opportunities.
+                </p>
+              </div>
+
+              <div class="form-message"></div>
+
+              <div class="form-section-card">
+
+                <h3 class="form-section-title">
+                  Candidate Information
+                </h3>
+
+                <div class="form-grid">
+
+                  <div class="form-group">
+                    <label>
+                      Candidate Name
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="text"
+                      name="airportCandidateName"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Mobile Number
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="tel"
+                      name="airportPhone"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Email Address</label>
+
+                    <input
+                      type="email"
+                      name="airportEmail"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Date of Birth</label>
+
+                    <input
+                      type="date"
+                      name="airportDob"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Highest Education</label>
+
+                    <select name="airportEducation">
+                      <option>10th Pass</option>
+                      <option>12th Pass</option>
+                      <option>Diploma</option>
+                      <option>Graduate</option>
+                      <option>Postgraduate</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Preferred Airport</label>
+
+                    <input
+                      type="text"
+                      name="preferredAirport"
+                      placeholder="Example: Delhi Airport"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Preferred Role
+                      <span class="required">*</span>
+                    </label>
+
+                    <select
+                      name="airportRole"
+                      required
+                    >
+                      <option value="">Select role</option>
+                      <option>Airport Ground Staff</option>
+                      <option>Passenger Service Executive</option>
+                      <option>Check-in Executive</option>
+                      <option>Baggage Handling</option>
+                      <option>Ramp Assistant</option>
+                      <option>Airport Cargo</option>
+                      <option>Ticketing and Reservation</option>
+                      <option>Airline Customer Support</option>
+                      <option>Cabin Crew</option>
+                      <option>Aviation Security Support</option>
+                      <option>Housekeeping and Facility</option>
+                      <option>Airport Retail and Hospitality</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>English Communication</label>
+
+                    <select name="englishCommunication">
+                      <option>Basic</option>
+                      <option>Intermediate</option>
+                      <option>Good</option>
+                      <option>Fluent</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Passport Status</label>
+
+                    <select name="passportStatus">
+                      <option>Not Available</option>
+                      <option>Applied</option>
+                      <option>Available</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Aviation Experience</label>
+
+                    <select name="aviationExperience">
+                      <option>No Experience</option>
+                      <option>Less than 1 year</option>
+                      <option>1–3 years</option>
+                      <option>More than 3 years</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label>Additional Information</label>
+
+                    <textarea
+                      name="airportInformation"
+                      placeholder="Mention communication skills, customer-service experience or preferred shift"
+                    ></textarea>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="safety-notice">
+                <strong>Airport-job safety:</strong>
+                Never pay a person merely for receiving a job offer. Verify
+                the employer, recruitment process, workplace and joining
+                letter before making any payment.
+              </div>
+
+              <div class="consent-box">
+                <input
+                  type="checkbox"
+                  id="airportConsent"
+                  required
+                >
+
+                <label for="airportConsent">
+                  I understand that airport employment is subject to employer
+                  selection, background verification and security rules.
+                </label>
+              </div>
+
+              <div class="form-actions">
+                <button
+                  type="reset"
+                  class="reset-button"
+                >
+                  Reset
+                </button>
+
+                <button
+                  type="submit"
+                  class="submit-button"
+                >
+                  Submit Airport Profile
+                </button>
+              </div>
+
+            </form>
+
+            <!-- Resume -->
+
+            <form
+              class="service-form"
+              id="resumeForm"
+              data-form-title="Resume Submission"
+            >
+
+              <div class="form-header">
+                <p class="form-header-label">
+                  Candidate Profile
+                </p>
+
+                <h2>Resume Submission Form</h2>
+
+                <p>
+                  Upload your resume for suitable private-sector employment
+                  opportunities.
+                </p>
+              </div>
+
+              <div class="form-message"></div>
+
+              <div class="form-section-card">
+
+                <h3 class="form-section-title">
+                  Candidate Information
+                </h3>
+
+                <div class="form-grid">
+
+                  <div class="form-group">
+                    <label>
+                      Full Name
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="text"
+                      name="resumeCandidateName"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Mobile Number
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="tel"
+                      name="resumePhone"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Email Address
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="email"
+                      name="resumeEmail"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Current Job Title</label>
+
+                    <input
+                      type="text"
+                      name="currentJobTitle"
+                      placeholder="Write Fresher if not employed"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Preferred Job Category</label>
+
+                    <input
+                      type="text"
+                      name="resumePreferredJob"
+                      placeholder="Example: Pharmacy, IT or Airport"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Preferred Location</label>
+
+                    <input
+                      type="text"
+                      name="resumeLocation"
+                    >
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label>
+                      Upload Resume
+                      <span class="required">*</span>
+                    </label>
+
+                    <div class="file-upload">
+
+                      <input
+                        type="file"
+                        name="resumeFile"
+                        accept=".pdf,.doc,.docx"
+                        required
+                      >
+
+                      <span class="upload-icon">📄</span>
+
+                      <strong>
+                        Select your resume
+                      </strong>
+
+                      <small>
+                        PDF, DOC or DOCX format
+                      </small>
+
+                      <div class="selected-files"></div>
+
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="consent-box">
+                <input
+                  type="checkbox"
+                  id="resumeConsent"
+                  required
+                >
+
+                <label for="resumeConsent">
+                  I permit MedOrbit to review and share my resume with
+                  relevant verified employers for recruitment purposes.
+                </label>
+              </div>
+
+              <div class="form-actions">
+                <button
+                  type="reset"
+                  class="reset-button"
+                >
+                  Reset
+                </button>
+
+                <button
+                  type="submit"
+                  class="submit-button"
+                >
+                  Submit Resume
+                </button>
+              </div>
+
+            </form>
+
+            <!-- Employer -->
+
+            <form
+              class="service-form"
+              id="employerForm"
+              data-form-title="Employer Hiring Requirement"
+            >
+
+              <div class="form-header">
+                <p class="form-header-label">
+                  Recruitment Support
+                </p>
+
+                <h2>Employer Hiring Requirement Form</h2>
+
+                <p>
+                  Companies, contractors, hospitals, hotels, offices and
+                  recruiters can submit genuine private hiring requirements.
+                </p>
+              </div>
+
+              <div class="form-message"></div>
+
+              <div class="form-section-card">
+
+                <h3 class="form-section-title">
+                  Company Information
+                </h3>
+
+                <div class="form-grid">
+
+                  <div class="form-group">
+                    <label>
+                      Company Name
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="text"
+                      name="companyName"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Contact Person
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="text"
+                      name="contactPerson"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Official Mobile Number
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="tel"
+                      name="employerPhone"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Official Email
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="email"
+                      name="employerEmail"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Company Website</label>
+
+                    <input
+                      type="url"
+                      name="companyWebsite"
+                      placeholder="https://"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Company Location</label>
+
+                    <input
+                      type="text"
+                      name="companyLocation"
+                    >
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="form-section-card">
+
+                <h3 class="form-section-title">
+                  Hiring Requirement
+                </h3>
+
+                <div class="form-grid">
+
+                  <div class="form-group">
+                    <label>
+                      Job Title
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="text"
+                      name="jobTitle"
+                      placeholder="Example: Housekeeping Staff"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Number of Vacancies
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="number"
+                      name="vacancies"
+                      min="1"
+                      value="1"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Employment Type</label>
+
+                    <select name="employmentType">
+                      <option>Full-Time</option>
+                      <option>Part-Time</option>
+                      <option>Contract</option>
+                      <option>Temporary</option>
+                      <option>Internship</option>
+                      <option>Apprenticeship</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Job Location
+                      <span class="required">*</span>
+                    </label>
+
+                    <input
+                      type="text"
+                      name="jobLocation"
+                      required
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Minimum Monthly Salary</label>
+
+                    <input
+                      type="number"
+                      name="minimumSalary"
+                      min="0"
+                      placeholder="Amount in ₹"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Maximum Monthly Salary</label>
+
+                    <input
+                      type="number"
+                      name="maximumSalary"
+                      min="0"
+                      placeholder="Amount in ₹"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label>Minimum Education</label>
+
+                    <select name="minimumEducation">
+                      <option>No Formal Education Required</option>
+                      <option>10th Pass</option>
+                      <option>12th Pass</option>
+                      <option>ITI</option>
+                      <option>Diploma</option>
+                      <option>Graduate</option>
+                      <option>Postgraduate</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Experience Required</label>
+
+                    <select name="requiredExperience">
+                      <option>Fresher Eligible</option>
+                      <option>Less than 1 year</option>
+                      <option>1–3 years</option>
+                      <option>3–5 years</option>
+                      <option>More than 5 years</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label>
+                      Complete Job Description
+                      <span class="required">*</span>
+                    </label>
+
+                    <textarea
+                      name="jobDescription"
+                      placeholder="Mention responsibilities, shift, benefits, documents and joining requirements"
+                      required
+                    ></textarea>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="consent-box">
+                <input
+                  type="checkbox"
+                  id="employerConsent"
+                  required
+                >
+
+                <label for="employerConsent">
+                  I confirm that this is a genuine private hiring requirement
+                  and permit MedOrbit to verify the submitted information.
+                </label>
+              </div>
+
+              <div class="form-actions">
+                <button
+                  type="reset"
+                  class="reset-button"
+                >
+                  Reset
+                </button>
+
+                <button
+                  type="submit"
+                  class="submit-button"
+                >
+                  Submit Hiring Requirement
+                </button>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <span>
+        © <span id="currentYear"></span> MedOrbit
+      </span>
+
+      <span>
+        Education consultancy and private job assistance
+      </span>
+
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuButton =
+        document.getElementById("menuButton");
+
+      const headerNavigation =
+        document.getElementById("headerNavigation");
+
+      const selectorButtons =
+        document.querySelectorAll(".form-selector-button");
+
+      const serviceForms =
+        document.querySelectorAll(".service-form");
+
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+      /*
+       * Mobile navigation
+       */
+
+      menuButton.addEventListener("click", function () {
+        headerNavigation.classList.toggle("open");
+      });
+
+      /*
+       * Switch forms
+       */
+
+      function showForm(formId) {
+        selectorButtons.forEach(function (button) {
+          button.classList.toggle(
+            "active",
+            button.dataset.targetForm === formId
+          );
+        });
+
+        serviceForms.forEach(function (form) {
+          form.classList.toggle(
+            "active",
+            form.id === formId
+          );
+        });
+
+        const activeForm =
+          document.getElementById(formId);
+
+        if (
+          activeForm &&
+          window.innerWidth <= 960
+        ) {
+          activeForm.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        }
+      }
+
+      selectorButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          showForm(button.dataset.targetForm);
+
+          const url =
+            new URL(window.location.href);
+
+          url.searchParams.set(
+            "form",
+            button.dataset.targetForm
+          );
+
+          history.replaceState(
+            {},
+            "",
+            url
+          );
+        });
+      });
+
+      /*
+       * Open a direct form using:
+       * forms.html?form=admissionForm
+       */
+
+      const requestedForm =
+        new URLSearchParams(
+          window.location.search
+        ).get("form");
+
+      if (
+        requestedForm &&
+        document.getElementById(requestedForm)
+      ) {
+        showForm(requestedForm);
+      }
+
+      /*
+       * File selection
+       */
+
+      document
+        .querySelectorAll(".file-upload input")
+        .forEach(function (input) {
+          input.addEventListener("change", function () {
+            const uploadBox =
+              input.closest(".file-upload");
+
+            const fileNameBox =
+              uploadBox.querySelector(".selected-files");
+
+            if (!input.files.length) {
+              fileNameBox.textContent = "";
+              return;
+            }
+
+            const selectedNames =
+              Array.from(input.files)
+                .map(function (file) {
+                  return file.name;
+                })
+                .join(", ");
+
+            fileNameBox.textContent =
+              "Selected: " + selectedNames;
+          });
+        });
+
+      /*
+       * Demonstration submission
+       *
+       * This currently displays a success message.
+       * Connect fetch() here later to save data.
+       */
+
+      serviceForms.forEach(function (form) {
+        form.addEventListener(
+          "submit",
+          function (event) {
+            event.preventDefault();
+
+            const messageBox =
+              form.querySelector(".form-message");
+
+            const submitButton =
+              form.querySelector(".submit-button");
+
+            if (!form.checkValidity()) {
+              form.reportValidity();
+
+              messageBox.className =
+                "form-message error";
+
+              messageBox.textContent =
+                "Please complete all required fields correctly.";
+
+              return;
+            }
+
+            const originalText =
+              submitButton.textContent;
+
+            submitButton.disabled = true;
+            submitButton.textContent =
+              "Submitting...";
+
+            messageBox.className =
+              "form-message";
+
+            messageBox.textContent = "";
+
+            window.setTimeout(function () {
+              messageBox.className =
+                "form-message success";
+
+              messageBox.textContent =
+                form.dataset.formTitle +
+                " has been submitted successfully. The MedOrbit team may contact you after reviewing the details.";
+
+              form.reset();
+
+              form
+                .querySelectorAll(".selected-files")
+                .forEach(function (element) {
+                  element.textContent = "";
+                });
+
+              submitButton.disabled = false;
+              submitButton.textContent =
+                originalText;
+
+              messageBox.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+              });
+            }, 900);
+          }
+        );
+
+        form.addEventListener(
+          "reset",
+          function () {
+            const messageBox =
+              form.querySelector(".form-message");
+
+            messageBox.className =
+              "form-message";
+
+            messageBox.textContent = "";
+
+            form
+              .querySelectorAll(".selected-files")
+              .forEach(function (element) {
+                element.textContent = "";
+              });
+          }
+        );
+      });
+    });
+  </script>
+
+</body>
+</html>
+<a href="forms.html">Apply Now</a>
+<a href="forms.html?form=educationForm">
+  Education Counselling
+</a>
+
+<a href="forms.html?form=admissionForm">
+  Admission Assistance
+</a>
+
+<a href="forms.html?form=jobForm">
+  Job Assistance
+</a>
+
+<a href="forms.html?form=airportForm">
+  Airport Job Form
+</a>
+
+<a href="forms.html?form=employerForm">
+  Post a Job
+</a>
