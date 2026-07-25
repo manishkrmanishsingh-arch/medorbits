@@ -1,0 +1,229 @@
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+*{
+    box-sizing:border-box;
+}
+
+img,
+video{
+    max-width:100%;
+    height:auto;
+}
+
+.container{
+    width:min(1200px,92%);
+    margin:auto;
+}
+
+section{
+    overflow:hidden;
+}
+
+/* Tablets */
+
+@media (max-width:1024px){
+
+.hero-container,
+.hero-grid,
+.feature-grid,
+.cta-box{
+display:grid;
+grid-template-columns:1fr;
+gap:40px;
+}
+
+.services-grid,
+.course-grid,
+.country-grid,
+.college-grid,
+.job-grid,
+.testimonial-grid,
+.gallery-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.stats-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.navbar{
+padding:15px 20px;
+}
+
+.hero{
+padding:100px 0 70px;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+#menuBtn{
+display:flex;
+}
+
+#navbar{
+position:fixed;
+top:80px;
+left:-100%;
+width:100%;
+height:calc(100vh - 80px);
+background:#fff;
+flex-direction:column;
+justify-content:flex-start;
+align-items:flex-start;
+padding:30px;
+transition:.35s;
+overflow-y:auto;
+z-index:999;
+}
+
+#navbar.active{
+left:0;
+}
+
+.consult-btn{
+display:none;
+}
+
+.hero{
+text-align:center;
+padding:80px 0 50px;
+}
+
+.hero h1{
+font-size:36px;
+line-height:1.2;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.hero-buttons{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.hero-buttons a{
+width:100%;
+}
+
+.hero-features{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+margin-top:30px;
+}
+
+.hero-form{
+width:100%;
+}
+
+.services-grid,
+.course-grid,
+.country-grid,
+.college-grid,
+.job-grid,
+.gallery-grid,
+.testimonial-grid,
+.stats-grid,
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+.card,
+.country-card,
+.job-card,
+.testimonial{
+width:100%;
+}
+
+.section{
+padding:60px 0;
+}
+
+.section-title h2{
+font-size:32px;
+}
+
+.section-title p{
+font-size:15px;
+}
+
+footer{
+text-align:center;
+}
+
+.footer-links{
+justify-content:center;
+}
+
+.float-btn{
+width:55px;
+height:55px;
+font-size:22px;
+}
+
+}
+
+/* Small Phones */
+
+@media (max-width:480px){
+
+.hero h1{
+font-size:30px;
+}
+
+.logo h2{
+font-size:22px;
+}
+
+.logo img{
+height:45px;
+}
+
+.top-bar{
+display:none;
+}
+
+.section-title h2{
+font-size:28px;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-outline{
+width:100%;
+}
+
+input,
+select,
+textarea{
+font-size:16px;
+}
+
+}
+
+/* Large Screens */
+
+@media (min-width:1400px){
+
+.container{
+max-width:1350px;
+}
+
+.hero h1{
+font-size:72px;
+}
+
+}
