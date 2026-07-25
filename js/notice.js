@@ -951,4 +951,6 @@ async function sha256(value) {
       byte.toString(16).padStart(2, "0")
     )
     .join("");
+    
+    <script src="js/notices.js" defer></script>
 }
