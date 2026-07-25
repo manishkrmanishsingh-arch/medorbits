@@ -1,14 +1,3152 @@
-{
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "medorbits",
-  "compatibility_date": "2026-07-24",
-  "observability": {
-    "enabled": true
-  },
-  "assets": {
-    "directory": "."
-  },
-  "compatibility_flags": [
-    "nodejs_compat"
-  ]
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Private Job Assistance | MedOrbit</title>
+
+  <meta
+    name="description"
+    content="Find private-sector jobs through MedOrbit, including cleaning, housekeeping, delivery, drivers, warehouse, hospital, retail, airport, aviation, IT, corporate and management jobs."
+  >
+
+  <meta
+    name="keywords"
+    content="private jobs, airport jobs, housekeeping jobs, cleaning jobs, delivery jobs, driver jobs, hospital jobs, warehouse jobs, corporate jobs, MedOrbit jobs"
+  >
+
+  <style>
+    :root {
+      --primary: #063f78;
+      --primary-dark: #042d57;
+      --secondary: #d6a625;
+      --accent: #0e78c7;
+      --light-blue: #eef6ff;
+      --light-yellow: #fff8e6;
+      --background: #f5f8fc;
+      --white: #ffffff;
+      --text: #172033;
+      --muted: #667085;
+      --border: #dde5ee;
+      --success: #16803d;
+      --danger: #c93535;
+      --shadow: 0 18px 45px rgba(18, 55, 92, 0.1);
+      --radius: 18px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
+    }
+
+    /* Header */
+
+    .topbar {
+      background: var(--primary-dark);
+      color: var(--white);
+      font-size: 13px;
+    }
+
+    .topbar-inner {
+      min-height: 38px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .topbar-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    .topbar a {
+      text-decoration: none;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.98);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(12px);
+    }
+
+    .navbar {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      text-decoration: none;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 31px;
+      font-weight: 700;
+      color: var(--primary);
+      white-space: nowrap;
+    }
+
+    .logo span {
+      color: var(--secondary);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 700;
+      color: #31415a;
+      transition: 0.2s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--accent);
+    }
+
+    .nav-button {
+      background: var(--primary);
+      color: var(--white);
+      padding: 11px 18px;
+      border-radius: 10px;
+    }
+
+    .nav-button:hover {
+      color: var(--white);
+      background: var(--primary-dark);
+    }
+
+    .menu-button {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--border);
+      background: var(--white);
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 22px;
+    }
+
+    /* Hero */
+
+    .hero {
+      background:
+        linear-gradient(
+          125deg,
+          rgba(4, 45, 87, 0.97),
+          rgba(8, 92, 157, 0.92)
+        );
+      color: var(--white);
+      padding: 86px 0 76px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .hero::before {
+      width: 340px;
+      height: 340px;
+      right: -100px;
+      top: -130px;
+    }
+
+    .hero::after {
+      width: 260px;
+      height: 260px;
+      left: -120px;
+      bottom: -130px;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: #ffd873;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 13px;
+    }
+
+    .hero h1 {
+      font-family: "Times New Roman", Times, serif;
+      font-size: clamp(42px, 6vw, 70px);
+      line-height: 1.06;
+      margin-bottom: 22px;
+    }
+
+    .hero-description {
+      max-width: 730px;
+      font-size: 18px;
+      color: #e7eff8;
+      margin-bottom: 28px;
+    }
+
+    .hero-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 11px;
+      margin-bottom: 32px;
+    }
+
+    .hero-point {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .button {
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 48px;
+      padding: 0 21px;
+      border-radius: 11px;
+      font-weight: 800;
+      transition: 0.2s ease;
+    }
+
+    .button-primary {
+      background: var(--secondary);
+      color: #222;
+    }
+
+    .button-primary:hover {
+      transform: translateY(-2px);
+      background: #e6b936;
+    }
+
+    .button-outline {
+      color: var(--white);
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .button-outline:hover {
+      background: var(--white);
+      color: var(--primary);
+    }
+
+    .hero-card {
+      background: var(--white);
+      color: var(--text);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 25px 65px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero-card h2 {
+      font-family: "Times New Roman", Times, serif;
+      color: var(--primary);
+      margin-bottom: 8px;
+      font-size: 29px;
+    }
+
+    .hero-card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .quick-form {
+      display: grid;
+      gap: 13px;
+    }
+
+    .input-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 6px;
+      color: #344054;
+    }
+
+    .input-group input,
+    .input-group select,
+    .input-group textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 13px;
+      outline: none;
+      background: var(--white);
+    }
+
+    .input-group input:focus,
+    .input-group select:focus,
+    .input-group textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(14, 120, 199, 0.1);
+    }
+
+    .full-button {
+      width: 100%;
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .full-button:hover {
+      background: var(--primary-dark);
+    }
+
+    /* Stats */
+
+    .stats {
+      background: var(--white);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      margin-top: -35px;
+      position: relative;
+      z-index: 5;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      overflow: hidden;
+    }
+
+    .stat {
+      padding: 25px 20px;
+      text-align: center;
+      border-right: 1px solid var(--border);
+    }
+
+    .stat:last-child {
+      border-right: 0;
+    }
+
+    .stat strong {
+      display: block;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 31px;
+      color: var(--primary);
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* General sections */
+
+    section {
+      padding: 75px 0;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 30px;
+      margin-bottom: 32px;
+    }
+
+    .section-header h2 {
+      font-family: "Times New Roman", Times, serif;
+      font-size: clamp(32px, 4vw, 45px);
+      color: var(--primary-dark);
+      line-height: 1.15;
+    }
+
+    .section-header p {
+      max-width: 680px;
+      color: var(--muted);
+    }
+
+    /* Search area */
+
+    .job-search-panel {
+      background: var(--white);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+
+    .job-search-form {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr auto;
+      gap: 12px;
+    }
+
+    .job-search-form input,
+    .job-search-form select {
+      min-height: 51px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0 14px;
+      outline: none;
+    }
+
+    .job-search-form input:focus,
+    .job-search-form select:focus {
+      border-color: var(--accent);
+    }
+
+    /* Categories */
+
+    .categories-section {
+      background: var(--white);
+    }
+
+    .category-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .filter-button {
+      border: 1px solid var(--border);
+      background: var(--white);
+      color: #344054;
+      padding: 9px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .filter-button:hover,
+    .filter-button.active {
+      color: var(--white);
+      border-color: var(--primary);
+      background: var(--primary);
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 17px;
+    }
+
+    .category-card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 21px;
+      background: var(--white);
+      transition: 0.22s;
+      cursor: pointer;
+      min-height: 165px;
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+      border-color: #b8d2ea;
+      box-shadow: var(--shadow);
+    }
+
+    .category-icon {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      background: var(--light-blue);
+      border-radius: 12px;
+      font-size: 23px;
+      margin-bottom: 15px;
+    }
+
+    .category-card h3 {
+      font-size: 17px;
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+      line-height: 1.35;
+    }
+
+    .category-card p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* Jobs */
+
+    .jobs-section {
+      background: #f4f7fb;
+    }
+
+    .jobs-layout {
+      display: grid;
+      grid-template-columns: 270px 1fr;
+      gap: 25px;
+      align-items: start;
+    }
+
+    .sidebar {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 21px;
+      position: sticky;
+      top: 95px;
+    }
+
+    .sidebar h3 {
+      color: var(--primary-dark);
+      margin-bottom: 18px;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 24px;
+    }
+
+    .filter-group {
+      margin-bottom: 22px;
+    }
+
+    .filter-group h4 {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .checkbox-row {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 9px;
+      color: #475467;
+      font-size: 13px;
+    }
+
+    .checkbox-row input {
+      accent-color: var(--primary);
+    }
+
+    .jobs-list {
+      display: grid;
+      gap: 17px;
+    }
+
+    .job-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 17px;
+      padding: 23px;
+      transition: 0.2s;
+    }
+
+    .job-card:hover {
+      box-shadow: var(--shadow);
+      transform: translateY(-2px);
+    }
+
+    .job-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 15px;
+    }
+
+    .job-company-logo {
+      width: 55px;
+      height: 55px;
+      flex: 0 0 55px;
+      border-radius: 13px;
+      background: var(--light-blue);
+      color: var(--primary);
+      display: grid;
+      place-items: center;
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    .job-main-info {
+      display: flex;
+      gap: 15px;
+    }
+
+    .job-title h3 {
+      color: var(--primary-dark);
+      font-size: 20px;
+      line-height: 1.25;
+      margin-bottom: 4px;
+    }
+
+    .job-title p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .save-button {
+      border: 1px solid var(--border);
+      background: var(--white);
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .save-button.saved {
+      color: var(--danger);
+      background: #fff1f1;
+    }
+
+    .job-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 15px 0;
+    }
+
+    .job-tag {
+      background: #f1f5f9;
+      color: #455468;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .verified-tag {
+      color: var(--success);
+      background: #eaf8ef;
+    }
+
+    .job-description {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .job-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .salary {
+      color: var(--primary-dark);
+      font-weight: 800;
+    }
+
+    .salary small {
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .apply-button {
+      background: var(--primary);
+      color: var(--white);
+      min-height: 41px;
+      padding: 0 17px;
+      border-radius: 9px;
+      border: none;
+      cursor: pointer;
+      font-weight: 800;
+    }
+
+    .apply-button:hover {
+      background: var(--primary-dark);
+    }
+
+    .no-results {
+      display: none;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 35px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    /* Assistance */
+
+    .assistance-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .assistance-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 17px;
+      padding: 25px;
+      box-shadow: 0 8px 30px rgba(12, 45, 79, 0.05);
+    }
+
+    .assistance-card h3 {
+      color: var(--primary-dark);
+      margin: 12px 0 8px;
+    }
+
+    .assistance-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* Process */
+
+    .process-section {
+      background: var(--primary-dark);
+      color: var(--white);
+    }
+
+    .process-section .section-header h2 {
+      color: var(--white);
+    }
+
+    .process-section .section-header p {
+      color: #cbd8e6;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .process-card {
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+      padding: 23px;
+    }
+
+    .process-number {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      background: var(--secondary);
+      color: #1d1d1d;
+      border-radius: 50%;
+      font-weight: 900;
+      margin-bottom: 15px;
+    }
+
+    .process-card h3 {
+      margin-bottom: 7px;
+    }
+
+    .process-card p {
+      color: #cbd8e6;
+      font-size: 14px;
+    }
+
+    /* Employer */
+
+    .employer-banner {
+      background:
+        linear-gradient(120deg, var(--light-yellow), var(--light-blue));
+      border: 1px solid #e4e9ef;
+      border-radius: 24px;
+      padding: 42px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 35px;
+      align-items: center;
+    }
+
+    .employer-banner h2 {
+      font-family: "Times New Roman", Times, serif;
+      color: var(--primary-dark);
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    .employer-banner p {
+      color: var(--muted);
+      max-width: 750px;
+    }
+
+    /* Disclaimer */
+
+    .disclaimer {
+      background: #fff8e1;
+      border: 1px solid #efd88d;
+      border-radius: 14px;
+      padding: 18px;
+      font-size: 13px;
+      color: #6a5413;
+      margin-top: 30px;
+    }
+
+    /* Footer */
+
+    footer {
+      background: #071f38;
+      color: var(--white);
+      padding: 55px 0 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 35px;
+    }
+
+    .footer-about p {
+      color: #b9c6d4;
+      margin-top: 13px;
+      font-size: 14px;
+    }
+
+    .footer-column h3 {
+      margin-bottom: 15px;
+      font-size: 17px;
+    }
+
+    .footer-column a {
+      display: block;
+      color: #b9c6d4;
+      text-decoration: none;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .footer-column a:hover {
+      color: var(--white);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding-top: 20px;
+      color: #9eb0c1;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    /* Modal */
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 20, 38, 0.72);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 2000;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    .modal-content {
+      width: min(560px, 100%);
+      max-height: 92vh;
+      overflow-y: auto;
+      background: var(--white);
+      border-radius: 18px;
+      padding: 26px;
+      position: relative;
+    }
+
+    .close-modal {
+      position: absolute;
+      right: 17px;
+      top: 14px;
+      border: none;
+      background: transparent;
+      font-size: 27px;
+      cursor: pointer;
+    }
+
+    .modal-content h2 {
+      font-family: "Times New Roman", Times, serif;
+      color: var(--primary-dark);
+      margin-bottom: 7px;
+    }
+
+    .modal-content > p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .application-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .application-form .full-width {
+      grid-column: 1 / -1;
+    }
+
+    .success-message {
+      display: none;
+      background: #eaf8ef;
+      color: var(--success);
+      border: 1px solid #b9e2c7;
+      padding: 13px;
+      border-radius: 10px;
+      margin-top: 14px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 1050px) {
+      .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .job-search-form {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 850px) {
+      .topbar {
+        display: none;
+      }
+
+      .menu-button {
+        display: block;
+      }
+
+      nav {
+        display: none;
+        position: absolute;
+        left: 4%;
+        right: 4%;
+        top: 76px;
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 18px;
+        flex-direction: column;
+        align-items: stretch;
+        box-shadow: var(--shadow);
+      }
+
+      nav.open {
+        display: flex;
+      }
+
+      nav a {
+        padding: 9px;
+      }
+
+      .hero-content {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        max-width: 620px;
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stat:nth-child(2) {
+        border-right: 0;
+      }
+
+      .stat:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--border);
+      }
+
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .jobs-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      .assistance-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .employer-banner {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 590px) {
+      .hero {
+        padding: 58px 0 65px;
+      }
+
+      section {
+        padding: 56px 0;
+      }
+
+      .hero h1 {
+        font-size: 43px;
+      }
+
+      .hero-description {
+        font-size: 16px;
+      }
+
+      .stats {
+        margin-top: -24px;
+      }
+
+      .category-grid,
+      .process-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .job-search-form {
+        grid-template-columns: 1fr;
+      }
+
+      .section-header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .job-top,
+      .job-bottom {
+        align-items: flex-start;
+      }
+
+      .job-main-info {
+        flex-direction: column;
+      }
+
+      .job-bottom {
+        flex-direction: column;
+      }
+
+      .apply-button {
+        width: 100%;
+      }
+
+      .application-form {
+        grid-template-columns: 1fr;
+      }
+
+      .application-form .full-width {
+        grid-column: auto;
+      }
+
+      .employer-banner {
+        padding: 27px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-info">
+        <span>Private Job Assistance Across India</span>
+        <a href="tel:+919142102309">Call: +91 91421 02309</a>
+      </div>
+
+      <div class="topbar-info">
+        <span>Candidate Support</span>
+        <span>Employer Hiring Support</span>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        Med<span>Orbit</span>
+      </a>
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        aria-label="Open navigation"
+      >
+        ☰
+      </button>
+
+      <nav id="mainNavigation">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Education</a>
+        <a href="jobs.html" class="active">Jobs</a>
+        <a href="admission-guide.html">Admission Guide</a>
+        <a href="contact.html">Contact</a>
+        <a href="#employer" class="nav-button">Post a Job</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-content">
+
+        <div>
+          <p class="eyebrow">MedOrbit Private Job Assistance</p>
+
+          <h1>
+            Every private job, from cleaning work to airport careers
+          </h1>
+
+          <p class="hero-description">
+            Find private-sector opportunities for every skill and education
+            level, including garbage cleaning, sanitation, housekeeping,
+            drivers, helpers, factories, hospitals, retail, offices, airport
+            ground staff, aviation, IT and management.
+          </p>
+
+          <div class="hero-points">
+            <span class="hero-point">Entry-Level Jobs</span>
+            <span class="hero-point">Skilled Work</span>
+            <span class="hero-point">Airport Jobs</span>
+            <span class="hero-point">Healthcare Jobs</span>
+            <span class="hero-point">Corporate Jobs</span>
+            <span class="hero-point">Fresher Jobs</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#latestJobs" class="button button-primary">
+              Find Jobs
+            </a>
+
+            <a href="#jobAssistance" class="button button-outline">
+              Get Job Assistance
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <h2>Get Job Assistance</h2>
+
+          <p>
+            Submit your basic details. The MedOrbit team can contact you
+            regarding suitable private-sector opportunities.
+          </p>
+
+          <form class="quick-form" id="quickAssistanceForm">
+
+            <div class="input-group">
+              <label for="quickName">Full Name</label>
+              <input
+                type="text"
+                id="quickName"
+                placeholder="Enter your name"
+                required
+              >
+            </div>
+
+            <div class="input-group">
+              <label for="quickPhone">Mobile Number</label>
+              <input
+                type="tel"
+                id="quickPhone"
+                placeholder="Enter mobile number"
+                required
+              >
+            </div>
+
+            <div class="input-group">
+              <label for="quickCategory">Preferred Job</label>
+
+              <select id="quickCategory" required>
+                <option value="">Select job category</option>
+                <option>Cleaning and Sanitation</option>
+                <option>Housekeeping</option>
+                <option>Helper and Labour</option>
+                <option>Driver and Delivery</option>
+                <option>Warehouse and Factory</option>
+                <option>Security</option>
+                <option>Retail and Sales</option>
+                <option>Hospital and Healthcare</option>
+                <option>Airport and Aviation</option>
+                <option>Office and Corporate</option>
+                <option>IT and Technical</option>
+                <option>Other Private Job</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="quickLocation">Preferred Location</label>
+              <input
+                type="text"
+                id="quickLocation"
+                placeholder="City or state"
+              >
+            </div>
+
+            <button type="submit" class="button full-button">
+              Submit Details
+            </button>
+
+            <div
+              class="success-message"
+              id="quickSuccessMessage"
+            >
+              Your details have been submitted successfully.
+            </div>
+
+          </form>
+        </aside>
+
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="stats">
+
+        <div class="stat">
+          <strong>50+</strong>
+          <span>Job categories supported</span>
+        </div>
+
+        <div class="stat">
+          <strong>All India</strong>
+          <span>Location-based job search</span>
+        </div>
+
+        <div class="stat">
+          <strong>Private</strong>
+          <span>Private-sector focused platform</span>
+        </div>
+
+        <div class="stat">
+          <strong>All Levels</strong>
+          <span>Basic work to management</span>
+        </div>
+
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Search Opportunities</p>
+            <h2>Search private jobs</h2>
+          </div>
+
+          <p>
+            Search by job title, skill, city or work category. The demo
+            vacancies below can later be replaced with real jobs from your
+            database.
+          </p>
+        </div>
+
+        <div class="job-search-panel">
+          <form class="job-search-form" id="mainJobSearch">
+
+            <input
+              type="search"
+              id="searchKeyword"
+              placeholder="Job title, skill or company"
+            >
+
+            <input
+              type="search"
+              id="searchLocation"
+              placeholder="City or location"
+            >
+
+            <select id="searchCategory">
+              <option value="">All Categories</option>
+              <option value="cleaning">Cleaning and Sanitation</option>
+              <option value="housekeeping">Housekeeping</option>
+              <option value="labour">Labour and Helpers</option>
+              <option value="driver">Drivers and Delivery</option>
+              <option value="warehouse">Warehouse and Factory</option>
+              <option value="security">Security</option>
+              <option value="retail">Retail and Sales</option>
+              <option value="hospital">Healthcare</option>
+              <option value="airport">Airport and Aviation</option>
+              <option value="office">Office and Corporate</option>
+              <option value="it">IT and Technical</option>
+            </select>
+
+            <button type="submit" class="button full-button">
+              Search
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="categories-section" id="jobCategories">
+      <div class="container">
+
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Complete Job Coverage</p>
+            <h2>Explore all private job categories</h2>
+          </div>
+
+          <p>
+            MedOrbit can list opportunities ranging from ground-level,
+            support and skilled work to professional, airport and senior
+            corporate positions.
+          </p>
+        </div>
+
+        <div class="category-filters">
+          <button class="filter-button active" data-group="all">
+            All
+          </button>
+
+          <button class="filter-button" data-group="basic">
+            Basic and Support
+          </button>
+
+          <button class="filter-button" data-group="skilled">
+            Skilled Work
+          </button>
+
+          <button class="filter-button" data-group="service">
+            Service Industry
+          </button>
+
+          <button class="filter-button" data-group="professional">
+            Professional
+          </button>
+
+          <button class="filter-button" data-group="aviation">
+            Airport and Aviation
+          </button>
+        </div>
+
+        <div class="category-grid" id="categoryGrid">
+
+          <article class="category-card" data-group="basic">
+            <div class="category-icon">🧹</div>
+            <h3>Garbage Cleaning and Waste Collection</h3>
+            <p>
+              Waste collectors, garbage handlers, cleaning workers and
+              sanitation support staff.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="basic">
+            <div class="category-icon">🧼</div>
+            <h3>Sanitation and Cleaning</h3>
+            <p>
+              Office cleaning, road cleaning, toilet cleaning and industrial
+              sanitation roles.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="basic">
+            <div class="category-icon">🏢</div>
+            <h3>Housekeeping and Facility Work</h3>
+            <p>
+              Housekeeping staff, room attendants, facility workers and
+              janitorial staff.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="basic">
+            <div class="category-icon">👷</div>
+            <h3>Helpers and General Labour</h3>
+            <p>
+              General helpers, daily-wage staff, site helpers and loading
+              support.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="basic">
+            <div class="category-icon">📦</div>
+            <h3>Loaders, Packers and Movers</h3>
+            <p>
+              Packing, shifting, loading, unloading and material-handling
+              work.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="basic">
+            <div class="category-icon">🛡️</div>
+            <h3>Security Guards and Bouncers</h3>
+            <p>
+              Security guards, watchmen, supervisors and event-security
+              staff.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="basic">
+            <div class="category-icon">🚗</div>
+            <h3>Drivers and Chauffeurs</h3>
+            <p>
+              Car drivers, commercial drivers, personal drivers and cab
+              operators.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="basic">
+            <div class="category-icon">🛵</div>
+            <h3>Delivery and Courier</h3>
+            <p>
+              Food delivery, parcel delivery, courier and last-mile delivery
+              jobs.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="basic">
+            <div class="category-icon">🏠</div>
+            <h3>Domestic Help and Care Work</h3>
+            <p>
+              Domestic helpers, cooks, caretakers, babysitters and elderly
+              support.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="skilled">
+            <div class="category-icon">🏭</div>
+            <h3>Factory and Manufacturing</h3>
+            <p>
+              Machine operators, production workers, quality staff and
+              assembly workers.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="skilled">
+            <div class="category-icon">🚚</div>
+            <h3>Warehouse and Logistics</h3>
+            <p>
+              Warehouse assistants, inventory staff, dispatch and logistics
+              coordinators.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="skilled">
+            <div class="category-icon">🏗️</div>
+            <h3>Construction and Civil Work</h3>
+            <p>
+              Masons, civil helpers, site workers, painters and construction
+              teams.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="skilled">
+            <div class="category-icon">⚡</div>
+            <h3>Electricians and Technicians</h3>
+            <p>
+              Electricians, AC technicians, appliance technicians and
+              maintenance workers.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="skilled">
+            <div class="category-icon">🔧</div>
+            <h3>Plumbers and Fitters</h3>
+            <p>
+              Plumbing, pipe fitting, maintenance and installation work.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="skilled">
+            <div class="category-icon">🪚</div>
+            <h3>Carpenters and Furniture Workers</h3>
+            <p>
+              Carpenters, modular furniture staff, polishers and installers.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="skilled">
+            <div class="category-icon">🔥</div>
+            <h3>Welders and Fabricators</h3>
+            <p>
+              Welding, metal fabrication, cutting and industrial fitting
+              jobs.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="skilled">
+            <div class="category-icon">🔩</div>
+            <h3>Mechanics and Automobile</h3>
+            <p>
+              Car mechanics, bike mechanics, service advisors and workshop
+              technicians.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="service">
+            <div class="category-icon">🛍️</div>
+            <h3>Retail, Store and Mall Jobs</h3>
+            <p>
+              Store helpers, cashiers, sales staff, merchandisers and store
+              managers.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="service">
+            <div class="category-icon">📣</div>
+            <h3>Sales and Field Promotion</h3>
+            <p>
+              Field sales, promoters, business development and direct-sales
+              jobs.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="service">
+            <div class="category-icon">☎️</div>
+            <h3>Telecalling, BPO and Customer Support</h3>
+            <p>
+              Telecallers, voice process, chat support and customer-care
+              executives.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="service">
+            <div class="category-icon">🏨</div>
+            <h3>Hotel and Hospitality</h3>
+            <p>
+              Hotel staff, room attendants, front-office staff and guest
+              service.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="service">
+            <div class="category-icon">🍽️</div>
+            <h3>Restaurant, Kitchen and Catering</h3>
+            <p>
+              Chefs, cooks, waiters, stewards, dishwashers and catering staff.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="service">
+            <div class="category-icon">💇</div>
+            <h3>Beauty, Salon and Wellness</h3>
+            <p>
+              Beauticians, salon assistants, hairdressers, therapists and
+              makeup staff.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="service">
+            <div class="category-icon">🏥</div>
+            <h3>Hospital and Healthcare Support</h3>
+            <p>
+              Ward attendants, hospital helpers, lab support and front-office
+              staff.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="service">
+            <div class="category-icon">💊</div>
+            <h3>Pharmacy and Medical Jobs</h3>
+            <p>
+              Pharmacists, medical representatives, pharmacy assistants and
+              healthcare sales.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="professional">
+            <div class="category-icon">🗂️</div>
+            <h3>Office Support and Back Office</h3>
+            <p>
+              Office assistants, receptionists, data-entry operators and
+              administrative staff.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="professional">
+            <div class="category-icon">💻</div>
+            <h3>IT, Software and Technology</h3>
+            <p>
+              Developers, support engineers, designers, testers and technical
+              staff.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="professional">
+            <div class="category-icon">📊</div>
+            <h3>Finance, Banking and Accounts</h3>
+            <p>
+              Accountants, billing executives, finance staff and private-bank
+              roles.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="professional">
+            <div class="category-icon">🎓</div>
+            <h3>Education and Training</h3>
+            <p>
+              Teachers, trainers, tutors, counsellors and education-support
+              staff.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="professional">
+            <div class="category-icon">📱</div>
+            <h3>Marketing, Media and Content</h3>
+            <p>
+              Digital marketing, social media, content, design and media jobs.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="professional">
+            <div class="category-icon">👥</div>
+            <h3>Human Resources and Recruitment</h3>
+            <p>
+              Recruiters, HR executives, payroll staff and employee support.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="professional">
+            <div class="category-icon">🏢</div>
+            <h3>Corporate and Management</h3>
+            <p>
+              Executives, supervisors, team leaders, managers and senior
+              professionals.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="aviation">
+            <div class="category-icon">✈️</div>
+            <h3>Airport Ground Staff</h3>
+            <p>
+              Check-in staff, passenger service, boarding support and terminal
+              operations.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="aviation">
+            <div class="category-icon">🧳</div>
+            <h3>Baggage and Ramp Handling</h3>
+            <p>
+              Baggage loaders, ramp agents, equipment operators and ground
+              handling.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="aviation">
+            <div class="category-icon">📦</div>
+            <h3>Airport Cargo and Logistics</h3>
+            <p>
+              Cargo assistants, documentation staff, warehouse and freight
+              handling.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="aviation">
+            <div class="category-icon">🎫</div>
+            <h3>Airline Ticketing and Reservations</h3>
+            <p>
+              Ticketing executives, reservation agents and travel desk staff.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="aviation">
+            <div class="category-icon">👩‍✈️</div>
+            <h3>Cabin Crew and Airline Hospitality</h3>
+            <p>
+              Cabin crew, inflight hospitality and airline customer-service
+              roles.
+            </p>
+          </article>
+
+          <article class="category-card" data-group="aviation">
+            <div class="category-icon">🛂</div>
+            <h3>Aviation Security and Operations</h3>
+            <p>
+              Private aviation security, operations support and terminal
+              monitoring.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="jobs-section" id="latestJobs">
+      <div class="container">
+
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Featured Openings</p>
+            <h2>Latest private job opportunities</h2>
+          </div>
+
+          <p>
+            These are demo vacancies. You can later connect this section with
+            your database, Google Sheet, Firebase or Cloudflare D1.
+          </p>
+        </div>
+
+        <div class="jobs-layout">
+
+          <aside class="sidebar">
+            <h3>Filter Jobs</h3>
+
+            <div class="filter-group">
+              <h4>Experience Level</h4>
+
+              <label class="checkbox-row">
+                <input type="checkbox" class="job-filter" value="fresher">
+                Fresher
+              </label>
+
+              <label class="checkbox-row">
+                <input type="checkbox" class="job-filter" value="experienced">
+                Experienced
+              </label>
+
+              <label class="checkbox-row">
+                <input type="checkbox" class="job-filter" value="any">
+                Any Experience
+              </label>
+            </div>
+
+            <div class="filter-group">
+              <h4>Work Type</h4>
+
+              <label class="checkbox-row">
+                <input type="checkbox" class="job-filter" value="full-time">
+                Full-Time
+              </label>
+
+              <label class="checkbox-row">
+                <input type="checkbox" class="job-filter" value="part-time">
+                Part-Time
+              </label>
+
+              <label class="checkbox-row">
+                <input type="checkbox" class="job-filter" value="contract">
+                Contract
+              </label>
+
+              <label class="checkbox-row">
+                <input type="checkbox" class="job-filter" value="remote">
+                Work From Home
+              </label>
+            </div>
+
+            <div class="filter-group">
+              <h4>Sector</h4>
+
+              <label class="checkbox-row">
+                <input type="checkbox" class="job-filter" value="basic">
+                Basic and Support
+              </label>
+
+              <label class="checkbox-row">
+                <input type="checkbox" class="job-filter" value="skilled">
+                Skilled
+              </label>
+
+              <label class="checkbox-row">
+                <input type="checkbox" class="job-filter" value="service">
+                Service
+              </label>
+
+              <label class="checkbox-row">
+                <input
+                  type="checkbox"
+                  class="job-filter"
+                  value="professional"
+                >
+                Professional
+              </label>
+
+              <label class="checkbox-row">
+                <input type="checkbox" class="job-filter" value="aviation">
+                Airport and Aviation
+              </label>
+            </div>
+          </aside>
+
+          <div>
+            <div class="jobs-list" id="jobsList">
+
+              <article
+                class="job-card"
+                data-title="sanitation cleaning worker"
+                data-location="noida"
+                data-category="cleaning"
+                data-tags="basic any full-time"
+              >
+                <div class="job-top">
+                  <div class="job-main-info">
+
+                    <div class="job-company-logo">SC</div>
+
+                    <div class="job-title">
+                      <h3>Sanitation and Cleaning Worker</h3>
+                      <p>Private Facility Management Company · Noida</p>
+                    </div>
+
+                  </div>
+
+                  <button class="save-button" aria-label="Save job">
+                    ♡
+                  </button>
+                </div>
+
+                <div class="job-tags">
+                  <span class="job-tag">Noida</span>
+                  <span class="job-tag">Full-Time</span>
+                  <span class="job-tag">No Experience Required</span>
+                  <span class="job-tag verified-tag">Verified Listing</span>
+                </div>
+
+                <p class="job-description">
+                  Cleaning and sanitation work for a commercial facility.
+                  Basic training and safety equipment will be provided.
+                </p>
+
+                <div class="job-bottom">
+                  <div class="salary">
+                    ₹12,000–₹16,000
+                    <small>/month</small>
+                  </div>
+
+                  <button
+                    class="apply-button"
+                    data-job="Sanitation and Cleaning Worker"
+                  >
+                    Apply Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="job-card"
+                data-title="housekeeping attendant hotel"
+                data-location="delhi"
+                data-category="housekeeping"
+                data-tags="service fresher full-time"
+              >
+                <div class="job-top">
+                  <div class="job-main-info">
+
+                    <div class="job-company-logo">HK</div>
+
+                    <div class="job-title">
+                      <h3>Housekeeping Attendant</h3>
+                      <p>Hotel and Hospitality Group · Delhi</p>
+                    </div>
+
+                  </div>
+
+                  <button class="save-button" aria-label="Save job">
+                    ♡
+                  </button>
+                </div>
+
+                <div class="job-tags">
+                  <span class="job-tag">Delhi</span>
+                  <span class="job-tag">Full-Time</span>
+                  <span class="job-tag">Fresher</span>
+                  <span class="job-tag verified-tag">Verified Listing</span>
+                </div>
+
+                <p class="job-description">
+                  Maintain guest rooms and common areas. Candidates with or
+                  without hotel experience may apply.
+                </p>
+
+                <div class="job-bottom">
+                  <div class="salary">
+                    ₹14,000–₹18,000
+                    <small>/month</small>
+                  </div>
+
+                  <button
+                    class="apply-button"
+                    data-job="Housekeeping Attendant"
+                  >
+                    Apply Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="job-card"
+                data-title="delivery executive courier"
+                data-location="gurugram"
+                data-category="driver"
+                data-tags="basic any full-time"
+              >
+                <div class="job-top">
+                  <div class="job-main-info">
+
+                    <div class="job-company-logo">DE</div>
+
+                    <div class="job-title">
+                      <h3>Delivery Executive</h3>
+                      <p>Logistics Partner · Gurugram</p>
+                    </div>
+
+                  </div>
+
+                  <button class="save-button" aria-label="Save job">
+                    ♡
+                  </button>
+                </div>
+
+                <div class="job-tags">
+                  <span class="job-tag">Gurugram</span>
+                  <span class="job-tag">Full-Time</span>
+                  <span class="job-tag">Two-Wheeler Preferred</span>
+                  <span class="job-tag verified-tag">Verified Listing</span>
+                </div>
+
+                <p class="job-description">
+                  Pick up and deliver parcels within assigned areas.
+                  Smartphone and valid driving licence preferred.
+                </p>
+
+                <div class="job-bottom">
+                  <div class="salary">
+                    ₹18,000–₹28,000
+                    <small>/month</small>
+                  </div>
+
+                  <button
+                    class="apply-button"
+                    data-job="Delivery Executive"
+                  >
+                    Apply Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="job-card"
+                data-title="warehouse loader packer"
+                data-location="greater noida"
+                data-category="warehouse"
+                data-tags="basic fresher full-time"
+              >
+                <div class="job-top">
+                  <div class="job-main-info">
+
+                    <div class="job-company-logo">WP</div>
+
+                    <div class="job-title">
+                      <h3>Warehouse Loader and Packer</h3>
+                      <p>E-commerce Warehouse · Greater Noida</p>
+                    </div>
+
+                  </div>
+
+                  <button class="save-button" aria-label="Save job">
+                    ♡
+                  </button>
+                </div>
+
+                <div class="job-tags">
+                  <span class="job-tag">Greater Noida</span>
+                  <span class="job-tag">Full-Time</span>
+                  <span class="job-tag">Fresher</span>
+                  <span class="job-tag verified-tag">Verified Listing</span>
+                </div>
+
+                <p class="job-description">
+                  Packing, sorting and loading products in an e-commerce
+                  warehouse. Rotational shifts may apply.
+                </p>
+
+                <div class="job-bottom">
+                  <div class="salary">
+                    ₹13,500–₹18,500
+                    <small>/month</small>
+                  </div>
+
+                  <button
+                    class="apply-button"
+                    data-job="Warehouse Loader and Packer"
+                  >
+                    Apply Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="job-card"
+                data-title="hospital ward attendant"
+                data-location="lucknow"
+                data-category="hospital"
+                data-tags="service experienced full-time"
+              >
+                <div class="job-top">
+                  <div class="job-main-info">
+
+                    <div class="job-company-logo">HA</div>
+
+                    <div class="job-title">
+                      <h3>Hospital Ward Attendant</h3>
+                      <p>Private Multispeciality Hospital · Lucknow</p>
+                    </div>
+
+                  </div>
+
+                  <button class="save-button" aria-label="Save job">
+                    ♡
+                  </button>
+                </div>
+
+                <div class="job-tags">
+                  <span class="job-tag">Lucknow</span>
+                  <span class="job-tag">Full-Time</span>
+                  <span class="job-tag">Hospital Experience Preferred</span>
+                  <span class="job-tag verified-tag">Verified Listing</span>
+                </div>
+
+                <p class="job-description">
+                  Assist patients and nursing teams with ward-related support,
+                  movement and basic non-clinical duties.
+                </p>
+
+                <div class="job-bottom">
+                  <div class="salary">
+                    ₹15,000–₹21,000
+                    <small>/month</small>
+                  </div>
+
+                  <button
+                    class="apply-button"
+                    data-job="Hospital Ward Attendant"
+                  >
+                    Apply Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="job-card"
+                data-title="airport ground staff passenger service"
+                data-location="delhi airport"
+                data-category="airport"
+                data-tags="aviation fresher full-time"
+              >
+                <div class="job-top">
+                  <div class="job-main-info">
+
+                    <div class="job-company-logo">AG</div>
+
+                    <div class="job-title">
+                      <h3>Airport Ground Staff</h3>
+                      <p>Private Aviation Service Provider · Delhi Airport</p>
+                    </div>
+
+                  </div>
+
+                  <button class="save-button" aria-label="Save job">
+                    ♡
+                  </button>
+                </div>
+
+                <div class="job-tags">
+                  <span class="job-tag">Delhi Airport</span>
+                  <span class="job-tag">Full-Time</span>
+                  <span class="job-tag">Fresher Eligible</span>
+                  <span class="job-tag verified-tag">Verification Required</span>
+                </div>
+
+                <p class="job-description">
+                  Passenger assistance, check-in support, boarding
+                  coordination and terminal customer-service duties.
+                </p>
+
+                <div class="job-bottom">
+                  <div class="salary">
+                    ₹20,000–₹32,000
+                    <small>/month</small>
+                  </div>
+
+                  <button
+                    class="apply-button"
+                    data-job="Airport Ground Staff"
+                  >
+                    Apply Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="job-card"
+                data-title="airport baggage handling ramp assistant"
+                data-location="mumbai airport"
+                data-category="airport"
+                data-tags="aviation any full-time"
+              >
+                <div class="job-top">
+                  <div class="job-main-info">
+
+                    <div class="job-company-logo">BH</div>
+
+                    <div class="job-title">
+                      <h3>Baggage Handling Assistant</h3>
+                      <p>Ground Handling Agency · Mumbai Airport</p>
+                    </div>
+
+                  </div>
+
+                  <button class="save-button" aria-label="Save job">
+                    ♡
+                  </button>
+                </div>
+
+                <div class="job-tags">
+                  <span class="job-tag">Mumbai Airport</span>
+                  <span class="job-tag">Rotational Shift</span>
+                  <span class="job-tag">Physically Fit</span>
+                  <span class="job-tag verified-tag">Verification Required</span>
+                </div>
+
+                <p class="job-description">
+                  Loading, unloading and transferring passenger baggage while
+                  following airport safety procedures.
+                </p>
+
+                <div class="job-bottom">
+                  <div class="salary">
+                    ₹18,000–₹26,000
+                    <small>/month</small>
+                  </div>
+
+                  <button
+                    class="apply-button"
+                    data-job="Baggage Handling Assistant"
+                  >
+                    Apply Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="job-card"
+                data-title="customer support executive bpo"
+                data-location="noida"
+                data-category="office"
+                data-tags="professional fresher full-time"
+              >
+                <div class="job-top">
+                  <div class="job-main-info">
+
+                    <div class="job-company-logo">CS</div>
+
+                    <div class="job-title">
+                      <h3>Customer Support Executive</h3>
+                      <p>Private BPO Company · Noida</p>
+                    </div>
+
+                  </div>
+
+                  <button class="save-button" aria-label="Save job">
+                    ♡
+                  </button>
+                </div>
+
+                <div class="job-tags">
+                  <span class="job-tag">Noida</span>
+                  <span class="job-tag">Full-Time</span>
+                  <span class="job-tag">Graduate or Undergraduate</span>
+                  <span class="job-tag verified-tag">Verified Listing</span>
+                </div>
+
+                <p class="job-description">
+                  Handle customer queries through calls, chat or email.
+                  Communication skills and basic computer knowledge required.
+                </p>
+
+                <div class="job-bottom">
+                  <div class="salary">
+                    ₹18,000–₹30,000
+                    <small>/month</small>
+                  </div>
+
+                  <button
+                    class="apply-button"
+                    data-job="Customer Support Executive"
+                  >
+                    Apply Now
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="job-card"
+                data-title="software developer frontend"
+                data-location="remote"
+                data-category="it"
+                data-tags="professional experienced remote"
+              >
+                <div class="job-top">
+                  <div class="job-main-info">
+
+                    <div class="job-company-logo">IT</div>
+
+                    <div class="job-title">
+                      <h3>Frontend Developer</h3>
+                      <p>Technology Company · Remote</p>
+                    </div>
+
+                  </div>
+
+                  <button class="save-button" aria-label="Save job">
+                    ♡
+                  </button>
+                </div>
+
+                <div class="job-tags">
+                  <span class="job-tag">Work From Home</span>
+                  <span class="job-tag">Full-Time</span>
+                  <span class="job-tag">1–3 Years Experience</span>
+                  <span class="job-tag verified-tag">Verified Listing</span>
+                </div>
+
+                <p class="job-description">
+                  Develop responsive web interfaces using HTML, CSS,
+                  JavaScript and modern frontend frameworks.
+                </p>
+
+                <div class="job-bottom">
+                  <div class="salary">
+                    ₹35,000–₹70,000
+                    <small>/month</small>
+                  </div>
+
+                  <button
+                    class="apply-button"
+                    data-job="Frontend Developer"
+                  >
+                    Apply Now
+                  </button>
+                </div>
+              </article>
+
+            </div>
+
+            <div class="no-results" id="noResults">
+              <h3>No matching job found</h3>
+              <p>
+                Try another keyword, location or category.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="disclaimer">
+          <strong>Important:</strong>
+          MedOrbit should verify employers before publishing vacancies.
+          Candidates should never pay money merely for receiving a job offer.
+          Clearly disclose any legitimate service, training or documentation
+          charges before collecting payment. Airport jobs should be verified
+          carefully because fraudulent aviation recruitment advertisements
+          are common.
+        </div>
+
+      </div>
+    </section>
+
+    <section id="jobAssistance">
+      <div class="container">
+
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Candidate Services</p>
+            <h2>Complete job assistance</h2>
+          </div>
+
+          <p>
+            You can later activate these services one by one without changing
+            the entire layout.
+          </p>
+        </div>
+
+        <div class="assistance-grid">
+
+          <article class="assistance-card">
+            <div class="category-icon">📄</div>
+            <h3>Resume Assistance</h3>
+            <p>
+              Help candidates prepare simple, professional resumes suitable
+              for private employers.
+            </p>
+          </article>
+
+          <article class="assistance-card">
+            <div class="category-icon">🎯</div>
+            <h3>Job Matching</h3>
+            <p>
+              Match candidates with available roles based on location, skills,
+              education and experience.
+            </p>
+          </article>
+
+          <article class="assistance-card">
+            <div class="category-icon">🗣️</div>
+            <h3>Interview Preparation</h3>
+            <p>
+              Provide basic interview guidance, communication support and
+              employer-specific preparation.
+            </p>
+          </article>
+
+          <article class="assistance-card">
+            <div class="category-icon">🧾</div>
+            <h3>Document Guidance</h3>
+            <p>
+              Explain which documents may be required for joining, background
+              verification or airport entry formalities.
+            </p>
+          </article>
+
+          <article class="assistance-card">
+            <div class="category-icon">📍</div>
+            <h3>Location-Based Support</h3>
+            <p>
+              Show jobs based on preferred city, state, relocation option or
+              work-from-home availability.
+            </p>
+          </article>
+
+          <article class="assistance-card">
+            <div class="category-icon">📲</div>
+            <h3>Job Alerts</h3>
+            <p>
+              Later connect email, SMS or WhatsApp alerts for suitable
+              vacancies and interview updates.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="process-section">
+      <div class="container">
+
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Simple Process</p>
+            <h2>How MedOrbit job assistance works</h2>
+          </div>
+
+          <p>
+            Keep the process clear for candidates from every education and
+            skill level.
+          </p>
+        </div>
+
+        <div class="process-grid">
+
+          <article class="process-card">
+            <div class="process-number">1</div>
+            <h3>Create Profile</h3>
+            <p>
+              Candidate submits name, contact details, skills, education and
+              preferred location.
+            </p>
+          </article>
+
+          <article class="process-card">
+            <div class="process-number">2</div>
+            <h3>Choose Job Category</h3>
+            <p>
+              Candidate selects suitable categories such as cleaning, driver,
+              airport, healthcare or corporate work.
+            </p>
+          </article>
+
+          <article class="process-card">
+            <div class="process-number">3</div>
+            <h3>Apply or Get Matched</h3>
+            <p>
+              Candidate applies directly or receives assistance in finding
+              suitable vacancies.
+            </p>
+          </article>
+
+          <article class="process-card">
+            <div class="process-number">4</div>
+            <h3>Interview and Joining</h3>
+            <p>
+              Candidate receives interview guidance, employer details and
+              joining-document instructions.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="employer">
+      <div class="container">
+
+        <div class="employer-banner">
+
+          <div>
+            <p class="eyebrow">For Employers and Recruiters</p>
+
+            <h2>
+              Hire workers, skilled staff and professionals
+            </h2>
+
+            <p>
+              Employers can submit requirements for cleaning staff, helpers,
+              drivers, delivery staff, factories, warehouses, hospitals,
+              offices, airport services, technical teams and management
+              positions.
+            </p>
+          </div>
+
+          <button
+            class="button full-button"
+            id="openEmployerModal"
+          >
+            Submit Hiring Requirement
+          </button>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-about">
+          <a href="index.html" class="logo" style="color: white;">
+            Med<span>Orbit</span>
+          </a>
+
+          <p>
+            Education, career guidance and private job assistance for
+            candidates across India.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Job Categories</h3>
+          <a href="#jobCategories">Cleaning Jobs</a>
+          <a href="#jobCategories">Driver Jobs</a>
+          <a href="#jobCategories">Hospital Jobs</a>
+          <a href="#jobCategories">Airport Jobs</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Candidate Support</h3>
+          <a href="#jobAssistance">Resume Assistance</a>
+          <a href="#jobAssistance">Job Matching</a>
+          <a href="#jobAssistance">Interview Guidance</a>
+          <a href="#latestJobs">Latest Jobs</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <a href="tel:+919142102309">+91 91421 02309</a>
+          <a href="mailto:support@medorbits.in">
+            support@medorbits.in
+          </a>
+          <a href="contact.html">Contact Page</a>
+          <a href="#employer">Employer Support</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>
+          © <span id="currentYear"></span> MedOrbit. All rights reserved.
+        </span>
+
+        <span>
+          Private job listings must be verified before publication.
+        </span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Candidate Application Modal -->
+
+  <div class="modal" id="applicationModal">
+
+    <div class="modal-content">
+
+      <button
+        class="close-modal"
+        data-close-modal="applicationModal"
+        aria-label="Close"
+      >
+        ×
+      </button>
+
+      <h2>Apply for Job</h2>
+
+      <p id="selectedJobText">
+        Submit your details for this opportunity.
+      </p>
+
+      <form class="application-form" id="applicationForm">
+
+        <div class="input-group">
+          <label for="candidateName">Full Name</label>
+          <input
+            type="text"
+            id="candidateName"
+            required
+          >
+        </div>
+
+        <div class="input-group">
+          <label for="candidatePhone">Mobile Number</label>
+          <input
+            type="tel"
+            id="candidatePhone"
+            required
+          >
+        </div>
+
+        <div class="input-group">
+          <label for="candidateEmail">Email Address</label>
+          <input
+            type="email"
+            id="candidateEmail"
+          >
+        </div>
+
+        <div class="input-group">
+          <label for="candidateCity">Current City</label>
+          <input
+            type="text"
+            id="candidateCity"
+            required
+          >
+        </div>
+
+        <div class="input-group">
+          <label for="candidateEducation">Education</label>
+          <select id="candidateEducation">
+            <option>No Formal Education</option>
+            <option>Below 10th</option>
+            <option>10th Pass</option>
+            <option>12th Pass</option>
+            <option>ITI</option>
+            <option>Diploma</option>
+            <option>Graduate</option>
+            <option>Postgraduate</option>
+            <option>Professional Degree</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="candidateExperience">Experience</label>
+          <select id="candidateExperience">
+            <option>Fresher</option>
+            <option>Less than 1 year</option>
+            <option>1–3 years</option>
+            <option>3–5 years</option>
+            <option>More than 5 years</option>
+          </select>
+        </div>
+
+        <div class="input-group full-width">
+          <label for="candidateMessage">
+            Skills or Additional Information
+          </label>
+
+          <textarea
+            id="candidateMessage"
+            rows="4"
+            placeholder="Mention your skills, licence, preferred location or availability"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="button full-button full-width"
+        >
+          Submit Application
+        </button>
+
+        <div
+          class="success-message full-width"
+          id="applicationSuccess"
+        >
+          Your job application has been submitted successfully.
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+  <!-- Employer Modal -->
+
+  <div class="modal" id="employerModal">
+
+    <div class="modal-content">
+
+      <button
+        class="close-modal"
+        data-close-modal="employerModal"
+        aria-label="Close"
+      >
+        ×
+      </button>
+
+      <h2>Submit Hiring Requirement</h2>
+
+      <p>
+        Employers and recruiters can provide their private hiring
+        requirements here.
+      </p>
+
+      <form class="application-form" id="employerForm">
+
+        <div class="input-group">
+          <label for="companyName">Company Name</label>
+          <input
+            type="text"
+            id="companyName"
+            required
+          >
+        </div>
+
+        <div class="input-group">
+          <label for="contactPerson">Contact Person</label>
+          <input
+            type="text"
+            id="contactPerson"
+            required
+          >
+        </div>
+
+        <div class="input-group">
+          <label for="employerPhone">Mobile Number</label>
+          <input
+            type="tel"
+            id="employerPhone"
+            required
+          >
+        </div>
+
+        <div class="input-group">
+          <label for="employerEmail">Email Address</label>
+          <input
+            type="email"
+            id="employerEmail"
+            required
+          >
+        </div>
+
+        <div class="input-group">
+          <label for="jobTitle">Job Title</label>
+          <input
+            type="text"
+            id="jobTitle"
+            placeholder="Example: Housekeeping Staff"
+            required
+          >
+        </div>
+
+        <div class="input-group">
+          <label for="vacancies">Number of Vacancies</label>
+          <input
+            type="number"
+            id="vacancies"
+            min="1"
+            value="1"
+            required
+          >
+        </div>
+
+        <div class="input-group">
+          <label for="jobLocation">Job Location</label>
+          <input
+            type="text"
+            id="jobLocation"
+            required
+          >
+        </div>
+
+        <div class="input-group">
+          <label for="salaryRange">Salary Range</label>
+          <input
+            type="text"
+            id="salaryRange"
+            placeholder="Example: ₹15,000–₹20,000"
+          >
+        </div>
+
+        <div class="input-group full-width">
+          <label for="jobRequirement">Job Description</label>
+
+          <textarea
+            id="jobRequirement"
+            rows="5"
+            placeholder="Mention duties, education, experience, shift and joining requirements"
+            required
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="button full-button full-width"
+        >
+          Submit Requirement
+        </button>
+
+        <div
+          class="success-message full-width"
+          id="employerSuccess"
+        >
+          Your hiring requirement has been submitted successfully.
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const mainNavigation = document.getElementById("mainNavigation");
+
+    menuButton.addEventListener("click", () => {
+      mainNavigation.classList.toggle("open");
+    });
+
+    document.querySelectorAll("#mainNavigation a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mainNavigation.classList.remove("open");
+      });
+    });
+
+    document.getElementById("currentYear").textContent =
+      new Date().getFullYear();
+
+    /*
+     * Category filtering
+     */
+
+    const categoryFilterButtons =
+      document.querySelectorAll(".filter-button");
+
+    const categoryCards =
+      document.querySelectorAll(".category-card");
+
+    categoryFilterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const selectedGroup = button.dataset.group;
+
+        categoryFilterButtons.forEach((item) => {
+          item.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        categoryCards.forEach((card) => {
+          const cardGroup = card.dataset.group;
+
+          if (
+            selectedGroup === "all" ||
+            cardGroup === selectedGroup
+          ) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+
+    /*
+     * Main job search
+     */
+
+    const mainJobSearch =
+      document.getElementById("mainJobSearch");
+
+    const jobs =
+      document.querySelectorAll(".job-card");
+
+    const noResults =
+      document.getElementById("noResults");
+
+    function filterJobs() {
+      const keyword =
+        document
+          .getElementById("searchKeyword")
+          .value
+          .trim()
+          .toLowerCase();
+
+      const location =
+        document
+          .getElementById("searchLocation")
+          .value
+          .trim()
+          .toLowerCase();
+
+      const category =
+        document
+          .getElementById("searchCategory")
+          .value
+          .trim()
+          .toLowerCase();
+
+      const selectedSidebarFilters =
+        Array.from(
+          document.querySelectorAll(".job-filter:checked")
+        ).map((input) => input.value);
+
+      let visibleJobs = 0;
+
+      jobs.forEach((job) => {
+        const title = job.dataset.title || "";
+        const jobLocation = job.dataset.location || "";
+        const jobCategory = job.dataset.category || "";
+        const jobTags = job.dataset.tags || "";
+
+        const keywordMatch =
+          !keyword ||
+          title.includes(keyword) ||
+          job.textContent.toLowerCase().includes(keyword);
+
+        const locationMatch =
+          !location ||
+          jobLocation.includes(location) ||
+          job.textContent.toLowerCase().includes(location);
+
+        const categoryMatch =
+          !category ||
+          jobCategory.includes(category);
+
+        const sidebarMatch =
+          selectedSidebarFilters.length === 0 ||
+          selectedSidebarFilters.some((filter) =>
+            jobTags.includes(filter)
+          );
+
+        if (
+          keywordMatch &&
+          locationMatch &&
+          categoryMatch &&
+          sidebarMatch
+        ) {
+          job.style.display = "block";
+          visibleJobs++;
+        } else {
+          job.style.display = "none";
+        }
+      });
+
+      noResults.style.display =
+        visibleJobs === 0 ? "block" : "none";
+    }
+
+    mainJobSearch.addEventListener("submit", (event) => {
+      event.preventDefault();
+      filterJobs();
+
+      document
+        .getElementById("latestJobs")
+        .scrollIntoView({
+          behavior: "smooth"
+        });
+    });
+
+    document.querySelectorAll(".job-filter").forEach((filter) => {
+      filter.addEventListener("change", filterJobs);
+    });
+
+    /*
+     * Save jobs
+     */
+
+    document.querySelectorAll(".save-button").forEach((button) => {
+      button.addEventListener("click", () => {
+        button.classList.toggle("saved");
+
+        button.textContent =
+          button.classList.contains("saved") ? "♥" : "♡";
+      });
+    });
+
+    /*
+     * Candidate application modal
+     */
+
+    const applicationModal =
+      document.getElementById("applicationModal");
+
+    const selectedJobText =
+      document.getElementById("selectedJobText");
+
+    document.querySelectorAll(".apply-button").forEach((button) => {
+      button.addEventListener("click", () => {
+        const jobName = button.dataset.job;
+
+        selectedJobText.textContent =
+          "You are applying for: " + jobName;
+
+        applicationModal.classList.add("active");
+      });
+    });
+
+    /*
+     * Employer modal
+     */
+
+    const employerModal =
+      document.getElementById("employerModal");
+
+    document
+      .getElementById("openEmployerModal")
+      .addEventListener("click", () => {
+        employerModal.classList.add("active");
+      });
+
+    /*
+     * Close modal controls
+     */
+
+    document.querySelectorAll("[data-close-modal]").forEach(
+      (button) => {
+        button.addEventListener("click", () => {
+          const modalId = button.dataset.closeModal;
+
+          document
+            .getElementById(modalId)
+            .classList.remove("active");
+        });
+      }
+    );
+
+    document.querySelectorAll(".modal").forEach((modal) => {
+      modal.addEventListener("click", (event) => {
+        if (event.target === modal) {
+          modal.classList.remove("active");
+        }
+      });
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        document.querySelectorAll(".modal").forEach(
+          (modal) => modal.classList.remove("active")
+        );
+      }
+    });
+
+    /*
+     * Demo form handling
+     *
+     * These forms currently show a success message.
+     * Later, connect them to Cloudflare Worker, Formspree,
+     * Firebase, Supabase or your preferred backend.
+     */
+
+    document
+      .getElementById("quickAssistanceForm")
+      .addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const successMessage =
+          document.getElementById("quickSuccessMessage");
+
+        successMessage.style.display = "block";
+
+        event.target.reset();
+
+        setTimeout(() => {
+          successMessage.style.display = "none";
+        }, 5000);
+      });
+
+    document
+      .getElementById("applicationForm")
+      .addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const successMessage =
+          document.getElementById("applicationSuccess");
+
+        successMessage.style.display = "block";
+
+        event.target.reset();
+
+        setTimeout(() => {
+          applicationModal.classList.remove("active");
+          successMessage.style.display = "none";
+        }, 2200);
+      });
+
+    document
+      .getElementById("employerForm")
+      .addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const successMessage =
+          document.getElementById("employerSuccess");
+
+        successMessage.style.display = "block";
+
+        event.target.reset();
+
+        setTimeout(() => {
+          employerModal.classList.remove("active");
+          successMessage.style.display = "none";
+        }, 2200);
+      });
+  </script>
+
+</body>
+</html>
+<!-- Education Consultancy Section -->
+<section class="education-consultancy" id="educationConsultancy">
+  <div class="container">
+
+    <div class="education-box">
+
+      <div class="education-content">
+        <p class="eyebrow">MedOrbit Education Consultancy</p>
+
+        <h2>
+          Admission guidance for India and abroad
+        </h2>
+
+        <p>
+          Along with private job assistance, MedOrbit provides education
+          consultancy for students seeking admission in medical, pharmacy,
+          nursing, paramedical and other professional courses.
+        </p>
+
+        <div class="education-services">
+          <span>College Selection</span>
+          <span>Course Guidance</span>
+          <span>Fee Comparison</span>
+          <span>Admission Assistance</span>
+          <span>Document Guidance</span>
+          <span>Study Abroad Support</span>
+        </div>
+
+        <div class="education-buttons">
+          <a href="courses.html" class="education-primary-button">
+            Explore Courses
+          </a>
+
+          <a href="contact.html" class="education-secondary-button">
+            Talk to a Counsellor
+          </a>
+        </div>
+      </div>
+
+      <div class="education-side-card">
+        <h3>Popular Courses</h3>
+
+        <ul>
+          <li>MBBS in India and Abroad</li>
+          <li>BDS and Dental Courses</li>
+          <li>BAMS, BHMS and AYUSH</li>
+          <li>B.Pharm and Pharm.D</li>
+          <li>Nursing and Paramedical</li>
+          <li>Engineering and Management</li>
+        </ul>
+
+        <a href="admission-guide.html">
+          View Admission Guide →
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
