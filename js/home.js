@@ -224,29 +224,5 @@ observer.unobserve(entry.target);
 images.forEach(img=>observer.observe(img));
 
 }
-js/
 
-main.js
-script.js
-home.js
-slider.js
-animations.js
-forms.js
-jobs.js
-admission.js
-search.js
-colleges.js
-courses.js
-countries.js
-universities.js
-scholarships.js
-career.js
-blog.js
-news.js
-events.js
-gallery.js
-testimonials.js
-chatbot.js
-dashboard.js
-api.js
-utils.js
+
