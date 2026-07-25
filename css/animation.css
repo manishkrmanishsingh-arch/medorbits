@@ -947,3 +947,173 @@ nav.open {
 <div class="education-content reveal-left">
 <div class="education-side-card reveal-right delay-1">
 <article class="job-card reveal-up delay-2">
+
+/* ==========================================================
+   PERFORMANCE OPTIMIZATION
+========================================================== */
+
+/* GPU Acceleration */
+
+.animate,
+.card,
+.hero-card,
+.program-card,
+.country-card,
+.job-card,
+.college-card,
+.university-card,
+.testimonial-card,
+.footer-card{
+
+will-change:transform,opacity;
+
+transform:translateZ(0);
+
+backface-visibility:hidden;
+
+-webkit-font-smoothing:antialiased;
+
+}
+
+/* ==========================================================
+   REDUCED MOTION SUPPORT
+========================================================== */
+
+@media (prefers-reduced-motion: reduce){
+
+*,
+*::before,
+*::after{
+
+animation-duration:.01ms!important;
+
+animation-iteration-count:1!important;
+
+transition-duration:.01ms!important;
+
+scroll-behavior:auto!important;
+
+}
+
+.animate-hidden,
+.animate-show{
+
+opacity:1!important;
+
+transform:none!important;
+
+}
+
+}
+
+/* ==========================================================
+   TOUCH DEVICE OPTIMIZATION
+========================================================== */
+
+@media (hover:none){
+
+.hover-up:hover,
+.hover-scale:hover,
+.card:hover,
+.job-card:hover,
+.college-card:hover,
+.country-card:hover{
+
+transform:none;
+
+}
+
+}
+
+/* ==========================================================
+   PRINT MODE
+========================================================== */
+
+@media print{
+
+*{
+
+animation:none!important;
+
+transition:none!important;
+
+transform:none!important;
+
+}
+
+}
+
+/* ==========================================================
+   END OF ANIMATION STYLES
+------------------------------------------------------------
+Project      : MedOrbit
+File         : animation.css
+Version      : 1.0.0
+
+Animations Included
+✓ Fade In
+✓ Fade Up
+✓ Fade Down
+✓ Fade Left
+✓ Fade Right
+✓ Zoom In
+✓ Zoom Out
+✓ Scale
+✓ Slide
+✓ Hero Animation
+✓ Card Hover Effects
+✓ Button Ripple
+✓ Floating Elements
+✓ Counter Animation
+✓ Scroll Reveal
+✓ Scroll Progress Bar
+✓ Back To Top
+✓ Loading Spinner
+✓ Skeleton Loading
+✓ File Upload Animation
+✓ Form Transition
+✓ Modal Animation
+✓ Navigation Animation
+✓ Dropdown Animation
+✓ Page Transition
+✓ Toast Notification
+✓ Success & Error Effects
+
+Performance Features
+• GPU Accelerated
+• Lazy Animation Loading
+• requestAnimationFrame Optimized
+• Intersection Observer Ready
+• Mobile Optimized
+• Battery Efficient
+• Reduced Motion Support
+• Print Safe
+
+Supported Browsers
+✓ Google Chrome
+✓ Microsoft Edge
+✓ Mozilla Firefox
+✓ Safari
+✓ Opera
+✓ Brave
+
+Supported Devices
+✓ Desktop
+✓ Laptop
+✓ Tablet
+✓ Mobile
+✓ Smart TV
+
+Optimized For
+• HTML5
+• CSS3
+• JavaScript ES6+
+• Responsive Design
+• Accessibility (WCAG Friendly)
+
+© 2026 MedOrbit
+All Rights Reserved.
+
+Designed & Developed for
+MedOrbit Education • Career • Study Abroad • Private Jobs Platform
+========================================================== */
