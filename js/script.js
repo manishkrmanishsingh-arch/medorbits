@@ -1,371 +1,1139 @@
-/* ==========================================================
-   MedOrbit General Website Script
+/* =========================================================
+   MedOrbit Website Utilities
    File: js/script.js
-   Compatible with Mobile, Tablet and Desktop
-========================================================== */
+
+   Handles:
+   - Mobile navigation
+   - Dropdown menus
+   - Search overlay
+   - Accordion and FAQ
+   - Tabs
+   - Modal windows
+   - Form validation
+   - File-name preview
+   - Password visibility
+   - Character counters
+   - Copy buttons
+   - WhatsApp links
+   - Active navigation
+   - Cookie notice
+   - Network status
+   ========================================================= */
+
+"use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
+  initMobileNavigation();
+  initDropdownMenus();
+  initSearchOverlay();
+  initAccordions();
+  initTabs();
+  initModals();
+  initFormValidation();
+  initFileUploads();
+  initPasswordToggles();
+  initCharacterCounters();
+  initCopyButtons();
+  initWhatsAppButtons();
+  initActiveNavigation();
+  initCookieNotice();
+  initNetworkStatus();
+  initExternalLinks();
+  initCurrentYear();
+});
 
-    /* ===============================
-       FAQ Accordion
-    =============================== */
+/* =========================================================
+   Mobile navigation
+   ========================================================= */
 
-    const faqItems = document.querySelectorAll(
-        ".faq-item, .accordion-item"
+function initMobileNavigation() {
+  const menuButton = document.querySelector(
+    "#menuButton, .menu-button, .menu-toggle"
+  );
+
+  const navigation = document.querySelector(
+    "#headerNavigation, #mainNavigation, .header-nav, .navigation"
+  );
+
+  if (!menuButton || !navigation) return;
+
+  const closeNavigation = () => {
+    navigation.classList.remove("open", "active");
+    menuButton.classList.remove("active");
+    menuButton.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("menu-open");
+  };
+
+  menuButton.setAttribute("aria-expanded", "false");
+
+  menuButton.addEventListener("click", () => {
+    const isOpen =
+      navigation.classList.toggle("open");
+
+    navigation.classList.toggle("active", isOpen);
+    menuButton.classList.toggle("active", isOpen);
+
+    menuButton.setAttribute(
+      "aria-expanded",
+      String(isOpen)
     );
 
-    faqItems.forEach(item => {
+    document.body.classList.toggle(
+      "menu-open",
+      isOpen
+    );
+  });
 
-        const question = item.querySelector(
-            ".faq-question, .accordion-header"
+  navigation
+    .querySelectorAll("a")
+    .forEach((link) => {
+      link.addEventListener("click", closeNavigation);
+    });
+
+  document.addEventListener("click", (event) => {
+    if (
+      !navigation.contains(event.target) &&
+      !menuButton.contains(event.target)
+    ) {
+      closeNavigation();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeNavigation();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 760) {
+      closeNavigation();
+    }
+  });
+}
+
+/* =========================================================
+   Dropdown menus
+   HTML:
+   <li class="dropdown">
+     <button class="dropdown-toggle">Courses</button>
+     <div class="dropdown-menu">...</div>
+   </li>
+   ========================================================= */
+
+function initDropdownMenus() {
+  document
+    .querySelectorAll(".dropdown")
+    .forEach((dropdown) => {
+      const toggle =
+        dropdown.querySelector(".dropdown-toggle");
+
+      const menu =
+        dropdown.querySelector(".dropdown-menu");
+
+      if (!toggle || !menu) return;
+
+      toggle.setAttribute("aria-expanded", "false");
+
+      toggle.addEventListener("click", (event) => {
+        event.stopPropagation();
+
+        document
+          .querySelectorAll(".dropdown.open")
+          .forEach((openDropdown) => {
+            if (openDropdown !== dropdown) {
+              openDropdown.classList.remove("open");
+
+              openDropdown
+                .querySelector(".dropdown-toggle")
+                ?.setAttribute(
+                  "aria-expanded",
+                  "false"
+                );
+            }
+          });
+
+        const isOpen =
+          dropdown.classList.toggle("open");
+
+        toggle.setAttribute(
+          "aria-expanded",
+          String(isOpen)
+        );
+      });
+
+      dropdown.addEventListener(
+        "keydown",
+        (event) => {
+          if (event.key === "Escape") {
+            dropdown.classList.remove("open");
+            toggle.setAttribute(
+              "aria-expanded",
+              "false"
+            );
+            toggle.focus();
+          }
+        }
+      );
+    });
+
+  document.addEventListener("click", () => {
+    document
+      .querySelectorAll(".dropdown.open")
+      .forEach((dropdown) => {
+        dropdown.classList.remove("open");
+
+        dropdown
+          .querySelector(".dropdown-toggle")
+          ?.setAttribute(
+            "aria-expanded",
+            "false"
+          );
+      });
+  });
+}
+
+/* =========================================================
+   Search overlay
+   Required IDs:
+   #searchOpen
+   #searchClose
+   #searchOverlay
+   #siteSearchInput
+   ========================================================= */
+
+function initSearchOverlay() {
+  const openButton =
+    document.getElementById("searchOpen");
+
+  const closeButton =
+    document.getElementById("searchClose");
+
+  const overlay =
+    document.getElementById("searchOverlay");
+
+  const input =
+    document.getElementById("siteSearchInput");
+
+  if (!overlay) return;
+
+  const openSearch = () => {
+    overlay.classList.add("active");
+    document.body.classList.add("search-open");
+
+    window.setTimeout(() => {
+      input?.focus();
+    }, 100);
+  };
+
+  const closeSearch = () => {
+    overlay.classList.remove("active");
+    document.body.classList.remove("search-open");
+  };
+
+  openButton?.addEventListener(
+    "click",
+    openSearch
+  );
+
+  closeButton?.addEventListener(
+    "click",
+    closeSearch
+  );
+
+  overlay.addEventListener("click", (event) => {
+    if (event.target === overlay) {
+      closeSearch();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (
+      event.key === "Escape" &&
+      overlay.classList.contains("active")
+    ) {
+      closeSearch();
+    }
+  });
+}
+
+/* =========================================================
+   Accordion and FAQ
+   ========================================================= */
+
+function initAccordions() {
+  document
+    .querySelectorAll(
+      ".accordion-item, .faq-item"
+    )
+    .forEach((item) => {
+      const trigger =
+        item.querySelector(
+          ".accordion-header, .faq-question"
         );
 
-        const answer = item.querySelector(
-            ".faq-answer, .accordion-content"
+      const content =
+        item.querySelector(
+          ".accordion-content, .faq-answer"
         );
 
-        if (!question || !answer) return;
+      if (!trigger || !content) return;
 
-        question.setAttribute("role", "button");
-        question.setAttribute("tabindex", "0");
-        question.setAttribute("aria-expanded", "false");
+      trigger.setAttribute(
+        "aria-expanded",
+        "false"
+      );
 
-        const toggleFAQ = () => {
+      content.hidden = true;
 
-            const isOpen = item.classList.contains("active");
+      trigger.addEventListener("click", () => {
+        const parent =
+          item.parentElement;
 
-            faqItems.forEach(otherItem => {
+        const isOpen =
+          item.classList.contains("open");
 
-                if (otherItem === item) return;
+        if (
+          parent?.dataset.singleOpen === "true"
+        ) {
+          parent
+            .querySelectorAll(
+              ".accordion-item.open, .faq-item.open"
+            )
+            .forEach((openItem) => {
+              if (openItem === item) return;
 
-                otherItem.classList.remove("active");
+              openItem.classList.remove("open");
 
-                const otherQuestion = otherItem.querySelector(
-                    ".faq-question, .accordion-header"
+              openItem
+                .querySelector(
+                  ".accordion-header, .faq-question"
+                )
+                ?.setAttribute(
+                  "aria-expanded",
+                  "false"
                 );
 
-                if (otherQuestion) {
-                    otherQuestion.setAttribute(
-                        "aria-expanded",
-                        "false"
-                    );
-                }
-
-            });
-
-            item.classList.toggle("active", !isOpen);
-
-            question.setAttribute(
-                "aria-expanded",
-                String(!isOpen)
-            );
-
-        };
-
-        question.addEventListener("click", toggleFAQ);
-
-        question.addEventListener("keydown", event => {
-
-            if (
-                event.key === "Enter" ||
-                event.key === " "
-            ) {
-                event.preventDefault();
-                toggleFAQ();
-            }
-
-        });
-
-    });
-
-    /* ===============================
-       Read More Buttons
-    =============================== */
-
-    document.querySelectorAll("[data-read-more]").forEach(button => {
-
-        button.addEventListener("click", () => {
-
-            const targetSelector =
-                button.getAttribute("data-read-more");
-
-            if (!targetSelector) return;
-
-            const target =
-                document.querySelector(targetSelector);
-
-            if (!target) return;
-
-            const isOpen =
-                target.classList.toggle("expanded");
-
-            button.textContent =
-                isOpen ? "Read Less" : "Read More";
-
-            button.setAttribute(
-                "aria-expanded",
-                String(isOpen)
-            );
-
-        });
-
-    });
-
-    /* ===============================
-       Course Filter Buttons
-    =============================== */
-
-    const filterButtons =
-        document.querySelectorAll("[data-filter]");
-
-    const filterItems =
-        document.querySelectorAll("[data-category]");
-
-    filterButtons.forEach(button => {
-
-        button.addEventListener("click", () => {
-
-            const filter =
-                button.getAttribute("data-filter");
-
-            filterButtons.forEach(btn => {
-                btn.classList.remove("active");
-            });
-
-            button.classList.add("active");
-
-            filterItems.forEach(item => {
-
-                const category =
-                    item.getAttribute("data-category");
-
-                if (
-                    filter === "all" ||
-                    category === filter
-                ) {
-                    item.style.display = "";
-                } else {
-                    item.style.display = "none";
-                }
-
-            });
-
-        });
-
-    });
-
-    /* ===============================
-       Form Button Loading State
-    =============================== */
-
-    document.querySelectorAll("form").forEach(form => {
-
-        form.addEventListener("submit", () => {
-
-            const button = form.querySelector(
-                'button[type="submit"], input[type="submit"]'
-            );
-
-            if (!button) return;
-
-            if (button.tagName === "BUTTON") {
-
-                const originalText =
-                    button.textContent;
-
-                button.dataset.originalText =
-                    originalText;
-
-                button.textContent =
-                    "Please wait...";
-
-                button.disabled = true;
-
-                setTimeout(() => {
-
-                    button.textContent =
-                        button.dataset.originalText ||
-                        "Submit";
-
-                    button.disabled = false;
-
-                }, 1800);
-
-            }
-
-        });
-
-    });
-
-    /* ===============================
-       Phone Number Validation
-    =============================== */
-
-    document.querySelectorAll(
-        'input[type="tel"], input[name*="phone"], input[id*="phone"]'
-    ).forEach(input => {
-
-        input.setAttribute("inputmode", "numeric");
-
-        input.addEventListener("input", () => {
-
-            input.value =
-                input.value.replace(/\D/g, "").slice(0, 10);
-
-        });
-
-        input.addEventListener("blur", () => {
-
-            if (
-                input.value.length > 0 &&
-                input.value.length !== 10
-            ) {
-                input.setCustomValidity(
-                    "Please enter a valid 10-digit mobile number."
+              const openContent =
+                openItem.querySelector(
+                  ".accordion-content, .faq-answer"
                 );
-            } else {
-                input.setCustomValidity("");
-            }
 
-        });
+              if (openContent) {
+                openContent.hidden = true;
+              }
+            });
+        }
 
+        item.classList.toggle("open", !isOpen);
+
+        trigger.setAttribute(
+          "aria-expanded",
+          String(!isOpen)
+        );
+
+        content.hidden = isOpen;
+      });
     });
+}
 
-    /* ===============================
-       External Links
-    =============================== */
+/* =========================================================
+   Tabs
+   HTML:
+   <div class="tabs">
+     <button data-tab-target="panel-one">Tab</button>
+     <div id="panel-one" class="tab-panel"></div>
+   </div>
+   ========================================================= */
 
-    document.querySelectorAll(
-        'a[href^="http"]'
-    ).forEach(link => {
+function initTabs() {
+  document
+    .querySelectorAll(".tabs")
+    .forEach((tabs) => {
+      const buttons =
+        tabs.querySelectorAll(
+          "[data-tab-target]"
+        );
 
-        const linkHost =
-            new URL(link.href).hostname;
+      const panels =
+        tabs.querySelectorAll(".tab-panel");
 
-        if (linkHost !== window.location.hostname) {
+      if (!buttons.length || !panels.length) {
+        return;
+      }
 
-            link.setAttribute("target", "_blank");
-            link.setAttribute(
-                "rel",
-                "noopener noreferrer"
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const targetId =
+            button.dataset.tabTarget;
+
+          const targetPanel =
+            tabs.querySelector(
+              `#${CSS.escape(targetId)}`
             );
 
-        }
+          if (!targetPanel) return;
 
+          buttons.forEach((item) => {
+            const active =
+              item === button;
+
+            item.classList.toggle(
+              "active",
+              active
+            );
+
+            item.setAttribute(
+              "aria-selected",
+              String(active)
+            );
+          });
+
+          panels.forEach((panel) => {
+            const active =
+              panel === targetPanel;
+
+            panel.classList.toggle(
+              "active",
+              active
+            );
+
+            panel.hidden = !active;
+          });
+        });
+      });
+    });
+}
+
+/* =========================================================
+   Modal windows
+   Open:
+   data-modal-open="applicationModal"
+
+   Close:
+   data-modal-close="applicationModal"
+   ========================================================= */
+
+function initModals() {
+  const openModal = (modal) => {
+    if (!modal) return;
+
+    modal.classList.add("active");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+
+    modal
+      .querySelector(
+        "input, select, textarea, button"
+      )
+      ?.focus();
+  };
+
+  const closeModal = (modal) => {
+    if (!modal) return;
+
+    modal.classList.remove("active");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
+  };
+
+  document
+    .querySelectorAll("[data-modal-open]")
+    .forEach((button) => {
+      button.addEventListener("click", () => {
+        const id =
+          button.dataset.modalOpen;
+
+        openModal(
+          document.getElementById(id)
+        );
+      });
     });
 
-    /* ===============================
-       Image Lazy Loading
-    =============================== */
+  document
+    .querySelectorAll("[data-modal-close]")
+    .forEach((button) => {
+      button.addEventListener("click", () => {
+        const id =
+          button.dataset.modalClose;
 
-    document.querySelectorAll("img").forEach(image => {
-
-        if (!image.hasAttribute("loading")) {
-            image.setAttribute("loading", "lazy");
-        }
-
-        image.addEventListener("error", () => {
-
-            image.classList.add("image-error");
-
-        });
-
+        closeModal(
+          document.getElementById(id)
+        );
+      });
     });
 
-    /* ===============================
-       Reveal Elements on Scroll
-    =============================== */
+  document
+    .querySelectorAll(".modal")
+    .forEach((modal) => {
+      modal.setAttribute(
+        "aria-hidden",
+        "true"
+      );
 
-    const revealElements =
-        document.querySelectorAll(".reveal");
+      modal.addEventListener(
+        "click",
+        (event) => {
+          if (event.target === modal) {
+            closeModal(modal);
+          }
+        }
+      );
+    });
 
-    if ("IntersectionObserver" in window) {
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
 
-        const revealObserver =
-            new IntersectionObserver(entries => {
+    document
+      .querySelectorAll(".modal.active")
+      .forEach(closeModal);
+  });
+}
 
-                entries.forEach(entry => {
+/* =========================================================
+   Form validation
+   ========================================================= */
 
-                    if (entry.isIntersecting) {
+function initFormValidation() {
+  document
+    .querySelectorAll(
+      "form[data-validate], .medorbit-form"
+    )
+    .forEach((form) => {
+      const fields =
+        form.querySelectorAll(
+          "input, select, textarea"
+        );
 
-                        entry.target.classList.add(
-                            "visible"
-                        );
+      fields.forEach((field) => {
+        field.addEventListener(
+          "blur",
+          () => validateField(field)
+        );
 
-                        revealObserver.unobserve(
-                            entry.target
-                        );
+        field.addEventListener(
+          "input",
+          () => {
+            if (
+              field.classList.contains("invalid")
+            ) {
+              validateField(field);
+            }
+          }
+        );
+      });
 
-                    }
+      form.addEventListener(
+        "submit",
+        (event) => {
+          let valid = true;
 
-                });
+          fields.forEach((field) => {
+            if (!validateField(field)) {
+              valid = false;
+            }
+          });
 
-            }, {
-                threshold: 0.12
-            });
+          if (!valid) {
+            event.preventDefault();
 
-        revealElements.forEach(element => {
-            revealObserver.observe(element);
-        });
+            const firstInvalid =
+              form.querySelector(".invalid");
 
-    } else {
+            firstInvalid?.focus();
 
-        revealElements.forEach(element => {
-            element.classList.add("visible");
-        });
+            showToast(
+              "Please complete the required fields.",
+              "error"
+            );
+          }
+        }
+      );
+    });
+}
 
+function validateField(field) {
+  if (
+    field.disabled ||
+    field.type === "hidden"
+  ) {
+    return true;
+  }
+
+  const valid = field.checkValidity();
+
+  field.classList.toggle("invalid", !valid);
+  field.classList.toggle(
+    "valid",
+    valid && field.value !== ""
+  );
+
+  const group =
+    field.closest(".form-group");
+
+  let error =
+    group?.querySelector(".field-error");
+
+  if (!valid && group) {
+    if (!error) {
+      error =
+        document.createElement("small");
+
+      error.className = "field-error";
+      group.appendChild(error);
     }
 
-    /* ===============================
-       Prevent Duplicate Form Submission
-    =============================== */
+    error.textContent =
+      getValidationMessage(field);
+  } else {
+    error?.remove();
+  }
 
-    document.querySelectorAll("form").forEach(form => {
+  return valid;
+}
 
-        let submitted = false;
+function getValidationMessage(field) {
+  if (field.validity.valueMissing) {
+    return "This field is required.";
+  }
 
-        form.addEventListener("submit", event => {
+  if (field.validity.typeMismatch) {
+    if (field.type === "email") {
+      return "Enter a valid email address.";
+    }
 
-            if (submitted) {
-                event.preventDefault();
-                return;
+    if (field.type === "url") {
+      return "Enter a valid website address.";
+    }
+  }
+
+  if (field.validity.patternMismatch) {
+    return (
+      field.dataset.patternMessage ||
+      "Enter the information in the required format."
+    );
+  }
+
+  if (field.validity.tooShort) {
+    return `Enter at least ${field.minLength} characters.`;
+  }
+
+  if (field.validity.tooLong) {
+    return `Maximum ${field.maxLength} characters allowed.`;
+  }
+
+  if (field.validity.rangeUnderflow) {
+    return `Minimum value is ${field.min}.`;
+  }
+
+  if (field.validity.rangeOverflow) {
+    return `Maximum value is ${field.max}.`;
+  }
+
+  return "Please check this field.";
+}
+
+/* =========================================================
+   File uploads
+   ========================================================= */
+
+function initFileUploads() {
+  document
+    .querySelectorAll(
+      '.file-upload input[type="file"], input[data-file-preview]'
+    )
+    .forEach((input) => {
+      input.addEventListener("change", () => {
+        const container =
+          input.closest(".file-upload") ||
+          input.parentElement;
+
+        const output =
+          container?.querySelector(
+            ".selected-files, .selected-file-name"
+          );
+
+        if (!output) return;
+
+        if (!input.files?.length) {
+          output.textContent = "";
+          return;
+        }
+
+        const maxSizeMb =
+          Number(input.dataset.maxSizeMb) || 10;
+
+        const allowedFiles =
+          Array.from(input.files).filter(
+            (file) => {
+              const valid =
+                file.size <=
+                maxSizeMb * 1024 * 1024;
+
+              if (!valid) {
+                showToast(
+                  `${file.name} exceeds ${maxSizeMb} MB.`,
+                  "error"
+                );
+              }
+
+              return valid;
             }
+          );
 
-            if (form.checkValidity()) {
-
-                submitted = true;
-
-                setTimeout(() => {
-                    submitted = false;
-                }, 2500);
-
-            }
-
-        });
-
+        output.textContent = allowedFiles.length
+          ? `Selected: ${allowedFiles
+              .map((file) => file.name)
+              .join(", ")}`
+          : "";
+      });
     });
+}
 
-    /* ===============================
-       Close Notification Messages
-    =============================== */
+/* =========================================================
+   Password visibility
+   Button:
+   data-password-toggle="passwordInput"
+   ========================================================= */
 
-    document.querySelectorAll(
-        ".alert, .notification, .message-box"
-    ).forEach(message => {
+function initPasswordToggles() {
+  document
+    .querySelectorAll(
+      "[data-password-toggle]"
+    )
+    .forEach((button) => {
+      button.addEventListener("click", () => {
+        const input =
+          document.getElementById(
+            button.dataset.passwordToggle
+          );
 
-        const closeButton =
-            message.querySelector(
-                ".close-alert, .close-notification, .close-message"
-            );
+        if (!input) return;
 
-        if (!closeButton) return;
+        const showing =
+          input.type === "text";
 
-        closeButton.addEventListener("click", () => {
+        input.type =
+          showing ? "password" : "text";
 
-            message.style.display = "none";
+        button.setAttribute(
+          "aria-label",
+          showing
+            ? "Show password"
+            : "Hide password"
+        );
 
-        });
-
+        button.classList.toggle(
+          "showing",
+          !showing
+        );
+      });
     });
+}
 
-});
+/* =========================================================
+   Character counters
+   HTML:
+   <textarea maxlength="500" data-character-count></textarea>
+   ========================================================= */
+
+function initCharacterCounters() {
+  document
+    .querySelectorAll(
+      "[data-character-count]"
+    )
+    .forEach((field) => {
+      const maximum =
+        Number(field.maxLength);
+
+      if (!maximum || maximum < 1) return;
+
+      const counter =
+        document.createElement("small");
+
+      counter.className =
+        "character-counter";
+
+      field.insertAdjacentElement(
+        "afterend",
+        counter
+      );
+
+      const update = () => {
+        const used =
+          field.value.length;
+
+        counter.textContent =
+          `${used}/${maximum}`;
+
+        counter.classList.toggle(
+          "near-limit",
+          used >= maximum * 0.9
+        );
+      };
+
+      field.addEventListener("input", update);
+      update();
+    });
+}
+
+/* =========================================================
+   Copy buttons
+   HTML:
+   <button data-copy-text="9142102309">Copy</button>
+   ========================================================= */
+
+function initCopyButtons() {
+  document
+    .querySelectorAll("[data-copy-text]")
+    .forEach((button) => {
+      button.addEventListener("click", async () => {
+        const text =
+          button.dataset.copyText;
+
+        try {
+          await navigator.clipboard.writeText(
+            text
+          );
+
+          showToast(
+            "Copied successfully.",
+            "success"
+          );
+        } catch {
+          fallbackCopy(text);
+        }
+      });
+    });
+}
+
+function fallbackCopy(text) {
+  const textarea =
+    document.createElement("textarea");
+
+  textarea.value = text;
+  textarea.style.position = "fixed";
+  textarea.style.opacity = "0";
+
+  document.body.appendChild(textarea);
+  textarea.select();
+
+  document.execCommand("copy");
+  textarea.remove();
+
+  showToast(
+    "Copied successfully.",
+    "success"
+  );
+}
+
+/* =========================================================
+   WhatsApp buttons
+   HTML:
+   <button
+     data-whatsapp-number="919142102309"
+     data-whatsapp-message="Hello MedOrbit">
+   </button>
+   ========================================================= */
+
+function initWhatsAppButtons() {
+  document
+    .querySelectorAll(
+      "[data-whatsapp-number]"
+    )
+    .forEach((button) => {
+      button.addEventListener("click", () => {
+        const number =
+          button.dataset.whatsappNumber
+            .replace(/\D/g, "");
+
+        const message =
+          button.dataset.whatsappMessage ||
+          "Hello MedOrbit, I need assistance.";
+
+        const url =
+          `https://wa.me/${number}` +
+          `?text=${encodeURIComponent(message)}`;
+
+        window.open(
+          url,
+          "_blank",
+          "noopener,noreferrer"
+        );
+      });
+    });
+}
+
+/* =========================================================
+   Active navigation
+   ========================================================= */
+
+function initActiveNavigation() {
+  const currentPage =
+    window.location.pathname
+      .split("/")
+      .pop() || "index.html";
+
+  document
+    .querySelectorAll(
+      ".header-nav a, nav a"
+    )
+    .forEach((link) => {
+      const href =
+        link.getAttribute("href");
+
+      if (
+        !href ||
+        href.startsWith("#") ||
+        href.startsWith("http")
+      ) {
+        return;
+      }
+
+      const linkPage =
+        href.split("?")[0].split("#")[0];
+
+      link.classList.toggle(
+        "active",
+        linkPage === currentPage
+      );
+    });
+}
+
+/* =========================================================
+   Cookie notice
+   Required element:
+   #cookieNotice
+   ========================================================= */
+
+function initCookieNotice() {
+  const notice =
+    document.getElementById("cookieNotice");
+
+  if (!notice) return;
+
+  const accepted =
+    localStorage.getItem(
+      "medorbit-cookie-consent"
+    );
+
+  if (accepted === "accepted") {
+    notice.remove();
+    return;
+  }
+
+  notice.classList.add("show");
+
+  notice
+    .querySelector("[data-cookie-accept]")
+    ?.addEventListener("click", () => {
+      localStorage.setItem(
+        "medorbit-cookie-consent",
+        "accepted"
+      );
+
+      notice.classList.remove("show");
+
+      window.setTimeout(
+        () => notice.remove(),
+        250
+      );
+    });
+}
+
+/* =========================================================
+   Online and offline status
+   ========================================================= */
+
+function initNetworkStatus() {
+  const updateStatus = () => {
+    if (navigator.onLine) {
+      document.body.classList.remove(
+        "is-offline"
+      );
+
+      document
+        .getElementById("networkNotice")
+        ?.remove();
+
+      return;
+    }
+
+    document.body.classList.add(
+      "is-offline"
+    );
+
+    if (
+      document.getElementById("networkNotice")
+    ) {
+      return;
+    }
+
+    const notice =
+      document.createElement("div");
+
+    notice.id = "networkNotice";
+    notice.className = "network-notice";
+    notice.textContent =
+      "You are offline. Some features may not work.";
+
+    document.body.appendChild(notice);
+  };
+
+  window.addEventListener(
+    "online",
+    updateStatus
+  );
+
+  window.addEventListener(
+    "offline",
+    updateStatus
+  );
+
+  updateStatus();
+}
+
+/* =========================================================
+   External links
+   ========================================================= */
+
+function initExternalLinks() {
+  document
+    .querySelectorAll('a[href^="http"]')
+    .forEach((link) => {
+      try {
+        const url =
+          new URL(link.href);
+
+        if (
+          url.hostname !==
+          window.location.hostname
+        ) {
+          link.target = "_blank";
+          link.rel =
+            "noopener noreferrer";
+        }
+      } catch {
+        // Ignore invalid links.
+      }
+    });
+}
+
+/* =========================================================
+   Current year
+   ========================================================= */
+
+function initCurrentYear() {
+  document
+    .querySelectorAll(
+      ".year, [data-current-year]"
+    )
+    .forEach((element) => {
+      element.textContent =
+        new Date().getFullYear();
+    });
+}
+
+/* =========================================================
+   Toast notification
+   ========================================================= */
+
+function showToast(
+  message,
+  type = "info",
+  duration = 3500
+) {
+  let container =
+    document.getElementById(
+      "toastContainer"
+    );
+
+  if (!container) {
+    container =
+      document.createElement("div");
+
+    container.id = "toastContainer";
+    container.className =
+      "toast-container";
+
+    container.setAttribute(
+      "aria-live",
+      "polite"
+    );
+
+    document.body.appendChild(container);
+  }
+
+  const toast =
+    document.createElement("div");
+
+  toast.className =
+    `site-toast ${type}`;
+
+  toast.textContent = message;
+
+  container.appendChild(toast);
+
+  requestAnimationFrame(() => {
+    toast.classList.add("show");
+  });
+
+  window.setTimeout(() => {
+    toast.classList.remove("show");
+
+    toast.addEventListener(
+      "transitionend",
+      () => toast.remove(),
+      {
+        once: true
+      }
+    );
+  }, duration);
+}
+
+/* =========================================================
+   Global MedOrbit utilities
+   ========================================================= */
+
+window.MedOrbit = {
+  ...(window.MedOrbit || {}),
+
+  showToast,
+
+  openModal(id) {
+    const modal =
+      document.getElementById(id);
+
+    if (!modal) return;
+
+    modal.classList.add("active");
+    modal.setAttribute(
+      "aria-hidden",
+      "false"
+    );
+  },
+
+  closeModal(id) {
+    const modal =
+      document.getElementById(id);
+
+    if (!modal) return;
+
+    modal.classList.remove("active");
+    modal.setAttribute(
+      "aria-hidden",
+      "true"
+    );
+  },
+
+  formatCurrency(amount) {
+    return new Intl.NumberFormat(
+      "en-IN",
+      {
+        style: "currency",
+        currency: "INR",
+        maximumFractionDigits: 0
+      }
+    ).format(amount);
+  }
+};
