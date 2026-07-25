@@ -1757,3 +1757,209 @@ ol {
     border-style: solid;
   }
 }
+
+/* ==========================================================
+   PAGE UTILITY CLASSES
+========================================================== */
+
+/* Containers */
+
+.page-container{
+max-width:1400px;
+margin:0 auto;
+padding:0 20px;
+}
+
+.section-spacing{
+padding:80px 0;
+}
+
+.section-small{
+padding:50px 0;
+}
+
+.section-large{
+padding:120px 0;
+}
+
+/* Visibility */
+
+.page-hidden{
+display:none!important;
+}
+
+.page-visible{
+display:block!important;
+}
+
+/* Loading */
+
+.page-loading{
+pointer-events:none;
+opacity:.7;
+cursor:wait;
+}
+
+/* Cards */
+
+.page-card-shadow{
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.page-card-radius{
+
+border-radius:18px;
+
+}
+
+/* Responsive Images */
+
+.page-image{
+
+width:100%;
+
+height:auto;
+
+display:block;
+
+object-fit:cover;
+
+}
+
+/* Generic Transition */
+
+.page-transition{
+
+transition:.3s ease;
+
+}
+
+/* ==========================================================
+   PRINT SUPPORT
+========================================================== */
+
+@media print{
+
+header,
+footer,
+.navigation,
+.sidebar,
+.back-to-top,
+.whatsapp,
+.ai-chat{
+
+display:none!important;
+
+}
+
+.page-container{
+
+max-width:100%;
+
+padding:0;
+
+}
+
+}
+
+/* ==========================================================
+   ACCESSIBILITY
+========================================================== */
+
+:focus-visible{
+
+outline:3px solid rgba(0,86,179,.25);
+
+outline-offset:3px;
+
+}
+
+/* ==========================================================
+   END OF PAGE STYLES
+------------------------------------------------------------
+Project      : MedOrbit
+File         : pages.css
+Version      : 1.0.0
+
+Shared Components
+✓ Page Hero
+✓ Page Banner
+✓ Breadcrumb Navigation
+✓ Containers
+✓ Grid Layouts
+✓ Cards
+✓ Buttons
+✓ Sidebar Layout
+✓ CTA Sections
+✓ Common Page Headers
+✓ Shared Footer Sections
+✓ Shared Forms Layout
+✓ Responsive Utilities
+✓ Accessibility Helpers
+✓ Print Styles
+
+Supported Pages
+• Home
+• About
+• Courses
+• Colleges
+• Universities
+• Countries
+• Study Abroad
+• Admission Guide
+• Fee Structure
+• Brochure
+• Scholarships
+• Jobs
+• Career Counselling
+• Employer Services
+• Student Services
+• Blog
+• News
+• FAQ
+• Contact
+• Privacy Policy
+• Terms & Conditions
+• Dashboard
+
+Performance Features
+• Mobile-First Layout
+• Responsive Grid System
+• Reusable Components
+• Lightweight Styling
+• SEO-Friendly Structure
+• Accessibility Ready
+• Print Optimized
+
+Compatible With
+✓ HTML5
+✓ CSS3
+✓ JavaScript ES6+
+✓ Responsive Framework
+✓ Progressive Web App (PWA)
+✓ Modern Browsers
+
+Supported Browsers
+✓ Google Chrome
+✓ Microsoft Edge
+✓ Mozilla Firefox
+✓ Safari
+✓ Opera
+✓ Brave
+
+Supported Devices
+✓ Desktop
+✓ Laptop
+✓ Tablet
+✓ Mobile
+✓ Smart TV
+
+© 2026 MedOrbit.
+All Rights Reserved.
+
+Designed & Developed for
+MedOrbit — Education Consultancy • Study Abroad • Private Career Assistance • Skill Development Platform
+========================================================== */
