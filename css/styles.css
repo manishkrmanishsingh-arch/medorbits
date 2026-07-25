@@ -210,3 +210,160 @@ header nav a[aria-current="page"] {
         right: 10px;
     }
 }
+/* Education Consultancy */
+
+.education-consultancy {
+  padding: 70px 0;
+  background: #ffffff;
+}
+
+.education-box {
+  background:
+    linear-gradient(
+      125deg,
+      #eef6ff,
+      #fff9e9
+    );
+  border: 1px solid #dfe7ef;
+  border-radius: 24px;
+  padding: 42px;
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 35px;
+  align-items: center;
+  box-shadow: 0 16px 45px rgba(18, 55, 92, 0.08);
+}
+
+.education-content h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(32px, 4vw, 46px);
+  color: #042d57;
+  line-height: 1.15;
+  margin-bottom: 15px;
+}
+
+.education-content > p:not(.eyebrow) {
+  color: #667085;
+  max-width: 720px;
+  margin-bottom: 22px;
+}
+
+.education-services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 25px;
+}
+
+.education-services span {
+  background: #ffffff;
+  border: 1px solid #d8e3ed;
+  color: #31415a;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.education-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.education-primary-button,
+.education-secondary-button {
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 19px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 800;
+  transition: 0.2s;
+}
+
+.education-primary-button {
+  background: #063f78;
+  color: #ffffff;
+}
+
+.education-primary-button:hover {
+  background: #042d57;
+}
+
+.education-secondary-button {
+  background: #ffffff;
+  color: #063f78;
+  border: 1px solid #b9cee1;
+}
+
+.education-secondary-button:hover {
+  border-color: #063f78;
+}
+
+.education-side-card {
+  background: #ffffff;
+  border: 1px solid #dce5ee;
+  border-radius: 17px;
+  padding: 25px;
+}
+
+.education-side-card h3 {
+  font-family: "Times New Roman", Times, serif;
+  color: #042d57;
+  font-size: 25px;
+  margin-bottom: 14px;
+}
+
+.education-side-card ul {
+  list-style: none;
+  margin-bottom: 18px;
+}
+
+.education-side-card li {
+  color: #536174;
+  padding: 8px 0;
+  border-bottom: 1px solid #edf1f5;
+  font-size: 14px;
+}
+
+.education-side-card li::before {
+  content: "✓";
+  color: #16803d;
+  font-weight: 900;
+  margin-right: 9px;
+}
+
+.education-side-card a {
+  text-decoration: none;
+  color: #063f78;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+@media (max-width: 850px) {
+  .education-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 590px) {
+  .education-consultancy {
+    padding: 55px 0;
+  }
+
+  .education-box {
+    padding: 27px;
+  }
+
+  .education-buttons {
+    flex-direction: column;
+  }
+
+  .education-primary-button,
+  .education-secondary-button {
+    width: 100%;
+  }
+}
