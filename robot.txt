@@ -1,0 +1,54 @@
+# ============================================================
+# robots.txt — MedOrbit Foundation
+# Website: https://medorbits.in
+# ============================================================
+
+User-agent: *
+Allow: /
+
+# Keep non-public, temporary and development areas out of search results
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /drafts/
+
+Sitemap: https://www.medorbits.in/sitemap.xml
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /drafts/
+Disallow: /test/
+Disallow: /backup/
+Disallow: /staging/
+
+# Internal data and configuration files
+Disallow: /data/
+Disallow: /config/
+Disallow: /.git/
+Disallow: /.github/
+
+# Prevent indexing of duplicate or utility URLs
+Disallow: /*?preview=
+Disallow: /*?draft=
+Disallow: /*?test=
+Disallow: /*?session=
+Disallow: /*?utm_source=
+Disallow: /*?utm_medium=
+Disallow: /*?utm_campaign=
+
+# Allow all assets required to render the website correctly
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+Allow: /assets/icons/
+Allow: /assets/fonts/
+Allow: /assets/pdf/
+
+# Primary sitemap
+Sitemap: https://medorbits.in/sitemap.xml
+
+# Preferred host
+Host: medorbits.in
