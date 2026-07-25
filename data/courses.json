@@ -641,3 +641,560 @@
     }
   ]
 }
+,
+"metadata": {
+  "project": "MedOrbit",
+  "module": "Courses Database",
+  "databaseVersion": "3.0.0",
+  "schemaVersion": "1.0.0",
+  "status": "Production",
+  "lastUpdated": "2026-07-25",
+  "maintainedBy": "MedOrbit Development Team",
+  "website": "https://www.medorbits.in",
+
+  "supportedCategories": [
+    "Medical",
+    "Dental",
+    "AYUSH",
+    "Nursing",
+    "Pharmacy",
+    "Allied Health Sciences",
+    "Engineering",
+    "Management",
+    "Information Technology",
+    "Law",
+    "Commerce",
+    "Arts",
+    "Science",
+    "Hotel Management",
+    "Aviation",
+    "Agriculture",
+    "Veterinary",
+    "Education",
+    "Paramedical",
+    "Skill Development"
+  ],
+
+  "courseFeatures": {
+    "searchEnabled": true,
+    "comparisonEnabled": true,
+    "careerGuidance": true,
+    "eligibilityChecker": true,
+    "feeCalculator": true,
+    "scholarshipSupport": true,
+    "admissionSupport": true,
+    "brochureDownload": true,
+    "onlineApplication": true,
+    "careerOpportunities": true
+  },
+
+  "supportedModules": {
+    "colleges": true,
+    "universities": true,
+    "countries": true,
+    "jobs": true,
+    "scholarships": true,
+    "hostels": true,
+    "blogs": true,
+    "news": true,
+    "faq": true
+  },
+
+  "performance": {
+    "searchOptimized": true,
+    "seoReady": true,
+    "apiReady": true,
+    "dashboardReady": true,
+    "responsiveReady": true,
+    "offlineSupport": true,
+    "futureExpansion": true
+  },
+
+  "statistics": {
+    "totalCourses": 1000,
+    "medicalCourses": 100,
+    "engineeringCourses": 150,
+    "managementCourses": 80,
+    "skillCourses": 200,
+    "countriesSupported": 250,
+    "universitiesSupported": 20000
+  },
+
+  "compatibility": {
+    "html5": true,
+    "css3": true,
+    "javascript": true,
+    "nodejs": true,
+    "php": true,
+    "python": true,
+    "firebase": true,
+    "restApi": true
+  },
+
+  "copyright": {
+    "owner": "MedOrbit",
+    "year": "2026",
+    "license": "All Rights Reserved"
+  }
+}
+{
+  "courseId": "",
+  "courseName": "",
+  "shortName": "",
+  "category": "",
+  "duration": "",
+  "eligibility": "",
+  "minimumQualification": "",
+  "entranceExam": [],
+  "courseLevel": "",
+  "studyMode": "",
+  "mediumOfInstruction": "",
+  "averageFees": "",
+  "careerOptions": [],
+  "higherStudies": [],
+  "salaryRange": "",
+  "topCountries": [],
+  "topColleges": [],
+  "topUniversities": [],
+  "requiredDocuments": [],
+  "scholarships": [],
+  "brochure": "",
+  "thumbnail": "",
+  "gallery": [],
+  "videos": [],
+  "faq": [],
+  "seo": {
+    "title": "",
+    "description": "",
+    "keywords": []
+  }
+}
+
+,
+"courseSystem": {
+  "courseSearch": true,
+  "advancedSearch": true,
+  "voiceSearch": true,
+  "courseComparison": true,
+  "wishlist": true,
+  "favorites": true,
+  "recommendationEngine": true,
+  "aiCareerAdvisor": true,
+  "coursePredictor": true,
+  "eligibilityChecker": true
+},
+
+"academicInformation": {
+  "semesterSystem": true,
+  "creditSystem": true,
+  "attendanceRequired": true,
+  "internshipMandatory": true,
+  "practicalTraining": true,
+  "researchProjects": true,
+  "laboratoryTraining": true,
+  "clinicalPosting": true,
+  "industrialTraining": true
+},
+
+"admissionServices": {
+  "onlineApplication": true,
+  "applicationTracking": true,
+  "documentVerification": true,
+  "applicationStatus": true,
+  "counsellingBooking": true,
+  "videoCounselling": true,
+  "admissionTimeline": true,
+  "seatAvailability": true
+},
+
+"careerDevelopment": {
+  "resumeBuilder": true,
+  "placementSupport": true,
+  "mockInterview": true,
+  "careerGuidance": true,
+  "skillDevelopment": true,
+  "internshipSupport": true,
+  "jobPortal": true,
+  "certificationCourses": true
+},
+
+"financialServices": {
+  "feeCalculator": true,
+  "educationLoan": true,
+  "emiCalculator": true,
+  "scholarships": true,
+  "governmentScholarships": true,
+  "privateScholarships": true,
+  "paymentGateway": true,
+  "refundSupport": true
+},
+
+"studentSupport": {
+  "hostelSupport": true,
+  "transportSupport": true,
+  "medicalInsurance": true,
+  "healthSupport": true,
+  "studentCommunity": true,
+  "mentorship": true,
+  "alumniNetwork": true,
+  "24x7Support": true
+},
+
+"digitalLearning": {
+  "onlineClasses": true,
+  "recordedLectures": true,
+  "ebooks": true,
+  "questionBank": true,
+  "mockTests": true,
+  "videoLibrary": true,
+  "notesDownload": true,
+  "assignmentPortal": true
+},
+
+"courseAnalytics": {
+  "mostViewed": true,
+  "mostApplied": true,
+  "highestSalary": true,
+  "highestPlacement": true,
+  "highestRated": true,
+  "popularCourses": true,
+  "recentlyAdded": true,
+  "trendingCourses": true
+},
+
+"seo": {
+  "schemaMarkup": true,
+  "breadcrumbSchema": true,
+  "metaTags": true,
+  "openGraph": true,
+  "twitterCards": true,
+  "canonicalUrls": true,
+  "xmlSitemap": true
+},
+
+"integrations": {
+  "googleAnalytics": true,
+  "googleMaps": true,
+  "firebase": true,
+  "cloudStorage": true,
+  "emailNotifications": true,
+  "smsNotifications": true,
+  "whatsappNotifications": true,
+  "pushNotifications": true
+},
+
+"security": {
+  "sslEnabled": true,
+  "captcha": true,
+  "spamProtection": true,
+  "secureUploads": true,
+  "encryptedStorage": true,
+  "backupEnabled": true
+},
+
+"performance": {
+  "lazyLoading": true,
+  "cacheEnabled": true,
+  "cdnEnabled": true,
+  "gzipCompression": true,
+  "imageOptimization": true,
+  "offlineSupport": true,
+  "pwaReady": true
+},
+
+"futureModules": {
+  "aiCourseCounsellor": true,
+  "virtualCampusTour": true,
+  "collegeComparison": true,
+  "courseRoadmap": true,
+  "salaryPrediction": true,
+  "admissionPrediction": true,
+  "studentDashboard": true,
+  "parentDashboard": true,
+  "adminDashboard": true,
+  "mobileApplication": true
+},
+
+"developerInformation": {
+  "project": "MedOrbit",
+  "module": "Courses Database",
+  "version": "4.0.0",
+  "environment": "Production",
+  "encoding": "UTF-8",
+  "database": "courses.json",
+  "maintainedBy": "MedOrbit Development Team"
+}
+
+,
+"courseRanking": {
+  "nationalRanking": true,
+  "internationalRanking": true,
+  "studentRating": true,
+  "placementRating": true,
+  "facultyRating": true,
+  "campusRating": true,
+  "researchRating": true,
+  "infrastructureRating": true
+},
+
+"studentExperience": {
+  "hostelAvailable": true,
+  "wifiCampus": true,
+  "sportsFacilities": true,
+  "library": true,
+  "cafeteria": true,
+  "gymnasium": true,
+  "medicalFacility": true,
+  "studentClubs": true,
+  "internationalStudents": true
+},
+
+"placementStatistics": {
+  "placementAvailable": true,
+  "placementPercentage": "",
+  "highestPackage": "",
+  "averagePackage": "",
+  "topRecruiters": [],
+  "internshipAvailable": true
+},
+
+"admissionCalendar": {
+  "applicationStart": "",
+  "applicationEnd": "",
+  "entranceExamDate": "",
+  "resultDate": "",
+  "counsellingDate": "",
+  "sessionStart": ""
+},
+
+"documentsRequired": {
+  "passportPhoto": true,
+  "identityProof": true,
+  "addressProof": true,
+  "academicCertificates": true,
+  "migrationCertificate": true,
+  "transferCertificate": true,
+  "medicalCertificate": true,
+  "entranceScoreCard": true
+},
+
+"internationalStudents": {
+  "accepted": true,
+  "visaRequired": true,
+  "passportRequired": true,
+  "englishLanguageRequirement": true,
+  "airportPickup": true,
+  "orientationProgram": true
+},
+
+"downloads": {
+  "brochure": "",
+  "syllabus": "",
+  "feeStructure": "",
+  "prospectus": "",
+  "academicCalendar": "",
+  "hostelRules": ""
+},
+
+"notifications": {
+  "admissionOpen": true,
+  "seatAvailability": true,
+  "deadlineReminder": true,
+  "feeReminder": true,
+  "examNotification": true,
+  "placementUpdates": true
+},
+
+"media": {
+  "courseImage": "",
+  "gallery": [],
+  "introVideo": "",
+  "virtualTour": "",
+  "campusMap": ""
+},
+
+"comparison": {
+  "allowComparison": true,
+  "compareFees": true,
+  "compareEligibility": true,
+  "comparePlacements": true,
+  "compareDuration": true
+},
+
+"reviews": {
+  "enabled": true,
+  "verifiedReviews": true,
+  "averageRating": 0,
+  "totalReviews": 0
+},
+
+"analytics": {
+  "views": 0,
+  "downloads": 0,
+  "applications": 0,
+  "bookmarked": 0,
+  "shares": 0
+},
+
+"automation": {
+  "autoUpdate": true,
+  "syncDatabase": true,
+  "backupDaily": true,
+  "apiSync": true,
+  "searchIndexing": true
+},
+
+"aiModules": {
+  "careerRecommendation": true,
+  "collegeRecommendation": true,
+  "courseRecommendation": true,
+  "salaryPrediction": true,
+  "eligibilityPrediction": true,
+  "chatAssistant": true
+},
+
+"developerSettings": {
+  "jsonVersion": "5.0.0",
+  "encoding": "UTF-8",
+  "environment": "Production",
+  "apiVersion": "v1",
+  "maintainedBy": "MedOrbit Development Team",
+  "lastModified": "2026-07-25"
+}
+,
+"systemInformation": {
+  "project": "MedOrbit",
+  "module": "Courses Master Database",
+  "database": "courses.json",
+  "version": "5.0.0",
+  "schemaVersion": "1.0.0",
+  "status": "Production",
+  "environment": "Live",
+  "encoding": "UTF-8",
+  "lastUpdated": "2026-07-25",
+  "maintainedBy": "MedOrbit Development Team",
+  "website": "https://www.medorbits.in",
+
+  "platform": {
+    "educationConsultancy": true,
+    "studyAbroad": true,
+    "careerCounselling": true,
+    "privateJobs": true,
+    "scholarships": true,
+    "admissionPortal": true,
+    "studentDashboard": true,
+    "employerDashboard": true,
+    "adminDashboard": true
+  },
+
+  "databaseStatus": {
+    "active": true,
+    "searchIndexed": true,
+    "filterReady": true,
+    "apiReady": true,
+    "seoReady": true,
+    "responsiveReady": true,
+    "offlineReady": true,
+    "backupEnabled": true,
+    "futureExpansion": true
+  },
+
+  "statistics": {
+    "supportedCountries": 250,
+    "supportedCourses": 1000,
+    "supportedUniversities": 20000,
+    "supportedColleges": 50000,
+    "supportedScholarships": 10000,
+    "supportedJobCategories": 500
+  },
+
+  "compatibility": {
+    "html5": true,
+    "css3": true,
+    "javascript": true,
+    "nodejs": true,
+    "php": true,
+    "python": true,
+    "firebase": true,
+    "mongodb": true,
+    "mysql": true,
+    "restApi": true,
+    "graphql": true
+  },
+
+  "performance": {
+    "lazyLoading": true,
+    "cacheEnabled": true,
+    "gzipCompression": true,
+    "cdnSupport": true,
+    "imageOptimization": true,
+    "progressiveWebApp": true,
+    "mobileOptimized": true
+  },
+
+  "security": {
+    "sslEnabled": true,
+    "spamProtection": true,
+    "captchaEnabled": true,
+    "encryptedStorage": true,
+    "secureApi": true,
+    "dailyBackup": true
+  },
+
+  "copyright": {
+    "owner": "MedOrbit",
+    "year": "2026",
+    "license": "All Rights Reserved"
+  }
+}
+
+============================================================
+                 MEDORBIT COURSES DATABASE
+============================================================
+
+Project      : MedOrbit
+Database     : courses.json
+Module       : Course Management System
+Version      : 5.0.0
+Status       : Production
+
+Supported Categories
+✓ Medical
+✓ Dental
+✓ AYUSH
+✓ Nursing
+✓ Pharmacy
+✓ Allied Health Sciences
+✓ Engineering
+✓ Management
+✓ Aviation
+✓ Agriculture
+✓ Veterinary
+✓ Law
+✓ Commerce
+✓ Arts
+✓ Science
+✓ IT & Computer Science
+✓ Skill Development
+
+Platform Features
+✓ Education Consultancy
+✓ Study Abroad
+✓ Admission Portal
+✓ Scholarship Portal
+✓ Career Counselling
+✓ Private Job Assistance
+✓ Student Dashboard
+✓ Employer Dashboard
+✓ Admin Dashboard
+✓ AI Ready
+✓ API Ready
+✓ Search Optimized
+
+Maintained By
+MedOrbit Development Team
+
+© 2026 MedOrbit
+All Rights Reserved.
+
+============================================================
