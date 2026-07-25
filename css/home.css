@@ -1,326 +1,281 @@
 /* ==========================================================
-   MedOrbit Home Page CSS
-   Responsive | Mobile First | Modern UI
+   HOME PAGE VARIABLES
 ========================================================== */
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+/* Colors, spacing, shadows (only if different from global) */
+
+/* ==========================================================
+   HERO SECTION
+========================================================== */
+
+/* Hero layout */
+
+/* Hero content */
+
+/* Hero buttons */
+
+/* Hero search */
+
+/* Hero statistics */
+
+/* ==========================================================
+   QUICK SERVICES
+========================================================== */
+
+/* Cards */
+
+/* Hover effects */
+
+/* ==========================================================
+   FEATURED COURSES
+========================================================== */
+
+/* Grid */
+
+/* Course cards */
+
+/* ==========================================================
+   STUDY ABROAD
+========================================================== */
+
+/* Country cards */
+
+/* ==========================================================
+   FEATURED COLLEGES
+========================================================== */
+
+/* College cards */
+
+/* ==========================================================
+   JOB ASSISTANCE
+========================================================== */
+
+/* Job cards */
+
+/* Search */
+
+/* ==========================================================
+   EDUCATION CONSULTANCY
+========================================================== */
+
+/* Consultancy section */
+
+/* ==========================================================
+   SUCCESS STORIES
+========================================================== */
+
+/* Student cards */
+
+/* ==========================================================
+   TESTIMONIALS
+========================================================== */
+
+/* Testimonials */
+
+/* ==========================================================
+   NEWS & BLOGS
+========================================================== */
+
+/* Latest news */
+
+/* ==========================================================
+   FAQ
+========================================================== */
+
+/* Accordion */
+
+/* ==========================================================
+   NEWSLETTER
+========================================================== */
+
+/* Newsletter form */
+
+/* ==========================================================
+   CTA
+========================================================== */
+
+/* CTA banner */
+
+/* ==========================================================
+   FLOATING ELEMENTS
+========================================================== */
+
+/* WhatsApp */
+
+/* Call button */
+
+/* ==========================================================
+   HOME RESPONSIVE
+========================================================== */
+
+/* Desktop */
+
+/* Tablet */
+
+/* Mobile */
+
+/* Small Mobile */
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/animation.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/home.css">
+
+.hero-bg{
+position:absolute;
+inset:0;
+overflow:hidden;
+z-index:-1;
 }
 
-body{
-background:#f5f8fc;
-color:#222;
-overflow-x:hidden;
-line-height:1.6;
+.hero-circle{
+
+position:absolute;
+border-radius:50%;
+
+filter:blur(80px);
+
+animation:float 12s ease-in-out infinite;
+
 }
 
-/* ======================
-Hero Section
-====================== */
+.hero-circle.one{
 
-.hero{
-padding:90px 8%;
+width:320px;
+height:320px;
+
+background:#0066cc30;
+
+top:-80px;
+left:-120px;
+
+}
+
+.hero-circle.two{
+
+width:250px;
+height:250px;
+
+background:#f5b40025;
+
+right:-80px;
+bottom:-50px;
+
+}
+
+@keyframes float{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-40px);
+
+}
+
+}
+
+.hero-search{
+
 display:flex;
-align-items:center;
-justify-content:space-between;
-gap:50px;
-background:linear-gradient(135deg,#0056b3,#0d8af0);
-color:#fff;
-min-height:90vh;
-}
 
-.hero-content{
-flex:1;
-}
-
-.hero-content h1{
-font-size:54px;
-line-height:1.2;
-margin-bottom:20px;
-font-weight:700;
-}
-
-.hero-content h1 span{
-color:#ffd54f;
-}
-
-.hero-content p{
-font-size:18px;
-opacity:.95;
-margin-bottom:30px;
-max-width:620px;
-}
-
-.hero-buttons{
-display:flex;
-gap:18px;
-flex-wrap:wrap;
-}
-
-.hero-image{
-flex:1;
-text-align:center;
-}
-
-.hero-image img{
-max-width:100%;
-height:auto;
-}
-
-/* ======================
-Buttons
-====================== */
-
-.btn-primary{
-
-display:inline-block;
-
-padding:15px 35px;
-
-background:#ffd54f;
-
-color:#111;
-
-border-radius:8px;
-
-text-decoration:none;
-
-font-weight:700;
-
-}
-
-.btn-primary:hover{
+gap:15px;
 
 background:#fff;
 
-transform:translateY(-3px);
+padding:12px;
+
+border-radius:60px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.1);
+
+max-width:850px;
+
+margin:auto;
 
 }
 
-.btn-secondary{
+.hero-search input{
 
-display:inline-block;
+flex:1;
 
-padding:15px 35px;
+border:none;
 
-border:2px solid #fff;
+outline:none;
+
+padding:16px;
+
+font-size:16px;
+
+}
+
+.hero-search button{
+
+background:#0056b3;
 
 color:#fff;
 
-text-decoration:none;
+border:none;
 
-border-radius:8px;
+padding:16px 35px;
 
-font-weight:700;
+border-radius:40px;
 
-}
-
-.btn-secondary:hover{
-
-background:#fff;
-
-color:#0056b3;
+cursor:pointer;
 
 }
 
-/* ======================
-Section
-====================== */
-
-.section{
-
-padding:80px 8%;
-
-}
-
-.section-title{
-
-text-align:center;
-
-font-size:38px;
-
-margin-bottom:15px;
-
-color:#0056b3;
-
-}
-
-.section-subtitle{
-
-text-align:center;
-
-max-width:750px;
-
-margin:auto auto 55px;
-
-color:#666;
-
-}
-
-/* ======================
-Stats
-====================== */
-
-.stats{
+.statistics{
 
 display:grid;
 
 grid-template-columns:repeat(4,1fr);
 
-gap:25px;
+gap:30px;
+
+margin-top:60px;
 
 }
 
-.stat-box{
+.stat-card{
 
 background:#fff;
 
 padding:35px;
 
-border-radius:15px;
-
 text-align:center;
 
-box-shadow:0 10px 30px rgba(0,0,0,.08);
+border-radius:20px;
+
+transition:.4s;
 
 }
 
-.stat-box h2{
+.stat-card:hover{
 
-font-size:42px;
+transform:translateY(-10px);
+
+}
+
+.stat-card h2{
+
+font-size:48px;
 
 color:#0056b3;
 
-margin-bottom:10px;
-
 }
 
-.stat-box p{
+.stat-card p{
 
 color:#666;
 
 }
 
-/* ======================
-Courses
-====================== */
-
-.course-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-
-gap:30px;
-
-}
-
-.course-card{
-
-background:#fff;
-
-padding:30px;
-
-border-radius:15px;
-
-box-shadow:0 8px 25px rgba(0,0,0,.08);
-
-text-align:center;
-
-}
-
-.course-card img{
-
-width:70px;
-
-margin:auto;
-
-margin-bottom:20px;
-
-}
-
-.course-card h3{
-
-margin-bottom:15px;
-
-color:#0056b3;
-
-}
-
-.course-card p{
-
-color:#666;
-
-margin-bottom:20px;
-
-}
-
-.course-card a{
-
-text-decoration:none;
-
-font-weight:bold;
-
-color:#0056b3;
-
-}
-
-/* ======================
-Countries
-====================== */
-
-.country-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-
-gap:25px;
-
-}
-
-.country-card{
-
-background:#fff;
-
-padding:25px;
-
-border-radius:15px;
-
-text-align:center;
-
-box-shadow:0 8px 25px rgba(0,0,0,.08);
-
-}
-
-.country-card img{
-
-width:70px;
-
-height:70px;
-
-object-fit:cover;
-
-border-radius:50%;
-
-margin-bottom:15px;
-
-}
-
-.country-card h4{
-
-color:#0056b3;
-
-}
-
-/* ======================
-Why Choose
-====================== */
-
-.why-grid{
+.college-grid{
 
 display:grid;
 
@@ -330,219 +285,238 @@ gap:30px;
 
 }
 
-.why-box{
+.college-card{
 
 background:#fff;
 
-padding:30px;
-
-border-radius:15px;
-
-box-shadow:0 8px 25px rgba(0,0,0,.08);
-
-}
-
-.why-box h3{
-
-margin-bottom:15px;
-
-color:#0056b3;
-
-}
-
-/* ======================
-Testimonials
-====================== */
-
-.testimonial-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-
-gap:25px;
-
-}
-
-.testimonial{
-
-background:#fff;
-
-padding:30px;
-
-border-radius:15px;
-
-box-shadow:0 8px 25px rgba(0,0,0,.08);
-
-}
-
-.testimonial img{
-
-width:70px;
-
-height:70px;
-
-border-radius:50%;
-
-margin-bottom:15px;
-
-}
-
-.testimonial h4{
-
-color:#0056b3;
-
-margin-bottom:8px;
-
-}
-
-/* ======================
-CTA
-====================== */
-
-.cta{
-
-background:#0056b3;
-
-color:#fff;
-
-text-align:center;
-
-padding:80px 8%;
-
-}
-
-.cta h2{
-
-font-size:40px;
-
-margin-bottom:20px;
-
-}
-
-.cta p{
-
-max-width:700px;
-
-margin:auto auto 30px;
-
-}
-
-/* ======================
-Partners
-====================== */
-
-.partner-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-
-gap:25px;
-
-align-items:center;
-
-}
-
-.partner-grid img{
-
-width:100%;
-
-filter:grayscale(100%);
-
-opacity:.75;
-
-}
-
-.partner-grid img:hover{
-
-filter:none;
-
-opacity:1;
-
-}
-
-/* ======================
-Blog
-====================== */
-
-.blog-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-
-gap:30px;
-
-}
-
-.blog-card{
-
-background:#fff;
-
-border-radius:15px;
+border-radius:18px;
 
 overflow:hidden;
 
-box-shadow:0 8px 25px rgba(0,0,0,.08);
+transition:.4s;
 
 }
 
-.blog-card img{
+.college-card img{
 
 width:100%;
-
 height:220px;
 
 object-fit:cover;
 
 }
 
-.blog-content{
+.college-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+}
+
+.country-grid{
+
+display:grid;
+
+grid-template-columns:repeat(5,1fr);
+
+gap:25px;
+
+}
+
+.country-card{
 
 padding:25px;
 
-}
+background:#fff;
 
-.blog-content h3{
-
-margin-bottom:15px;
-
-color:#0056b3;
-
-}
-
-/* ======================
-Responsive
-====================== */
-
-@media(max-width:992px){
-
-.hero{
-
-flex-direction:column;
+border-radius:18px;
 
 text-align:center;
 
-padding:70px 5%;
+transition:.4s;
 
 }
 
-.hero-content h1{
+.country-card img{
 
-font-size:42px;
+width:70px;
+
+margin:auto;
 
 }
 
-.hero-buttons{
+.country-card:hover{
+
+background:#0056b3;
+
+color:#fff;
+
+}
+
+.testimonial{
+
+padding:35px;
+
+background:#fff;
+
+border-radius:20px;
+
+}
+
+.student{
+
+display:flex;
+
+gap:20px;
+
+align-items:center;
+
+}
+
+.student img{
+
+width:80px;
+
+height:80px;
+
+border-radius:50%;
+
+}
+
+.news-card{
+
+display:flex;
+
+gap:25px;
+
+padding:20px;
+
+background:#fff;
+
+border-radius:15px;
+
+}
+
+.news-card img{
+
+width:180px;
+
+height:120px;
+
+object-fit:cover;
+
+}
+
+.newsletter{
+
+padding:70px;
+
+background:linear-gradient(135deg,#0056b3,#0099ff);
+
+color:#fff;
+
+border-radius:30px;
+
+text-align:center;
+
+}
+
+.newsletter form{
+
+display:flex;
 
 justify-content:center;
 
+margin-top:25px;
+
+gap:15px;
+
 }
 
-.stats{
+.newsletter input{
+
+width:420px;
+
+padding:18px;
+
+border:none;
+
+border-radius:50px;
+
+}
+
+.whatsapp{
+
+position:fixed;
+
+right:20px;
+
+bottom:20px;
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+background:#25d366;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:28px;
+
+color:#fff;
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+z-index:999;
+
+}
+
+.ai-chat{
+
+position:fixed;
+
+right:20px;
+
+bottom:95px;
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+background:#0056b3;
+
+color:#fff;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:28px;
+
+}
+
+@media(max-width:992px){
+
+.statistics{
 
 grid-template-columns:repeat(2,1fr);
+
+}
+
+.country-grid{
+
+grid-template-columns:repeat(3,1fr);
 
 }
 
@@ -550,45 +524,35 @@ grid-template-columns:repeat(2,1fr);
 
 @media(max-width:768px){
 
-.section{
+.hero-search{
 
-padding:60px 20px;
+flex-direction:column;
 
-}
-
-.hero{
-
-padding:60px 20px;
+border-radius:25px;
 
 }
 
-.hero-content h1{
-
-font-size:34px;
-
-}
-
-.hero-content p{
-
-font-size:16px;
-
-}
-
-.section-title{
-
-font-size:30px;
-
-}
-
-.stats{
+.statistics{
 
 grid-template-columns:1fr;
 
 }
 
-.cta h2{
+.country-grid{
 
-font-size:30px;
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.news-card{
+
+flex-direction:column;
+
+}
+
+.newsletter form{
+
+flex-direction:column;
 
 }
 
@@ -596,59 +560,443 @@ font-size:30px;
 
 @media(max-width:480px){
 
-.hero{
+.country-grid{
 
-padding:50px 15px;
-
-}
-
-.hero-content h1{
-
-font-size:28px;
+grid-template-columns:1fr;
 
 }
 
-.hero-buttons{
-
-flex-direction:column;
-
-}
-
-.btn-primary,
-.btn-secondary{
+.hero-search button{
 
 width:100%;
+
+}
+
+.newsletter{
+
+padding:35px;
+
+}
+
+}
+
+<!-- ==========================================
+     MEDORBIT PREMIUM FOOTER
+=========================================== -->
+
+<footer class="footer">
+
+<div class="container">
+
+<!-- CTA -->
+
+<div class="footer-cta">
+
+<h2>Ready to Begin Your Career or Education Journey?</h2>
+
+<p>
+From MBBS admissions and study abroad guidance to private job opportunities across India,
+MedOrbit is here to support you at every step.
+</p>
+
+<div class="footer-cta-buttons">
+
+<a href="forms.html" class="footer-btn-primary">
+Apply Now
+</a>
+
+<a href="contact.html" class="footer-btn-secondary">
+Free Counselling
+</a>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="footer-grid">
+
+<!-- Company -->
+
+<div>
+
+<h3>MedOrbit</h3>
+
+<p>
+Your trusted platform for education consultancy,
+career counselling,
+study abroad,
+private jobs,
+scholarships,
+and professional guidance.
+</p>
+
+</div>
+
+<!-- Quick Links -->
+
+<div>
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="courses.html">Courses</a></li>
+
+<li><a href="colleges.html">Colleges</a></li>
+
+<li><a href="universities.html">Universities</a></li>
+
+<li><a href="countries/india.html">Study in India</a></li>
+
+<li><a href="countries/nepal.html">Study Abroad</a></li>
+
+<li><a href="jobs.html">Private Jobs</a></li>
+
+<li><a href="forms.html">Apply Online</a></li>
+
+</ul>
+
+</div>
+
+<!-- Services -->
+
+<div>
+
+<h3>Services</h3>
+
+<ul>
+
+<li>MBBS Admission</li>
+
+<li>BDS Admission</li>
+
+<li>Nursing Admission</li>
+
+<li>Ayush Courses</li>
+
+<li>Pharmacy Courses</li>
+
+<li>Private Job Assistance</li>
+
+<li>Career Counselling</li>
+
+<li>Scholarships</li>
+
+</ul>
+
+</div>
+
+<!-- Contact -->
+
+<div>
+
+<h3>Contact</h3>
+
+<p>📍 Wave Silver Tower, Sector-18, Noida</p>
+
+<p>📞 +91 9142102309</p>
+
+<p>✉ info@medorbits.in</p>
+
+<p>🌐 www.medorbits.in</p>
+
+<div class="footer-social">
+
+<a href="#">Facebook</a>
+
+<a href="#">Instagram</a>
+
+<a href="#">LinkedIn</a>
+
+<a href="#">YouTube</a>
+
+</div>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="footer-bottom">
+
+<div>
+
+© <span class="year"></span>
+MedOrbit.
+All Rights Reserved.
+
+</div>
+
+<div>
+
+<a href="privacy-policy.html">
+Privacy Policy
+</a>
+
+|
+
+<a href="terms.html">
+Terms & Conditions
+</a>
+
+|
+
+<a href="refund-policy.html">
+Refund Policy
+</a>
+
+|
+
+<a href="disclaimer.html">
+Disclaimer
+</a>
+
+</div>
+
+</div>
+
+<!-- Legal -->
+
+<div class="footer-disclaimer">
+
+<strong>Important Notice:</strong>
+
+MedOrbit provides educational guidance, counselling, and career assistance. Admission decisions, scholarship awards, job selections, visa approvals, and recruitment outcomes are made solely by the respective institutions, employers, universities, or authorities. Users should verify all information directly with the relevant organization before making decisions.
+
+</div>
+
+</div>
+
+</footer>
+
+.footer{
+
+background:#041d36;
+
+color:#dfe8f3;
+
+padding:80px 0 30px;
+
+}
+
+.footer-cta{
+
+text-align:center;
+
+padding-bottom:50px;
+
+}
+
+.footer-cta h2{
+
+font-family:"Times New Roman",serif;
+
+font-size:42px;
+
+margin-bottom:15px;
+
+color:#fff;
+
+}
+
+.footer-cta p{
+
+max-width:850px;
+
+margin:auto;
+
+line-height:1.8;
+
+color:#c8d7e8;
+
+}
+
+.footer-cta-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+margin-top:30px;
+
+flex-wrap:wrap;
+
+}
+
+.footer-btn-primary{
+
+background:#0056b3;
+
+color:#fff;
+
+padding:15px 35px;
+
+border-radius:12px;
+
+text-decoration:none;
+
+font-weight:700;
+
+}
+
+.footer-btn-secondary{
+
+background:#fff;
+
+color:#0056b3;
+
+padding:15px 35px;
+
+border-radius:12px;
+
+text-decoration:none;
+
+font-weight:700;
+
+}
+
+.footer-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:40px;
+
+padding:50px 0;
+
+}
+
+.footer h3{
+
+color:#fff;
+
+margin-bottom:20px;
+
+}
+
+.footer ul{
+
+list-style:none;
+
+padding:0;
+
+}
+
+.footer ul li{
+
+margin-bottom:10px;
+
+}
+
+.footer ul li a{
+
+color:#cfd9e5;
+
+text-decoration:none;
+
+}
+
+.footer ul li a:hover{
+
+color:#fff;
+
+}
+
+.footer-social{
+
+display:flex;
+
+gap:12px;
+
+margin-top:20px;
+
+flex-wrap:wrap;
+
+}
+
+.footer-social a{
+
+color:#fff;
+
+text-decoration:none;
+
+padding:8px 14px;
+
+border:1px solid rgba(255,255,255,.25);
+
+border-radius:8px;
+
+}
+
+.footer-bottom{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+padding-top:25px;
+
+}
+
+.footer-bottom a{
+
+color:#cfd9e5;
+
+text-decoration:none;
+
+}
+
+.footer-disclaimer{
+
+margin-top:30px;
+
+padding-top:25px;
+
+border-top:1px solid rgba(255,255,255,.1);
+
+font-size:14px;
+
+line-height:1.8;
+
+color:#aebdce;
+
+}
+
+@media(max-width:768px){
+
+.footer-cta h2{
+
+font-size:32px;
+
+}
+
+.footer-bottom{
+
+flex-direction:column;
 
 text-align:center;
 
 }
 
-.section{
+.footer-grid{
 
-padding:50px 15px;
-
-}
-
-.section-title{
-
-font-size:26px;
-
-}
-
-.course-card,
-.country-card,
-.stat-box,
-.why-box,
-.testimonial{
-
-padding:22px;
-
-}
-
-.blog-card img{
-
-height:180px;
+gap:30px;
 
 }
 
 }
+
