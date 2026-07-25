@@ -64,3 +64,5 @@ ON notices(publication_status);
 
 CREATE INDEX IF NOT EXISTS idx_notice_closing_date
 ON notices(closing_date);
+
+npx wrangler d1 execute medorbit-notices --file=schema.sql --remote
