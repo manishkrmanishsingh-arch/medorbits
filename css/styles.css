@@ -367,3 +367,329 @@ header nav a[aria-current="page"] {
     width: 100%;
   }
 }
+
+/* ==========================================================
+   GLOBAL UTILITY CLASSES
+========================================================== */
+
+/* Display */
+
+.hidden{
+display:none!important;
+}
+
+.visible{
+display:block!important;
+}
+
+.flex{
+display:flex!important;
+}
+
+.grid{
+display:grid!important;
+}
+
+.inline-flex{
+display:inline-flex!important;
+}
+
+/* Alignment */
+
+.justify-center{
+justify-content:center!important;
+}
+
+.justify-between{
+justify-content:space-between!important;
+}
+
+.align-center{
+align-items:center!important;
+}
+
+.text-center{
+text-align:center!important;
+}
+
+.text-left{
+text-align:left!important;
+}
+
+.text-right{
+text-align:right!important;
+}
+
+/* Width */
+
+.w-100{
+width:100%!important;
+}
+
+.max-width{
+max-width:1200px;
+margin:auto;
+}
+
+/* Margin */
+
+.mt-10{margin-top:10px;}
+.mt-20{margin-top:20px;}
+.mt-30{margin-top:30px;}
+.mt-40{margin-top:40px;}
+.mt-50{margin-top:50px;}
+
+.mb-10{margin-bottom:10px;}
+.mb-20{margin-bottom:20px;}
+.mb-30{margin-bottom:30px;}
+.mb-40{margin-bottom:40px;}
+.mb-50{margin-bottom:50px;}
+
+/* Padding */
+
+.p-10{padding:10px;}
+.p-20{padding:20px;}
+.p-30{padding:30px;}
+.p-40{padding:40px;}
+
+.section-padding{
+padding:80px 0;
+}
+
+/* Border Radius */
+
+.rounded{
+border-radius:12px;
+}
+
+.rounded-lg{
+border-radius:20px;
+}
+
+.rounded-circle{
+border-radius:50%;
+}
+
+/* Shadows */
+
+.shadow{
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.shadow-lg{
+
+box-shadow:
+0 20px 45px rgba(0,0,0,.12);
+
+}
+
+/* Background */
+
+.bg-white{
+background:#ffffff;
+}
+
+.bg-light{
+background:#f8fbff;
+}
+
+.bg-primary{
+background:#0056b3;
+color:#ffffff;
+}
+
+.bg-dark{
+background:#041d36;
+color:#ffffff;
+}
+
+/* Text */
+
+.text-primary{
+color:#0056b3;
+}
+
+.text-success{
+color:#28a745;
+}
+
+.text-danger{
+color:#dc3545;
+}
+
+.text-warning{
+color:#ffc107;
+}
+
+.text-muted{
+color:#777;
+}
+
+.text-white{
+color:#ffffff;
+}
+
+/* Animation */
+
+.transition{
+transition:.3s ease;
+}
+
+.hover-up:hover{
+
+transform:translateY(-5px);
+
+}
+
+.hover-scale:hover{
+
+transform:scale(1.03);
+
+}
+
+/* Image */
+
+.img-cover{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}
+
+.img-contain{
+
+object-fit:contain;
+
+}
+
+/* Selection */
+
+::selection{
+
+background:#0056b3;
+
+color:#ffffff;
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+height:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#0056b3;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#eef4fa;
+
+}
+
+/* Smooth Scroll */
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+/* ==========================================================
+   PRINT SUPPORT
+========================================================== */
+
+@media print{
+
+header,
+footer,
+.whatsapp,
+.ai-chat,
+.back-to-top,
+button{
+
+display:none!important;
+
+}
+
+body{
+
+background:#ffffff;
+
+color:#000000;
+
+}
+
+}
+
+/* ==========================================================
+   END OF GLOBAL STYLES
+------------------------------------------------------------
+Project  : MedOrbit
+File     : style.css
+Version  : 1.0.0
+
+Core Features
+✓ Global Layout
+✓ Navigation
+✓ Typography
+✓ Utility Classes
+✓ Responsive Foundation
+✓ Accessibility
+✓ Performance Optimized
+✓ Print Support
+✓ Browser Compatible
+✓ Mobile First Design
+
+Supported Modules
+• Home
+• About
+• Courses
+• Colleges
+• Universities
+• Countries
+• Jobs
+• Education Consultancy
+• Admission Forms
+• Scholarships
+• Fee Structure
+• Career Counselling
+• Brochure
+• Blog
+• Contact
+• Dashboard
+
+Designed for:
+Desktop
+Laptop
+Tablet
+Mobile
+Smart TV
+
+Compatible Browsers:
+Google Chrome
+Microsoft Edge
+Mozilla Firefox
+Safari
+Opera
+
+© 2026 MedOrbit.
+All Rights Reserved.
+
+Built with HTML5 • CSS3 • JavaScript
+========================================================== */
