@@ -677,3 +677,149 @@
 
   </div>
 </section>
+
+/* ==========================================================
+   RESPONSIVE UTILITY CLASSES
+========================================================== */
+
+/* Hide on Desktop */
+
+@media (min-width:992px){
+
+.hide-desktop{
+display:none!important;
+}
+
+}
+
+/* Hide on Tablet */
+
+@media (min-width:768px) and (max-width:991px){
+
+.hide-tablet{
+display:none!important;
+}
+
+}
+
+/* Hide on Mobile */
+
+@media (max-width:767px){
+
+.hide-mobile{
+display:none!important;
+}
+
+.show-mobile{
+display:block!important;
+}
+
+.full-width-mobile{
+width:100%!important;
+}
+
+.text-center-mobile{
+text-align:center!important;
+}
+
+.stack-mobile{
+display:flex!important;
+flex-direction:column!important;
+}
+
+}
+
+/* Ultra Wide Screens */
+
+@media (min-width:1600px){
+
+.container{
+
+max-width:1500px;
+
+}
+
+}
+
+/* Foldable Devices */
+
+@media (max-width:420px){
+
+.container{
+
+padding-left:14px;
+padding-right:14px;
+
+}
+
+}
+
+/* Landscape Mobile */
+
+@media (max-height:500px) and (orientation:landscape){
+
+.hero{
+
+min-height:auto;
+
+padding:80px 0;
+
+}
+
+}
+
+/* High Resolution Displays */
+
+@media (-webkit-min-device-pixel-ratio:2),
+(min-resolution:192dpi){
+
+img{
+
+image-rendering:auto;
+
+}
+
+}
+
+/* ==========================================================
+   SAFE AREA SUPPORT (iPhone Notch)
+========================================================== */
+
+body{
+
+padding-left:env(safe-area-inset-left);
+
+padding-right:env(safe-area-inset-right);
+
+padding-bottom:env(safe-area-inset-bottom);
+
+}
+
+/* ==========================================================
+   END OF RESPONSIVE STYLES
+------------------------------------------------------------
+Project      : MedOrbit
+File         : responsive.css
+Version      : 1.0.0
+
+Responsive Features
+✓ Mobile First Design
+✓ Tablet Optimization
+✓ Desktop Optimization
+✓ Large Screen Support
+✓ Ultra-Wide Monitor Support
+✓ Foldable Device Support
+✓ Landscape Mode Support
+✓ Safe Area (Notch) Support
+✓ Flexible Grid System
+✓ Responsive Navigation
+✓ Responsive Typography
+✓ Responsive Forms
+✓ Responsive Images
+✓ Responsive Tables
+✓ Responsive Cards
+✓ Responsive Footer
+✓ Responsive Header
+✓ Responsive Search
+✓ Responsive Sliders
+✓ Responsive Dashboard
