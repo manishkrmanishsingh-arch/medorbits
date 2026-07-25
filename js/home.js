@@ -1,100 +1,252 @@
-/* ==========================================
-   MedOrbit Home JS
-   File: js/home.js
-========================================== */
+"use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    /* Hero Animation */
+    initHeroSlider();
 
-    const hero = document.querySelector(".hero");
+    initAdmissionSearch();
 
-    if (hero) {
+    initJobSearch();
 
-        hero.classList.add("hero-loaded");
+    initFeaturedColleges();
 
-    }
+    initFeaturedUniversities();
 
+    initCountryCards();
 
-    /* Active Navigation */
+    initCareerPrograms();
 
-    const currentPage =
-        window.location.pathname.split("/").pop();
+    initTestimonials();
 
-    document.querySelectorAll("nav a").forEach(link => {
+    initRecruiters();
 
-        const href = link.getAttribute("href");
+    initLatestJobs();
 
-        if (href === currentPage) {
+    initScholarships();
 
-            link.classList.add("active");
+    initNews();
 
-        }
+    initEvents();
 
-    });
+    initFAQ();
 
+    initNewsletter();
 
-    /* Hero Buttons Animation */
+    initAnnouncementBar();
 
-    const buttons =
-        document.querySelectorAll(".hero .btn");
+    initPopupBanner();
 
-    buttons.forEach((button, index) => {
+    initFloatingButtons();
 
-        button.style.animationDelay =
-            (index * 0.2) + "s";
+    initHeroAnimation();
 
-        button.classList.add("fade-up");
+    initGreeting();
 
-    });
+    initLiveVisitors();
 
+    initScrollEffects();
 
-    /* Floating Cards */
+    initLazyLoad();
 
-    const cards =
-        document.querySelectorAll(".hero-card");
+});
+function initHeroSlider(){
 
-    cards.forEach((card, index) => {
+    const slides=document.querySelectorAll(".hero-slide");
 
-        card.style.animationDelay =
-            (index * 0.3) + "s";
+    if(slides.length===0) return;
 
-        card.classList.add("float-card");
+    let current=0;
 
-    });
+    function show(index){
 
+        slides.forEach(slide=>{
 
-    /* Scroll Down Button */
-
-    const scrollBtn =
-        document.querySelector(".scroll-down");
-
-    if (scrollBtn) {
-
-        scrollBtn.addEventListener("click", () => {
-
-            window.scrollTo({
-
-                top: window.innerHeight,
-
-                behavior: "smooth"
-
-            });
+            slide.classList.remove("active");
 
         });
 
-    }
-
-
-    /* Welcome Text */
-
-    const title =
-        document.querySelector(".hero h1");
-
-    if (title) {
-
-        title.classList.add("text-visible");
+        slides[index].classList.add("active");
 
     }
+
+    show(current);
+
+    setInterval(()=>{
+
+        current++;
+
+        if(current>=slides.length){
+
+            current=0;
+
+        }
+
+        show(current);
+
+    },5000);
+
+}
+function initAdmissionSearch(){
+
+const form=document.getElementById("admissionSearch");
+
+if(!form) return;
+
+form.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const course=this.course.value;
+const country=this.country.value;
+
+console.log(course,country);
 
 });
+
+}
+function initJobSearch(){
+
+const form=document.getElementById("jobSearch");
+
+if(!form) return;
+
+form.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const keyword=this.keyword.value;
+
+console.log(keyword);
+
+});
+
+}
+function initGreeting(){
+
+const greeting=document.querySelector(".greeting");
+
+if(!greeting) return;
+
+const hour=new Date().getHours();
+
+let text="Welcome";
+
+if(hour<12){
+
+text="Good Morning";
+
+}else if(hour<17){
+
+text="Good Afternoon";
+
+}else{
+
+text="Good Evening";
+
+}
+
+greeting.textContent=text;
+
+}
+function initFloatingButtons(){
+
+const whatsapp=document.querySelector(".whatsapp-button");
+
+if(!whatsapp) return;
+
+whatsapp.onclick=()=>{
+
+window.open(
+
+"https://wa.me/919142102309",
+
+"_blank"
+
+);
+
+};
+
+}
+function initLiveVisitors(){
+
+const live=document.querySelector(".live-users");
+
+if(!live) return;
+
+setInterval(()=>{
+
+live.textContent=
+
+Math.floor(
+
+Math.random()*40
+
+)+120;
+
+},5000);
+
+}
+function initScrollEffects(){
+
+window.addEventListener("scroll",()=>{
+
+document.body.classList.toggle(
+
+"scrolled",
+
+window.scrollY>150
+
+);
+
+});
+
+}
+function initLazyLoad(){
+
+const images=document.querySelectorAll("img[data-src]");
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.src=entry.target.dataset.src;
+
+observer.unobserve(entry.target);
+
+}
+
+});
+
+});
+
+images.forEach(img=>observer.observe(img));
+
+}
+js/
+
+main.js
+script.js
+home.js
+slider.js
+animations.js
+forms.js
+jobs.js
+admission.js
+search.js
+colleges.js
+courses.js
+countries.js
+universities.js
+scholarships.js
+career.js
+blog.js
+news.js
+events.js
+gallery.js
+testimonials.js
+chatbot.js
+dashboard.js
+api.js
+utils.js
