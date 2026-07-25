@@ -581,6 +581,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           button?.classList.remove("is-loading");
         }
+        <script src="js/animations.js" defer></script>
       );
     });
 
