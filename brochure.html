@@ -1,45 +1,2524 @@
-MedOrbit
-Home
-Admission Guide
-Courses
-MBBS India
-MBBS Abroad
-Contact
-Dynamic College Directory • 2026–27
-Explore Colleges with Updated Information
-Search and compare government, private and international institutions. College records are loaded from your central JSON database, so updates appear automatically without editing this page.
-Browse Colleges WhatsApp Counsellor
-Live data connection
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
-Central college database
-Source: data/college.json
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
 
-Automatic refresh
-Checks for updated information every 30 minutes
+  <title>
+    Digital Brochures | MedOrbit Foundation
+  </title>
 
-Responsive interface
-Optimised for mobile, tablet and desktop
-● Connecting to database
-Database update: Checking…
-Page refreshed: —
-Refresh data
-Search college, city, state or course
-Country
-              All countries
-            
-State/Region
-              All states/regions
-            
-Ownership
-              All ownerships
-            
-Course
-              All courses
-            
-Clear
-College Directory
-Loading colleges…
+  <meta
+    name="description"
+    content="Explore MedOrbit Foundation brochures for education, admissions, colleges, study abroad, jobs, recruitment, scholarships, training and foundation initiatives."
+  >
 
+  <meta
+    name="keywords"
+    content="MedOrbit Foundation brochure, education brochure, college brochure, jobs brochure, study abroad brochure, training brochure, scholarship brochure"
+  >
 
+  <meta name="author" content="MedOrbit Foundation">
+  <meta name="theme-color" content="#0756a3">
 
-© 2026 MedOrbit • Wave Silver Tower, 7006, 7th Floor, Sector 18, Noida • +91 9142102309
+  <link
+    rel="canonical"
+    href="https://medorbits.in/brochure.html"
+  >
+
+  <meta
+    property="og:title"
+    content="Digital Brochures | MedOrbit Foundation"
+  >
+
+  <meta
+    property="og:description"
+    content="Browse education, career, job, study abroad and training brochures from MedOrbit Foundation."
+  >
+
+  <meta property="og:type" content="website">
+
+  <meta
+    property="og:url"
+    content="https://medorbits.in/brochure.html"
+  >
+
+  <style>
+    :root {
+      --primary: #0756a3;
+      --primary-dark: #043d77;
+      --secondary: #0ea5a4;
+      --accent: #ffb703;
+      --success: #15803d;
+      --danger: #dc2626;
+      --dark: #172033;
+      --text: #475569;
+      --muted: #7b8796;
+      --light: #f5f8fc;
+      --white: #ffffff;
+      --border: #dbe4ef;
+
+      --shadow:
+        0 14px 34px rgba(21, 47, 78, 0.12);
+
+      --shadow-large:
+        0 24px 60px rgba(21, 47, 78, 0.16);
+
+      --radius: 20px;
+      --radius-large: 28px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
+    }
+
+    .section {
+      padding: 82px 0;
+    }
+
+    .section-white {
+      background: var(--white);
+    }
+
+    .section-dark {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .section-heading {
+      max-width: 790px;
+      margin: 0 auto 44px;
+      text-align: center;
+    }
+
+    .section-heading span {
+      display: inline-block;
+      margin-bottom: 9px;
+      color: var(--primary);
+      font-size: 0.82rem;
+      font-weight: 900;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .section-heading h2 {
+      margin-bottom: 14px;
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      line-height: 1.15;
+    }
+
+    .section-heading p {
+      color: var(--text);
+    }
+
+    .section-dark .section-heading span {
+      color: var(--accent);
+    }
+
+    .section-dark .section-heading p {
+      color: #b8c3d1;
+    }
+
+    .btn {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 22px;
+      border: 1px solid transparent;
+      border-radius: 12px;
+      font-weight: 800;
+      transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+      box-shadow:
+        0 10px 22px rgba(7, 86, 163, 0.24);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .btn-secondary {
+      background: var(--secondary);
+      color: var(--white);
+    }
+
+    .btn-light {
+      background: var(--white);
+      color: var(--primary);
+    }
+
+    .btn-outline {
+      border-color: rgba(255, 255, 255, 0.65);
+      background: transparent;
+      color: var(--white);
+    }
+
+    .topbar {
+      background: var(--primary-dark);
+      color: var(--white);
+      font-size: 0.9rem;
+    }
+
+    .topbar-inner {
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .topbar-group {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-icon {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background:
+        linear-gradient(
+          135deg,
+          var(--primary),
+          var(--secondary)
+        );
+      color: var(--white);
+      font-size: 1.25rem;
+      font-weight: 900;
+      box-shadow:
+        0 10px 22px rgba(7, 86, 163, 0.22);
+    }
+
+    .logo-copy {
+      display: grid;
+      line-height: 1.05;
+    }
+
+    .logo-name {
+      color: var(--primary);
+      font-size: 1.55rem;
+      font-weight: 900;
+    }
+
+    .logo-name strong {
+      color: var(--dark);
+    }
+
+    .logo-copy small {
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 0.59rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: var(--dark);
+      font-size: 0.93rem;
+      font-weight: 750;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--primary);
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 46px;
+      height: 46px;
+      border: 0;
+      border-radius: 12px;
+      background: #eaf3fc;
+      color: var(--primary);
+      font-size: 1.35rem;
+    }
+
+    .announcement {
+      padding: 11px 0;
+      background: #fff4cc;
+      color: #614c00;
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(
+          135deg,
+          var(--primary-dark),
+          var(--primary) 58%,
+          var(--secondary)
+        );
+      color: var(--white);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: -160px;
+      right: -120px;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      left: -170px;
+      bottom: -220px;
+      width: 470px;
+      height: 470px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      min-height: 560px;
+      padding: 78px 0;
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 18px;
+      padding: 8px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      font-size: 0.86rem;
+      font-weight: 800;
+    }
+
+    .hero h1 {
+      margin-bottom: 20px;
+      font-size: clamp(2.5rem, 5.7vw, 4.9rem);
+      line-height: 1.03;
+      letter-spacing: -0.04em;
+    }
+
+    .hero h1 span {
+      color: var(--accent);
+    }
+
+    .hero-copy > p {
+      max-width: 680px;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: clamp(1rem, 2vw, 1.16rem);
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 13px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .hero-panel {
+      padding: 29px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: var(--radius-large);
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(14px);
+      box-shadow: var(--shadow-large);
+    }
+
+    .hero-panel h2 {
+      margin-bottom: 8px;
+      font-size: 1.55rem;
+    }
+
+    .hero-panel > p {
+      margin-bottom: 20px;
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    .hero-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .hero-list-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.11);
+    }
+
+    .hero-list-icon {
+      width: 40px;
+      height: 40px;
+      flex: 0 0 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: var(--white);
+      color: var(--primary);
+    }
+
+    .hero-list-item small {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .brochure-grid {
+      display: grid;
+      grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .brochure-card {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .brochure-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow-large);
+    }
+
+    .brochure-cover {
+      min-height: 190px;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      padding: 24px;
+      overflow: hidden;
+      color: var(--white);
+    }
+
+    .brochure-cover::before {
+      content: "";
+      position: absolute;
+      top: -70px;
+      right: -60px;
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .brochure-cover::after {
+      content: "";
+      position: absolute;
+      bottom: -75px;
+      left: -50px;
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .cover-blue {
+      background:
+        linear-gradient(135deg, #043d77, #0756a3);
+    }
+
+    .cover-green {
+      background:
+        linear-gradient(135deg, #087f78, #0ea5a4);
+    }
+
+    .cover-orange {
+      background:
+        linear-gradient(135deg, #c26100, #f59e0b);
+    }
+
+    .cover-purple {
+      background:
+        linear-gradient(135deg, #5b21b6, #7c3aed);
+    }
+
+    .cover-red {
+      background:
+        linear-gradient(135deg, #991b1b, #dc2626);
+    }
+
+    .cover-dark {
+      background:
+        linear-gradient(135deg, #111827, #334155);
+    }
+
+    .cover-pink {
+      background:
+        linear-gradient(135deg, #9d174d, #db2777);
+    }
+
+    .cover-indigo {
+      background:
+        linear-gradient(135deg, #312e81, #4f46e5);
+    }
+
+    .cover-teal {
+      background:
+        linear-gradient(135deg, #115e59, #14b8a6);
+    }
+
+    .cover-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .cover-icon {
+      display: block;
+      margin-bottom: 13px;
+      font-size: 2.2rem;
+    }
+
+    .cover-content h3 {
+      font-size: 1.5rem;
+      line-height: 1.15;
+    }
+
+    .brochure-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+    }
+
+    .brochure-body p {
+      margin-bottom: 17px;
+      color: var(--text);
+    }
+
+    .brochure-list {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 22px;
+    }
+
+    .brochure-list li {
+      position: relative;
+      padding-left: 22px;
+      color: var(--text);
+      font-size: 0.93rem;
+    }
+
+    .brochure-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--secondary);
+      font-weight: 900;
+    }
+
+    .brochure-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: auto;
+    }
+
+    .brochure-actions .btn {
+      flex: 1;
+      min-width: 130px;
+    }
+
+    .category-nav {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 38px;
+    }
+
+    .category-nav button {
+      min-height: 42px;
+      padding: 9px 16px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--white);
+      color: var(--text);
+      font-weight: 800;
+      transition: 0.25s ease;
+    }
+
+    .category-nav button:hover,
+    .category-nav button.active {
+      border-color: var(--primary);
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .feature-card {
+      padding: 24px;
+      text-align: center;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .feature-card span {
+      display: block;
+      margin-bottom: 12px;
+      font-size: 2rem;
+    }
+
+    .feature-card h3 {
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+    }
+
+    .feature-card p {
+      color: var(--text);
+      font-size: 0.92rem;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+      gap: 17px;
+    }
+
+    .step-card {
+      padding: 23px;
+      text-align: center;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: var(--white);
+    }
+
+    .step-number {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 13px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: var(--white);
+      font-weight: 900;
+    }
+
+    .step-card h3 {
+      margin-bottom: 7px;
+      font-size: 1rem;
+    }
+
+    .step-card p {
+      color: var(--text);
+      font-size: 0.9rem;
+    }
+
+    .enquiry-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 42px;
+      align-items: center;
+    }
+
+    .enquiry-copy h2 {
+      margin-bottom: 15px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+    }
+
+    .enquiry-copy p {
+      margin-bottom: 16px;
+      color: #c0cada;
+    }
+
+    .enquiry-points {
+      display: grid;
+      gap: 11px;
+      margin-top: 22px;
+    }
+
+    .enquiry-point {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #dbe4ef;
+    }
+
+    .enquiry-point i {
+      width: 29px;
+      height: 29px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 29px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--accent);
+      font-style: normal;
+    }
+
+    .enquiry-form {
+      padding: 28px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: var(--radius-large);
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .form-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .field {
+      display: grid;
+      gap: 7px;
+    }
+
+    .field label {
+      font-size: 0.88rem;
+      font-weight: 800;
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      min-height: 48px;
+      padding: 12px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 11px;
+      outline: none;
+      background: var(--white);
+      color: var(--dark);
+    }
+
+    .field textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .enquiry-form .btn {
+      width: 100%;
+    }
+
+    .disclaimer {
+      padding: 18px;
+      border-left: 4px solid var(--accent);
+      border-radius: 0 12px 12px 0;
+      background: #fff8dd;
+      color: #664f00;
+      font-size: 0.92rem;
+    }
+
+    .footer {
+      padding: 62px 0 22px;
+      background: #101827;
+      color: #dbe4ef;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns:
+        1.35fr 1fr 1fr 1fr;
+      gap: 30px;
+    }
+
+    .footer h3 {
+      margin-bottom: 15px;
+      color: var(--white);
+    }
+
+    .footer p,
+    .footer a {
+      color: #aeb9c8;
+      font-size: 0.94rem;
+    }
+
+    .footer a:hover {
+      color: var(--white);
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 9px;
+    }
+
+    .footer-bottom {
+      margin-top: 35px;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      border-top:
+        1px solid rgba(255, 255, 255, 0.12);
+      color: #9da9b7;
+      font-size: 0.88rem;
+    }
+
+    .floating-buttons {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 900;
+      display: grid;
+      gap: 11px;
+    }
+
+    .float-btn {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--white);
+      font-size: 1.25rem;
+      box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.2);
+    }
+
+    .whatsapp {
+      background: #25d366;
+    }
+
+    .call {
+      background: var(--primary);
+    }
+
+    @media (max-width: 1050px) {
+      .nav-links {
+        position: fixed;
+        top: 78px;
+        left: 0;
+        right: 0;
+        max-height: calc(100vh - 78px);
+        overflow-y: auto;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 4%;
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-cta {
+        display: none;
+      }
+
+      .hero-grid,
+      .enquiry-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .brochure-grid {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+      }
+
+      .feature-grid {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+      }
+
+      .steps-grid {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+      }
+
+      .footer-grid {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        width: min(94%, 1180px);
+      }
+
+      .section {
+        padding: 62px 0;
+      }
+
+      .topbar-inner {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .topbar-group {
+        justify-content: center;
+      }
+
+      .topbar-group span:first-child {
+        display: none;
+      }
+
+      .logo-copy small {
+        display: none;
+      }
+
+      .hero-grid {
+        min-height: auto;
+        padding: 60px 0;
+        gap: 32px;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.3rem, 12vw, 3.5rem);
+      }
+
+      .hero-actions {
+        display: grid;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .brochure-grid,
+      .feature-grid,
+      .steps-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .brochure-actions {
+        display: grid;
+      }
+
+      .brochure-actions .btn {
+        width: 100%;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .logo-name {
+        font-size: 1.34rem;
+      }
+
+      .logo-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .hero-panel,
+      .brochure-body,
+      .enquiry-form {
+        padding: 20px;
+      }
+
+      .topbar-group {
+        flex-direction: column;
+        gap: 1px;
+        padding: 5px 0;
+      }
+
+      .category-nav {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 8px;
+      }
+
+      .category-nav button {
+        flex: 0 0 auto;
+      }
+
+      .floating-buttons {
+        right: 12px;
+        bottom: 12px;
+      }
+
+      .float-btn {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    @media print {
+      .topbar,
+      .header,
+      .announcement,
+      .hero-actions,
+      .category-nav,
+      .brochure-actions,
+      .section-dark,
+      .footer,
+      .floating-buttons {
+        display: none !important;
+      }
+
+      body {
+        background: var(--white);
+      }
+
+      .section {
+        padding: 30px 0;
+      }
+
+      .brochure-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .brochure-card {
+        break-inside: avoid;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+
+      <div class="topbar-group">
+        <span>
+          Education • Careers • Jobs • Training
+        </span>
+
+        <span>
+          📞 +91 9142102309
+        </span>
+      </div>
+
+      <a href="https://medorbits.in">
+        🌐 medorbits.in
+      </a>
+
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container navbar">
+
+      <a href="index.html" class="logo">
+
+        <span class="logo-icon">
+          M
+        </span>
+
+        <span class="logo-copy">
+
+          <span class="logo-name">
+            Med<strong>Orbit</strong>
+          </span>
+
+          <small>
+            Foundation
+          </small>
+
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+      >
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+
+        <li>
+          <a href="index.html">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="about.html">
+            About
+          </a>
+        </li>
+
+        <li>
+          <a href="services.html">
+            Services
+          </a>
+        </li>
+
+        <li>
+          <a href="brochure.html" class="active">
+            Brochures
+          </a>
+        </li>
+
+        <li>
+          <a href="courses.html">
+            Courses
+          </a>
+        </li>
+
+        <li>
+          <a href="colleges.html">
+            Colleges
+          </a>
+        </li>
+
+        <li>
+          <a href="jobs.html">
+            Jobs
+          </a>
+        </li>
+
+        <li>
+          <a href="contact.html">
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
+      <a
+        class="btn btn-primary nav-cta"
+        href="https://wa.me/919142102309?text=Hello%20MedOrbit%20Foundation%2C%20I%20need%20a%20brochure."
+      >
+        Request Brochure
+      </a>
+
+    </div>
+  </header>
+
+  <div class="announcement">
+    📘 Explore specialised brochures for education, jobs, training and study abroad.
+  </div>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+
+          <span class="hero-badge">
+            📚 MedOrbit Digital Brochure Library
+          </span>
+
+          <h1>
+            Find the Right
+            <span>Information Brochure</span>
+          </h1>
+
+          <p>
+            Browse dedicated brochures covering courses, colleges,
+            admissions, jobs, recruitment, study abroad, scholarships,
+            training and MedOrbit Foundation initiatives.
+          </p>
+
+          <div class="hero-actions">
+
+            <a
+              class="btn btn-light"
+              href="#brochures"
+            >
+              Browse Brochures
+            </a>
+
+            <a
+              class="btn btn-outline"
+              href="https://wa.me/919142102309?text=Hello%20MedOrbit%20Foundation%2C%20please%20send%20me%20the%20relevant%20brochure."
+            >
+              Request on WhatsApp
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="hero-panel">
+
+          <h2>
+            Brochure Categories
+          </h2>
+
+          <p>
+            Choose the brochure that matches your requirement.
+          </p>
+
+          <div class="hero-list">
+
+            <div class="hero-list-item">
+              <span class="hero-list-icon">🎓</span>
+
+              <div>
+                <strong>Education and Admissions</strong>
+                <br>
+                <small>Courses, colleges, eligibility and admission.</small>
+              </div>
+            </div>
+
+            <div class="hero-list-item">
+              <span class="hero-list-icon">🌍</span>
+
+              <div>
+                <strong>Study Abroad</strong>
+                <br>
+                <small>Countries, universities, fees and applications.</small>
+              </div>
+            </div>
+
+            <div class="hero-list-item">
+              <span class="hero-list-icon">💼</span>
+
+              <div>
+                <strong>Jobs and Recruitment</strong>
+                <br>
+                <small>Employment sectors and recruitment support.</small>
+              </div>
+            </div>
+
+            <div class="hero-list-item">
+              <span class="hero-list-icon">🛠️</span>
+
+              <div>
+                <strong>Training and Development</strong>
+                <br>
+                <small>Employability, technical and professional skills.</small>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="brochures">
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span>
+            Brochure Catalogue
+          </span>
+
+          <h2>
+            Explore Our Specialised Brochures
+          </h2>
+
+          <p>
+            Each brochure contains focused information for a particular
+            course, service, sector or opportunity.
+          </p>
+
+        </div>
+
+        <div class="category-nav">
+
+          <button class="filter-button active" data-filter="all">
+            All Brochures
+          </button>
+
+          <button class="filter-button" data-filter="education">
+            Education
+          </button>
+
+          <button class="filter-button" data-filter="abroad">
+            Study Abroad
+          </button>
+
+          <button class="filter-button" data-filter="jobs">
+            Jobs
+          </button>
+
+          <button class="filter-button" data-filter="training">
+            Training
+          </button>
+
+          <button class="filter-button" data-filter="foundation">
+            Foundation
+          </button>
+
+        </div>
+
+        <div class="brochure-grid">
+
+          <article
+            class="brochure-card"
+            data-category="education"
+          >
+
+            <div class="brochure-cover cover-blue">
+
+              <div class="cover-content">
+                <span class="cover-icon">🎓</span>
+                <h3>Education and Admissions</h3>
+              </div>
+
+            </div>
+
+            <div class="brochure-body">
+
+              <p>
+                A complete overview of courses, colleges, universities,
+                admissions and student support services.
+              </p>
+
+              <ul class="brochure-list">
+                <li>Course categories</li>
+                <li>Government and private colleges</li>
+                <li>Eligibility and entrance exams</li>
+                <li>Admission and documentation support</li>
+              </ul>
+
+              <div class="brochure-actions">
+
+                <a
+                  class="btn btn-primary"
+                  href="brochures/education.html"
+                >
+                  View Brochure
+                </a>
+
+                <button
+                  class="btn btn-secondary share-button"
+                  data-brochure="Education and Admissions Brochure"
+                >
+                  Share
+                </button>
+
+              </div>
+
+            </div>
+          </article>
+
+          <article
+            class="brochure-card"
+            data-category="education"
+          >
+
+            <div class="brochure-cover cover-red">
+
+              <div class="cover-content">
+                <span class="cover-icon">🩺</span>
+                <h3>Medical and Healthcare Courses</h3>
+              </div>
+
+            </div>
+
+            <div class="brochure-body">
+
+              <p>
+                Course and college guidance for medical, dental, AYUSH,
+                nursing, pharmacy and allied health programs.
+              </p>
+
+              <ul class="brochure-list">
+                <li>MBBS and BDS</li>
+                <li>BAMS, BHMS and BUMS</li>
+                <li>Nursing and pharmacy</li>
+                <li>Paramedical and allied health</li>
+              </ul>
+
+              <div class="brochure-actions">
+
+                <a
+                  class="btn btn-primary"
+                  href="brochures/medical.html"
+                >
+                  View Brochure
+                </a>
+
+                <button
+                  class="btn btn-secondary share-button"
+                  data-brochure="Medical and Healthcare Courses Brochure"
+                >
+                  Share
+                </button>
+
+              </div>
+
+            </div>
+          </article>
+
+          <article
+            class="brochure-card"
+            data-category="education"
+          >
+
+            <div class="brochure-cover cover-green">
+
+              <div class="cover-content">
+                <span class="cover-icon">👩‍⚕️</span>
+                <h3>Nursing Courses</h3>
+              </div>
+
+            </div>
+
+            <div class="brochure-body">
+
+              <p>
+                Information about nursing programs, college types,
+                eligibility, career scope and admission pathways.
+              </p>
+
+              <ul class="brochure-list">
+                <li>B.Sc Nursing</li>
+                <li>GNM and ANM</li>
+                <li>Post Basic B.Sc Nursing</li>
+                <li>M.Sc Nursing</li>
+              </ul>
+
+              <div class="brochure-actions">
+
+                <a
+                  class="btn btn-primary"
+                  href="brochures/nursing.html"
+                >
+                  View Brochure
+                </a>
+
+                <button
+                  class="btn btn-secondary share-button"
+                  data-brochure="Nursing Courses Brochure"
+                >
+                  Share
+                </button>
+
+              </div>
+
+            </div>
+          </article>
+
+          <article
+            class="brochure-card"
+            data-category="education"
+          >
+
+            <div class="brochure-cover cover-purple">
+
+              <div class="cover-content">
+                <span class="cover-icon">⚙️</span>
+                <h3>Engineering and Technology</h3>
+              </div>
+
+            </div>
+
+            <div class="brochure-body">
+
+              <p>
+                Explore engineering branches, technology programs,
+                colleges and career opportunities.
+              </p>
+
+              <ul class="brochure-list">
+                <li>B.Tech and M.Tech</li>
+                <li>Diploma engineering</li>
+                <li>Computer science and AI</li>
+                <li>Data science and cybersecurity</li>
+              </ul>
+
+              <div class="brochure-actions">
+
+                <a
+                  class="btn btn-primary"
+                  href="brochures/engineering.html"
+                >
+                  View Brochure
+                </a>
+
+                <button
+                  class="btn btn-secondary share-button"
+                  data-brochure="Engineering and Technology Brochure"
+                >
+                  Share
+                </button>
+
+              </div>
+
+            </div>
+          </article>
+
+          <article
+            class="brochure-card"
+            data-category="education"
+          >
+
+            <div class="brochure-cover cover-orange">
+
+              <div class="cover-content">
+                <span class="cover-icon">📊</span>
+                <h3>Management and Commerce</h3>
+              </div>
+
+            </div>
+
+            <div class="brochure-body">
+
+              <p>
+                Information about management, commerce, finance and
+                business education options.
+              </p>
+
+              <ul class="brochure-list">
+                <li>BBA, MBA and PGDM</li>
+                <li>B.Com and M.Com</li>
+                <li>Finance and accounting</li>
+                <li>Hospital and hotel management</li>
+              </ul>
+
+              <div class="brochure-actions">
+
+                <a
+                  class="btn btn-primary"
+                  href="brochures/management.html"
+                >
+                  View Brochure
+                </a>
+
+                <button
+                  class="btn btn-secondary share-button"
+                  data-brochure="Management and Commerce Brochure"
+                >
+                  Share
+                </button>
+
+              </div>
+
+            </div>
+          </article>
+
+          <article
+            class="brochure-card"
+            data-category="abroad"
+          >
+
+            <div class="brochure-cover cover-indigo">
+
+              <div class="cover-content">
+                <span class="cover-icon">🌍</span>
+                <h3>Study Abroad</h3>
+              </div>
+
+            </div>
+
+            <div class="brochure-body">
+
+              <p>
+                Explore international education destinations,
+                universities, applications, visas and student support.
+              </p>
+
+              <ul class="brochure-list">
+                <li>Country comparison</li>
+                <li>University selection</li>
+                <li>Fees and living costs</li>
+                <li>Visa and travel guidance</li>
+              </ul>
+
+              <div class="brochure-actions">
+
+                <a
+                  class="btn btn-primary"
+                  href="brochures/study-abroad.html"
+                >
+                  View Brochure
+                </a>
+
+                <button
+                  class="btn btn-secondary share-button"
+                  data-brochure="Study Abroad Brochure"
+                >
+                  Share
+                </button>
+
+              </div>
+
+            </div>
+          </article>
+
+          <article
+            class="brochure-card"
+            data-category="jobs"
+          >
+
+            <div class="brochure-cover cover-dark">
+
+              <div class="cover-content">
+                <span class="cover-icon">💼</span>
+                <h3>Jobs and Recruitment</h3>
+              </div>
+
+            </div>
+
+            <div class="brochure-body">
+
+              <p>
+                Employment and recruitment information covering
+                multiple industries, departments and qualifications.
+              </p>
+
+              <ul class="brochure-list">
+                <li>Government and private jobs</li>
+                <li>Freshers and experienced roles</li>
+                <li>Healthcare and corporate sectors</li>
+                <li>International opportunities</li>
+              </ul>
+
+              <div class="brochure-actions">
+
+                <a
+                  class="btn btn-primary"
+                  href="brochures/jobs.html"
+                >
+                  View Brochure
+                </a>
+
+                <button
+                  class="btn btn-secondary share-button"
+                  data-brochure="Jobs and Recruitment Brochure"
+                >
+                  Share
+                </button>
+
+              </div>
+
+            </div>
+          </article>
+
+          <article
+            class="brochure-card"
+            data-category="training"
+          >
+
+            <div class="brochure-cover cover-teal">
+
+              <div class="cover-content">
+                <span class="cover-icon">🛠️</span>
+                <h3>Training and Skill Development</h3>
+              </div>
+
+            </div>
+
+            <div class="brochure-body">
+
+              <p>
+                Training programs designed to improve employability,
+                communication and professional skills.
+              </p>
+
+              <ul class="brochure-list">
+                <li>Interview preparation</li>
+                <li>Personality development</li>
+                <li>Digital and computer skills</li>
+                <li>Professional workshops</li>
+              </ul>
+
+              <div class="brochure-actions">
+
+                <a
+                  class="btn btn-primary"
+                  href="brochures/training.html"
+                >
+                  View Brochure
+                </a>
+
+                <button
+                  class="btn btn-secondary share-button"
+                  data-brochure="Training and Skill Development Brochure"
+                >
+                  Share
+                </button>
+
+              </div>
+
+            </div>
+          </article>
+
+          <article
+            class="brochure-card"
+            data-category="education"
+          >
+
+            <div class="brochure-cover cover-pink">
+
+              <div class="cover-content">
+                <span class="cover-icon">🏆</span>
+                <h3>Scholarships and Financial Guidance</h3>
+              </div>
+
+            </div>
+
+            <div class="brochure-body">
+
+              <p>
+                Information support for government, private and
+                international scholarship opportunities.
+              </p>
+
+              <ul class="brochure-list">
+                <li>Government scholarships</li>
+                <li>Private scholarships</li>
+                <li>International scholarships</li>
+                <li>Application guidance</li>
+              </ul>
+
+              <div class="brochure-actions">
+
+                <a
+                  class="btn btn-primary"
+                  href="brochures/scholarships.html"
+                >
+                  View Brochure
+                </a>
+
+                <button
+                  class="btn btn-secondary share-button"
+                  data-brochure="Scholarships and Financial Guidance Brochure"
+                >
+                  Share
+                </button>
+
+              </div>
+
+            </div>
+          </article>
+
+          <article
+            class="brochure-card"
+            data-category="foundation"
+          >
+
+            <div class="brochure-cover cover-blue">
+
+              <div class="cover-content">
+                <span class="cover-icon">🤝</span>
+                <h3>MedOrbit Foundation</h3>
+              </div>
+
+            </div>
+
+            <div class="brochure-body">
+
+              <p>
+                Learn about our mission, services, awareness programs,
+                counselling camps and development initiatives.
+              </p>
+
+              <ul class="brochure-list">
+                <li>Vision and mission</li>
+                <li>Education support programs</li>
+                <li>Career awareness initiatives</li>
+                <li>Community and skill development</li>
+              </ul>
+
+              <div class="brochure-actions">
+
+                <a
+                  class="btn btn-primary"
+                  href="brochures/foundation.html"
+                >
+                  View Brochure
+                </a>
+
+                <button
+                  class="btn btn-secondary share-button"
+                  data-brochure="MedOrbit Foundation Brochure"
+                >
+                  Share
+                </button>
+
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section-white">
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span>
+            Brochure Features
+          </span>
+
+          <h2>
+            Designed for Easy Access and Sharing
+          </h2>
+
+          <p>
+            MedOrbit brochures are structured to work efficiently across
+            mobile, tablet and desktop devices.
+          </p>
+
+        </div>
+
+        <div class="feature-grid">
+
+          <article class="feature-card">
+            <span>📱</span>
+            <h3>Mobile Responsive</h3>
+            <p>
+              Easy to read and navigate on smartphones and tablets.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span>🔍</span>
+            <h3>Category Focused</h3>
+            <p>
+              Separate brochures prevent unrelated information from
+              becoming confusing.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span>🔗</span>
+            <h3>Easy to Share</h3>
+            <p>
+              Send a specific brochure to students, parents, employers
+              or institutions.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span>🖨️</span>
+            <h3>Print Friendly</h3>
+            <p>
+              Clean layout suitable for printing and future PDF
+              conversion.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span>
+            How to Use
+          </span>
+
+          <h2>
+            Find the Right Brochure in Five Steps
+          </h2>
+
+        </div>
+
+        <div class="steps-grid">
+
+          <article class="step-card">
+
+            <div class="step-number">
+              1
+            </div>
+
+            <h3>
+              Select Category
+            </h3>
+
+            <p>
+              Choose education, jobs, study abroad or training.
+            </p>
+
+          </article>
+
+          <article class="step-card">
+
+            <div class="step-number">
+              2
+            </div>
+
+            <h3>
+              Open Brochure
+            </h3>
+
+            <p>
+              View the detailed category-specific brochure.
+            </p>
+
+          </article>
+
+          <article class="step-card">
+
+            <div class="step-number">
+              3
+            </div>
+
+            <h3>
+              Review Information
+            </h3>
+
+            <p>
+              Check courses, services, eligibility or opportunities.
+            </p>
+
+          </article>
+
+          <article class="step-card">
+
+            <div class="step-number">
+              4
+            </div>
+
+            <h3>
+              Share Requirement
+            </h3>
+
+            <p>
+              Contact MedOrbit with your profile and preferences.
+            </p>
+
+          </article>
+
+          <article class="step-card">
+
+            <div class="step-number">
+              5
+            </div>
+
+            <h3>
+              Get Guidance
+            </h3>
+
+            <p>
+              Receive relevant information and next-step assistance.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container enquiry-grid">
+
+        <div class="enquiry-copy">
+
+          <h2>
+            Cannot Find the Brochure You Need?
+          </h2>
+
+          <p>
+            Tell us your course, job sector, destination or training
+            requirement. Our team will guide you towards the relevant
+            information.
+          </p>
+
+          <div class="enquiry-points">
+
+            <div class="enquiry-point">
+              <i>✓</i>
+              Education and admission brochures
+            </div>
+
+            <div class="enquiry-point">
+              <i>✓</i>
+              College and course information
+            </div>
+
+            <div class="enquiry-point">
+              <i>✓</i>
+              Job and recruitment categories
+            </div>
+
+            <div class="enquiry-point">
+              <i>✓</i>
+              Study abroad and training information
+            </div>
+
+          </div>
+
+        </div>
+
+        <form
+          class="enquiry-form"
+          id="brochureForm"
+        >
+
+          <div class="form-grid">
+
+            <div class="field">
+
+              <label for="name">
+                Full Name
+              </label>
+
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your full name"
+                required
+              >
+
+            </div>
+
+            <div class="field">
+
+              <label for="phone">
+                Mobile Number
+              </label>
+
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Enter mobile number"
+                inputmode="numeric"
+                required
+              >
+
+            </div>
+
+            <div class="field">
+
+              <label for="brochureType">
+                Required Brochure
+              </label>
+
+              <select
+                id="brochureType"
+                required
+              >
+
+                <option value="">
+                  Select brochure
+                </option>
+
+                <option>
+                  Education and Admissions
+                </option>
+
+                <option>
+                  Medical Courses
+                </option>
+
+                <option>
+                  Nursing Courses
+                </option>
+
+                <option>
+                  Engineering and Technology
+                </option>
+
+                <option>
+                  Management and Commerce
+                </option>
+
+                <option>
+                  Study Abroad
+                </option>
+
+                <option>
+                  Jobs and Recruitment
+                </option>
+
+                <option>
+                  Training and Skill Development
+                </option>
+
+                <option>
+                  Scholarships
+                </option>
+
+                <option>
+                  Foundation Activities
+                </option>
+
+              </select>
+
+            </div>
+
+            <div class="field">
+
+              <label for="message">
+                Requirement
+              </label>
+
+              <textarea
+                id="message"
+                placeholder="Mention the course, college, job sector or other requirement"
+              ></textarea>
+
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-light"
+            >
+              Request on WhatsApp
+            </button>
+
+          </div>
+
+        </form>
+
+      </div>
+    </section>
+
+    <section class="section section-white">
+      <div class="container">
+
+        <div class="disclaimer">
+
+          <strong>Important:</strong>
+
+          Course fees, college recognition, admission criteria, job
+          vacancies, salaries, deadlines, visa requirements and
+          scholarship conditions can change. Always verify information
+          through the relevant official college, university, employer,
+          government department, regulatory authority or embassy before
+          applying or making any payment.
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <h3>
+            MedOrbit Foundation
+          </h3>
+
+          <p>
+            Professional consultancy and guidance for education, jobs,
+            careers, recruitment, training and study abroad.
+          </p>
+
+        </div>
+
+        <div>
+
+          <h3>
+            Brochures
+          </h3>
+
+          <div class="footer-links">
+
+            <a href="brochures/education.html">
+              Education
+            </a>
+
+            <a href="brochures/medical.html">
+              Medical
+            </a>
+
+            <a href="brochures/study-abroad.html">
+              Study Abroad
+            </a>
+
+            <a href="brochures/jobs.html">
+              Jobs
+            </a>
+
+          </div>
+
+        </div>
+
+        <div>
+
+          <h3>
+            Resources
+          </h3>
+
+          <div class="footer-links">
+
+            <a href="courses.html">
+              Courses
+            </a>
+
+            <a href="colleges.html">
+              Colleges
+            </a>
+
+            <a href="jobs.html">
+              Job Opportunities
+            </a>
+
+            <a href="training.html">
+              Training
+            </a>
+
+          </div>
+
+        </div>
+
+        <div>
+
+          <h3>
+            Contact
+          </h3>
+
+          <div class="footer-links">
+
+            <a href="tel:+919142102309">
+              +91 9142102309
+            </a>
+
+            <a href="https://wa.me/919142102309">
+              WhatsApp Support
+            </a>
+
+            <a href="https://medorbits.in">
+              medorbits.in
+            </a>
+
+            <p>
+              Wave Silver Tower, 7th Floor, Sector 18, Noida,
+              Uttar Pradesh, India
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <span>
+          © <span id="year"></span> MedOrbit Foundation.
+          All rights reserved.
+        </span>
+
+        <span>
+          Verify information through relevant official authorities.
+        </span>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="floating-buttons">
+
+    <a
+      class="float-btn whatsapp"
+      href="https://wa.me/919142102309?text=Hello%20MedOrbit%20Foundation%2C%20I%20need%20a%20brochure."
+      aria-label="Request brochure on WhatsApp"
+    >
+      💬
+    </a>
+
+    <a
+      class="float-btn call"
+      href="tel:+919142102309"
+      aria-label="Call MedOrbit Foundation"
+    >
+      ☎
+    </a>
+
+  </div>
+
+  <script>
+    const menuToggle =
+      document.getElementById("menuToggle");
+
+    const navLinks =
+      document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", function () {
+      navLinks.classList.toggle("active");
+      document.body.classList.toggle("menu-open");
+
+      if (navLinks.classList.contains("active")) {
+        menuToggle.textContent = "✕";
+
+        menuToggle.setAttribute(
+          "aria-label",
+          "Close navigation menu"
+        );
+      } else {
+        menuToggle.textContent = "☰";
+
+        menuToggle.setAttribute(
+          "aria-label",
+          "Open navigation menu"
+        );
+      }
+    });
+
+    document
+      .querySelectorAll(".nav-links a")
+      .forEach(function (link) {
+        link.addEventListener("click", function () {
+          navLinks.classList.remove("active");
+          document.body.classList.remove("menu-open");
+          menuToggle.textContent = "☰";
+        });
+      });
+
+    const filterButtons =
+      document.querySelectorAll(".filter-button");
+
+    const brochureCards =
+      document.querySelectorAll(".brochure-card");
+
+    filterButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        filterButtons.forEach(function (item) {
+          item.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        const selectedCategory =
+          button.getAttribute("data-filter");
+
+        brochureCards.forEach(function (card) {
+          const cardCategory =
+            card.getAttribute("data-category");
+
+          if (
+            selectedCategory === "all" ||
+            selectedCategory === cardCategory
+          ) {
+            card.style.display = "flex";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+
+    document
+      .querySelectorAll(".share-button")
+      .forEach(function (button) {
+        button.addEventListener("click", function () {
+          const brochureName =
+            button.getAttribute("data-brochure");
+
+          const shareText =
+            brochureName +
+            " - MedOrbit Foundation";
+
+          const shareURL =
+            window.location.href;
+
+          if (navigator.share) {
+            navigator.share({
+              title: brochureName,
+              text: shareText,
+              url: shareURL
+            });
+          } else {
+            const whatsappURL =
+              "https://wa.me/?text=" +
+              encodeURIComponent(
+                shareText + " " + shareURL
+              );
+
+            window.open(
+              whatsappURL,
+              "_blank",
+              "noopener,noreferrer"
+            );
+          }
+        });
+      });
+
+    const brochureForm =
+      document.getElementById("brochureForm");
+
+    brochureForm.addEventListener(
+      "submit",
+      function (event) {
+        event.preventDefault();
+
+        const name =
+          document.getElementById("name").value.trim();
+
+        const phone =
+          document.getElementById("phone").value.trim();
+
+        const brochureType =
+          document
+            .getElementById("brochureType")
+            .value;
+
+        const message =
+          document
+            .getElementById("message")
+            .value
+            .trim();
+
+        const whatsappMessage =
+          "Hello MedOrbit Foundation,%0A%0A" +
+          "I would like to request a brochure.%0A%0A" +
+          "Name: " +
+          encodeURIComponent(name) +
+          "%0A" +
+          "Mobile: " +
+          encodeURIComponent(phone) +
+          "%0A" +
+          "Brochure Required: " +
+          encodeURIComponent(brochureType) +
+          "%0A" +
+          "Requirement: " +
+          encodeURIComponent(
+            message || "Not provided"
+          );
+
+        const whatsappURL =
+          "https://wa.me/919142102309?text=" +
+          whatsappMessage;
+
+        window.open(
+          whatsappURL,
+          "_blank",
+          "noopener,noreferrer"
+        );
+      }
+    );
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
