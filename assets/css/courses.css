@@ -1,0 +1,4830 @@
+/*==================================================
+MEDORBIT COURSES PAGE
+PART 1
+Hero + Search
+==================================================*/
+
+/*======================================
+HERO
+======================================*/
+
+.course-hero{
+
+position:relative;
+
+overflow:hidden;
+
+padding:130px 0 100px;
+
+background:
+
+linear-gradient(
+135deg,
+rgba(7,86,163,.96),
+rgba(14,165,164,.90));
+
+color:#fff;
+
+}
+
+.course-hero::before{
+
+content:"";
+
+position:absolute;
+
+width:700px;
+height:700px;
+
+right:-220px;
+top:-220px;
+
+border-radius:50%;
+
+background:
+
+rgba(255,255,255,.08);
+
+animation:heroRotate 30s linear infinite;
+
+}
+
+.course-hero::after{
+
+content:"";
+
+position:absolute;
+
+width:500px;
+height:500px;
+
+left:-180px;
+bottom:-180px;
+
+border-radius:50%;
+
+background:
+
+rgba(255,255,255,.05);
+
+animation:heroRotateReverse 25s linear infinite;
+
+}
+
+@keyframes heroRotate{
+
+from{
+
+transform:rotate(0deg);
+
+}
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+@keyframes heroRotateReverse{
+
+from{
+
+transform:rotate(360deg);
+
+}
+
+to{
+
+transform:rotate(0deg);
+
+}
+
+
+.course-hero-content{
+
+position:relative;
+
+z-index:2;
+
+max-width:760px;
+
+}
+
+}
+
+.course-hero h1{
+
+font-size:
+
+clamp(2.8rem,6vw,4.8rem);
+
+line-height:1.08;
+
+margin-bottom:20px;
+
+font-weight:800;
+
+}
+
+.course-hero h1 span{
+
+color:#ffcc33;
+
+}
+
+.course-hero p{
+
+font-size:1.12rem;
+
+line-height:1.9;
+
+opacity:.95;
+
+max-width:620px;
+
+margin-bottom:35px;
+
+}
+
+/*======================================
+SEARCH PANEL
+======================================*/
+
+.search-panel{
+
+position:relative;
+
+margin-top:-70px;
+
+z-index:20;
+
+background:
+
+rgba(255,255,255,.90);
+
+backdrop-filter:blur(20px);
+
+border-radius:28px;
+
+padding:35px;
+
+box-shadow:
+
+0 30px 70px rgba(0,0,0,.12);
+
+border:
+
+1px solid rgba(255,255,255,.45);
+
+}
+
+.search-grid{
+
+display:grid;
+
+grid-template-columns:
+
+2fr
+1fr
+auto;
+
+gap:18px;
+
+align-items:center;
+
+}
+
+.search-panel input,
+
+.search-panel select{
+
+height:58px;
+
+border-radius:16px;
+
+border:1px solid #dce7f2;
+
+padding:0 18px;
+
+font-size:16px;
+
+background:#fff;
+
+transition:.35s;
+
+}
+
+.search-panel input:focus,
+
+.search-panel select:focus{
+
+outline:none;
+
+border-color:#0ea5a4;
+
+box-shadow:
+
+0 0 0 4px rgba(14,165,164,.12);
+
+}
+
+.search-panel button{
+
+height:58px;
+
+padding:0 30px;
+
+border:none;
+
+border-radius:16px;
+
+background:
+
+linear-gradient(
+135deg,
+#0756a3,
+#0ea5a4);
+
+color:#fff;
+
+font-size:16px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.35s;
+
+}
+
+.search-panel button:hover{
+
+transform:
+
+translateY(-3px);
+
+box-shadow:
+
+0 18px 40px rgba(7,86,163,.30);
+
+}
+
+/*======================================
+RESPONSIVE
+======================================*/
+
+@media(max-width:900px){
+
+.search-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.search-panel{
+
+margin-top:30px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.course-hero{
+
+padding:90px 0 70px;
+
+text-align:center;
+
+}
+
+.course-hero p{
+
+margin:auto auto 30px;
+
+}
+
+}
+/*==================================================
+QUICK CATEGORIES
+==================================================*/
+
+.categories-section{
+
+padding:90px 0;
+
+background:
+
+linear-gradient(
+180deg,
+#ffffff,
+#f6fbff);
+
+}
+
+.category-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(180px,1fr));
+
+gap:25px;
+
+}
+
+.category-card{
+
+background:#fff;
+
+border-radius:24px;
+
+padding:35px 20px;
+
+text-align:center;
+
+position:relative;
+
+overflow:hidden;
+
+cursor:pointer;
+
+transition:.45s;
+
+border:1px solid #e6eef7;
+
+box-shadow:
+0 12px 35px rgba(0,0,0,.06);
+
+}
+
+.category-card::before{
+
+content:"";
+
+position:absolute;
+
+left:0;
+top:0;
+
+width:100%;
+height:5px;
+
+background:
+
+linear-gradient(
+90deg,
+#0756a3,
+#0ea5a4,
+#ffb703);
+
+}
+
+.category-card:hover{
+
+transform:
+
+translateY(-12px);
+
+box-shadow:
+
+0 25px 60px rgba(0,0,0,.12);
+
+}
+
+.category-icon{
+
+width:82px;
+height:82px;
+
+margin:auto;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+font-size:40px;
+
+background:
+
+linear-gradient(
+135deg,
+#0756a3,
+#0ea5a4);
+
+color:#fff;
+
+margin-bottom:22px;
+
+transition:.45s;
+
+}
+
+.category-card:hover
+.category-icon{
+
+transform:
+
+rotate(12deg)
+scale(1.12);
+
+}
+
+.category-card h3{
+
+font-size:1.15rem;
+
+margin-bottom:10px;
+
+}
+
+.category-card p{
+
+font-size:.92rem;
+
+color:#64748b;
+
+line-height:1.7;
+
+}
+
+/*==================================================
+COURSE CARDS
+==================================================*/
+
+.course-grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(330px,1fr));
+
+gap:32px;
+
+}
+
+.course-card{
+
+background:#fff;
+
+border-radius:26px;
+
+overflow:hidden;
+
+position:relative;
+
+transition:.45s;
+
+box-shadow:
+
+0 18px 45px rgba(0,0,0,.06);
+
+}
+
+.course-card:hover{
+
+transform:
+
+translateY(-14px);
+
+box-shadow:
+
+0 30px 70px rgba(0,0,0,.14);
+
+}
+
+.course-image{
+
+height:240px;
+
+overflow:hidden;
+
+}
+
+.course-image img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:1s;
+
+}
+
+.course-card:hover img{
+
+transform:scale(1.12);
+
+}
+
+.course-body{
+
+padding:30px;
+
+}
+
+.course-title{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:15px;
+
+}
+
+.course-title h3{
+
+font-size:1.4rem;
+
+}
+
+.course-description{
+
+line-height:1.8;
+
+color:#64748b;
+
+margin-bottom:22px;
+
+}
+
+.course-tags{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:10px;
+
+margin-bottom:25px;
+
+}
+
+.course-tag{
+
+padding:8px 16px;
+
+border-radius:40px;
+
+background:#eef8ff;
+
+color:#0756a3;
+
+font-size:.82rem;
+
+font-weight:700;
+
+}
+
+/*==================================================
+STATISTICS
+==================================================*/
+
+.stats-section{
+
+padding:100px 0;
+
+background:
+
+linear-gradient(
+135deg,
+#0756a3,
+#0ea5a4);
+
+color:#fff;
+
+}
+
+.stats-grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+
+}
+
+.stat-card{
+
+text-align:center;
+
+padding:35px;
+
+background:
+
+rgba(255,255,255,.10);
+
+backdrop-filter:blur(15px);
+
+border-radius:24px;
+
+}
+
+.stat-number{
+
+font-size:3rem;
+
+font-weight:800;
+
+margin-bottom:12px;
+
+}
+
+.stat-title{
+
+font-size:1rem;
+
+opacity:.92;
+
+}
+
+/*==================================================
+POPULAR STREAMS
+==================================================*/
+
+.stream-grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(260px,1fr));
+
+gap:24px;
+
+}
+
+.stream-card{
+
+padding:32px;
+
+background:#fff;
+
+border-radius:24px;
+
+transition:.4s;
+
+box-shadow:
+
+0 15px 35px rgba(0,0,0,.06);
+
+}
+
+.stream-card:hover{
+
+transform:
+
+translateY(-10px);
+
+}
+
+.stream-card h3{
+
+margin:18px 0;
+
+}
+
+.stream-card ul{
+
+padding-left:18px;
+
+line-height:2;
+
+color:#64748b;
+
+}
+/*==================================================
+ELIGIBILITY SECTION
+==================================================*/
+
+.eligibility-section{
+
+padding:90px 0;
+
+}
+
+.eligibility-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.eligibility-card{
+
+padding:35px;
+
+border-radius:24px;
+
+position:relative;
+
+}
+
+.eligibility-card h3{
+
+margin-bottom:18px;
+
+}
+
+.eligibility-card ul{
+
+margin-top:18px;
+
+padding-left:20px;
+
+line-height:2;
+
+}
+
+.eligibility-card li{
+
+color:#475569;
+
+}
+
+.eligibility-icon{
+
+font-size:46px;
+
+margin-bottom:20px;
+
+}
+
+.featured-card{
+
+background:
+linear-gradient(
+135deg,
+#0756a3,
+#0ea5a4);
+
+color:#fff;
+
+}
+
+.featured-card li{
+
+color:#fff;
+
+}
+
+.featured-card a{
+
+color:#fff;
+
+font-weight:700;
+
+display:inline-block;
+
+margin-top:20px;
+
+}
+/*==================================================
+WHY MEDORBIT
+==================================================*/
+
+.why-medorbit{
+
+padding:90px 0;
+
+}
+
+.why-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(260px,1fr));
+
+gap:28px;
+
+}
+
+.why-card{
+
+padding:32px;
+
+text-align:center;
+
+border-radius:22px;
+
+}
+
+.why-icon{
+
+width:72px;
+
+height:72px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+margin:auto;
+
+margin-bottom:20px;
+
+font-size:32px;
+
+border-radius:50%;
+
+background:#eef6ff;
+
+color:#0756a3;
+
+}
+
+.why-card h3{
+
+margin-bottom:12px;
+
+}
+
+.why-card p{
+
+line-height:1.8;
+
+color:#64748b;
+
+}
+/*==================================================
+ENTRANCE EXAMS
+==================================================*/
+
+.exam-section{
+
+padding:90px 0;
+
+}
+
+.exam-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(260px,1fr));
+
+gap:28px;
+
+}
+
+.exam-card{
+
+padding:30px;
+
+border-radius:22px;
+
+text-align:center;
+
+}
+
+.exam-card h3{
+
+margin:20px 0 12px;
+
+}
+
+.exam-card p{
+
+color:#64748b;
+
+line-height:1.8;
+
+margin-bottom:18px;
+
+}
+
+.exam-icon{
+
+font-size:42px;
+
+}
+/*==================================================
+CAREER OPPORTUNITIES
+==================================================*/
+
+.career-section{
+
+padding:90px 0;
+
+}
+
+.career-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:28px;
+
+}
+
+.career-card{
+
+padding:30px;
+
+border-radius:22px;
+
+}
+
+.career-card h3{
+
+margin:16px 0;
+
+}
+
+.career-card ul{
+
+padding-left:20px;
+
+line-height:2;
+
+}
+
+.career-card li{
+
+color:#475569;
+
+}
+
+.career-icon{
+
+font-size:42px;
+
+}
+/*==================================================
+RECRUITERS
+==================================================*/
+
+.recruiters-section{
+
+padding:90px 0;
+
+overflow:hidden;
+
+}
+
+.recruiters-track{
+
+display:flex;
+
+gap:24px;
+
+width:max-content;
+
+animation:recruitersScroll 35s linear infinite;
+
+}
+
+.recruiters-track:hover{
+
+animation-play-state:paused;
+
+}
+
+.recruiter{
+
+min-width:220px;
+
+padding:25px;
+
+border-radius:20px;
+
+text-align:center;
+
+background:#fff;
+
+}
+
+.recruiter img{
+
+height:60px;
+
+width:auto;
+
+margin:auto;
+
+object-fit:contain;
+
+}
+
+.recruiter h4{
+
+margin-top:18px;
+
+font-size:1rem;
+
+}
+
+@keyframes recruitersScroll{
+
+0%{
+
+transform:translateX(0);
+
+}
+
+100%{
+
+transform:translateX(-50%);
+
+}
+
+}
+/*==================================================
+STUDENT SUCCESS
+==================================================*/
+
+.success-section{
+
+padding:90px 0;
+
+}
+
+.success-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.success-card{
+
+padding:30px;
+
+border-radius:24px;
+
+}
+
+.student-top{
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+margin-bottom:20px;
+
+}
+
+.student-photo{
+
+width:70px;
+
+height:70px;
+
+border-radius:50%;
+
+overflow:hidden;
+
+flex-shrink:0;
+
+}
+
+.student-photo img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}
+
+.student-info h4{
+
+margin-bottom:5px;
+
+}
+
+.student-info span{
+
+font-size:.9rem;
+
+color:#64748b;
+
+}
+
+.success-review{
+
+line-height:1.8;
+
+color:#475569;
+
+margin-top:18px;
+
+}
+/*==================================================
+FAQ
+==================================================*/
+
+.faq-section{
+
+padding:90px 0;
+
+}
+
+.faq-container{
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.faq-item{
+
+margin-bottom:18px;
+
+border-radius:18px;
+
+overflow:hidden;
+
+background:#fff;
+
+}
+
+.faq-item summary{
+
+padding:22px 25px;
+
+cursor:pointer;
+
+font-weight:700;
+
+font-size:1.05rem;
+
+}
+
+.faq-item p{
+
+padding:0 25px 24px;
+
+line-height:1.9;
+
+color:#64748b;
+
+}
+/*==================================================
+FINAL CTA
+==================================================*/
+
+.course-final-cta{
+
+padding:100px 0;
+
+}
+
+.course-final-wrapper{
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:50px;
+
+align-items:center;
+
+}
+
+.course-final-list{
+
+margin-top:30px;
+
+display:grid;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:15px;
+
+}
+
+.course-final-item{
+
+padding:15px;
+
+border-radius:14px;
+
+background:rgba(255,255,255,.08);
+
+}
+
+.course-contact-box{
+
+padding:35px;
+
+border-radius:25px;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(20px);
+
+}
+
+.course-contact-box h3{
+
+margin-bottom:20px;
+
+}
+
+.course-contact-box ul{
+
+padding-left:18px;
+
+line-height:2;
+
+}
+
+@media(max-width:900px){
+
+.course-final-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+.course-final-list{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/*==================================================
+COURSES.CSS -- FINAL PART
+Paste at the END of assets/css/courses.css
+No duplicate global button/card/theme styles
+==================================================*/
+
+
+/*==================================================
+SECTION SPACING FIXES
+==================================================*/
+
+.course-categories,
+.course-directory,
+.eligibility-section,
+.why-medorbit,
+.exam-section,
+.career-section,
+.recruiters-section,
+.success-section,
+.faq-section,
+.course-final-cta{
+  position:relative;
+  z-index:1;
+}
+
+.course-directory{
+  padding:90px 0;
+}
+
+.course-categories{
+  padding:90px 0;
+}
+
+.section-title,
+.section-heading{
+  position:relative;
+  z-index:2;
+}
+
+
+/*==================================================
+COURSE DIRECTORY FILTER STATE
+==================================================*/
+
+.course-card.is-hidden{
+  display:none;
+}
+
+.course-card.is-visible{
+  display:flex;
+}
+
+.empty-state{
+  display:none;
+  max-width:700px;
+  margin:35px auto 0;
+  padding:36px 24px;
+  text-align:center;
+  border:1px dashed rgba(7,86,163,.25);
+  border-radius:22px;
+  background:rgba(255,255,255,.78);
+}
+
+.empty-state.active{
+  display:block;
+}
+
+.empty-state span{
+  display:block;
+  margin-bottom:14px;
+  font-size:2.2rem;
+}
+
+.empty-state h3{
+  margin-bottom:8px;
+}
+
+.empty-state p{
+  color:#64748b;
+}
+
+
+/*==================================================
+COURSE CARD INTERNAL LAYOUT
+==================================================*/
+
+.course-content{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  padding:28px;
+}
+
+.course-top{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:14px;
+}
+
+.course-top h3{
+  margin:0;
+  font-size:1.3rem;
+  line-height:1.3;
+}
+
+.course-top > span{
+  flex:0 0 auto;
+  font-size:1.7rem;
+}
+
+.course-content > p{
+  margin-bottom:18px;
+  color:#64748b;
+  line-height:1.75;
+}
+
+.course-footer{
+  display:flex;
+  gap:12px;
+  margin-top:auto;
+}
+
+.course-footer a{
+  flex:1;
+  min-height:46px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:11px 16px;
+  border-radius:14px;
+  font-weight:700;
+}
+
+.course-btn{
+  background:linear-gradient(135deg,#0756a3,#0ea5a4);
+  color:#fff;
+}
+
+.course-btn-outline{
+  border:1px solid rgba(7,86,163,.22);
+  background:#fff;
+  color:#0756a3;
+}
+
+
+/*==================================================
+CATEGORY MOBILE SLIDER
+==================================================*/
+
+.category-grid{
+  position:relative;
+  z-index:2;
+}
+
+.category-card{
+  min-width:0;
+}
+
+.category-card small{
+  display:block;
+  margin-top:6px;
+  color:#64748b;
+  line-height:1.5;
+}
+
+
+/*==================================================
+ELIGIBILITY POLISH
+==================================================*/
+
+.eligibility-card{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+
+.eligibility-card ul{
+  margin-bottom:18px;
+}
+
+.eligibility-card a{
+  margin-top:auto;
+}
+
+
+/*==================================================
+WHY MEDORBIT POLISH
+==================================================*/
+
+.why-card{
+  height:100%;
+}
+
+.why-card p{
+  margin:0;
+}
+
+
+/*==================================================
+ENTRANCE EXAM POLISH
+==================================================*/
+
+.exam-card{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+
+.exam-card a{
+  margin-top:auto;
+}
+
+
+/*==================================================
+CAREER CARD POLISH
+==================================================*/
+
+.career-card{
+  height:100%;
+}
+
+.career-card ul{
+  margin-bottom:0;
+}
+
+
+/*==================================================
+RECRUITERS SELECTOR CORRECTION
+==================================================*/
+
+.recruiter-slider{
+  position:relative;
+  overflow:hidden;
+}
+
+.recruiter-track,
+.recruiters-track{
+  display:flex;
+  align-items:stretch;
+  gap:20px;
+  width:max-content;
+  animation:recruitersScroll 42s linear infinite;
+}
+
+.recruiter-track:hover,
+.recruiters-track:hover{
+  animation-play-state:paused;
+}
+
+.recruiter-card,
+.recruiter{
+  min-width:220px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:22px 24px;
+  border-radius:18px;
+  background:#fff;
+  text-align:center;
+  font-weight:700;
+  box-shadow:0 10px 26px rgba(0,0,0,.06);
+}
+
+@keyframes recruitersScroll{
+  from{
+    transform:translateX(0);
+  }
+
+  to{
+    transform:translateX(-50%);
+  }
+}
+
+
+/*==================================================
+STUDENT SUCCESS SELECTOR CORRECTION
+==================================================*/
+
+.success-card{
+  height:100%;
+}
+
+.success-top{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:18px;
+}
+
+.success-avatar{
+  width:64px;
+  height:64px;
+  flex:0 0 64px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#eef6ff;
+  font-size:1.8rem;
+}
+
+.success-top h3{
+  margin-bottom:4px;
+}
+
+.success-top small{
+  color:#64748b;
+}
+
+.success-card > p{
+  color:#475569;
+  line-height:1.8;
+}
+
+
+/*==================================================
+FAQ POLISH
+==================================================*/
+
+.faq-item{
+  border:1px solid rgba(7,86,163,.09);
+}
+
+.faq-item summary{
+  position:relative;
+  padding-right:58px;
+  list-style:none;
+}
+
+.faq-item summary::-webkit-details-marker{
+  display:none;
+}
+
+.faq-item summary::after{
+  content:"+";
+  position:absolute;
+  top:50%;
+  right:22px;
+  width:30px;
+  height:30px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#eef6ff;
+  color:#0756a3;
+  font-size:1.25rem;
+  transform:translateY(-50%);
+  transition:.3s ease;
+}
+
+.faq-item[open] summary::after{
+  content:"−";
+  transform:translateY(-50%) rotate(180deg);
+}
+
+.faq-item[open]{
+  border-color:rgba(14,165,164,.28);
+}
+
+
+/*==================================================
+FINAL CTA SELECTOR CORRECTION
+==================================================*/
+
+.final-cta,
+.course-final-cta{
+  position:relative;
+  overflow:hidden;
+  padding:100px 0;
+  background:linear-gradient(135deg,#043d77,#0756a3,#0ea5a4);
+  color:#fff;
+}
+
+.cta-wrapper,
+.course-final-wrapper{
+  display:grid;
+  grid-template-columns:minmax(0,1.6fr) minmax(280px,.8fr);
+  gap:44px;
+  align-items:center;
+}
+
+.cta-content h2,
+.course-final-wrapper h2{
+  margin-bottom:18px;
+}
+
+.cta-content > p,
+.course-final-wrapper > div > p{
+  max-width:720px;
+  color:rgba(255,255,255,.88);
+  line-height:1.8;
+}
+
+.cta-features,
+.course-final-list{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+  margin:30px 0;
+}
+
+.cta-feature,
+.course-final-item{
+  padding:14px 16px;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:14px;
+  background:rgba(255,255,255,.09);
+}
+
+.trust-box,
+.course-contact-box{
+  border:1px solid rgba(255,255,255,.16);
+}
+
+.cta-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+}
+
+
+/*==================================================
+ACCESSIBILITY
+==================================================*/
+
+.category-card:focus-visible,
+.course-footer a:focus-visible,
+.exam-card a:focus-visible,
+.eligibility-card a:focus-visible,
+.faq-item summary:focus-visible{
+  outline:3px solid rgba(14,165,164,.35);
+  outline-offset:4px;
+}
+
+
+/*==================================================
+TABLET
+==================================================*/
+
+@media(max-width:1024px){
+
+  .course-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .cta-wrapper,
+  .course-final-wrapper{
+    grid-template-columns:1fr;
+  }
+
+}
+
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media(max-width:768px){
+
+  .course-categories,
+  .course-directory,
+  .eligibility-section,
+  .why-medorbit,
+  .exam-section,
+  .career-section,
+  .recruiters-section,
+  .success-section,
+  .faq-section{
+    padding:64px 0;
+  }
+
+  .category-grid{
+    display:flex;
+    overflow-x:auto;
+    gap:14px;
+    padding:4px 2px 16px;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;
+  }
+
+  .category-grid::-webkit-scrollbar{
+    display:none;
+  }
+
+  .category-card{
+    min-width:170px;
+    flex:0 0 170px;
+    scroll-snap-align:start;
+  }
+
+  .course-grid,
+  .eligibility-grid,
+  .why-grid,
+  .exam-grid,
+  .career-grid,
+  .success-grid{
+    grid-template-columns:1fr;
+  }
+
+  .course-image{
+    height:210px;
+  }
+
+  .course-footer{
+    flex-direction:column;
+  }
+
+  .course-footer a{
+    width:100%;
+  }
+
+  .cta-features,
+  .course-final-list{
+    grid-template-columns:1fr;
+  }
+
+  .cta-buttons{
+    display:grid;
+  }
+
+  .cta-buttons a{
+    width:100%;
+  }
+
+}
+
+
+/*==================================================
+SMALL MOBILE
+==================================================*/
+
+@media(max-width:480px){
+
+  .course-content,
+  .eligibility-card,
+  .why-card,
+  .exam-card,
+  .career-card,
+  .success-card{
+    padding:22px;
+  }
+
+  .course-image{
+    height:185px;
+  }
+
+  .category-card{
+    min-width:150px;
+    flex-basis:150px;
+    padding:24px 16px;
+  }
+
+  .category-icon{
+    width:68px;
+    height:68px;
+    font-size:32px;
+  }
+
+  .recruiter-card,
+  .recruiter{
+    min-width:180px;
+  }
+
+  .final-cta,
+  .course-final-cta{
+    padding:72px 0;
+  }
+
+}
+
+
+/*==================================================
+REDUCED MOTION
+==================================================*/
+
+@media(prefers-reduced-motion:reduce){
+
+  .recruiter-track,
+  .recruiters-track{
+    animation:none;
+  }
+
+  .course-card,
+  .category-card,
+  .eligibility-card,
+  .why-card,
+  .exam-card,
+  .career-card,
+  .success-card{
+    transition:none;
+  }
+
+}
+
+
+/*==================================================
+PRINT
+==================================================*/
+
+@media print{
+
+  .recruiter-slider,
+  .final-cta,
+  .course-final-cta,
+  .course-footer,
+  .category-grid{
+    display:none !important;
+  }
+
+  .course-grid{
+    display:block;
+  }
+
+  .course-card{
+    break-inside:avoid;
+    margin-bottom:18px;
+    box-shadow:none;
+    border:1px solid #dbe4ef;
+  }
+
+}
+/*==================================================
+PREMIUM ELIGIBILITY SLIDER
+==================================================*/
+
+.eligibility-section{
+  padding:96px 0;
+  overflow:hidden;
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(14,165,164,.08),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(124,58,237,.08),
+      transparent 34%
+    ),
+    #f5f9ff;
+}
+
+.eligibility-slider{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:25px;
+}
+
+.eligibility-card{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  min-height:590px;
+  padding:30px;
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:30px;
+  color:#fff;
+  box-shadow:0 24px 55px rgba(15,43,75,.16);
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+.eligibility-card::before{
+  content:"";
+  position:absolute;
+  top:-120px;
+  right:-100px;
+  width:270px;
+  height:270px;
+  border-radius:50%;
+  background:rgba(255,255,255,.10);
+}
+
+.eligibility-card::after{
+  content:"";
+  position:absolute;
+  left:-100px;
+  bottom:-130px;
+  width:250px;
+  height:250px;
+  border-radius:50%;
+  background:rgba(255,255,255,.07);
+}
+
+.eligibility-card:hover{
+  transform:translateY(-9px);
+  box-shadow:0 32px 70px rgba(15,43,75,.22);
+}
+
+.eligibility-blue{
+  background:linear-gradient(145deg,#0756a3,#0878ba);
+}
+
+.eligibility-teal{
+  background:linear-gradient(145deg,#0868ad,#0ea5a4);
+}
+
+.eligibility-violet{
+  background:linear-gradient(145deg,#4338ca,#7c3aed);
+}
+
+.eligibility-orange{
+  background:linear-gradient(145deg,#c2410c,#f59e0b);
+}
+
+.eligibility-pink{
+  background:linear-gradient(145deg,#be185d,#ec4899);
+}
+
+.eligibility-dark{
+  background:linear-gradient(145deg,#172033,#334155);
+}
+
+.eligibility-card-header{
+  position:relative;
+  z-index:2;
+  display:flex;
+  align-items:center;
+  gap:17px;
+  margin-bottom:25px;
+}
+
+.eligibility-icon{
+  width:66px;
+  height:66px;
+  flex:0 0 66px;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(255,255,255,.24);
+  border-radius:20px;
+  background:rgba(255,255,255,.14);
+  backdrop-filter:blur(12px);
+  font-size:2rem;
+}
+
+.eligibility-card-header small{
+  display:block;
+  margin-bottom:3px;
+  color:rgba(255,255,255,.7);
+  font-size:.75rem;
+  font-weight:800;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+
+.eligibility-card-header h3{
+  margin:0;
+  color:#fff;
+  font-size:1.45rem;
+}
+
+.eligibility-options{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:11px;
+  margin-bottom:27px;
+}
+
+.eligibility-options a{
+  min-height:66px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:12px 13px;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:15px;
+  background:rgba(255,255,255,.10);
+  color:#fff;
+  font-size:.86rem;
+  font-weight:700;
+  line-height:1.35;
+  transition:
+    transform .25s ease,
+    background .25s ease;
+}
+
+.eligibility-options a:hover{
+  transform:translateY(-3px);
+  background:rgba(255,255,255,.19);
+}
+
+.eligibility-options a span{
+  flex:0 0 auto;
+  font-size:1.2rem;
+}
+
+.eligibility-button{
+  position:relative;
+  z-index:2;
+  min-height:50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-top:auto;
+  padding:13px 17px;
+  border:1px solid rgba(255,255,255,.26);
+  border-radius:15px;
+  background:#fff;
+  color:#0756a3;
+  font-weight:900;
+  text-align:center;
+  box-shadow:0 13px 28px rgba(0,0,0,.13);
+}
+
+.eligibility-swipe-hint{
+  display:none;
+  margin-top:15px;
+  color:#64748b;
+  text-align:center;
+  font-size:.82rem;
+  font-weight:700;
+}
+
+
+/*==================================================
+TABLET
+==================================================*/
+
+@media(max-width:1050px){
+
+  .eligibility-slider{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+}
+
+
+/*==================================================
+MOBILE SLIDER
+==================================================*/
+
+@media(max-width:768px){
+
+  .eligibility-section{
+    padding:68px 0;
+  }
+
+  .eligibility-slider{
+    display:flex;
+    overflow-x:auto;
+    gap:17px;
+    margin-inline:-3%;
+    padding:5px 3% 22px;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;
+    overscroll-behavior-inline:contain;
+  }
+
+  .eligibility-slider::-webkit-scrollbar{
+    display:none;
+  }
+
+  .eligibility-card{
+    min-width:88%;
+    flex:0 0 88%;
+    min-height:560px;
+    padding:25px;
+    scroll-snap-align:center;
+  }
+
+  .eligibility-options{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .eligibility-swipe-hint{
+    display:block;
+  }
+
+}
+
+
+/*==================================================
+SMALL MOBILE
+==================================================*/
+
+@media(max-width:430px){
+
+  .eligibility-card{
+    min-width:91%;
+    flex-basis:91%;
+    min-height:545px;
+    padding:22px;
+    border-radius:25px;
+  }
+
+  .eligibility-icon{
+    width:57px;
+    height:57px;
+    flex-basis:57px;
+    font-size:1.65rem;
+  }
+
+  .eligibility-card-header h3{
+    font-size:1.25rem;
+  }
+
+  .eligibility-options{
+    gap:9px;
+  }
+
+  .eligibility-options a{
+    min-height:60px;
+    padding:10px;
+    font-size:.78rem;
+  }
+
+}
+/*==================================================
+PREMIUM ENTRANCE EXAM SLIDER
+==================================================*/
+
+.entrance-section{
+  position:relative;
+  overflow:hidden;
+  padding:96px 0;
+  background:
+    radial-gradient(
+      circle at 5% 15%,
+      rgba(7,86,163,.08),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 95% 80%,
+      rgba(245,158,11,.08),
+      transparent 32%
+    ),
+    #f8fbff;
+}
+
+.entrance-slider{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:25px;
+}
+
+.entrance-card{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  min-height:575px;
+  padding:29px;
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:30px;
+  color:#fff;
+  box-shadow:0 24px 55px rgba(15,43,75,.16);
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+.entrance-card::before{
+  content:"";
+  position:absolute;
+  top:-120px;
+  right:-100px;
+  width:270px;
+  height:270px;
+  border-radius:50%;
+  background:rgba(255,255,255,.10);
+}
+
+.entrance-card::after{
+  content:"";
+  position:absolute;
+  left:-110px;
+  bottom:-135px;
+  width:260px;
+  height:260px;
+  border-radius:50%;
+  background:rgba(255,255,255,.07);
+}
+
+.entrance-card:hover{
+  transform:translateY(-9px);
+  box-shadow:0 34px 74px rgba(15,43,75,.23);
+}
+
+.entrance-medical{
+  background:linear-gradient(145deg,#0756a3,#0ea5a4);
+}
+
+.entrance-engineering{
+  background:linear-gradient(145deg,#1d4ed8,#4338ca);
+}
+
+.entrance-cuet{
+  background:linear-gradient(145deg,#0f766e,#14b8a6);
+}
+
+.entrance-management{
+  background:linear-gradient(145deg,#9a3412,#f59e0b);
+}
+
+.entrance-law{
+  background:linear-gradient(145deg,#4c1d95,#7c3aed);
+}
+
+.entrance-pharmacy{
+  background:linear-gradient(145deg,#be185d,#ec4899);
+}
+
+.entrance-agriculture{
+  background:linear-gradient(145deg,#166534,#65a30d);
+}
+
+.entrance-state{
+  background:linear-gradient(145deg,#172033,#475569);
+}
+
+.entrance-top{
+  position:relative;
+  z-index:2;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:20px;
+}
+
+.entrance-icon{
+  width:66px;
+  height:66px;
+  flex:0 0 66px;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:20px;
+  background:rgba(255,255,255,.14);
+  backdrop-filter:blur(12px);
+  font-size:2rem;
+}
+
+.entrance-top small{
+  display:block;
+  margin-bottom:3px;
+  color:rgba(255,255,255,.72);
+  font-size:.74rem;
+  font-weight:800;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+
+.entrance-top h3{
+  margin:0;
+  color:#fff;
+  font-size:1.48rem;
+}
+
+.entrance-card > p{
+  position:relative;
+  z-index:2;
+  margin-bottom:22px;
+  color:rgba(255,255,255,.82);
+  line-height:1.75;
+}
+
+.entrance-pathways{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:10px;
+  margin-bottom:22px;
+}
+
+.entrance-pathways span{
+  min-height:58px;
+  display:flex;
+  align-items:center;
+  padding:11px 12px;
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:14px;
+  background:rgba(255,255,255,.10);
+  color:#fff;
+  font-size:.82rem;
+  font-weight:700;
+  line-height:1.35;
+}
+
+.entrance-meta{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:11px;
+  margin-bottom:22px;
+}
+
+.entrance-meta div{
+  padding:13px;
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:14px;
+  background:rgba(255,255,255,.08);
+}
+
+.entrance-meta strong{
+  display:block;
+  margin-bottom:4px;
+  color:rgba(255,255,255,.68);
+  font-size:.7rem;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+}
+
+.entrance-meta span{
+  color:#fff;
+  font-size:.87rem;
+  font-weight:800;
+}
+
+.entrance-button{
+  position:relative;
+  z-index:2;
+  min-height:50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-top:auto;
+  padding:13px 17px;
+  border-radius:15px;
+  background:#fff;
+  color:#0756a3;
+  font-weight:900;
+  text-align:center;
+  box-shadow:0 13px 28px rgba(0,0,0,.13);
+}
+
+.entrance-swipe-hint{
+  display:none;
+  margin-top:15px;
+  color:#64748b;
+  text-align:center;
+  font-size:.82rem;
+  font-weight:700;
+}
+
+@media(max-width:1050px){
+
+  .entrance-slider{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+}
+
+@media(max-width:768px){
+
+  .entrance-section{
+    padding:68px 0;
+  }
+
+  .entrance-slider{
+    display:flex;
+    overflow-x:auto;
+    gap:17px;
+    margin-inline:-3%;
+    padding:5px 3% 22px;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;
+    overscroll-behavior-inline:contain;
+  }
+
+  .entrance-slider::-webkit-scrollbar{
+    display:none;
+  }
+
+  .entrance-card{
+    min-width:88%;
+    flex:0 0 88%;
+    min-height:565px;
+    padding:25px;
+    scroll-snap-align:center;
+  }
+
+  .entrance-swipe-hint{
+    display:block;
+  }
+
+}
+
+@media(max-width:430px){
+
+  .entrance-card{
+    min-width:91%;
+    flex-basis:91%;
+    min-height:550px;
+    padding:22px;
+    border-radius:25px;
+  }
+
+  .entrance-icon{
+    width:57px;
+    height:57px;
+    flex-basis:57px;
+    font-size:1.65rem;
+  }
+
+  .entrance-top h3{
+    font-size:1.25rem;
+  }
+
+  .entrance-pathways span{
+    min-height:55px;
+    padding:9px;
+    font-size:.75rem;
+  }
+
+  .entrance-meta{
+    grid-template-columns:1fr 1fr;
+  }
+
+}
+/* ==========================================================
+   MEDORBIT COURSES PAGE -- FINAL PREMIUM MOBILE FIX
+   Paste at the absolute bottom of courses page CSS
+========================================================== */
+
+
+/* ==========================================================
+   GLOBAL COURSES PAGE
+========================================================== */
+
+body{
+  overflow-x:hidden;
+  background:
+    linear-gradient(
+      180deg,
+      #edf5ff 0%,
+      #f8fbff 38%,
+      #eef6ff 72%,
+      #f9fcff 100%
+    );
+}
+
+main{
+  overflow:hidden;
+}
+
+.courses-page .container,
+.course-page .container,
+.container{
+  width:min(1180px,calc(100% - 28px));
+  margin-inline:auto;
+}
+
+
+/* ==========================================================
+   COURSES HERO
+========================================================== */
+
+.courses-hero,
+.course-hero{
+  position:relative;
+  overflow:hidden;
+  padding:70px 0 62px;
+  background:
+    radial-gradient(circle at 12% 10%,rgba(70,171,255,.22),transparent 30%),
+    radial-gradient(circle at 88% 15%,rgba(214,40,57,.12),transparent 26%),
+    linear-gradient(135deg,#06315f 0%,#07579f 58%,#0b72c7 100%);
+  color:#fff;
+}
+
+.courses-hero h1,
+.course-hero h1{
+  margin:0;
+  color:#fff;
+  font-size:clamp(42px,7vw,72px);
+  line-height:1.05;
+}
+
+.courses-hero p,
+.course-hero p{
+  color:rgba(255,255,255,.84);
+}
+
+.courses-hero-buttons,
+.course-hero-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:26px;
+}
+
+.courses-hero-buttons .button,
+.course-hero-buttons .button{
+  min-height:50px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 22px;
+  border-radius:999px;
+  font-weight:800;
+}
+
+.courses-hero-buttons .primary-button,
+.course-hero-buttons .primary-button{
+  background:#18a56f;
+  color:#fff;
+}
+
+.courses-hero-buttons .secondary-button,
+.course-hero-buttons .secondary-button{
+  border:1px solid rgba(255,255,255,.65);
+  background:rgba(255,255,255,.12);
+  color:#fff !important;
+}
+
+
+/* ==========================================================
+   COURSE FINDER
+========================================================== */
+
+.course-finder,
+.course-search-box,
+.smart-course-finder{
+  max-width:850px;
+  margin:35px auto 0;
+  padding:24px;
+  border:1px solid rgba(255,255,255,.17);
+  border-radius:24px;
+  background:rgba(255,255,255,.10);
+  backdrop-filter:blur(14px);
+}
+
+.course-finder input,
+.course-finder select,
+.course-search-box input,
+.course-search-box select,
+.smart-course-finder input,
+.smart-course-finder select{
+  width:100%;
+  min-height:52px;
+  margin-top:10px;
+  padding:0 15px;
+  border:1px solid #d7e4f3;
+  border-radius:14px;
+  background:#fff;
+  color:#172033;
+  font-size:14px;
+  outline:none;
+}
+
+.course-finder button,
+.course-search-box button,
+.smart-course-finder button{
+  width:100%;
+  min-height:52px;
+  margin-top:12px;
+  border:0;
+  border-radius:14px;
+  background:linear-gradient(135deg,#18a56f,#0d8c5c);
+  color:#fff;
+  font-weight:850;
+  cursor:pointer;
+}
+
+.popular-searches,
+.popular-tags{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:8px;
+  margin-top:15px;
+}
+
+.popular-searches a,
+.popular-searches span,
+.popular-tags a,
+.popular-tags span{
+  padding:7px 12px;
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:999px;
+  background:rgba(255,255,255,.12);
+  color:#fff;
+  font-size:12px;
+  font-weight:700;
+}
+
+
+/* ==========================================================
+   CAREER STREAM SLIDER
+========================================================== */
+
+.course-category-slider,
+.career-stream-slider,
+.stream-slider{
+  display:flex;
+  align-items:stretch;
+  gap:14px;
+  overflow-x:auto;
+  overflow-y:hidden;
+  padding:5px 2px 18px;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;
+  scrollbar-color:#0b63b6 #dbe8f5;
+}
+
+.course-category-card,
+.career-stream-card,
+.stream-card{
+  flex:0 0 240px;
+  min-width:240px;
+  min-height:270px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:24px 18px;
+  border:2px solid #d2e3f4;
+  border-radius:24px;
+  background:#fff;
+  text-align:center;
+  box-shadow:0 12px 30px rgba(18,48,82,.10);
+  scroll-snap-align:start;
+}
+
+.course-category-card::before,
+.career-stream-card::before,
+.stream-card::before{
+  content:"";
+  position:absolute;
+}
+
+.course-category-icon,
+.career-stream-icon,
+.stream-icon{
+  width:92px;
+  height:92px;
+  display:grid;
+  place-items:center;
+  margin-bottom:20px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#0756a3,#13a773);
+  font-size:42px;
+}
+
+.course-category-card h3,
+.career-stream-card h3,
+.stream-card h3{
+  margin:0;
+  color:#172033;
+  font-size:24px;
+}
+
+.course-category-card p,
+.career-stream-card p,
+.stream-card p{
+  margin:12px 0 0;
+  color:#687587;
+  font-size:14px;
+  line-height:1.5;
+}
+
+
+/* ==========================================================
+   PROFESSIONAL COURSE CARDS
+========================================================== */
+
+.professional-course-grid,
+.course-grid,
+.all-course-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+}
+
+.professional-course-card,
+.course-detail-card,
+.course-list-card{
+  min-height:0 !important;
+  height:auto !important;
+  padding:24px;
+  border:2px solid #d3e4f5;
+  border-radius:22px;
+  background:#fff;
+  box-shadow:0 12px 30px rgba(18,48,82,.09);
+}
+
+.professional-course-card img,
+.course-detail-card img,
+.course-list-card img{
+  display:block;
+  width:100%;
+  height:190px;
+  object-fit:cover;
+  margin-bottom:18px;
+  border-radius:16px;
+  background:#eaf3ff;
+}
+
+.professional-course-card h3,
+.course-detail-card h3,
+.course-list-card h3{
+  margin:0;
+  color:#0756a3;
+  font-size:23px;
+}
+
+.professional-course-card p,
+.course-detail-card p,
+.course-list-card p{
+  margin:12px 0 0;
+  color:#66758a;
+  font-size:14px;
+  line-height:1.65;
+}
+
+
+/* ==========================================================
+   COURSE TAGS INSTEAD OF PLAIN TEXT
+========================================================== */
+
+.course-tags,
+.course-options,
+.course-programmes,
+.programme-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:17px;
+  padding:0;
+  list-style:none;
+}
+
+.course-tags span,
+.course-tags a,
+.course-options span,
+.course-options a,
+.course-programmes span,
+.course-programmes a,
+.programme-list li{
+  margin:0;
+  padding:8px 12px;
+  border:1px solid #cfe0f2;
+  border-radius:999px;
+  background:#eef6ff;
+  color:#174f82;
+  font-size:12px;
+  font-weight:750;
+  line-height:1.2;
+}
+
+
+/* ==========================================================
+   CAREER OPPORTUNITY CARDS
+========================================================== */
+
+.career-options-grid,
+.career-path-grid,
+.course-career-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
+
+.career-option-card,
+.career-path-card,
+.course-career-card{
+  min-height:0 !important;
+  height:auto !important;
+  padding:24px;
+  border:2px solid #d3e4f5;
+  border-radius:22px;
+  background:#fff;
+  box-shadow:0 10px 28px rgba(18,48,82,.09);
+}
+
+.career-option-card > span,
+.career-path-card > span,
+.course-career-card > span{
+  width:56px;
+  height:56px;
+  display:grid;
+  place-items:center;
+  margin-bottom:17px;
+  border-radius:17px;
+  background:#eaf4ff;
+  font-size:30px;
+}
+
+.career-option-card h3,
+.career-path-card h3,
+.course-career-card h3{
+  margin:0 0 14px;
+  color:#0756a3;
+  font-size:21px;
+}
+
+.career-option-card ul,
+.career-path-card ul,
+.course-career-card ul{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+.career-option-card li,
+.career-path-card li,
+.course-career-card li{
+  padding:8px 11px;
+  border:1px solid #d3e3f3;
+  border-radius:999px;
+  background:#f1f7fd;
+  color:#516278;
+  font-size:12px;
+  line-height:1.2;
+}
+
+
+/* ==========================================================
+   TESTIMONIALS
+========================================================== */
+
+.testimonial-grid,
+.student-review-grid,
+.review-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
+
+.testimonial-card,
+.student-review-card,
+.review-card{
+  min-height:0 !important;
+  height:auto !important;
+  padding:22px;
+  border:2px solid #d2e3f4;
+  border-radius:22px;
+  background:#fff;
+  box-shadow:0 12px 30px rgba(18,48,82,.09);
+}
+
+.testimonial-header,
+.review-header{
+  display:flex;
+  align-items:center;
+  gap:13px;
+  margin-bottom:15px;
+}
+
+.testimonial-avatar,
+.review-avatar{
+  width:54px;
+  height:54px;
+  display:grid;
+  place-items:center;
+  flex:0 0 54px;
+  border-radius:16px;
+  background:#eaf4ff;
+  font-size:28px;
+}
+
+.testimonial-card h3,
+.student-review-card h3,
+.review-card h3{
+  margin:0;
+  color:#172033;
+  font-size:18px;
+}
+
+.testimonial-card small,
+.student-review-card small,
+.review-card small{
+  color:#718096;
+  font-size:12px;
+}
+
+.testimonial-stars,
+.review-stars{
+  margin:12px 0;
+  color:#f2b01e;
+  letter-spacing:2px;
+  font-size:17px;
+}
+
+.testimonial-card p,
+.student-review-card p,
+.review-card p{
+  margin:0;
+  color:#59687d;
+  font-size:14px;
+  line-height:1.65;
+}
+
+
+/* ==========================================================
+   BROKEN IMAGES -- VISUAL FALLBACK
+========================================================== */
+
+.professional-course-card img,
+.course-detail-card img,
+.course-list-card img{
+  color:transparent;
+}
+
+.professional-course-card img:not([src]),
+.course-detail-card img:not([src]),
+.course-list-card img:not([src]){
+  display:none;
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media(max-width:950px){
+
+  .professional-course-grid,
+  .course-grid,
+  .all-course-grid,
+  .career-options-grid,
+  .career-path-grid,
+  .course-career-grid,
+  .testimonial-grid,
+  .student-review-grid,
+  .review-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media(max-width:650px){
+
+  .courses-hero,
+  .course-hero{
+    padding:50px 0 44px;
+  }
+
+  .courses-hero h1,
+  .course-hero h1{
+    font-size:42px;
+  }
+
+  .courses-hero-buttons,
+  .course-hero-buttons{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
+
+  .courses-hero-buttons .button,
+  .course-hero-buttons .button{
+    width:100%;
+    padding:0 10px;
+    font-size:12px;
+  }
+
+  .course-finder,
+  .course-search-box,
+  .smart-course-finder{
+    padding:18px 14px;
+    border-radius:20px;
+  }
+
+  .course-category-card,
+  .career-stream-card,
+  .stream-card{
+    flex-basis:210px;
+    min-width:210px;
+    min-height:245px;
+    padding:20px 14px;
+  }
+
+  .course-category-icon,
+  .career-stream-icon,
+  .stream-icon{
+    width:78px;
+    height:78px;
+    font-size:35px;
+  }
+
+  .course-category-card h3,
+  .career-stream-card h3,
+  .stream-card h3{
+    font-size:21px;
+  }
+
+  .professional-course-grid,
+  .course-grid,
+  .all-course-grid,
+  .career-options-grid,
+  .career-path-grid,
+  .course-career-grid,
+  .testimonial-grid,
+  .student-review-grid,
+  .review-grid{
+    grid-template-columns:1fr;
+    gap:14px;
+  }
+
+  .professional-course-card,
+  .course-detail-card,
+  .course-list-card,
+  .career-option-card,
+  .career-path-card,
+  .course-career-card,
+  .testimonial-card,
+  .student-review-card,
+  .review-card{
+    min-height:0 !important;
+    height:auto !important;
+    padding:20px;
+    border-radius:18px;
+  }
+
+  .professional-course-card img,
+  .course-detail-card img,
+  .course-list-card img{
+    height:180px;
+  }
+
+}
+
+
+/* ==========================================================
+   VERY SMALL MOBILE
+========================================================== */
+
+@media(max-width:390px){
+
+  .courses-hero-buttons,
+  .course-hero-buttons{
+    grid-template-columns:1fr;
+  }
+
+}
+
+
+/* ==========================================================
+   MEDORBIT COURSES PAGE
+   PREMIUM HERO + SEARCH EXPERIENCE
+   Paste at the absolute bottom of courses.css or style.css
+========================================================== */
+
+
+/* ==========================================================
+   HERO SECTION
+========================================================== */
+
+.courses-hero,
+.course-hero,
+.courses-banner{
+  position:relative;
+  overflow:hidden;
+  padding:78px 0 68px;
+  background:
+    radial-gradient(circle at 12% 10%,rgba(76,175,255,.24),transparent 30%),
+    radial-gradient(circle at 88% 15%,rgba(27,197,143,.18),transparent 28%),
+    linear-gradient(135deg,#062b52 0%,#07589d 55%,#0a75c7 100%);
+  color:#ffffff;
+}
+
+.courses-hero::before,
+.course-hero::before,
+.courses-banner::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  opacity:.12;
+  pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.18) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.18) 1px,transparent 1px);
+  background-size:44px 44px;
+}
+
+.courses-hero::after,
+.course-hero::after,
+.courses-banner::after{
+  content:"";
+  position:absolute;
+  width:520px;
+  height:520px;
+  right:-170px;
+  top:-210px;
+  border-radius:50%;
+  background:rgba(255,255,255,.08);
+}
+
+.courses-hero .container,
+.course-hero .container,
+.courses-banner .container{
+  position:relative;
+  z-index:2;
+}
+
+.courses-hero-content,
+.course-hero-content,
+.courses-banner-content{
+  max-width:940px;
+  margin:auto;
+  text-align:center;
+}
+
+.courses-hero-label,
+.course-hero-label,
+.courses-banner-label{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  margin-bottom:16px;
+  padding:8px 14px;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:999px;
+  background:rgba(255,255,255,.10);
+  color:#bff6df;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+
+.courses-hero h1,
+.course-hero h1,
+.courses-banner h1{
+  max-width:900px;
+  margin:0 auto;
+  color:#ffffff;
+  font-size:clamp(42px,7vw,76px);
+  line-height:1.03;
+  letter-spacing:-.045em;
+}
+
+.courses-hero-description,
+.course-hero-description,
+.courses-banner-description,
+.courses-hero p,
+.course-hero p,
+.courses-banner p{
+  max-width:780px;
+  margin:18px auto 0;
+  color:rgba(255,255,255,.84);
+  font-size:17px;
+  line-height:1.75;
+}
+
+
+/* ==========================================================
+   HERO BUTTONS
+========================================================== */
+
+.courses-hero-buttons,
+.course-hero-buttons,
+.courses-banner-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:12px;
+  margin-top:28px;
+}
+
+.courses-hero-buttons a,
+.course-hero-buttons a,
+.courses-banner-buttons a{
+  min-width:190px;
+  min-height:52px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 22px;
+  border-radius:999px;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:850;
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    background .25s ease;
+}
+
+.courses-hero-buttons .primary-button,
+.course-hero-buttons .primary-button,
+.courses-banner-buttons .primary-button{
+  border:1px solid #17b77d;
+  background:linear-gradient(135deg,#16ad77,#0d8e62);
+  color:#ffffff;
+  box-shadow:0 14px 30px rgba(10,118,80,.28);
+}
+
+.courses-hero-buttons .secondary-button,
+.course-hero-buttons .secondary-button,
+.courses-banner-buttons .secondary-button{
+  border:1px solid rgba(255,255,255,.34);
+  background:rgba(255,255,255,.12);
+  color:#ffffff !important;
+  backdrop-filter:blur(10px);
+}
+
+.courses-hero-buttons a:hover,
+.course-hero-buttons a:hover,
+.courses-banner-buttons a:hover{
+  transform:translateY(-3px);
+}
+
+
+/* ==========================================================
+   TRUST POINTS
+========================================================== */
+
+.courses-trust-points,
+.course-trust-points,
+.courses-hero-trust{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:9px;
+  margin-top:24px;
+}
+
+.courses-trust-points span,
+.course-trust-points span,
+.courses-hero-trust span{
+  padding:8px 12px;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:999px;
+  background:rgba(255,255,255,.08);
+  color:#dceeff;
+  font-size:11px;
+  font-weight:750;
+}
+
+
+/* ==========================================================
+   PREMIUM SEARCH PANEL
+========================================================== */
+
+.course-finder,
+.smart-course-finder,
+.course-search-box,
+.course-search-panel{
+  max-width:940px;
+  margin:36px auto 0;
+  padding:24px;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:26px;
+  background:rgba(255,255,255,.11);
+  box-shadow:0 24px 55px rgba(0,0,0,.18);
+  backdrop-filter:blur(18px);
+}
+
+.course-finder-header,
+.smart-course-finder-header,
+.course-search-heading{
+  margin-bottom:18px;
+  text-align:center;
+}
+
+.course-finder-header span,
+.smart-course-finder-header span,
+.course-search-heading span{
+  display:block;
+  color:#cfe9ff;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+}
+
+.course-finder-header h2,
+.smart-course-finder-header h2,
+.course-search-heading h2{
+  margin:5px 0 0;
+  color:#ffffff;
+  font-size:28px;
+  line-height:1.2;
+}
+
+.course-finder-header p,
+.smart-course-finder-header p,
+.course-search-heading p{
+  margin:8px auto 0;
+  color:rgba(255,255,255,.74);
+  font-size:13px;
+}
+
+
+/* Search controls */
+
+.course-finder-form,
+.smart-course-finder-form,
+.course-search-form{
+  display:grid;
+  grid-template-columns:minmax(0,1.4fr) minmax(210px,.7fr) auto;
+  gap:10px;
+  align-items:center;
+}
+
+.course-finder input,
+.smart-course-finder input,
+.course-search-box input,
+.course-search-panel input{
+  width:100%;
+  min-height:56px;
+  padding:0 18px;
+  border:1px solid rgba(7,86,163,.16);
+  border-radius:16px;
+  background:#ffffff;
+  color:#182437;
+  font-size:15px;
+  outline:none;
+  box-shadow:0 8px 20px rgba(11,79,156,.08);
+}
+
+.course-finder input::placeholder,
+.smart-course-finder input::placeholder,
+.course-search-box input::placeholder,
+.course-search-panel input::placeholder{
+  color:#91a0b3;
+}
+
+.course-finder input:focus,
+.smart-course-finder input:focus,
+.course-search-box input:focus,
+.course-search-panel input:focus{
+  border-color:#1a8be6;
+  box-shadow:0 0 0 4px rgba(26,139,230,.12);
+}
+
+
+/* Category dropdown */
+
+.course-finder select,
+.smart-course-finder select,
+.course-search-box select,
+.course-search-panel select{
+  width:100%;
+  min-height:56px;
+  padding:0 42px 0 16px;
+  border:1px solid rgba(7,86,163,.16);
+  border-radius:16px;
+  background:
+    linear-gradient(180deg,#ffffff,#f7fbff);
+  color:#24364d;
+  font-size:14px;
+  font-weight:700;
+  outline:none;
+  cursor:pointer;
+  box-shadow:0 8px 20px rgba(11,79,156,.08);
+}
+
+
+/* Search button */
+
+.course-finder button,
+.smart-course-finder button,
+.course-search-box button,
+.course-search-panel button,
+.search-courses-button{
+  min-width:170px;
+  min-height:56px;
+  padding:0 22px;
+  border:0;
+  border-radius:16px;
+  background:
+    linear-gradient(135deg,#18a56f,#0b8a5c);
+  color:#ffffff;
+  font-size:14px;
+  font-weight:850;
+  cursor:pointer;
+  box-shadow:0 12px 26px rgba(24,165,111,.24);
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+.course-finder button:hover,
+.smart-course-finder button:hover,
+.course-search-box button:hover,
+.course-search-panel button:hover,
+.search-courses-button:hover{
+  transform:translateY(-2px);
+  box-shadow:0 16px 32px rgba(24,165,111,.30);
+}
+
+
+/* ==========================================================
+   POPULAR SEARCH TAGS
+========================================================== */
+
+.popular-searches,
+.popular-tags,
+.course-popular-tags{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  margin-top:16px;
+}
+
+.popular-searches > span:first-child,
+.popular-tags > span:first-child,
+.course-popular-tags > span:first-child{
+  color:rgba(255,255,255,.74);
+  font-size:12px;
+  font-weight:700;
+}
+
+.popular-searches a,
+.popular-searches button,
+.popular-searches span:not(:first-child),
+.popular-tags a,
+.popular-tags button,
+.popular-tags span:not(:first-child),
+.course-popular-tags a,
+.course-popular-tags button,
+.course-popular-tags span:not(:first-child){
+  min-height:34px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 13px;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:999px;
+  background:rgba(255,255,255,.11);
+  color:#ffffff;
+  font-size:12px;
+  font-weight:750;
+  text-decoration:none;
+  cursor:pointer;
+  transition:
+    background .2s ease,
+    transform .2s ease;
+}
+
+.popular-searches a:hover,
+.popular-searches button:hover,
+.popular-tags a:hover,
+.popular-tags button:hover,
+.course-popular-tags a:hover,
+.course-popular-tags button:hover{
+  transform:translateY(-2px);
+  background:rgba(255,255,255,.18);
+}
+
+
+/* ==========================================================
+   CATEGORY SECTION
+========================================================== */
+
+.course-category-section,
+.career-stream-section,
+.stream-section{
+  padding:64px 0;
+  background:
+    linear-gradient(180deg,#f7f3ff 0%,#eef5ff 100%);
+}
+
+.course-category-section .section-heading,
+.career-stream-section .section-heading,
+.stream-section .section-heading{
+  max-width:800px;
+  margin:0 auto 30px;
+  text-align:center;
+}
+
+.course-category-section .section-label,
+.career-stream-section .section-label,
+.stream-section .section-label{
+  display:inline-flex;
+  padding:8px 14px;
+  border-radius:999px;
+  background:#e5f3ff;
+  color:#0964ac;
+  font-size:12px;
+  font-weight:850;
+  letter-spacing:.04em;
+  text-transform:none;
+}
+
+.course-category-section h2,
+.career-stream-section h2,
+.stream-section h2{
+  margin:14px 0 0;
+  color:#172033;
+  font-size:clamp(36px,6vw,60px);
+  line-height:1.08;
+}
+
+.course-category-section .section-heading p,
+.career-stream-section .section-heading p,
+.stream-section .section-heading p{
+  margin:16px auto 0;
+  color:#66758a;
+  font-size:16px;
+}
+
+
+/* ==========================================================
+   CATEGORY SLIDER
+========================================================== */
+
+.course-category-slider,
+.career-stream-slider,
+.stream-slider{
+  display:flex;
+  gap:16px;
+  overflow-x:auto;
+  overflow-y:hidden;
+  padding:5px 2px 20px;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;
+  scrollbar-color:#0b63b6 #dce8f5;
+}
+
+.course-category-card,
+.career-stream-card,
+.stream-card{
+  position:relative;
+  flex:0 0 250px;
+  min-width:250px;
+  min-height:285px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:25px 18px;
+  overflow:hidden;
+  border:2px solid #d5e4f4;
+  border-radius:26px;
+  background:#ffffff;
+  text-align:center;
+  box-shadow:0 15px 34px rgba(18,48,82,.10);
+  scroll-snap-align:start;
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease;
+}
+
+.course-category-card::before,
+.career-stream-card::before,
+.stream-card::before{
+  content:"";
+  position:absolute;
+  top:0;
+  right:0;
+  left:0;
+  height:6px;
+  background:linear-gradient(90deg,#0756a3,#14a477,#f1c21b);
+}
+
+.course-category-card:hover,
+.career-stream-card:hover,
+.stream-card:hover{
+  transform:translateY(-6px);
+  border-color:#1686e8;
+  box-shadow:0 22px 44px rgba(18,48,82,.16);
+}
+
+.course-category-icon,
+.career-stream-icon,
+.stream-icon{
+  width:94px;
+  height:94px;
+  display:grid;
+  place-items:center;
+  margin-bottom:22px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#0756a3,#14a477);
+  color:#ffffff;
+  font-size:40px;
+  box-shadow:0 14px 28px rgba(7,86,163,.22);
+}
+
+.course-category-card h3,
+.career-stream-card h3,
+.stream-card h3{
+  margin:0;
+  color:#182437;
+  font-size:25px;
+}
+
+.course-category-card p,
+.career-stream-card p,
+.stream-card p{
+  margin:12px 0 0;
+  color:#67768a;
+  font-size:14px;
+  line-height:1.55;
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media(max-width:700px){
+
+  .courses-hero,
+  .course-hero,
+  .courses-banner{
+    padding:52px 0 48px;
+  }
+
+  .courses-hero h1,
+  .course-hero h1,
+  .courses-banner h1{
+    font-size:42px;
+  }
+
+  .courses-hero-description,
+  .course-hero-description,
+  .courses-banner-description,
+  .courses-hero p,
+  .course-hero p,
+  .courses-banner p{
+    font-size:15px;
+  }
+
+  .courses-hero-buttons,
+  .course-hero-buttons,
+  .courses-banner-buttons{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+  }
+
+  .courses-hero-buttons a,
+  .course-hero-buttons a,
+  .courses-banner-buttons a{
+    min-width:0;
+    width:100%;
+    padding:0 10px;
+    font-size:12px;
+  }
+
+  .course-finder,
+  .smart-course-finder,
+  .course-search-box,
+  .course-search-panel{
+    margin-top:28px;
+    padding:18px 14px;
+    border-radius:22px;
+  }
+
+  .course-finder-header h2,
+  .smart-course-finder-header h2,
+  .course-search-heading h2{
+    font-size:24px;
+  }
+
+  .course-finder-form,
+  .smart-course-finder-form,
+  .course-search-form{
+    grid-template-columns:1fr;
+  }
+
+  .course-finder input,
+  .smart-course-finder input,
+  .course-search-box input,
+  .course-search-panel input,
+  .course-finder select,
+  .smart-course-finder select,
+  .course-search-box select,
+  .course-search-panel select,
+  .course-finder button,
+  .smart-course-finder button,
+  .course-search-box button,
+  .course-search-panel button,
+  .search-courses-button{
+    width:100%;
+    min-width:0;
+  }
+
+  .popular-searches,
+  .popular-tags,
+  .course-popular-tags{
+    justify-content:flex-start;
+  }
+
+  .course-category-section,
+  .career-stream-section,
+  .stream-section{
+    padding:50px 0;
+  }
+
+  .course-category-section h2,
+  .career-stream-section h2,
+  .stream-section h2{
+    font-size:40px;
+  }
+
+  .course-category-slider,
+  .career-stream-slider,
+  .stream-slider{
+    margin-right:-14px;
+    padding-right:14px;
+  }
+
+  .course-category-card,
+  .career-stream-card,
+  .stream-card{
+    flex-basis:220px;
+    min-width:220px;
+    min-height:250px;
+    padding:22px 15px;
+  }
+
+  .course-category-icon,
+  .career-stream-icon,
+  .stream-icon{
+    width:78px;
+    height:78px;
+    font-size:34px;
+  }
+
+  .course-category-card h3,
+  .career-stream-card h3,
+  .stream-card h3{
+    font-size:21px;
+  }
+
+}
+
+
+/* ==========================================================
+   VERY SMALL MOBILE
+========================================================== */
+
+@media(max-width:390px){
+
+  .courses-hero-buttons,
+  .course-hero-buttons,
+  .courses-banner-buttons{
+    grid-template-columns:1fr;
+  }
+
+}
+/* ==========================================================
+   MEDORBIT COURSES PAGE -- FINAL PREMIUM OVERRIDE
+   Paste at the absolute bottom of the CSS used by courses.html
+========================================================== */
+
+:root{
+  --courses-navy:#062f5d;
+  --courses-blue:#0756a3;
+  --courses-blue-light:#1686e8;
+  --courses-green:#18a56f;
+  --courses-green-dark:#0d8c5c;
+  --courses-text:#182437;
+  --courses-muted:#687587;
+  --courses-soft:#eef6ff;
+  --courses-border:#cfe1f5;
+  --courses-white:#ffffff;
+}
+
+
+/* ==========================================================
+   PAGE
+========================================================== */
+
+body{
+  overflow-x:hidden;
+  background:
+    linear-gradient(
+      180deg,
+      #edf5ff 0%,
+      #f8fbff 45%,
+      #eef6ff 100%
+    );
+  color:var(--courses-text);
+}
+
+main{
+  overflow:hidden;
+}
+
+
+/* ==========================================================
+   COURSES HERO
+========================================================== */
+
+.courses-hero,
+.course-hero,
+.courses-banner{
+  position:relative;
+  overflow:hidden;
+  padding:72px 0 64px;
+  background:
+    radial-gradient(
+      circle at 12% 12%,
+      rgba(40,153,255,.22),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 88% 12%,
+      rgba(24,165,111,.17),
+      transparent 27%
+    ),
+    linear-gradient(
+      135deg,
+      #062a52 0%,
+      #075192 58%,
+      #0871c2 100%
+    );
+  color:#ffffff;
+}
+
+.courses-hero::before,
+.course-hero::before,
+.courses-banner::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  opacity:.12;
+  pointer-events:none;
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,.18) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.18) 1px,
+      transparent 1px
+    );
+  background-size:44px 44px;
+}
+
+.courses-hero::after,
+.course-hero::after,
+.courses-banner::after{
+  content:"";
+  position:absolute;
+  top:-220px;
+  right:-170px;
+  width:540px;
+  height:540px;
+  border-radius:50%;
+  background:rgba(255,255,255,.07);
+}
+
+.courses-hero .container,
+.course-hero .container,
+.courses-banner .container{
+  position:relative;
+  z-index:2;
+}
+
+.courses-hero-content,
+.course-hero-content,
+.courses-banner-content{
+  max-width:920px;
+  margin:auto;
+  text-align:center;
+}
+
+.courses-hero-label,
+.course-hero-label,
+.courses-banner-label{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:8px 14px;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:999px;
+  background:rgba(255,255,255,.09);
+  color:#b8ffe3;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+
+.courses-hero h1,
+.course-hero h1,
+.courses-banner h1{
+  max-width:900px;
+  margin:16px auto 0;
+  color:#ffffff;
+  font-size:clamp(42px,7vw,72px);
+  line-height:1.04;
+  letter-spacing:-.045em;
+}
+
+.courses-hero-description,
+.course-hero-description,
+.courses-banner-description{
+  max-width:760px;
+  margin:20px auto 0;
+  color:rgba(255,255,255,.84);
+  font-size:17px;
+  line-height:1.75;
+}
+
+
+/* ==========================================================
+   HERO BUTTONS
+========================================================== */
+
+.courses-hero-buttons,
+.course-hero-buttons,
+.courses-banner-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:12px;
+  margin-top:28px;
+}
+
+.courses-hero-buttons .button,
+.course-hero-buttons .button,
+.courses-banner-buttons .button{
+  width:auto;
+  min-width:190px;
+  min-height:50px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 22px;
+  border-radius:999px;
+  text-align:center;
+  font-size:14px;
+  font-weight:850;
+}
+
+.courses-hero-buttons .primary-button,
+.course-hero-buttons .primary-button,
+.courses-banner-buttons .primary-button{
+  border:1px solid var(--courses-green);
+  background:
+    linear-gradient(
+      135deg,
+      var(--courses-green),
+      var(--courses-green-dark)
+    );
+  color:#ffffff;
+  box-shadow:
+    0 13px 28px rgba(24,165,111,.26);
+}
+
+.courses-hero-buttons .secondary-button,
+.course-hero-buttons .secondary-button,
+.courses-banner-buttons .secondary-button{
+  border:1px solid rgba(255,255,255,.42);
+  background:rgba(255,255,255,.11);
+  color:#ffffff !important;
+  backdrop-filter:blur(10px);
+}
+
+
+/* ==========================================================
+   HERO TRUST POINTS
+========================================================== */
+
+.courses-trust-points,
+.course-trust-points,
+.courses-hero-trust{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:9px;
+  margin-top:24px;
+}
+
+.courses-trust-points span,
+.course-trust-points span,
+.courses-hero-trust span{
+  padding:8px 12px;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:999px;
+  background:rgba(255,255,255,.08);
+  color:#dceeff;
+  font-size:11px;
+  font-weight:750;
+}
+
+
+/* ==========================================================
+   PREMIUM COURSE FINDER
+========================================================== */
+
+.course-finder,
+.smart-course-finder,
+.course-search-box,
+.course-search-panel{
+  max-width:920px;
+  margin:34px auto 0;
+  padding:25px;
+  border:1px solid rgba(255,255,255,.17);
+  border-radius:26px;
+  background:rgba(255,255,255,.11);
+  box-shadow:
+    0 25px 58px rgba(0,0,0,.18);
+  backdrop-filter:blur(18px);
+}
+
+.course-finder-header,
+.smart-course-finder-header,
+.course-search-heading{
+  margin-bottom:18px;
+  text-align:center;
+}
+
+.course-finder-header > span,
+.smart-course-finder-header > span,
+.course-search-heading > span{
+  color:#b8ddff;
+  font-size:12px;
+  font-weight:850;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.course-finder-header h2,
+.smart-course-finder-header h2,
+.course-search-heading h2{
+  margin:6px 0 0;
+  color:#ffffff;
+  font-size:28px;
+  line-height:1.2;
+}
+
+.course-finder-header p,
+.smart-course-finder-header p,
+.course-search-heading p{
+  max-width:650px;
+  margin:8px auto 0;
+  color:rgba(255,255,255,.76);
+  font-size:13px;
+}
+
+
+/* ==========================================================
+   SEARCH FORM
+========================================================== */
+
+.course-finder-form,
+.smart-course-finder-form,
+.course-search-form{
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(210px,.7fr) auto;
+  gap:10px;
+  align-items:center;
+}
+
+.course-finder input,
+.smart-course-finder input,
+.course-search-box input,
+.course-search-panel input,
+.course-finder select,
+.smart-course-finder select,
+.course-search-box select,
+.course-search-panel select{
+  width:100%;
+  min-height:56px;
+  margin:0;
+  border:1px solid #d5e3f2;
+  border-radius:16px;
+  background:#ffffff;
+  color:var(--courses-text);
+  font-size:14px;
+  outline:none;
+  box-shadow:
+    0 8px 20px rgba(11,79,156,.08);
+}
+
+.course-finder input,
+.smart-course-finder input,
+.course-search-box input,
+.course-search-panel input{
+  padding:0 18px;
+}
+
+.course-finder input::placeholder,
+.smart-course-finder input::placeholder,
+.course-search-box input::placeholder,
+.course-search-panel input::placeholder{
+  color:#98a5b5;
+}
+
+.course-finder select,
+.smart-course-finder select,
+.course-search-box select,
+.course-search-panel select{
+  padding:0 42px 0 16px;
+  font-weight:750;
+  cursor:pointer;
+}
+
+.course-finder input:focus,
+.smart-course-finder input:focus,
+.course-search-box input:focus,
+.course-search-panel input:focus,
+.course-finder select:focus,
+.smart-course-finder select:focus,
+.course-search-box select:focus,
+.course-search-panel select:focus{
+  border-color:var(--courses-blue-light);
+  box-shadow:
+    0 0 0 4px rgba(22,134,232,.12);
+}
+
+
+/* Search Courses button */
+
+.course-finder-form button,
+.smart-course-finder-form button,
+.course-search-form button,
+.search-courses-button{
+  width:auto !important;
+  min-width:170px;
+  min-height:56px;
+  margin:0 !important;
+  padding:0 22px;
+  border:0;
+  border-radius:16px;
+  background:
+    linear-gradient(
+      135deg,
+      var(--courses-green),
+      var(--courses-green-dark)
+    );
+  color:#ffffff !important;
+  font-size:14px;
+  font-weight:850;
+  cursor:pointer;
+  box-shadow:
+    0 12px 26px rgba(24,165,111,.25);
+}
+
+
+/* ==========================================================
+   POPULAR SEARCHES
+========================================================== */
+
+.popular-searches,
+.popular-tags,
+.course-popular-tags{
+  display:flex !important;
+  flex-direction:row !important;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  margin-top:17px;
+}
+
+.popular-searches > span:first-child,
+.popular-tags > span:first-child,
+.course-popular-tags > span:first-child{
+  width:auto !important;
+  color:rgba(255,255,255,.75);
+  font-size:12px;
+  font-weight:700;
+}
+
+.popular-searches a,
+.popular-searches button,
+.popular-searches span:not(:first-child),
+.popular-tags a,
+.popular-tags button,
+.popular-tags span:not(:first-child),
+.course-popular-tags a,
+.course-popular-tags button,
+.course-popular-tags span:not(:first-child){
+  width:auto !important;
+  min-width:0 !important;
+  min-height:34px !important;
+  display:inline-flex !important;
+  align-items:center;
+  justify-content:center;
+  margin:0 !important;
+  padding:0 13px !important;
+  border:1px solid rgba(255,255,255,.20) !important;
+  border-radius:999px !important;
+  background:rgba(255,255,255,.11) !important;
+  color:#ffffff !important;
+  box-shadow:none !important;
+  font-size:12px !important;
+  font-weight:750;
+  text-decoration:none;
+}
+
+
+/* ==========================================================
+   CATEGORY AREA
+========================================================== */
+
+.course-category-section,
+.career-stream-section,
+.stream-section{
+  position:relative;
+  overflow:hidden;
+  padding:62px 0;
+  background:
+    radial-gradient(
+      circle at 90% 5%,
+      rgba(120,106,255,.08),
+      transparent 29%
+    ),
+    linear-gradient(
+      180deg,
+      #f7f4ff 0%,
+      #edf5ff 100%
+    );
+}
+
+.course-category-section .section-heading,
+.career-stream-section .section-heading,
+.stream-section .section-heading{
+  max-width:800px;
+  margin:0 auto 30px;
+  text-align:center;
+}
+
+.course-category-section .section-label,
+.career-stream-section .section-label,
+.stream-section .section-label{
+  display:inline-flex;
+  padding:8px 15px;
+  border-radius:999px;
+  background:#e6f4ff;
+  color:#0861a9;
+  font-size:12px;
+  font-weight:850;
+  letter-spacing:0;
+  text-transform:none;
+}
+
+.course-category-section h2,
+.career-stream-section h2,
+.stream-section h2{
+  margin:14px 0 0;
+  color:var(--courses-text);
+  font-size:clamp(36px,6vw,58px);
+  line-height:1.08;
+}
+
+.course-category-section .section-heading p,
+.career-stream-section .section-heading p,
+.stream-section .section-heading p{
+  margin:16px auto 0;
+  color:var(--courses-muted);
+  font-size:16px;
+}
+
+
+/* ==========================================================
+   CATEGORY SLIDER
+========================================================== */
+
+.course-category-slider,
+.career-stream-slider,
+.stream-slider{
+  display:flex;
+  gap:15px;
+  overflow-x:auto;
+  overflow-y:hidden;
+  padding:5px 2px 20px;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;
+  scrollbar-color:var(--courses-blue) #dce8f5;
+}
+
+.course-category-card,
+.career-stream-card,
+.stream-card{
+  position:relative;
+  flex:0 0 245px;
+  min-width:245px;
+  min-height:265px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:24px 17px;
+  overflow:hidden;
+  border:2px solid #d3e3f4;
+  border-radius:25px;
+  background:#ffffff;
+  text-align:center;
+  box-shadow:
+    0 14px 34px rgba(18,48,82,.10);
+  scroll-snap-align:start;
+}
+
+.course-category-card::before,
+.career-stream-card::before,
+.stream-card::before{
+  content:"";
+  position:absolute;
+  top:0;
+  right:0;
+  left:0;
+  height:6px;
+  background:
+    linear-gradient(
+      90deg,
+      var(--courses-blue),
+      var(--courses-green),
+      #e5bf26
+    );
+}
+
+.course-category-icon,
+.career-stream-icon,
+.stream-icon{
+  width:88px;
+  height:88px;
+  display:grid;
+  place-items:center;
+  margin-bottom:20px;
+  border-radius:50%;
+  background:
+    linear-gradient(
+      135deg,
+      var(--courses-blue),
+      var(--courses-green)
+    );
+  color:#ffffff;
+  font-size:38px;
+  box-shadow:
+    0 13px 27px rgba(7,86,163,.22);
+}
+
+.course-category-card h3,
+.career-stream-card h3,
+.stream-card h3{
+  margin:0;
+  color:var(--courses-text);
+  font-size:23px;
+}
+
+.course-category-card p,
+.career-stream-card p,
+.stream-card p{
+  margin:11px 0 0;
+  color:var(--courses-muted);
+  font-size:14px;
+  line-height:1.55;
+}
+
+
+/* ==========================================================
+   COURSE CATALOGUE CARDS
+========================================================== */
+
+.professional-course-grid,
+.course-grid,
+.all-course-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
+
+.professional-course-card,
+.course-detail-card,
+.course-list-card{
+  min-height:0 !important;
+  height:auto !important;
+  padding:22px;
+  border:2px solid var(--courses-border);
+  border-radius:22px;
+  background:#ffffff;
+  box-shadow:
+    0 12px 30px rgba(18,48,82,.09);
+}
+
+.professional-course-card h3,
+.course-detail-card h3,
+.course-list-card h3{
+  margin:0;
+  color:var(--courses-blue);
+  font-size:22px;
+}
+
+.professional-course-card p,
+.course-detail-card p,
+.course-list-card p{
+  margin:10px 0 0;
+  color:var(--courses-muted);
+  font-size:14px;
+  line-height:1.65;
+}
+
+
+/* ==========================================================
+   COURSE PILLS
+========================================================== */
+
+.course-tags,
+.course-options,
+.course-programmes,
+.programme-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:16px;
+  padding:0;
+  list-style:none;
+}
+
+.course-tags span,
+.course-tags a,
+.course-options span,
+.course-options a,
+.course-programmes span,
+.course-programmes a,
+.programme-list li{
+  margin:0;
+  padding:8px 12px;
+  border:1px solid #cfe0f2;
+  border-radius:999px;
+  background:#eef6ff;
+  color:#174f82;
+  font-size:12px;
+  font-weight:750;
+  line-height:1.2;
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media(max-width:700px){
+
+  .courses-hero,
+  .course-hero,
+  .courses-banner{
+    padding:52px 0 46px;
+  }
+
+  .courses-hero h1,
+  .course-hero h1,
+  .courses-banner h1{
+    font-size:42px;
+  }
+
+  .courses-hero-description,
+  .course-hero-description,
+  .courses-banner-description{
+    font-size:15px;
+  }
+
+  .courses-hero-buttons,
+  .course-hero-buttons,
+  .courses-banner-buttons{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+  }
+
+  .courses-hero-buttons .button,
+  .course-hero-buttons .button,
+  .courses-banner-buttons .button{
+    width:100%;
+    min-width:0;
+    padding:0 10px;
+    font-size:12px;
+  }
+
+
+  /* Search panel */
+
+  .course-finder,
+  .smart-course-finder,
+  .course-search-box,
+  .course-search-panel{
+    margin-top:28px;
+    padding:19px 14px;
+    border-radius:22px;
+  }
+
+  .course-finder-header h2,
+  .smart-course-finder-header h2,
+  .course-search-heading h2{
+    font-size:25px;
+  }
+
+  .course-finder-form,
+  .smart-course-finder-form,
+  .course-search-form{
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+
+  .course-finder-form button,
+  .smart-course-finder-form button,
+  .course-search-form button,
+  .search-courses-button{
+    width:100% !important;
+    min-width:0;
+  }
+
+
+  /* Popular tags must not become huge green buttons */
+
+  .popular-searches,
+  .popular-tags,
+  .course-popular-tags{
+    display:flex !important;
+    flex-direction:row !important;
+    justify-content:center;
+    gap:7px;
+  }
+
+  .popular-searches a,
+  .popular-searches button,
+  .popular-searches span:not(:first-child),
+  .popular-tags a,
+  .popular-tags button,
+  .popular-tags span:not(:first-child),
+  .course-popular-tags a,
+  .course-popular-tags button,
+  .course-popular-tags span:not(:first-child){
+    width:auto !important;
+    min-height:32px !important;
+    padding:0 11px !important;
+    border-radius:999px !important;
+    background:rgba(255,255,255,.12) !important;
+    color:#ffffff !important;
+    font-size:11px !important;
+  }
+
+
+  /* Categories */
+
+  .course-category-section,
+  .career-stream-section,
+  .stream-section{
+    padding:48px 0;
+  }
+
+  .course-category-section h2,
+  .career-stream-section h2,
+  .stream-section h2{
+    font-size:38px;
+  }
+
+  .course-category-slider,
+  .career-stream-slider,
+  .stream-slider{
+    margin-right:-14px;
+    padding-right:14px;
+  }
+
+  .course-category-card,
+  .career-stream-card,
+  .stream-card{
+    flex-basis:215px;
+    min-width:215px;
+    min-height:235px;
+    padding:20px 14px;
+  }
+
+  .course-category-icon,
+  .career-stream-icon,
+  .stream-icon{
+    width:76px;
+    height:76px;
+    font-size:33px;
+  }
+
+  .course-category-card h3,
+  .career-stream-card h3,
+  .stream-card h3{
+    font-size:21px;
+  }
+
+
+  /* Catalogue */
+
+  .professional-course-grid,
+  .course-grid,
+  .all-course-grid{
+    grid-template-columns:1fr;
+    gap:14px;
+  }
+
+  .professional-course-card,
+  .course-detail-card,
+  .course-list-card{
+    padding:20px;
+    border-radius:19px;
+  }
+
+}
+
+
+/* ==========================================================
+   VERY SMALL MOBILE
+========================================================== */
+
+@media(max-width:390px){
+
+  .courses-hero-buttons,
+  .course-hero-buttons,
+  .courses-banner-buttons{
+    grid-template-columns:1fr;
+  }
+
+}
+
+/* ==========================================================
+   POPULAR COURSES -- PREMIUM 2 × 2 MOBILE GRID
+   Paste at the absolute bottom of courses page CSS
+========================================================== */
+
+@media(max-width:700px){
+
+  .popular-searches,
+  .popular-tags,
+  .course-popular-tags{
+    display:grid !important;
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:10px !important;
+    width:100%;
+    margin-top:18px;
+  }
+
+  .popular-searches > span:first-child,
+  .popular-tags > span:first-child,
+  .course-popular-tags > span:first-child{
+    grid-column:1 / -1;
+    width:100% !important;
+    margin-bottom:2px;
+    color:rgba(255,255,255,.78);
+    text-align:center;
+    font-size:12px;
+    font-weight:750;
+  }
+
+  .popular-searches a,
+  .popular-searches button,
+  .popular-searches span:not(:first-child),
+  .popular-tags a,
+  .popular-tags button,
+  .popular-tags span:not(:first-child),
+  .course-popular-tags a,
+  .course-popular-tags button,
+  .course-popular-tags span:not(:first-child){
+    position:relative;
+    width:100% !important;
+    min-width:0 !important;
+    min-height:94px !important;
+    display:flex !important;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:7px;
+    margin:0 !important;
+    padding:12px 8px !important;
+    border:1px solid rgba(255,255,255,.24) !important;
+    border-radius:18px !important;
+    color:#ffffff !important;
+    text-align:center;
+    font-size:13px !important;
+    font-weight:850;
+    line-height:1.2;
+    text-decoration:none;
+    box-shadow:0 10px 24px rgba(0,0,0,.14) !important;
+  }
+
+  .popular-searches a::before,
+  .popular-searches button::before,
+  .popular-searches span:not(:first-child)::before,
+  .popular-tags a::before,
+  .popular-tags button::before,
+  .popular-tags span:not(:first-child)::before,
+  .course-popular-tags a::before,
+  .course-popular-tags button::before,
+  .course-popular-tags span:not(:first-child)::before{
+    display:block;
+    font-size:27px;
+    line-height:1;
+  }
+
+
+  /* MBBS */
+
+  .popular-searches > *:nth-child(2),
+  .popular-tags > *:nth-child(2),
+  .course-popular-tags > *:nth-child(2){
+    background:linear-gradient(135deg,#0b63b6,#148be0) !important;
+  }
+
+  .popular-searches > *:nth-child(2)::before,
+  .popular-tags > *:nth-child(2)::before,
+  .course-popular-tags > *:nth-child(2)::before{
+    content:"🩺";
+  }
+
+
+  /* Nursing */
+
+  .popular-searches > *:nth-child(3),
+  .popular-tags > *:nth-child(3),
+  .course-popular-tags > *:nth-child(3){
+    background:linear-gradient(135deg,#ad3d88,#dc5aa8) !important;
+  }
+
+  .popular-searches > *:nth-child(3)::before,
+  .popular-tags > *:nth-child(3)::before,
+  .course-popular-tags > *:nth-child(3)::before{
+    content:"👩‍⚕️";
+  }
+
+
+  /* Engineering */
+
+  .popular-searches > *:nth-child(4),
+  .popular-tags > *:nth-child(4),
+  .course-popular-tags > *:nth-child(4){
+    background:linear-gradient(135deg,#e08320,#f0a63c) !important;
+  }
+
+  .popular-searches > *:nth-child(4)::before,
+  .popular-tags > *:nth-child(4)::before,
+  .course-popular-tags > *:nth-child(4)::before{
+    content:"⚙️";
+  }
+
+
+  /* MBA */
+
+  .popular-searches > *:nth-child(5),
+  .popular-tags > *:nth-child(5),
+  .course-popular-tags > *:nth-child(5){
+    background:linear-gradient(135deg,#6b55c9,#8b72e3) !important;
+  }
+
+  .popular-searches > *:nth-child(5)::before,
+  .popular-tags > *:nth-child(5)::before,
+  .course-popular-tags > *:nth-child(5)::before{
+    content:"📊";
+  }
+
+}

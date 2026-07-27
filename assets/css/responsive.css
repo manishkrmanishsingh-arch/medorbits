@@ -1,0 +1,582 @@
+/*==================================================
+MEDORBIT RESPONSIVE CSS
+PART 1
+Desktop → Tablet
+==================================================*/
+
+
+/*=========================
+1200px
+=========================*/
+
+@media (max-width:1200px){
+
+.container{
+
+width:min(95%,1180px);
+
+}
+
+.hero-grid,
+.about-hero-grid,
+.about-overview-grid,
+.cta-wrapper,
+.course-final-wrapper{
+
+gap:40px;
+
+}
+
+.course-grid{
+
+grid-template-columns:
+repeat(2,minmax(0,1fr));
+
+}
+
+.footer-grid{
+
+grid-template-columns:
+repeat(2,minmax(0,1fr));
+
+}
+
+}
+
+
+/*=========================
+1024px
+=========================*/
+
+@media (max-width:1024px){
+
+section{
+
+padding:80px 0;
+
+}
+
+.menu-toggle{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+.nav-cta{
+
+display:none;
+
+}
+
+.nav-links{
+
+position:fixed;
+
+top:78px;
+
+left:0;
+
+right:0;
+
+display:none;
+
+flex-direction:column;
+
+background:#fff;
+
+padding:20px;
+
+box-shadow:
+
+0 20px 45px rgba(0,0,0,.10);
+
+z-index:999;
+
+}
+
+.nav-links.active{
+
+display:flex;
+
+}
+
+.nav-links a{
+
+padding:15px 0;
+
+border-bottom:1px solid #edf2f7;
+
+}
+
+.hero-grid,
+.about-hero-grid,
+.about-overview-grid,
+.course-hero .container,
+.cta-wrapper,
+.course-final-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+.hero-content,
+.hero-copy,
+.about-overview-copy{
+
+max-width:none;
+
+}
+
+.hero-actions{
+
+justify-content:center;
+
+}
+
+.footer-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+/*==================================================
+MEDORBIT RESPONSIVE CSS
+PART 2
+Tablet → Mobile
+Paste below Part 1
+==================================================*/
+
+
+/*=========================
+900px
+=========================*/
+
+@media (max-width:900px){
+
+  .hero-actions,
+  .about-hero-actions,
+  .course-hero-buttons,
+  .cta-buttons,
+  .about-cta-actions{
+    display:grid;
+    gap:14px;
+  }
+
+  .hero-actions a,
+  .about-hero-actions a,
+  .course-hero-buttons a,
+  .cta-buttons a,
+  .about-cta-actions a{
+    width:100%;
+  }
+
+  .search-grid{
+    grid-template-columns:1fr;
+  }
+
+  .course-grid,
+  .eligibility-grid,
+  .features-grid,
+  .exam-grid,
+  .career-grid,
+  .success-grid,
+  .about-services-grid,
+  .about-achievements-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .about-why-grid,
+  .about-impact-grid,
+  .about-values-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .about-approach-grid{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+
+  .cta-features,
+  .course-final-list{
+    grid-template-columns:1fr;
+  }
+
+  .about-cta-box{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+}
+
+
+/*=========================
+768px
+=========================*/
+
+@media (max-width:768px){
+
+  html{
+    scroll-padding-top:82px;
+  }
+
+  body{
+    font-size:15px;
+  }
+
+  section{
+    padding:64px 0;
+  }
+
+  .container{
+    width:min(94%,1180px);
+  }
+
+  .topbar-inner{
+    justify-content:center;
+    text-align:center;
+  }
+
+  .topbar-group,
+  .topbar-links{
+    justify-content:center;
+  }
+
+  .topbar-group > span:first-child{
+    display:none;
+  }
+
+  .navbar{
+    min-height:72px;
+  }
+
+  .nav-links{
+    top:72px;
+    max-height:calc(100vh - 72px);
+    overflow-y:auto;
+  }
+
+  .logo-copy small{
+    display:none;
+  }
+
+  .logo-icon,
+  .logo-mark{
+    width:40px;
+    height:40px;
+  }
+
+  .logo-name,
+  .logo-text{
+    font-size:1.3rem;
+  }
+
+  .announcement{
+    padding:9px 14px;
+    font-size:.82rem;
+  }
+
+  .hero,
+  .course-hero,
+  .about-hero{
+    padding:72px 0 58px;
+    text-align:center;
+  }
+
+  .hero h1,
+  .course-hero h1,
+  .about-hero h1{
+    font-size:clamp(2rem,10vw,3.2rem);
+  }
+
+  .hero p,
+  .course-hero p,
+  .about-hero p{
+    margin-left:auto;
+    margin-right:auto;
+    font-size:1rem;
+  }
+
+  .hero-actions,
+  .course-hero-buttons,
+  .about-hero-actions{
+    justify-content:center;
+  }
+
+  .search-panel,
+  .course-search-panel{
+    padding:22px;
+    border-radius:22px;
+  }
+
+  .search-panel input,
+  .search-panel select,
+  .search-panel button,
+  .search-fields input,
+  .search-fields select,
+  .search-button{
+    width:100%;
+    min-height:50px;
+  }
+
+  .category-grid,
+  .quick-category-grid{
+    display:flex;
+    overflow-x:auto;
+    gap:14px;
+    padding:4px 2px 16px;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;
+  }
+
+  .category-grid::-webkit-scrollbar,
+  .quick-category-grid::-webkit-scrollbar{
+    display:none;
+  }
+
+  .category-card,
+  .quick-category{
+    min-width:165px;
+    flex:0 0 165px;
+    scroll-snap-align:start;
+  }
+
+  .course-grid,
+  .eligibility-grid,
+  .features-grid,
+  .exam-grid,
+  .career-grid,
+  .success-grid,
+  .about-services-grid,
+  .about-achievements-grid,
+  .about-why-grid,
+  .about-impact-grid,
+  .about-values-grid,
+  .about-approach-grid{
+    grid-template-columns:1fr;
+  }
+
+  .course-image{
+    height:210px;
+  }
+
+  .course-footer,
+  .course-actions{
+    flex-direction:column;
+  }
+
+  .course-footer a,
+  .course-actions a{
+    width:100%;
+  }
+
+  .about-feature-list{
+    grid-template-columns:1fr;
+  }
+
+  .about-visual{
+    min-height:300px;
+  }
+
+  .about-visual-symbol{
+    width:160px;
+    height:160px;
+    font-size:4rem;
+  }
+
+  .recruiter-card,
+  .recruiter{
+    min-width:180px;
+  }
+
+  .faq-item summary{
+    padding:20px 54px 20px 20px;
+    font-size:1rem;
+  }
+
+  .faq-item p{
+    padding:0 20px 20px;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer-bottom{
+    flex-direction:column;
+    text-align:center;
+  }
+
+}
+/*==================================================
+480px MOBILE
+==================================================*/
+
+@media (max-width:480px){
+
+body{
+font-size:14px;
+}
+
+section{
+padding:52px 0;
+}
+
+.container{
+width:94%;
+}
+
+.hero h1,
+.course-hero h1,
+.about-hero h1{
+font-size:1.9rem;
+line-height:1.15;
+}
+
+.hero p,
+.course-hero p,
+.about-hero p{
+font-size:.95rem;
+}
+
+.logo-name{
+font-size:1.18rem;
+}
+
+.logo-icon{
+width:38px;
+height:38px;
+}
+
+.btn{
+width:100%;
+min-height:48px;
+}
+
+.course-image{
+height:180px;
+}
+
+.course-content,
+.course-body,
+.eligibility-card,
+.feature-card,
+.exam-card,
+.career-card,
+.success-card,
+.about-service-card,
+.about-value-card{
+padding:20px;
+}
+
+.category-card,
+.quick-category{
+min-width:150px;
+flex:0 0 150px;
+}
+
+.category-icon{
+width:62px;
+height:62px;
+font-size:28px;
+}
+
+.floating-buttons{
+right:12px;
+bottom:12px;
+}
+
+.float-btn{
+width:48px;
+height:48px;
+}
+
+}
+/*==================================================
+LANDSCAPE PHONE
+==================================================*/
+
+@media (max-height:500px) and (orientation:landscape){
+
+.hero,
+.course-hero,
+.about-hero{
+padding:50px 0;
+}
+
+.nav-links{
+max-height:calc(100vh - 60px);
+overflow:auto;
+}
+
+.floating-buttons{
+display:none;
+}
+
+}
+
+
+/*==================================================
+REDUCED MOTION
+==================================================*/
+
+@media (prefers-reduced-motion:reduce){
+
+*,
+*::before,
+*::after{
+
+animation:none !important;
+
+transition:none !important;
+
+scroll-behavior:auto !important;
+
+}
+
+}
+/*==================================================
+360px DEVICES
+==================================================*/
+
+@media (max-width:360px){
+
+.hero h1,
+.course-hero h1,
+.about-hero h1{
+
+font-size:1.7rem;
+
+}
+
+.section-title h2,
+.section-heading h2{
+
+font-size:1.55rem;
+
+}
+
+.logo-name{
+
+font-size:1.05rem;
+
+}
+
+.course-tag{
+
+font-size:.7rem;
+
+padding:5px 9px;
+
+}
+
+.recruiter-card{
+
+min-width:150px;
+
+}
+
+}

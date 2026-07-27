@@ -1,745 +1,3285 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
 
   <meta
     name="viewport"
-    content="width=device-width, initial-scale=1.0"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
   >
 
-  <title>MedOrbit | Medical Education & Admission Guidance</title>
+  <title>
+    MedOrbit | Medical Education, Admission & Career Guidance
+  </title>
 
   <meta
     name="description"
-    content="MedOrbit provides guidance for MBBS, BDS, BAMS, medical admissions, colleges and study abroad opportunities."
+    content="MedOrbit provides professional guidance for MBBS, BDS, BAMS, BHMS, nursing, pharmacy, medical admissions, college selection, study abroad and career opportunities."
   >
 
+  <meta
+    name="keywords"
+    content="MedOrbit, MBBS admission, BDS admission, BAMS admission, BHMS admission, medical colleges, study abroad, education consultancy, career guidance"
+  >
+
+  <meta name="author" content="MedOrbit Consultancy">
+  <meta name="theme-color" content="#0756a3">
+
+  <link rel="canonical" href="https://medorbits.in/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MedOrbit | Education, Admission & Career Guidance">
+  <meta
+    property="og:description"
+    content="Explore courses, colleges, study abroad opportunities, admission guidance and career support with MedOrbit."
+  >
+  <meta property="og:url" content="https://medorbits.in/">
+  
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+>
+
   <link rel="stylesheet" href="assets/css/style.css">
+<script defer src="assets/js/main.js"></script>
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 
 <body>
 
-  <!-- Header -->
+  <!-- =========================================
+       HEADER
+  ========================================== -->
+
   <header class="header">
+
     <div class="container navbar">
 
-      <a href="#" class="logo">
+      <a href="#home" class="logo" aria-label="MedOrbit home">
         Med<span>Orbit</span>
       </a>
 
-      <button class="menu-button" id="menuButton">
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="navLinks"
+        aria-expanded="false"
+      >
         ☰
       </button>
 
-      <nav class="nav-links" id="navLinks">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#courses">Courses</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+      <nav
+        class="nav-links"
+        id="navLinks"
+        aria-label="Main navigation"
+      >
+
+        <a href="#home">
+          Home
+        </a>
+
+        <a href="#about">
+          About
+        </a>
+
+        <a href="#courses">
+          Courses
+        </a>
+
+        <a href="#services">
+          Services
+        </a>
+
+        <a href="#career-services">
+          Careers
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
       </nav>
 
     </div>
+
   </header>
 
 
-  <!-- Hero Section -->
+  <!-- =========================================
+       MAIN CONTENT
+  ========================================== -->
+
   <main>
 
+
+    <!-- =========================================
+         HERO SECTION
+    ========================================== -->
+
     <section class="hero" id="home">
+
       <div class="container hero-content">
 
         <div class="hero-text">
 
           <p class="hero-label">
-  
-  Medical Education & Career Guidance
-      
-        </p>
+            Medical Education, Admission & Career Guidance
+          </p>
 
           <h1>
-  Build Your Medical Career with MedOrbit
+            Build Your Future with Trusted Guidance from MedOrbit
           </h1>
 
           <p class="hero-description">
-     Get trusted guidance for MBBS, BDS, BAMS, medical
-       admissions, college selection and study abroad opportunities.
+            Get professional support for MBBS, BDS, BAMS, BHMS, nursing,
+            pharmacy, college selection, counselling, study abroad and
+            career opportunities across India.
           </p>
 
           <div class="hero-buttons">
-            <a href="#courses" class="button primary-button">
+
+            <a
+              href="#courses"
+              class="button primary-button"
+            >
               Explore Courses
             </a>
 
-            <a href="#contact" class="button secondary-button">
-              Free Counselling
+            <a
+              href="#contact"
+              class="button secondary-button"
+            >
+             Contact an Expert
             </a>
+
+          </div>
+
+          <div class="hero-trust-points">
+
+            <span>
+              ✓ Personalised Guidance
+            </span>
+
+            <span>
+              ✓ Transparent Information
+            </span>
+
+            <span>
+              ✓ Student Support
+            </span>
+
           </div>
 
         </div>
 
+
+        <!-- Guidance Form -->
+
         <div class="hero-card">
 
-          <h2>Request Free Guidance</h2>
+    <p class="hero-card-label">
+  Exclusive Consultation
+</p>
 
-          <p>
-            Share your details and our counsellor will contact you.
-          </p>
+<h2>
+  Let's Shape Your Future
+</h2>
 
+<p class="hero-card-description">
+  
+  we are here to help you make informed decisions with confidence.
+</p>
+
+<div class="hero-card-highlight">
+
+  <span>✨ Premium Guidance</span>
+
+  <span>🎓 Education Experts</span>
+
+  <span>🌍 Global Opportunities</span>
+
+  <span>🤝 Personal Assistance</span>
+
+</div>
           <form id="guidanceForm">
+
+            <label
+              for="studentName"
+              class="visually-hidden"
+            >
+              Full Name
+            </label>
 
             <input
               type="text"
               id="studentName"
+              name="studentName"
               placeholder="Full Name"
+              autocomplete="name"
               required
             >
+
+
+            <label
+              for="studentPhone"
+              class="visually-hidden"
+            >
+              Mobile Number
+            </label>
 
             <input
               type="tel"
               id="studentPhone"
+              name="studentPhone"
               placeholder="Mobile Number"
+              inputmode="tel"
+              autocomplete="tel"
+              pattern="[0-9]{10}"
+              maxlength="10"
               required
             >
 
-            <select id="studentCourse" required>
-              <option value="">Select Course</option>
-              <option value="MBBS">MBBS</option>
-              <option value="BDS">BDS</option>
-              <option value="BAMS">BAMS</option>
-              <option value="Study Abroad">Study Abroad</option>
+
+            <label
+              for="studentCourse"
+              class="visually-hidden"
+            >
+              Select Course or Service
+            </label>
+
+            <select
+              id="studentCourse"
+              name="studentCourse"
+              required
+            >
+
+              <option value="">
+                Select Course or Service
+              </option>
+
+              <option value="MBBS">
+                MBBS
+              </option>
+
+              <option value="BDS">
+                BDS
+              </option>
+
+              <option value="BAMS">
+                BAMS
+              </option>
+
+              <option value="BHMS">
+                BHMS
+              </option>
+
+              <option value="Nursing">
+                Nursing
+              </option>
+
+              <option value="Pharmacy">
+                Pharmacy
+              </option>
+
+              <option value="Study Abroad">
+                Study Abroad
+              </option>
+
+              <option value="College Selection">
+                College Selection
+              </option>
+
+              <option value="Career Guidance">
+                Career Guidance
+              </option>
+
             </select>
 
-            <button type="submit" class="form-button">
+
+            <button
+              type="submit"
+              class="form-button"
+            >
               Continue on WhatsApp
             </button>
 
           </form>
 
+          <p class="form-note">
+            Submission does not guarantee admission, seat allotment,
+            scholarship, interview or employment.
+          </p>
+
         </div>
 
       </div>
+
     </section>
-      </section>
 
 
+    <!-- =========================================
+         STATISTICS
+    ========================================== -->
 
-ok<!-- Statistics -->
-<section class="stats">
-  <div class="container stats-grid">
+    <section
+      class="stats"
+      aria-label="MedOrbit highlights"
+    >
 
-    <div class="stat-card">
-      <h2>5000+</h2>
-      <p>Students Guided</p>
-    </div>
+      <div class="container stats-grid">
 
-    <div class="stat-card">
-      <h2>100+</h2>
-      <p>Medical Colleges</p>
-    </div>
-
-    <div class="stat-card">
-      <h2>8+</h2>
-      <p>Study Destinations</p>
-    </div>
-
-    <div class="stat-card">
-      <h2>24×7</h2>
-      <p>Student Support</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- Statistics -->
-<!-- About Section --><!-- Career & Employment Services -->
-<section class="career-section" id="career-services">
-
-  <div class="container">
-     
-      <section class="career-section" id="career-services">
-
-  <div class="container">
-
-    <details class="career-details">
-
-      <summary class="career-banner">
-
-        <div class="career-banner-left">
-
-          <span class="career-tag">
-            Career & Employment Services
-          </span>
+        <article class="stat-card">
 
           <h2>
-            Build Your Career with MedOrbit
+            5000+
           </h2>
 
           <p>
-            Discover genuine opportunities across India with career guidance,
-            interview support and employer connections.
+            Student Enquiries Assisted
           </p>
 
-          <div class="career-banner-stats">
-            <span>✓ PAN India Opportunities</span>
-            <span>✓ Multiple Industries</span>
-            <span>✓ Career Support</span>
+        </article>
+
+
+        <article class="stat-card">
+
+          <h2>
+            100+
+          </h2>
+
+          <p>
+            Institutions Explored
+          </p>
+
+        </article>
+
+
+        <article class="stat-card">
+
+          <h2>
+            8+
+          </h2>
+
+          <p>
+            Study Destinations
+          </p>
+
+        </article>
+
+
+        <article class="stat-card">
+
+          <h2>
+            24×7
+          </h2>
+
+          <p>
+            Online Enquiry Support
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+        <!-- =========================================
+         ABOUT SECTION
+    ========================================== -->
+
+    <section class="section about-section" id="about">
+
+      <div class="container about-grid">
+
+        <div class="about-content">
+
+          <p class="section-label">
+            About MedOrbit
+          </p>
+
+          <h2>
+            Clear Guidance for Education, Admission and Career Decisions
+          </h2>
+
+         <p>
+  MedOrbit is an education consultancy and career-support platform
+  that helps students and candidates understand academic,
+  admission-related and employment opportunities.
+</p>
+
+<p>
+  MedOrbit is an education consultancy and career-support platform
+  that helps students and candidates understand academic,
+  admission-related and employment opportunities.
+</p>
+
+<p>
+  Our goal is to simplify complex processes through responsible
+  communication, verified information sources and personalised
+  assistance based on individual requirements.
+</p>
+
+
+          <div class="about-points">
+
+            <div class="about-point">
+              <span>✓</span>
+
+              <p>
+                Course and college selection guidance
+              </p>
+            </div>
+
+            <div class="about-point">
+              <span>✓</span>
+
+              <p>
+                Admission and counselling-process assistance
+              </p>
+            </div>
+
+            <div class="about-point">
+              <span>✓</span>
+
+              <p>
+                Study abroad information and application support
+              </p>
+            </div>
+
+            <div class="about-point">
+              <span>✓</span>
+
+              <p>
+                Career preparation and recruitment-process guidance
+              </p>
+            </div>
+
+          </div>
+
+
+          <a
+            href="#contact"
+            class="button primary-button"
+          >
+            Speak with a Counsellor
+          </a>
+
+        </div>
+
+
+        <div class="about-image">
+
+          <img
+            src="assets/images/about-medorbit.jpg"
+            alt="Students receiving education and career guidance"
+            loading="lazy"
+          >
+
+          <div class="about-image-card">
+
+            <strong>
+              Personalised Guidance
+            </strong>
+
+            <span>
+              Support based on eligibility, preferences, academic background
+              and available opportunities.
+            </span>
+
           </div>
 
         </div>
 
-        <div class="career-banner-right">
-
-          <img
-            src="assets/images/career-banner.jpg"
-            alt="Career counselling and employment assistance"
-            loading="lazy"
-          >
-
-          <span class="career-view-btn">
-            <span class="open-label">View Details</span>
-            <span class="close-label">Hide Details</span>
-            <span class="career-arrow">⌄</span>
-          </span>
-
-        </div>
-
-      </summary>
-
-
-          <!-- ALL detailed Career content starts here -->
-          
-
-        Career & Employment Services
-      </p>
-
-      <h2>
-        Connecting Talent with Opportunity Across India
-      </h2>
-
-      <p class="career-intro">
-        At MedOrbit, we believe that the right career opportunity can
-        positively transform a person’s future. In addition to education
-        and admission guidance, we provide career and employment assistance
-        to help eligible candidates identify suitable opportunities with
-        participating employers and recruitment organizations across India.
-      </p>
-
-      <p>
-        Our career support team assists candidates with opportunity discovery,
-        profile evaluation, employer requirements, interview preparation,
-        documentation and recruitment-process guidance. Hiring may take place
-        through scheduled interviews, direct recruitment drives, walk-in
-        interviews, institutional recruitment programmes, apprenticeships,
-        internships or other legitimate recruitment processes conducted by
-        the respective employer or recruiting organization.
-      </p>
-
-    </div>
-
-
-    <!-- Industry Sectors -->
-    <div class="career-block">
-
-      <div class="career-block-heading">
-        <span>01</span>
-
-        <div>
-          <h3>Opportunities Across Multiple Industries</h3>
-
-          <p>
-            Available sectors depend on active employer requirements,
-            candidate eligibility and location.
-          </p>
-        </div>
       </div>
 
-      <div class="career-grid career-industry-grid">
+    </section>
 
-        <article class="career-card">
-          <h4>Healthcare & Hospitals</h4>
-          <p>Clinical support, hospital operations and allied services.</p>
-        </article>
+    <!-- =========================================
+         FEATURED COURSES
+    ========================================== -->
 
-        <article class="career-card">
-          <h4>Pharmaceuticals & Life Sciences</h4>
-          <p>Production, quality, sales, operations and related functions.</p>
-        </article>
-
-        <article class="career-card">
-          <h4>Medical & Diagnostic Services</h4>
-          <p>Diagnostic centres, laboratories and healthcare support roles.</p>
-        </article>
-
-        <article class="career-card">
-          <h4>Education & Training</h4>
-          <p>Teaching support, counselling, administration and training.</p>
-        </article>
-
-        <article class="career-card">
-          <h4>Aviation & Airport Services</h4>
-          <p>Ground operations and other employer-approved support roles.</p>
-        </article>
-
-        <article class="career-card">
-          <h4>Hospitality & Tourism</h4>
-          <p>Hotels, travel services, guest relations and operations.</p>
-        </article>
-
-        <article class="career-card">
-          <h4>Retail & E-Commerce</h4>
-          <p>Store operations, sales, customer service and fulfilment.</p>
-        </article>
-
-        <article class="career-card">
-          <h4>Manufacturing & Industrial Operations</h4>
-          <p>Production, maintenance, quality and industrial support.</p>
-        </article>
-
-        <article class="career-card">
-          <h4>Logistics & Supply Chain</h4>
-          <p>Warehouse, inventory, dispatch and transportation operations.</p>
-        </article>
-
-        <article class="career-card">
-          <h4>Information Technology</h4>
-          <p>Technical support, software, data and business operations.</p>
-        </article>
-
-        <article class="career-card">
-          <h4>Banking & Financial Services</h4>
-          <p>Operations, customer support, sales and back-office roles.</p>
-        </article>
-
-        <article class="career-card">
-          <h4>Customer Support & BPO</h4>
-          <p>Voice, non-voice, service desk and process-support positions.</p>
-        </article>
-
-        <article class="career-card">
-          <h4>Sales & Marketing</h4>
-          <p>Field sales, business development and promotional roles.</p>
-        </article>
-
-        <article class="career-card">
-          <h4>Administrative Operations</h4>
-          <p>Office coordination, data entry and administrative support.</p>
-        </article>
-
-        <article class="career-card">
-          <h4>Skilled Technical Trades</h4>
-          <p>Trade-specific roles subject to certification and experience.</p>
-        </article>
-
-        <article class="career-card">
-          <h4>Contractual Projects</h4>
-          <p>
-            Government-related or institutional contractual projects,
-            where applicable and officially authorized.
-          </p>
-        </article>
-
-      </div>
-
-    </div>
-
-
-    <!-- Qualification Levels -->
-    <div class="career-block career-light-block">
-
-      <div class="career-block-heading">
-        <span>02</span>
-
-        <div>
-          <h3>Opportunities for Different Qualification Levels</h3>
-
-          <p>
-            Eligibility depends on the employer’s role-specific criteria.
-          </p>
-        </div>
-      </div>
-
-      <div class="qualification-list">
-
-        <span>10th Pass</span>
-        <span>12th Pass</span>
-        <span>ITI</span>
-        <span>Polytechnic</span>
-        <span>Diploma</span>
-        <span>Undergraduate Degree</span>
-        <span>Professional Degree</span>
-        <span>Postgraduate Degree</span>
-        <span>Healthcare Professionals</span>
-        <span>Allied Health Professionals</span>
-        <span>Freshers</span>
-        <span>Experienced Professionals</span>
-
-      </div>
-
-      <p class="career-note">
-        Whether a candidate is beginning a career or seeking professional
-        advancement, MedOrbit aims to provide relevant information and
-        recruitment-process support based on available openings.
-      </p>
-
-    </div>
-
-
-    <!-- Employment Types -->
-    <div class="career-block">
-
-      <div class="career-block-heading">
-        <span>03</span>
-
-        <div>
-          <h3>Contractual and Permanent Employment Assistance</h3>
-
-          <p>
-            Employment type, salary and benefits are determined exclusively
-            by the recruiting employer.
-          </p>
-        </div>
-      </div>
-
-      <div class="employment-type-grid">
-
-        <article class="employment-type-card">
-          <strong>Permanent Positions</strong>
-          <p>Regular employment subject to employer appointment terms.</p>
-        </article>
-
-        <article class="employment-type-card">
-          <strong>Contractual Roles</strong>
-          <p>Fixed-term employment based on organizational requirements.</p>
-        </article>
-
-        <article class="employment-type-card">
-          <strong>Project-Based Assignments</strong>
-          <p>Roles linked to a specific project, duration or client contract.</p>
-        </article>
-
-        <article class="employment-type-card">
-          <strong>Apprenticeships</strong>
-          <p>Structured learning and work opportunities where available.</p>
-        </article>
-
-        <article class="employment-type-card">
-          <strong>Internships</strong>
-          <p>Short-term practical experience subject to employer policies.</p>
-        </article>
-
-        <article class="employment-type-card">
-          <strong>Graduate Trainee Programmes</strong>
-          <p>Entry-level training opportunities for eligible graduates.</p>
-        </article>
-
-        <article class="employment-type-card">
-          <strong>Entry-Level Opportunities</strong>
-          <p>Roles for freshers and candidates with limited experience.</p>
-        </article>
-
-        <article class="employment-type-card">
-          <strong>Professional and Managerial Roles</strong>
-          <p>
-            Mid-level and senior opportunities based on experience,
-            competency and employer requirements.
-          </p>
-        </article>
-
-      </div>
-
-      <p class="career-note">
-        Compensation, benefits, responsibilities, location, working hours and
-        employment conditions vary according to the employer, role, candidate
-        profile, market conditions and applicable laws.
-      </p>
-
-    </div>
-    
-
-
-           hi<!-- Career Support -->
-          
-         <p>
-            Practical assistance designed to help candidates participate
-            effectively in legitimate recruitment processes.
-          </p>
-        </div>
-      </div>
-
-      <div class="career-support-grid">
-
-        <div class="career-support-item">✓ Career Counselling</div>
-        <div class="career-support-item">✓ Profile Evaluation</div>
-        <div class="career-support-item">✓ Resume and CV Development</div>
-        <div class="career-support-item">✓ Interview Preparation</div>
-        <div class="career-support-item">✓ Soft-Skills Guidance</div>
-        <div class="career-support-item">✓ Job-Matching Assistance</div>
-        <div class="career-support-item">✓ Recruitment Drive Updates</div>
-        <div class="career-support-item">✓ Employer Referral Opportunities</div>
-        <div class="career-support-item">✓ Documentation Guidance</div>
-        <div class="career-support-item">✓ Offer-Document Review Support</div>
-        <div class="career-support-item">✓ Joining-Process Guidance</div>
-        <div class="career-support-item">✓ PAN-India Employment Information</div>
-
-      </div>
-
-    </div>
-
-
-    <!-- Commitment -->
-    <div class="career-commitment">
-
-   <div class="career-commitment-content">
-
-        <p class="section-label">Our Commitment</p>
-
-        <h3>
-          Honest Guidance, Professional Support and Transparent Communication
-        </h3>
-
-        <p>
-          Our objective is to help candidates improve their career readiness
-          and access relevant employment information through participating
-          employers, recruitment partners and authorized hiring processes.
-        </p>
-
-        <p>
-          MedOrbit aims to maintain ethical practices, clear communication and
-          professional support throughout the candidate-assistance process.
-        </p>
-
-      </div>
-
-      <div class="career-commitment-actions">
-
-        <a href="#contact" class="button primary-button">
-          Submit Your Profile
-        </a>
-
-        <a
-          href="https://wa.me/919142102309"
-          class="button secondary-button"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Speak on WhatsApp
-        </a>
-
-      </div>
-
-    </div>  
- 
-
-    <!-- Disclaimer -->
-    <div class="career-disclaimer">
-
-      <div class="career-disclaimer-title">
-        <span>!</span>
-        <h3>Important Employment Disclaimer</h3>
-      </div>
-
-        MedOrbit operates as an education consultancy and career-support
-        service. MedOrbit does not guarantee employment, interview calls,
-        selection, job offers, salary levels, promotions, appointment,
-        placement or joining dates.
-      </p>
-
-      <p>
-        
-      </p>
-
-      <p>
-        MedOrbit does not control third-party hiring decisions and is not
-        responsible for employer-led changes to vacancy status, interview
-        schedules, compensation, role requirements, eligibility conditions,
-        work location or recruitment timelines.
-      </p>
-
-      <p class="career-final-message">
-        <strong>Our promise:</strong>
-        honest guidance, professional career support and access to relevant
-        opportunity information. Final selection depends on candidate
-        eligibility, interview performance, document verification and the
-        employer’s independent hiring process.
-      </p>
-
-    </div> ...
-   
-           </div>      
-            </details>  
-        </div>      
-</section>
-
-  </div>
-
-</section>
-
-
-    <!-- Courses Section -->
     <section class="section light-section" id="courses">
 
       <div class="container">
 
         <div class="section-heading">
-          <p class="section-label">Featured Courses</p>
-          <h2>Choose Your Medical Career</h2>
+
+          <p class="section-label">
+            Featured Courses
+          </p>
+
+          <h2>
+            Explore Healthcare and Medical Programmes
+          </h2>
+
+          <p>
+            Swipe through popular courses or open the complete course
+            directory for more options.
+          </p>
+
         </div>
 
-        <div class="card-grid">
 
-          <article class="course-card">
-            <div class="course-icon">🩺</div>
-            <h3>MBBS</h3>
+        <div class="featured-course-slider">
+
+          <a href="#contact" class="slider-course-card">
+            <span class="slider-course-icon">🩺</span>
+
+            <div>
+              <h3>MBBS</h3>
+              <p>India & Abroad</p>
+            </div>
+
+            <span class="slider-course-arrow">→</span>
+          </a>
+
+
+          <a href="#contact" class="slider-course-card">
+            <span class="slider-course-icon">🦷</span>
+
+            <div>
+              <h3>BDS</h3>
+              <p>Dental Education</p>
+            </div>
+
+            <span class="slider-course-arrow">→</span>
+          </a>
+
+
+          <a href="#contact" class="slider-course-card">
+            <span class="slider-course-icon">🌿</span>
+
+            <div>
+              <h3>BAMS</h3>
+              <p>Ayurveda</p>
+            </div>
+
+            <span class="slider-course-arrow">→</span>
+          </a>
+
+
+          <a href="#contact" class="slider-course-card">
+            <span class="slider-course-icon">🏥</span>
+
+            <div>
+              <h3>BHMS</h3>
+              <p>Homeopathy</p>
+            </div>
+
+            <span class="slider-course-arrow">→</span>
+          </a>
+
+
+          <a href="#contact" class="slider-course-card">
+            <span class="slider-course-icon">🌙</span>
+
+            <div>
+              <h3>BUMS</h3>
+              <p>Unani Medicine</p>
+            </div>
+
+            <span class="slider-course-arrow">→</span>
+          </a>
+
+
+          <a href="#contact" class="slider-course-card">
+            <span class="slider-course-icon">👩‍⚕️</span>
+
+            <div>
+              <h3>Nursing</h3>
+              <p>GNM • ANM • B.Sc</p>
+            </div>
+
+            <span class="slider-course-arrow">→</span>
+          </a>
+
+
+          <a href="#contact" class="slider-course-card">
+            <span class="slider-course-icon">💊</span>
+
+            <div>
+              <h3>Pharmacy</h3>
+              <p>D.Pharm • B.Pharm</p>
+            </div>
+
+            <span class="slider-course-arrow">→</span>
+          </a>
+
+
+          <a href="#contact" class="slider-course-card">
+            <span class="slider-course-icon">🦿</span>
+
+            <div>
+              <h3>Physiotherapy</h3>
+              <p>BPT • MPT</p>
+            </div>
+
+            <span class="slider-course-arrow">→</span>
+          </a>
+
+
+          <a href="#contact" class="slider-course-card">
+            <span class="slider-course-icon">🔬</span>
+
+            <div>
+              <h3>Allied Health</h3>
+              <p>Paramedical Courses</p>
+            </div>
+
+            <span class="slider-course-arrow">→</span>
+          </a>
+
+
+          <a
+            href="courses.html"
+            class="slider-course-card slider-view-all"
+          >
+            <span class="slider-course-icon">＋</span>
+
+            <div>
+              <h3>All Courses</h3>
+              <p>Explore 50+ Options</p>
+            </div>
+
+            <span class="slider-course-arrow">↗</span>
+          </a>
+
+        </div>
+
+
+        <div class="course-slider-footer">
+
+          <span class="course-swipe-hint">
+            Swipe to explore →
+          </span>
+
+          <a href="courses.html" class="course-directory-button">
+            View All Courses
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- =========================================
+         MORE COURSES
+    ========================================== -->
+
+    <section class="section more-courses-section" id="more-courses">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            More Courses
+          </p>
+
+          <h2>
+            Explore More Education and Career Pathways
+          </h2>
+
+          <p>
+            Explore engineering, technology, healthcare, management,
+            law and other professional programmes.
+          </p>
+
+        </div>
+
+
+        <!-- Visible Horizontal Course Preview -->
+
+        <div class="course-catalog-slider">
+
+          <a href="#contact" class="catalog-course-card">
+
+            <span class="catalog-course-number">
+              01
+            </span>
+
+            <span class="catalog-course-icon">
+              ⚙️
+            </span>
+
+            <div>
+              <h3>Engineering</h3>
+              <p>B.Tech • BE • Diploma</p>
+            </div>
+
+          </a>
+
+
+          <a href="#contact" class="catalog-course-card">
+
+            <span class="catalog-course-number">
+              02
+            </span>
+
+            <span class="catalog-course-icon">
+              💻
+            </span>
+
+            <div>
+              <h3>Computer Applications</h3>
+              <p>BCA • MCA • IT</p>
+            </div>
+
+          </a>
+
+
+          <a href="#contact" class="catalog-course-card">
+
+            <span class="catalog-course-number">
+              03
+            </span>
+
+            <span class="catalog-course-icon">
+              📊
+            </span>
+
+            <div>
+              <h3>Management</h3>
+              <p>BBA • MBA • PGDM</p>
+            </div>
+
+          </a>
+
+
+          <a href="#contact" class="catalog-course-card">
+
+            <span class="catalog-course-number">
+              04
+            </span>
+
+            <span class="catalog-course-icon">
+              ⚖️
+            </span>
+
+            <div>
+              <h3>Law</h3>
+              <p>LLB • LLM • Integrated Law</p>
+            </div>
+
+          </a>
+
+
+          <a href="#contact" class="catalog-course-card">
+
+            <span class="catalog-course-number">
+              05
+            </span>
+
+            <span class="catalog-course-icon">
+              🐾
+            </span>
+
+            <div>
+              <h3>Veterinary Science</h3>
+              <p>BVSc & Animal Husbandry</p>
+            </div>
+
+          </a>
+
+
+          <a href="#contact" class="catalog-course-card">
+
+            <span class="catalog-course-number">
+              06
+            </span>
+
+            <span class="catalog-course-icon">
+              🧬
+            </span>
+
+            <div>
+              <h3>Biotechnology</h3>
+              <p>Life Sciences & Research</p>
+            </div>
+
+          </a>
+
+
+          <a href="#contact" class="catalog-course-card">
+
+            <span class="catalog-course-number">
+              07
+            </span>
+
+            <span class="catalog-course-icon">
+              🦿
+            </span>
+
+            <div>
+              <h3>Physiotherapy</h3>
+              <p>BPT • MPT</p>
+            </div>
+
+          </a>
+
+
+          <a href="#contact" class="catalog-course-card">
+
+            <span class="catalog-course-number">
+              08
+            </span>
+
+            <span class="catalog-course-icon">
+              🔬
+            </span>
+
+            <div>
+              <h3>Medical Laboratory Technology</h3>
+              <p>BMLT • DMLT</p>
+            </div>
+
+          </a>
+
+        </div>
+
+
+        <!-- Hidden Complete Course Catalogue -->
+
+        <details class="hidden-courses-details">
+
+          <summary class="hidden-courses-banner">
+
+            <div class="hidden-courses-banner-icon">
+              📚
+            </div>
+
+            <div class="hidden-courses-banner-text">
+
+              <span class="section-label">
+                Complete Course Catalogue
+              </span>
+
+              <h2>
+                Explore All Available Courses
+              </h2>
+
+              <p>
+                Open the complete catalogue to explore additional
+                professional and career-focused programmes.
+              </p>
+
+            </div>
+
+            <div class="hidden-courses-button">
+
+              <span class="hidden-courses-open">
+                Explore More
+              </span>
+
+              <span class="hidden-courses-close">
+                Hide Courses
+              </span>
+
+              <span class="hidden-courses-arrow">
+                ⌄
+              </span>
+
+            </div>
+
+          </summary>
+
+
+          <div class="hidden-courses-content">
+
+            <div class="hidden-courses-grid">
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  🐾
+                </div>
+
+                <h3>
+                  Veterinary Science
+                </h3>
+
+                <p>
+                  Explore BVSc and Animal Husbandry programmes,
+                  eligibility and career opportunities.
+                </p>
+
+                <a href="#contact" data-course="Veterinary Science">
+                  Explore Veterinary Courses →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  🦿
+                </div>
+
+                <h3>
+                  Physiotherapy
+                </h3>
+
+                <p>
+                  Explore BPT and MPT programmes, colleges,
+                  eligibility and specialisations.
+                </p>
+
+                <a href="#contact" data-course="Physiotherapy">
+                  Explore Physiotherapy →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  🧠
+                </div>
+
+                <h3>
+                  Occupational Therapy
+                </h3>
+
+                <p>
+                  Explore occupational therapy programmes,
+                  rehabilitation and professional pathways.
+                </p>
+
+                <a href="#contact" data-course="Occupational Therapy">
+                  Explore Occupational Therapy →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  🔬
+                </div>
+
+                <h3>
+                  Medical Laboratory Technology
+                </h3>
+
+                <p>
+                  Explore BMLT, DMLT, laboratory science and
+                  diagnostic career pathways.
+                </p>
+
+                <a
+                  href="#contact"
+                  data-course="Medical Laboratory Technology"
+                >
+                  Explore MLT Courses →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  🩻
+                </div>
+
+                <h3>
+                  Radiology & Imaging Technology
+                </h3>
+
+                <p>
+                  Explore radiology, imaging and diagnostic
+                  technology programmes.
+                </p>
+
+                <a
+                  href="#contact"
+                  data-course="Radiology and Imaging Technology"
+                >
+                  Explore Radiology Courses →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  🏥
+                </div>
+
+                <h3>
+                  Operation Theatre Technology
+                </h3>
+
+                <p>
+                  Explore operation theatre technician programmes
+                  and hospital-based careers.
+                </p>
+
+                <a
+                  href="#contact"
+                  data-course="Operation Theatre Technology"
+                >
+                  Explore OTT Courses →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  💧
+                </div>
+
+                <h3>
+                  Dialysis Technology
+                </h3>
+
+                <p>
+                  Explore dialysis technician programmes,
+                  clinical training and career opportunities.
+                </p>
+
+                <a href="#contact" data-course="Dialysis Technology">
+                  Explore Dialysis Courses →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  👁️
+                </div>
+
+                <h3>
+                  Optometry
+                </h3>
+
+                <p>
+                  Explore optometry, eye-care programmes,
+                  eligibility and career pathways.
+                </p>
+
+                <a href="#contact" data-course="Optometry">
+                  Explore Optometry →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  🚑
+                </div>
+
+                <h3>
+                  Emergency & Trauma Care
+                </h3>
+
+                <p>
+                  Explore emergency-care programmes,
+                  clinical training and healthcare careers.
+                </p>
+
+                <a
+                  href="#contact"
+                  data-course="Emergency and Trauma Care"
+                >
+                  Explore Emergency Care →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  🫁
+                </div>
+
+                <h3>
+                  Anaesthesia Technology
+                </h3>
+
+                <p>
+                  Explore anaesthesia technician programmes
+                  and hospital-based professional pathways.
+                </p>
+
+                <a
+                  href="#contact"
+                  data-course="Anaesthesia Technology"
+                >
+                  Explore Anaesthesia Courses →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  ❤️
+                </div>
+
+                <h3>
+                  Cardiac Care Technology
+                </h3>
+
+                <p>
+                  Explore cardiac-care programmes,
+                  clinical training and healthcare opportunities.
+                </p>
+
+                <a
+                  href="#contact"
+                  data-course="Cardiac Care Technology"
+                >
+                  Explore Cardiac Care →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  🫁
+                </div>
+
+                <h3>
+                  Respiratory Therapy
+                </h3>
+
+                <p>
+                  Explore respiratory-care programmes,
+                  hospital training and critical-care careers.
+                </p>
+
+                <a href="#contact" data-course="Respiratory Therapy">
+                  Explore Respiratory Therapy →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  🌐
+                </div>
+
+                <h3>
+                  Public Health
+                </h3>
+
+                <p>
+                  Explore public-health, community-health
+                  and healthcare-management programmes.
+                </p>
+
+                <a href="#contact" data-course="Public Health">
+                  Explore Public Health →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  🧬
+                </div>
+
+                <h3>
+                  Biotechnology
+                </h3>
+
+                <p>
+                  Explore biotechnology programmes,
+                  research and life-science pathways.
+                </p>
+
+                <a href="#contact" data-course="Biotechnology">
+                  Explore Biotechnology →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  🧫
+                </div>
+
+                <h3>
+                  Microbiology
+                </h3>
+
+                <p>
+                  Explore microbiology programmes,
+                  laboratory careers and research pathways.
+                </p>
+
+                <a href="#contact" data-course="Microbiology">
+                  Explore Microbiology →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  🥗
+                </div>
+
+                <h3>
+                  Nutrition & Dietetics
+                </h3>
+
+                <p>
+                  Explore nutrition, food science,
+                  dietetics and wellness programmes.
+                </p>
+
+                <a
+                  href="#contact"
+                  data-course="Nutrition and Dietetics"
+                >
+                  Explore Nutrition Courses →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  📋
+                </div>
+
+                <h3>
+                  Hospital Management
+                </h3>
+
+                <p>
+                  Explore hospital administration and
+                  healthcare-management programmes.
+                </p>
+
+                <a href="#contact" data-course="Hospital Management">
+                  Explore Hospital Management →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  ⚙️
+                </div>
+
+                <h3>
+                  Engineering
+                </h3>
+
+                <p>
+                  Explore B.Tech, BE, diploma and
+                  technical specialisations.
+                </p>
+
+                <a href="#contact" data-course="Engineering">
+                  Explore Engineering →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  💻
+                </div>
+
+                <h3>
+                  Computer Applications
+                </h3>
+
+                <p>
+                  Explore BCA, MCA, software,
+                  computer science and IT programmes.
+                </p>
+
+                <a
+                  href="#contact"
+                  data-course="Computer Applications"
+                >
+                  Explore Computer Courses →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  🤖
+                </div>
+
+                <h3>
+                  Artificial Intelligence
+                </h3>
+
+                <p>
+                  Explore artificial intelligence,
+                  machine learning and data science.
+                </p>
+
+                <a
+                  href="#contact"
+                  data-course="Artificial Intelligence"
+                >
+                  Explore AI Courses →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  🔐
+                </div>
+
+                <h3>
+                  Cyber Security
+                </h3>
+
+                <p>
+                  Explore cyber security, networking
+                  and digital-protection programmes.
+                </p>
+
+                <a href="#contact" data-course="Cyber Security">
+                  Explore Cyber Security →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  📊
+                </div>
+
+                <h3>
+                  Management
+                </h3>
+
+                <p>
+                  Explore BBA, MBA, PGDM and
+                  business specialisations.
+                </p>
+
+                <a href="#contact" data-course="Management">
+                  Explore Management →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  ⚖️
+                </div>
+
+                <h3>
+                  Law
+                </h3>
+
+                <p>
+                  Explore integrated law, LLB,
+                  LLM and legal-studies programmes.
+                </p>
+
+                <a href="#contact" data-course="Law">
+                  Explore Law Courses →
+                </a>
+
+              </article>
+
+
+              <article class="course-card">
+
+                <div class="course-icon" aria-hidden="true">
+                  📚
+                </div>
+
+                <h3>
+                  Education & Teaching
+                </h3>
+
+                <p>
+                  Explore B.Ed, D.El.Ed, M.Ed
+                  and teacher-training programmes.
+                </p>
+
+                <a
+                  href="#contact"
+                  data-course="Education and Teaching"
+                >
+                  Explore Teaching Courses →
+                </a>
+
+              </article>
+
+            </div>
+
+
+            <div class="hidden-courses-contact">
+
+              <div>
+
+                <h3>
+                  Cannot Find Your Preferred Course?
+                </h3>
+
+                <p>
+                  Contact MedOrbit for personalised course
+                  and college guidance.
+                </p>
+
+              </div>
+
+              <a
+                href="https://wa.me/919142102309?text=Hello%20MedOrbit%2C%20I%20need%20guidance%20for%20a%20course."
+                class="button primary-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ask MedOrbit
+              </a>
+
+            </div>
+
+          </div>
+
+        </details>
+
+      </div>
+      
+          </section>
+          
+    <!-- =========================================
+         CAREER SECTION
+    ========================================== -->
+
+    <section class="career-section" id="career-services">
+
+      <div class="container">
+
+        <details class="career-details">
+
+          <summary class="career-banner">
+
+            <div class="career-banner-left">
+
+              <span class="career-tag">
+                Career & Employment Services
+              </span>
+
+              <h2>
+                Build Your Career with MedOrbit
+              </h2>
+
+              <p>
+                Explore career information, interview preparation,
+                profile-support services and opportunities shared by
+                participating employers and recruitment organisations.
+              </p>
+
+              <div class="career-banner-stats">
+
+                <span>
+                  ✓ PAN-India Opportunities
+                </span>
+
+                <span>
+                  ✓ Multiple Industries
+                </span>
+
+                <span>
+                  ✓ Career Preparation
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="career-banner-right">
+
+              <img
+                src="assets/images/career-banner.jpg"
+                alt="Career counselling and employment guidance"
+                loading="lazy"
+              >
+
+              <span class="career-view-btn">
+
+                <span class="open-label">
+                  View Details
+                </span>
+
+                <span class="close-label">
+                  Hide Details
+                </span>
+
+                <span class="career-arrow" aria-hidden="true">
+                  ⌄
+                </span>
+
+              </span>
+
+            </div>
+
+          </summary>
+
+
+          <div class="career-expanded-content">
+
+            <div class="career-container">
+
+              <div class="career-introduction">
+
+                <p class="section-label">
+                  Career & Employment Assistance
+                </p>
+
+                <h2>
+                  Connecting Eligible Candidates with Relevant Opportunities
+                </h2>
+
+                <p class="career-intro">
+                  In addition to education and admission guidance, MedOrbit
+                  provides career-support services intended to help eligible
+                  candidates discover and prepare for suitable opportunities
+                  shared by participating employers, recruitment agencies and
+                  authorised organisations.
+                </p>
+
+                <p>
+                  Assistance may include profile evaluation, opportunity
+                  information, interview preparation, documentation guidance
+                  and general support during legitimate recruitment
+                  processes.
+                </p>
+
+                <p>
+                  Recruitment may occur through scheduled interviews,
+                  walk-in drives, recruitment programmes, employer referrals,
+                  apprenticeships, internships, contractual appointments or
+                  other employer-managed processes.
+                </p>
+
+              </div>
+
+
+              <div class="career-block">
+
+                <div class="career-block-heading">
+
+                  <span>
+                    01
+                  </span>
+
+                  <div>
+
+                    <h3>
+                      Opportunities Across Multiple Industries
+                    </h3>
+
+                    <p>
+                      Available sectors and positions depend on current
+                      employer requirements, candidate eligibility and
+                      location.
+                    </p>
+
+                  </div>
+
+                </div>
+
+
+                <div class="career-grid career-industry-grid">
+
+                  <article class="career-card">
+                    <h4>Healthcare & Hospitals</h4>
+                    <p>
+                      Clinical support, hospital administration and allied
+                      healthcare services.
+                    </p>
+                  </article>
+
+                  <article class="career-card">
+                    <h4>Pharmaceuticals & Life Sciences</h4>
+                    <p>
+                      Production, quality, sales, operations and related
+                      functions.
+                    </p>
+                  </article>
+
+                  <article class="career-card">
+                    <h4>Medical & Diagnostic Services</h4>
+                    <p>
+                      Diagnostic centres, laboratories and healthcare-support
+                      roles.
+                    </p>
+                  </article>
+
+                  <article class="career-card">
+                    <h4>Education & Training</h4>
+                    <p>
+                      Teaching support, counselling, administration and
+                      training roles.
+                    </p>
+                  </article>
+
+                  <article class="career-card">
+                    <h4>Aviation & Airport Services</h4>
+                    <p>
+                      Ground operations and other employer-approved support
+                      positions.
+                    </p>
+                  </article>
+
+                  <article class="career-card">
+                    <h4>Hospitality & Tourism</h4>
+                    <p>
+                      Hotels, travel services, guest relations and operational
+                      roles.
+                    </p>
+                  </article>
+
+                  <article class="career-card">
+                    <h4>Retail & E-Commerce</h4>
+                    <p>
+                      Store operations, sales, customer service and fulfilment.
+                    </p>
+                  </article>
+
+                  <article class="career-card">
+                    <h4>Manufacturing</h4>
+                    <p>
+                      Production, maintenance, quality and industrial-support
+                      functions.
+                    </p>
+                  </article>
+
+                  <article class="career-card">
+                    <h4>Logistics & Supply Chain</h4>
+                    <p>
+                      Warehouse, inventory, dispatch and transportation
+                      operations.
+                    </p>
+                  </article>
+
+                  <article class="career-card">
+                    <h4>Information Technology</h4>
+                    <p>
+                      Technical support, software, data and business-operation
+                      roles.
+                    </p>
+                  </article>
+
+                  <article class="career-card">
+                    <h4>Banking & Financial Services</h4>
+                    <p>
+                      Operations, customer support, sales and back-office
+                      roles.
+                    </p>
+                  </article>
+
+                  <article class="career-card">
+                    <h4>Customer Support & BPO</h4>
+                    <p>
+                      Voice, non-voice, service-desk and process-support
+                      positions.
+                    </p>
+                  </article>
+
+                  <article class="career-card">
+                    <h4>Sales & Marketing</h4>
+                    <p>
+                      Field sales, business development and promotional roles.
+                    </p>
+                  </article>
+
+                  <article class="career-card">
+                    <h4>Administrative Operations</h4>
+                    <p>
+                      Office coordination, data entry and administrative
+                      support.
+                    </p>
+                  </article>
+
+                  <article class="career-card">
+                    <h4>Skilled Technical Trades</h4>
+                    <p>
+                      Trade-specific roles subject to skills, certification
+                      and experience.
+                    </p>
+                  </article>
+
+                  <article class="career-card">
+                    <h4>Institutional Projects</h4>
+                    <p>
+                      Contractual or project-based positions where officially
+                      available and authorised.
+                    </p>
+                  </article>
+
+                </div>
+
+              </div>
+                <div class="career-block career-light-block">
+
+                <div class="career-block-heading">
+
+                  <span>
+                    02
+                  </span>
+
+                  <div>
+
+                    <h3>
+                      Opportunities for Different Qualification Levels
+                    </h3>
+
+                    <p>
+                      Eligibility is determined by the recruiting employer's
+                      role-specific requirements.
+                    </p>
+
+                  </div>
+
+                </div>
+
+
+                <div class="qualification-list">
+
+                  <span>10th Pass</span>
+                  <span>12th Pass</span>
+                  <span>ITI</span>
+                  <span>Polytechnic</span>
+                  <span>Diploma</span>
+                  <span>Undergraduate Degree</span>
+                  <span>Professional Degree</span>
+                  <span>Postgraduate Degree</span>
+                  <span>Healthcare Professionals</span>
+                  <span>Allied Health Professionals</span>
+                  <span>Freshers</span>
+                  <span>Experienced Professionals</span>
+
+                </div>
+
+                <p class="career-note">
+                  MedOrbit aims to share relevant information and provide
+                  recruitment-process assistance based on available openings,
+                  candidate profiles and employer requirements.
+                </p>
+
+              </div>
+
+
+              <div class="career-block">
+
+                <div class="career-block-heading">
+
+                  <span>
+                    03
+                  </span>
+
+                  <div>
+
+                    <h3>
+                      Employment Categories
+                    </h3>
+
+                    <p>
+                      Employment type, salary and benefits are determined
+                      exclusively by the recruiting employer.
+                    </p>
+
+                  </div>
+
+                </div>
+
+
+                <div class="employment-type-grid">
+
+                  <article class="employment-type-card">
+
+                    <strong>
+                      Permanent Positions
+                    </strong>
+
+                    <p>
+                      Regular employment subject to employer appointment terms
+                      and successful completion of the hiring process.
+                    </p>
+
+                  </article>
+
+
+                  <article class="employment-type-card">
+
+                    <strong>
+                      Contractual Roles
+                    </strong>
+
+                    <p>
+                      Fixed-term employment based on organisational and
+                      project requirements.
+                    </p>
+
+                  </article>
+
+
+                  <article class="employment-type-card">
+
+                    <strong>
+                      Project-Based Assignments
+                    </strong>
+
+                    <p>
+                      Roles linked to a particular project, duration, client
+                      requirement or service contract.
+                    </p>
+
+                  </article>
+
+
+                  <article class="employment-type-card">
+
+                    <strong>
+                      Apprenticeships
+                    </strong>
+
+                    <p>
+                      Structured learning and work opportunities where offered
+                      by eligible organisations.
+                    </p>
+
+                  </article>
+
+
+                  <article class="employment-type-card">
+
+                    <strong>
+                      Internships
+                    </strong>
+
+                    <p>
+                      Short-term practical experience subject to employer
+                      policies and availability.
+                    </p>
+
+                  </article>
+
+
+                  <article class="employment-type-card">
+
+                    <strong>
+                      Graduate Trainee Programmes
+                    </strong>
+
+                    <p>
+                      Entry-level training opportunities for candidates
+                      meeting employer eligibility requirements.
+                    </p>
+
+                  </article>
+
+
+                  <article class="employment-type-card">
+
+                    <strong>
+                      Entry-Level Opportunities
+                    </strong>
+
+                    <p>
+                      Roles intended for freshers and candidates with limited
+                      professional experience.
+                    </p>
+
+                  </article>
+
+
+                  <article class="employment-type-card">
+
+                    <strong>
+                      Professional and Managerial Roles
+                    </strong>
+
+                    <p>
+                      Mid-level and senior positions based on experience,
+                      competency and employer requirements.
+                    </p>
+
+                  </article>
+
+                </div>
+
+                <p class="career-note">
+                  Compensation, benefits, responsibilities, location, working
+                  hours and employment conditions vary according to the
+                  employer, role, candidate profile, market conditions and
+                  applicable law.
+                </p>
+
+              </div>
+
+
+              <div class="career-block career-light-block">
+
+                <div class="career-block-heading">
+
+                  <span>
+                    04
+                  </span>
+
+                  <div>
+
+                    <h3>
+                      Career Preparation and Candidate Support
+                    </h3>
+
+                    <p>
+                      Practical assistance designed to help candidates
+                      participate effectively in legitimate recruitment
+                      processes.
+                    </p>
+
+                  </div>
+
+                </div>
+
+
+                <div class="career-support-grid">
+
+                  <div class="career-support-item">
+                    ✓ Career Counselling
+                  </div>
+
+                  <div class="career-support-item">
+                    ✓ Profile Evaluation
+                  </div>
+
+                  <div class="career-support-item">
+                    ✓ Resume and CV Guidance
+                  </div>
+
+                  <div class="career-support-item">
+                    ✓ Interview Preparation
+                  </div>
+
+                  <div class="career-support-item">
+                    ✓ Soft-Skills Guidance
+                  </div>
+
+                  <div class="career-support-item">
+                    ✓ Opportunity-Matching Assistance
+                  </div>
+
+                  <div class="career-support-item">
+                    ✓ Recruitment Drive Information
+                  </div>
+
+                  <div class="career-support-item">
+                    ✓ Employer Referral Opportunities
+                  </div>
+
+                  <div class="career-support-item">
+                    ✓ Documentation Guidance
+                  </div>
+
+                  <div class="career-support-item">
+                    ✓ Offer-Document Review Support
+                  </div>
+
+                  <div class="career-support-item">
+                    ✓ Joining-Process Guidance
+                  </div>
+
+                  <div class="career-support-item">
+                    ✓ PAN-India Opportunity Information
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <div class="career-commitment">
+
+                <div class="career-commitment-content">
+
+                  <p class="section-label">
+                    Our Commitment
+                  </p>
+
+                  <h3>
+                    Professional Support and Transparent Communication
+                  </h3>
+
+                  <p>
+                    Our objective is to help candidates improve career
+                    readiness and understand relevant employment information
+                    shared through participating employers, recruitment
+                    partners and authorised hiring processes.
+                  </p>
+
+                  <p>
+                    MedOrbit aims to maintain responsible communication,
+                    ethical practices and transparent assistance throughout
+                    the candidate-support process.
+                  </p>
+
+                </div>
+
+
+                <div class="career-commitment-actions">
+
+                  <a
+                    href="#contact"
+                    class="button primary-button"
+                  >
+                    Submit Your Profile
+                  </a>
+
+                  <a
+                    href="https://wa.me/919142102309"
+                    class="button secondary-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Speak on WhatsApp
+                  </a>
+
+                </div>
+
+              </div>
+
+
+              <div class="career-disclaimer">
+
+                <div class="career-disclaimer-title">
+
+                  <span aria-hidden="true">
+                    !
+                  </span>
+
+                  <h3>
+                    Important Employment Disclaimer
+                  </h3>
+
+                </div>
+
+                <p>
+                  MedOrbit operates as an education consultancy and
+                  career-support service. MedOrbit is not the recruiting
+                  employer unless expressly stated in writing.
+                </p>
+
+                <p>
+                  MedOrbit does not guarantee employment, interview calls,
+                  candidate selection, job offers, salary levels, promotions,
+                  appointment, placement, joining dates or continued
+                  employment.
+                </p>
+
+                <p>
+                  All recruitment decisions are independently made by the
+                  respective employer or authorised recruiting organisation.
+                  Candidates should verify employer identity, vacancy details,
+                  appointment terms, compensation, work location and official
+                  documentation before accepting any opportunity.
+                </p>
+
+                <p>
+                  MedOrbit does not control third-party hiring decisions and is
+                  not responsible for employer-led changes to vacancy status,
+                  eligibility, interview schedules, role requirements,
+                  compensation, work location or recruitment timelines.
+                </p>
+
+                <p class="career-final-message">
+
+                  <strong>
+                    Our commitment:
+                  </strong>
+
+                  clear information, responsible guidance and professional
+                  candidate support. Final selection remains subject to
+                  eligibility, interview performance, document verification
+                  and the employer's independent hiring process.
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </details>
+
+      </div>
+
+    </section>
+        <!-- =========================================
+         CONTACT SECTION
+    ========================================== -->
+
+    <section class="contact-section" id="contact">
+
+      <div class="container contact-content">
+
+        <div class="contact-introduction">
+
+          <p class="section-label">
+            Contact MedOrbit
+          </p>
+
+          <h2>
+            Ready to Plan Your Next Step?
+          </h2>
+
+          <p>
+            Contact MedOrbit for education, admission, course, college,
+            study abroad or career-related guidance.
+          </p>
+
+        </div>
+
+
+        <div class="contact-details">
+
+          <a href="tel:+919142102309">
+            <span aria-hidden="true">📞</span>
+            +91 91421 02309
+          </a>
+
+          <a href="mailto:info@medorbits.in">
+            <span aria-hidden="true">✉️</span>
+            info@medorbits.in
+          </a>
+
+          <a
+            href="https://wa.me/919142102309"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span aria-hidden="true">💬</span>
+            Chat on WhatsApp
+          </a>
+
+          <p>
+            <span aria-hidden="true">📍</span>
+            Wave Silver Tower, Sector 18, Noida, Uttar Pradesh
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    
+
+  
+    <!-- =========================================
+         WHY CHOOSE MEDORBIT
+    ========================================== -->
+    <section class="section why-section" id="why-medorbit">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            Why Choose MedOrbit
+          </p>
+
+          <h2>
+            One Platform for Education, Admission and Career Guidance
+          </h2>
+
+          <p>
+            MedOrbit combines useful information, personalised assistance and
+            digital tools to help users make informed decisions.
+          </p>
+
+        </div>
+
+
+        <div class="why-grid">
+
+          <article class="why-card">
+
+            <span>01</span>
+
+            <h3>
+              Personalised Assistance
+            </h3>
+
             <p>
-              Complete guidance for medical colleges in India and abroad.
+              Guidance based on academic background, preferences,
+              eligibility and available options.
             </p>
-            <a href="#contact">Get Guidance →</a>
+
           </article>
 
-          <article class="course-card">
-            <div class="course-icon">🦷</div>
-            <h3>BDS</h3>
+
+          <article class="why-card">
+
+            <span>02</span>
+
+            <h3>
+              Multiple Services
+            </h3>
+
             <p>
-              Explore dental colleges, eligibility, fees and admission.
+              Explore education, admissions, study abroad and career support
+              through one platform.
             </p>
-            <a href="#contact">Get Guidance →</a>
+
           </article>
 
-          <article class="course-card">
-            <div class="course-icon">🌿</div>
-            <h3>BAMS</h3>
+
+          <article class="why-card">
+
+            <span>03</span>
+
+            <h3>
+              Transparent Communication
+            </h3>
+
             <p>
-              Learn about Ayurveda colleges and available career options.
+              Clear guidance without making guaranteed admission or
+              employment claims.
             </p>
-            <a href="#contact">Get Guidance →</a>
+
+          </article>
+
+
+          <article class="why-card">
+
+            <span>04</span>
+
+            <h3>
+              PAN-India Support
+            </h3>
+
+            <p>
+              Access information and assistance for opportunities across
+              multiple states and locations.
+            </p>
+
+          </article>
+
+
+          <article class="why-card">
+
+            <span>05</span>
+
+            <h3>
+              Digital Accessibility
+            </h3>
+
+            <p>
+              Use the website now and the upcoming MedOrbit application for
+              convenient access.
+            </p>
+
+          </article>
+
+
+          <article class="why-card">
+
+            <span>06</span>
+
+            <h3>
+              Responsible Guidance
+            </h3>
+
+            <p>
+              Important decisions remain subject to official institutions,
+              authorities and employers.
+            </p>
+
           </article>
 
         </div>
 
       </div>
+
     </section>
 
 
-    <!-- Services Section -->
-    <section class="section" id="services">
+    <!-- =========================================
+         HOW MEDORBIT WORKS
+    ========================================== -->
+    <section class="section process-section" id="how-it-works">
 
       <div class="container">
 
         <div class="section-heading">
-          <p class="section-label">Our Services</p>
-          <h2>Support at Every Step</h2>
+
+          <p class="section-label">
+            How It Works
+          </p>
+
+          <h2>
+            Begin Your Journey in Four Simple Steps
+          </h2>
+
         </div>
+
+
+        <div class="process-grid">
+
+          <article class="process-card">
+
+            <span class="process-number">
+              01
+            </span>
+
+            <h3>
+              Submit Your Enquiry
+            </h3>
+
+            <p>
+              Share your course, college, study abroad or career requirement.
+            </p>
+
+          </article>
+
+
+          <article class="process-card">
+
+            <span class="process-number">
+              02
+            </span>
+
+            <h3>
+              Speak with MedOrbit
+            </h3>
+
+            <p>
+              Discuss your eligibility, preferences, budget and objectives.
+            </p>
+
+          </article>
+
+
+          <article class="process-card">
+
+            <span class="process-number">
+              03
+            </span>
+
+            <h3>
+              Explore Suitable Options
+            </h3>
+
+            <p>
+              Review available courses, institutions, destinations or
+              opportunities.
+            </p>
+
+          </article>
+
+
+          <article class="process-card">
+
+            <span class="process-number">
+              04
+            </span>
+
+            <h3>
+              Proceed through Official Channels
+            </h3>
+
+            <p>
+              Complete applications and required processes with the relevant
+              authority or organisation.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         FREQUENTLY ASKED QUESTIONS
+    ========================================== -->
+
+    <section class="section faq-section" id="faq">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            Frequently Asked Questions
+          </p>
+
+          <h2>
+            Common Questions About MedOrbit Services
+          </h2>
+
+        </div>
+
+
+        <div class="faq-list">
+
+          <details class="faq-item">
+
+            <summary>
+              Does MedOrbit guarantee admission?
+            </summary>
+
+            <p>
+              No. Admission depends on eligibility, entrance results,
+              counselling rules, seat availability and decisions made by the
+              relevant institution or authority.
+            </p>
+
+          </details>
+
+
+          <details class="faq-item">
+
+            <summary>
+              Can MedOrbit help with MBBS admission in India and abroad?
+            </summary>
+
+            <p>
+              MedOrbit provides information and guidance regarding available
+              colleges, eligibility, application procedures, documentation
+              and counselling processes.
+            </p>
+
+          </details>
+
+
+          <details class="faq-item">
+
+            <summary>
+              Does MedOrbit provide career and employment support?
+            </summary>
+
+            <p>
+              MedOrbit may provide career preparation, opportunity information
+              and recruitment-process guidance. Final hiring decisions remain
+              entirely with the employer.
+            </p>
+
+          </details>
+
+
+          <details class="faq-item">
+
+            <summary>
+              When will the MedOrbit app be available?
+            </summary>
+
+            <p>
+              The application is currently under development. Launch details
+              will be announced through the official MedOrbit website and
+              communication channels.
+            </p>
+
+          </details>
+
+
+          <details class="faq-item">
+
+            <summary>
+              Will the MedOrbit app be free?
+            </summary>
+
+            <p>
+              General access features may be available without charge.
+              Specific premium or assisted services, if introduced, will be
+              clearly disclosed before use.
+            </p>
+
+          </details>
+
+
+          <details class="faq-item">
+
+            <summary>
+              How can I receive the app launch update?
+            </summary>
+
+            <p>
+              Submit the launch-notification form or contact MedOrbit through
+              WhatsApp to receive an update when the application becomes
+              available.
+            </p>
+
+          </details>
+
+        </div>
+
+      </div>
+
+    </section>
+           
+            <!-- =========================================
+         SERVICES SECTION
+    ========================================== -->
+       </section> 
+    <section class="section services-section" id="services">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="section-label">
+            Our Services
+          </p>
+
+          <h2>
+            Support at Every Important Step
+          </h2>
+
+          <p>
+            MedOrbit provides information and process guidance from initial
+            course exploration through application, admission and career
+            planning.
+          </p>
+
+        </div>
+
 
         <div class="service-grid">
 
-          <div class="service-item">
+          <article class="service-item">
+
             <span>01</span>
-            <h3>College Selection</h3>
-            <p>
-              Find suitable colleges according to your marks and budget.
-            </p>
-          </div>
 
-          <div class="service-item">
+            <h3>
+              College Selection
+            </h3>
+
+            <p>
+              Identify suitable colleges according to eligibility, entrance
+              performance, location preference and estimated budget.
+            </p>
+
+          </article>
+
+
+          <article class="service-item">
+
             <span>02</span>
-            <h3>Admission Guidance</h3>
-            <p>
-              Understand eligibility, documents and application steps.
-            </p>
-          </div>
 
-          <div class="service-item">
+            <h3>
+              Admission Guidance
+            </h3>
+
+            <p>
+              Understand eligibility, application procedures, counselling
+              stages, documentation and important deadlines.
+            </p>
+
+          </article>
+
+
+          <article class="service-item">
+
             <span>03</span>
-            <h3>Study Abroad</h3>
-            <p>
-              Guidance for universities, applications, visa and travel.
-            </p>
-          </div>
 
-          <div class="service-item">
+            <h3>
+              Study Abroad
+            </h3>
+
+            <p>
+              Receive information regarding universities, applications,
+              documentation, visas, travel and academic planning.
+            </p>
+
+          </article>
+
+
+          <article class="service-item">
+
             <span>04</span>
-            <h3>Career Counselling</h3>
+
+            <h3>
+              Career Counselling
+            </h3>
+
             <p>
-              Select the right course based on your career objectives.
+              Explore suitable courses and career pathways aligned with your
+              interests, qualifications and professional objectives.
             </p>
+
+          </article>
+
+
+          <article class="service-item">
+
+            <span>05</span>
+
+            <h3>
+              Documentation Support
+            </h3>
+
+            <p>
+              Receive guidance for organising academic, identity, eligibility
+              and application-related documents.
+            </p>
+
+          </article>
+
+
+          <article class="service-item">
+
+            <span>06</span>
+
+            <h3>
+              Application Assistance
+            </h3>
+
+            <p>
+              Understand application forms, submission requirements and
+              institutional procedures.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    
+                 <!-- Contact Section -->
+                 </section>
+               
+   <!-- =========================================
+     FUTURE MEDORBIT APP
+========================================= -->
+
+<section class="section app-tech-section" id="future-app">
+
+  <div class="container">
+
+    <div class="app-tech-shell">
+
+      <div class="app-tech-glow app-tech-glow-one"></div>
+      <div class="app-tech-glow app-tech-glow-two"></div>
+
+      <div class="app-tech-grid-overlay"></div>
+
+      <div class="app-tech-content">
+
+        <div class="app-tech-meta">
+
+          <span class="app-tech-status-dot"></span>
+
+          <span class="app-tech-status-text">
+            MedOrbit Digital Platform
+          </span>
+
+          <span class="app-tech-badge">
+            In Development
+          </span>
+
+        </div>
+
+        <p class="section-label app-tech-label">
+          Future Digital Experience
+        </p>
+
+        <h2>
+          The Next Generation MedOrbit Experience
+        </h2>
+
+        <p class="app-tech-description">
+          We are designing a connected digital platform that will bring
+          education guidance, admissions, study abroad support and career
+          services together through one secure and intelligent experience.
+        </p>
+
+
+        <div class="app-tech-feature-grid">
+
+          <article class="app-tech-feature">
+
+            <span class="app-tech-feature-icon">
+              01
+            </span>
+
+            <div>
+              <h3>Smart Course Discovery</h3>
+
+              <p>
+                Explore courses and programmes based on academic interests,
+                qualifications and career goals.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="app-tech-feature">
+
+            <span class="app-tech-feature-icon">
+              02
+            </span>
+
+            <div>
+              <h3>College Intelligence</h3>
+
+              <p>
+                Access organised information about colleges, universities
+                and available study destinations.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="app-tech-feature">
+
+            <span class="app-tech-feature-icon">
+              03
+            </span>
+
+            <div>
+              <h3>Admission Updates</h3>
+
+              <p>
+                Receive structured updates regarding applications,
+                counselling and important admission processes.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="app-tech-feature">
+
+            <span class="app-tech-feature-icon">
+              04
+            </span>
+
+            <div>
+              <h3>Document Management</h3>
+
+              <p>
+                Organise commonly required admission and application
+                documents through a guided checklist system.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="app-tech-feature">
+
+            <span class="app-tech-feature-icon">
+              05
+            </span>
+
+            <div>
+              <h3>Study Abroad Hub</h3>
+
+              <p>
+                Explore universities, destinations and application guidance
+                through a centralised digital interface.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="app-tech-feature">
+
+            <span class="app-tech-feature-icon">
+              06
+            </span>
+
+            <div>
+              <h3>Career Connect</h3>
+
+              <p>
+                Access career information, recruitment updates and
+                counsellor-assisted opportunity guidance.
+              </p>
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <div class="app-tech-actions">
+
+          <a
+            href="https://wa.me/919142102309?text=Hello%20MedOrbit%2C%20please%20inform%20me%20about%20the%20future%20MedOrbit%20digital%20platform."
+            class="app-tech-primary-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Join Launch Updates
+          </a>
+
+          <a
+            href="#contact"
+            class="app-tech-secondary-button"
+          >
+            Contact MedOrbit
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="app-tech-visual">
+
+        <div class="app-tech-orbit orbit-one"></div>
+        <div class="app-tech-orbit orbit-two"></div>
+        <div class="app-tech-orbit orbit-three"></div>
+
+        <div class="app-tech-phone">
+
+          <div class="app-tech-phone-top">
+
+            <span></span>
+
+          </div>
+
+          <div class="app-tech-screen">
+
+            <div class="app-tech-screen-header">
+
+              <div class="app-tech-logo">
+                Med<span>Orbit</span>
+              </div>
+
+              <span class="app-tech-live">
+                LIVE
+              </span>
+
+            </div>
+
+
+            <div class="app-tech-dashboard-card">
+
+              <span>
+                Digital Counselling
+              </span>
+
+              <h3>
+                Plan Your Academic Future
+              </h3>
+
+              <p>
+                Courses, colleges, admissions and career support.
+              </p>
+
+            </div>
+
+
+            <div class="app-tech-data-row">
+
+              <div>
+                <span>100+</span>
+                <small>Institutions</small>
+              </div>
+
+              <div>
+                <span>50+</span>
+                <small>Courses</small>
+              </div>
+
+              <div>
+                <span>8+</span>
+                <small>Destinations</small>
+              </div>
+
+            </div>
+
+
+            <div class="app-tech-menu-grid">
+
+              <div>
+                <span>🎓</span>
+                <small>Colleges</small>
+              </div>
+
+              <div>
+                <span>📚</span>
+                <small>Courses</small>
+              </div>
+
+              <div>
+                <span>🌍</span>
+                <small>Abroad</small>
+              </div>
+
+              <div>
+                <span>💼</span>
+                <small>Careers</small>
+              </div>
+
+            </div>
+
+
+            <div class="app-tech-progress">
+
+              <div class="app-tech-progress-heading">
+
+                <span>
+                  Development Status
+                </span>
+
+                <strong>
+                  In Progress
+                </strong>
+
+              </div>
+
+              <div class="app-tech-progress-bar">
+
+                <span></span>
+
+              </div>
+
+            </div>
+
           </div>
 
         </div>
 
-     </div> <!-- career-container -->
-
-</div> <!-- career-expanded-content -->
-
-</details>
-
-</div> <!-- container -->
-
-</section>
-
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-
-      <div class="container contact-content">
-
-        <div>
-          <p class="section-label">Contact Us</p>
-          <h2>Ready to Plan Your Future?</h2>
-          <p>
-            Speak with MedOrbit for course and admission guidance.
-          </p>
-        </div>
-
-        <div class="contact-details">
-
-          <a href="tel:+919142102309">
-            📞 +91 91421 02309
-          </a>
-
-          <a href="mailto:info@medorbits.in">
-            ✉️ info@medorbits.in
-          </a>
-
-          <p>
-            Wave Silver Tower, Sector 18, Noida
-          </p>
-        </div> <!-- closes career-container -->
-</div> <!-- closes career-expanded-content -->
-
-</details>
-
-</div> <!-- closes outer container -->
-</section>
-      
-      
-  </main>
-     
-
-              <!-- Career Popup -->
-<div class="career-popup">
-...
-</div>
-
-<footer>
-...
-           <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-
-      <p>
-        © 2026 MedOrbit. All Rights Reserved.
-      </p>
-
-      <a href="#home">
-        Back to Top ↑
-      </a>
+      </div>
 
     </div>
-  </footer>
+
+  </div>
+
+</section>
+
+      <!-- =========================================
+         GENERAL DISCLAIMER
+    ========================================== -->
+
+    <section class="website-disclaimer" id="disclaimer">
+
+      <div class="container">
+
+        <div class="disclaimer-box">
+
+          <h2>
+            General Disclaimer
+          </h2>
+
+          <p>
+            Information published on this website is provided for general
+            educational and informational purposes. College availability,
+            eligibility conditions, fees, admission procedures, counselling
+            rules, visa requirements, vacancy information and important dates
+            may change without prior notice.
+          </p>
+
+          <p>
+            MedOrbit does not guarantee admission, seat allotment, visa
+            approval, scholarship, employment, salary or selection. Final
+            decisions are made by the relevant institution, university,
+            counselling authority, embassy, government department, employer
+            or authorised organisation.
+          </p>
+
+          <p>
+            Students and candidates should independently verify important
+            information from official authorities before making payments,
+            submitting documents or taking admission or employment-related
+            decisions.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+    
+     </main>
+ 
+                  <!-- ==========================================================
+     FOOTER
+=========================================================== -->
+
+<footer class="footer">
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <!-- Company -->
+
+      <div class="footer-column">
+
+        <a href="index.html" class="footer-logo">
+          Med<span>Orbit</span>
+        </a>
+
+        <p class="footer-about">
+          MedOrbit provides education, admission and career guidance for
+          students across India and abroad. We assist with medical,
+          healthcare, professional and higher education pathways through
+          transparent information and personalised support.
+        </p>
+
+        <div class="footer-social">
+
+          <a href="#" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+
+          <a href="#" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href="#" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+          <a href="#" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+
+        </div>
+
+      </div>
 
 
-  <script src="main.js"></script>
+      <!-- Quick Links -->
+
+      <div class="footer-column">
+
+        <h3>Quick Links</h3>
+
+        <ul>
+
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="about.html">About Us</a></li>
+
+          <li><a href="courses.html">Courses</a></li>
+
+          <li><a href="colleges.html">Colleges</a></li>
+
+          <li><a href="study-abroad.html">Study Abroad</a></li>
+
+          <li><a href="jobs.html">Career Services</a></li>
+
+          <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- Popular Courses -->
+
+      <div class="footer-column">
+
+        <h3>Popular Courses</h3>
+
+        <ul>
+
+          <li><a href="#">MBBS</a></li>
+
+          <li><a href="#">BDS</a></li>
+
+          <li><a href="#">BAMS</a></li>
+
+          <li><a href="#">BHMS</a></li>
+
+          <li><a href="#">BUMS</a></li>
+
+          <li><a href="#">Nursing</a></li>
+
+          <li><a href="#">Pharmacy</a></li>
+
+          <li><a href="#">Allied Health Sciences</a></li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- Study Destinations -->
+
+      <div class="footer-column">
+
+        <h3>Study Destinations</h3>
+
+        <ul>
+
+          <li><a href="#">India</a></li>
+
+          <li><a href="#">Nepal</a></li>
+
+          <li><a href="#">Russia</a></li>
+
+          <li><a href="#">Georgia</a></li>
+
+          <li><a href="#">Kazakhstan</a></li>
+
+          <li><a href="#">Uzbekistan</a></li>
+
+          <li><a href="#">Kyrgyzstan</a></li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- Contact -->
+
+      <div class="footer-column">
+
+        <h3>Contact Us</h3>
+
+        <ul class="footer-contact">
+
+          <li>
+            📞
+            <a href="tel:+919142102309">
+              +91 91421 02309
+            </a>
+          </li>
+
+          <li>
+            ✉️
+            <a href="mailto:info@medorbits.in">
+              info@medorbits.in
+            </a>
+          </li>
+
+          <li>
+            📍 Wave Silver Tower,
+            7th Floor,
+            Sector 18,
+            Noida,
+            Uttar Pradesh
+          </li>
+
+          <li>
+            🕘
+            Monday – Sunday
+            <br>
+            9:00 AM – 8:00 PM
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <!-- Bottom -->
+
+    <div class="footer-bottom">
+
+      <div class="footer-bottom-links">
+
+        <a href="privacy-policy.html">
+          Privacy Policy
+        </a>
+
+        <a href="terms-and-conditions.html">
+          Terms & Conditions
+        </a>
+
+        <a href="refund-policy.html">
+          Refund Policy
+        </a>
+
+        <a href="disclaimer.html">
+          Disclaimer
+        </a>
+
+        <a href="sitemap.xml">
+          Sitemap
+        </a>
+
+      </div>
+
+
+      <p>
+
+        © 2026 MedOrbit Consultancy. All Rights Reserved.
+
+      </p>
+
+      <p class="footer-disclaimer">
+
+        Information provided on this website is for general educational
+        and informational purposes only. Admission, employment,
+        scholarships, visas and counselling outcomes are subject to the
+        policies and decisions of the respective institutions,
+        authorities and employers. MedOrbit does not guarantee admission,
+        employment or selection.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<button
+  id="backToTop"
+  class="back-to-top"
+  type="button"
+  aria-label="Back to Top"
+>
+  ↑
+</button>
 
 </body>
 </html>
+

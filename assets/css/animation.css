@@ -1,0 +1,1262 @@
+/*==================================================
+MEDORBIT ANIMATION.CSS
+PART 1 -- CORE ANIMATIONS
+Paste from the first line of assets/css/animation.css
+==================================================*/
+
+
+/*==================================================
+FADE ANIMATIONS
+==================================================*/
+
+.fade-up{
+  opacity:0;
+  transform:translateY(36px);
+  transition:
+    opacity .8s ease,
+    transform .8s ease;
+}
+
+.fade-up.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.fade-down{
+  opacity:0;
+  transform:translateY(-36px);
+  transition:
+    opacity .8s ease,
+    transform .8s ease;
+}
+
+.fade-down.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.fade-left{
+  opacity:0;
+  transform:translateX(-42px);
+  transition:
+    opacity .8s ease,
+    transform .8s ease;
+}
+
+.fade-left.show{
+  opacity:1;
+  transform:translateX(0);
+}
+
+.fade-right{
+  opacity:0;
+  transform:translateX(42px);
+  transition:
+    opacity .8s ease,
+    transform .8s ease;
+}
+
+.fade-right.show{
+  opacity:1;
+  transform:translateX(0);
+}
+
+
+/*==================================================
+ZOOM ANIMATIONS
+==================================================*/
+
+.zoom-in{
+  opacity:0;
+  transform:scale(.92);
+  transition:
+    opacity .75s ease,
+    transform .75s ease;
+}
+
+.zoom-in.show{
+  opacity:1;
+  transform:scale(1);
+}
+
+.zoom-out{
+  opacity:0;
+  transform:scale(1.08);
+  transition:
+    opacity .75s ease,
+    transform .75s ease;
+}
+
+.zoom-out.show{
+  opacity:1;
+  transform:scale(1);
+}
+
+
+/*==================================================
+FLOATING
+==================================================*/
+
+.float-animation{
+  animation:floatElement 4s ease-in-out infinite;
+}
+
+@keyframes floatElement{
+
+  0%,
+  100%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-12px);
+  }
+
+}
+
+
+/*==================================================
+PULSE
+==================================================*/
+
+.pulse-animation{
+  animation:pulseElement 2.6s ease-in-out infinite;
+}
+
+@keyframes pulseElement{
+
+  0%,
+  100%{
+    transform:scale(1);
+  }
+
+  50%{
+    transform:scale(1.05);
+  }
+
+}
+
+
+/*==================================================
+GLOW
+==================================================*/
+
+.glow-animation{
+  animation:glowElement 2.8s ease-in-out infinite;
+}
+
+@keyframes glowElement{
+
+  0%,
+  100%{
+    box-shadow:0 0 0 rgba(14,165,164,0);
+  }
+
+  50%{
+    box-shadow:0 0 34px rgba(14,165,164,.36);
+  }
+
+}
+
+
+/*==================================================
+ROTATE
+==================================================*/
+
+.rotate-slow{
+  animation:rotateSlow 20s linear infinite;
+}
+
+@keyframes rotateSlow{
+
+  from{
+    transform:rotate(0deg);
+  }
+
+  to{
+    transform:rotate(360deg);
+  }
+
+}
+
+
+/*==================================================
+SHIMMER
+==================================================*/
+
+.shimmer{
+  position:relative;
+  overflow:hidden;
+}
+
+.shimmer::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-120%;
+  width:100%;
+  height:100%;
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,.5),
+      transparent
+    );
+  animation:shimmerMove 2.4s infinite;
+}
+
+@keyframes shimmerMove{
+
+  to{
+    left:120%;
+  }
+
+}
+
+
+/*==================================================
+STAGGER DELAYS
+==================================================*/
+
+.delay-1{
+  transition-delay:.08s;
+}
+
+.delay-2{
+  transition-delay:.16s;
+}
+
+.delay-3{
+  transition-delay:.24s;
+}
+
+.delay-4{
+  transition-delay:.32s;
+}
+
+.delay-5{
+  transition-delay:.40s;
+}
+
+.delay-6{
+  transition-delay:.48s;
+}
+
+
+/*==================================================
+HOVER LIFT
+==================================================*/
+
+.hover-lift{
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+.hover-lift:hover{
+  transform:translateY(-8px);
+}
+
+
+/*==================================================
+ICON BOUNCE
+==================================================*/
+
+.icon-bounce:hover{
+  animation:iconBounce .55s ease;
+}
+
+@keyframes iconBounce{
+
+  0%,
+  100%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-8px);
+  }
+
+}
+
+
+/*==================================================
+REDUCED MOTION
+==================================================*/
+
+@media(prefers-reduced-motion:reduce){
+
+  .fade-up,
+  .fade-down,
+  .fade-left,
+  .fade-right,
+  .zoom-in,
+  .zoom-out{
+    opacity:1;
+    transform:none;
+    transition:none;
+  }
+
+  .float-animation,
+  .pulse-animation,
+  .glow-animation,
+  .rotate-slow,
+  .shimmer::after{
+    animation:none;
+  }
+
+}
+/*==================================================
+MEDORBIT ANIMATION.CSS
+PART 2
+==================================================*/
+
+
+/*==================================================
+NUMBER COUNTER
+==================================================*/
+
+.counter-animation{
+
+animation:counterPop .8s ease;
+
+}
+
+@keyframes counterPop{
+
+0%{
+
+opacity:0;
+
+transform:scale(.6);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+
+/*==================================================
+GRADIENT BACKGROUND
+==================================================*/
+
+.gradient-animation{
+
+background-size:300% 300%;
+
+animation:gradientMove 10s ease infinite;
+
+}
+
+@keyframes gradientMove{
+
+0%{
+
+background-position:0% 50%;
+
+}
+
+50%{
+
+background-position:100% 50%;
+
+}
+
+100%{
+
+background-position:0% 50%;
+
+}
+
+}
+
+
+/*==================================================
+BACKGROUND BUBBLES
+==================================================*/
+
+.floating-bg{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.floating-bg span{
+
+position:absolute;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.08);
+
+animation:bubbleMove 18s linear infinite;
+
+}
+
+@keyframes bubbleMove{
+
+0%{
+
+transform:translateY(100px);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120vh);
+
+opacity:0;
+
+}
+
+}
+
+
+/*==================================================
+BUTTON RIPPLE
+==================================================*/
+
+.ripple{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.ripple::after{
+
+content:"";
+
+position:absolute;
+
+width:10px;
+
+height:10px;
+
+background:rgba(255,255,255,.45);
+
+border-radius:50%;
+
+transform:scale(0);
+
+opacity:0;
+
+pointer-events:none;
+
+}
+
+.ripple:active::after{
+
+animation:rippleEffect .6s ease;
+
+}
+
+@keyframes rippleEffect{
+
+0%{
+
+transform:scale(0);
+
+opacity:.7;
+
+}
+
+100%{
+
+transform:scale(22);
+
+opacity:0;
+
+}
+
+}
+
+
+/*==================================================
+SCROLL PROGRESS
+==================================================*/
+
+.scroll-progress{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:4px;
+
+width:0;
+
+z-index:9999;
+
+background:
+
+linear-gradient(
+90deg,
+#0756a3,
+#0ea5a4,
+#ffb703);
+
+}
+
+
+/*==================================================
+IMAGE ZOOM
+==================================================*/
+
+.image-hover{
+
+overflow:hidden;
+
+}
+
+.image-hover img{
+
+transition:1s;
+
+}
+
+.image-hover:hover img{
+
+transform:scale(1.08);
+
+}
+
+
+/*==================================================
+TEXT GRADIENT
+==================================================*/
+
+.text-gradient{
+
+background:
+
+linear-gradient(
+90deg,
+#0756a3,
+#0ea5a4,
+#ffb703);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+background-clip:text;
+
+}
+/*==================================================
+MEDORBIT ANIMATION.CSS
+PART 3 -- TYPING • LOADING • MARQUEE • NOTIFICATIONS
+==================================================*/
+
+
+/*==================================================
+TYPING EFFECT
+==================================================*/
+
+.typing-text{
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+  border-right:3px solid currentColor;
+  animation:
+    typingEffect 4s steps(34,end) infinite alternate,
+    typingCursor .8s step-end infinite;
+}
+
+@keyframes typingEffect{
+
+  from{
+    width:0;
+  }
+
+  to{
+    width:100%;
+  }
+
+}
+
+@keyframes typingCursor{
+
+  0%,
+  100%{
+    border-color:transparent;
+  }
+
+  50%{
+    border-color:currentColor;
+  }
+
+}
+
+
+/*==================================================
+SPINNER
+==================================================*/
+
+.loading-spinner{
+  width:42px;
+  height:42px;
+  display:inline-block;
+  border:4px solid rgba(7,86,163,.15);
+  border-top-color:#0756a3;
+  border-radius:50%;
+  animation:spinnerRotate .8s linear infinite;
+}
+
+@keyframes spinnerRotate{
+
+  to{
+    transform:rotate(360deg);
+  }
+
+}
+
+
+/*==================================================
+DOT LOADER
+==================================================*/
+
+.dot-loader{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+}
+
+.dot-loader span{
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background:#0756a3;
+  animation:dotBounce 1.2s ease-in-out infinite;
+}
+
+.dot-loader span:nth-child(2){
+  animation-delay:.15s;
+}
+
+.dot-loader span:nth-child(3){
+  animation-delay:.3s;
+}
+
+@keyframes dotBounce{
+
+  0%,
+  80%,
+  100%{
+    transform:translateY(0);
+    opacity:.45;
+  }
+
+  40%{
+    transform:translateY(-8px);
+    opacity:1;
+  }
+
+}
+
+
+/*==================================================
+SKELETON LOADING
+==================================================*/
+
+.skeleton{
+  position:relative;
+  overflow:hidden;
+  background:#e9eff5;
+}
+
+.skeleton::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  transform:translateX(-100%);
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,.72),
+      transparent
+    );
+  animation:skeletonMove 1.5s infinite;
+}
+
+@keyframes skeletonMove{
+
+  to{
+    transform:translateX(100%);
+  }
+
+}
+
+.skeleton-text{
+  height:14px;
+  margin-bottom:10px;
+  border-radius:8px;
+}
+
+.skeleton-title{
+  width:65%;
+  height:22px;
+  margin-bottom:14px;
+  border-radius:9px;
+}
+
+.skeleton-image{
+  width:100%;
+  height:220px;
+  border-radius:18px;
+}
+
+
+/*==================================================
+NOTIFICATION POP
+==================================================*/
+
+.notification-pop{
+  animation:notificationPop .45s ease;
+}
+
+@keyframes notificationPop{
+
+  0%{
+    opacity:0;
+    transform:translateY(16px) scale(.94);
+  }
+
+  100%{
+    opacity:1;
+    transform:translateY(0) scale(1);
+  }
+
+}
+
+
+/*==================================================
+SHAKE
+==================================================*/
+
+.shake-animation{
+  animation:shakeElement .45s ease;
+}
+
+@keyframes shakeElement{
+
+  0%,
+  100%{
+    transform:translateX(0);
+  }
+
+  25%{
+    transform:translateX(-7px);
+  }
+
+  50%{
+    transform:translateX(7px);
+  }
+
+  75%{
+    transform:translateX(-4px);
+  }
+
+}
+
+
+/*==================================================
+SUCCESS CHECK
+==================================================*/
+
+.success-check{
+  animation:successCheck .55s ease;
+}
+
+@keyframes successCheck{
+
+  0%{
+    transform:scale(0) rotate(-20deg);
+    opacity:0;
+  }
+
+  70%{
+    transform:scale(1.15) rotate(4deg);
+    opacity:1;
+  }
+
+  100%{
+    transform:scale(1) rotate(0);
+  }
+
+}
+
+
+/*==================================================
+MARQUEE
+==================================================*/
+
+.marquee-track{
+  display:flex;
+  width:max-content;
+  animation:marqueeMove 35s linear infinite;
+}
+
+.marquee-track:hover{
+  animation-play-state:paused;
+}
+
+@keyframes marqueeMove{
+
+  from{
+    transform:translateX(0);
+  }
+
+  to{
+    transform:translateX(-50%);
+  }
+
+}
+
+
+/*==================================================
+SCROLL INDICATOR
+==================================================*/
+
+.scroll-indicator{
+  width:28px;
+  height:46px;
+  display:flex;
+  justify-content:center;
+  padding-top:8px;
+  border:2px solid currentColor;
+  border-radius:18px;
+}
+
+.scroll-indicator::before{
+  content:"";
+  width:5px;
+  height:9px;
+  border-radius:999px;
+  background:currentColor;
+  animation:scrollIndicator 1.8s ease-in-out infinite;
+}
+
+@keyframes scrollIndicator{
+
+  0%{
+    transform:translateY(0);
+    opacity:0;
+  }
+
+  30%{
+    opacity:1;
+  }
+
+  100%{
+    transform:translateY(18px);
+    opacity:0;
+  }
+
+}
+
+
+/*==================================================
+SLIDE LOOP
+==================================================*/
+
+.slide-loop{
+  animation:slideLoop 8s ease-in-out infinite;
+}
+
+@keyframes slideLoop{
+
+  0%,
+  100%{
+    transform:translateX(0);
+  }
+
+  50%{
+    transform:translateX(12px);
+  }
+
+}
+
+
+/*==================================================
+BORDER GLOW
+==================================================*/
+
+.border-glow{
+  animation:borderGlow 2.8s ease-in-out infinite;
+}
+
+@keyframes borderGlow{
+
+  0%,
+  100%{
+    border-color:rgba(7,86,163,.15);
+  }
+
+  50%{
+    border-color:rgba(14,165,164,.7);
+  }
+
+}
+
+
+/*==================================================
+REDUCED MOTION
+==================================================*/
+
+@media(prefers-reduced-motion:reduce){
+
+  .typing-text{
+    width:auto;
+    border-right:0;
+    animation:none;
+  }
+
+  .loading-spinner,
+  .dot-loader span,
+  .skeleton::after,
+  .marquee-track,
+  .scroll-indicator::before,
+  .slide-loop,
+  .border-glow{
+    animation:none;
+  }
+
+}
+/*==================================================
+MEDORBIT ANIMATION.CSS
+PART 4 -- PAGE REVEALS • STAGGER • TILT • FINAL RULES
+==================================================*/
+
+
+/*==================================================
+PAGE ENTER
+==================================================*/
+
+.page-enter{
+  animation:pageEnter .65s ease both;
+}
+
+@keyframes pageEnter{
+
+  from{
+    opacity:0;
+    transform:translateY(12px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}
+
+
+/*==================================================
+REVEAL MASK
+==================================================*/
+
+.reveal-mask{
+  position:relative;
+  overflow:hidden;
+}
+
+.reveal-mask::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  background:linear-gradient(135deg,#0756a3,#0ea5a4);
+  transform:translateX(0);
+  transition:transform .9s cubic-bezier(.77,0,.18,1);
+}
+
+.reveal-mask.show::before{
+  transform:translateX(105%);
+}
+
+
+/*==================================================
+CLIP REVEAL
+==================================================*/
+
+.clip-reveal{
+  opacity:0;
+  clip-path:inset(0 100% 0 0);
+  transition:
+    opacity .8s ease,
+    clip-path .9s cubic-bezier(.77,0,.18,1);
+}
+
+.clip-reveal.show{
+  opacity:1;
+  clip-path:inset(0 0 0 0);
+}
+
+
+/*==================================================
+STAGGER GROUP
+==================================================*/
+
+.stagger-group > *{
+  opacity:0;
+  transform:translateY(28px);
+  transition:
+    opacity .7s ease,
+    transform .7s ease;
+}
+
+.stagger-group.show > *{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.stagger-group.show > *:nth-child(1){
+  transition-delay:.05s;
+}
+
+.stagger-group.show > *:nth-child(2){
+  transition-delay:.1s;
+}
+
+.stagger-group.show > *:nth-child(3){
+  transition-delay:.15s;
+}
+
+.stagger-group.show > *:nth-child(4){
+  transition-delay:.2s;
+}
+
+.stagger-group.show > *:nth-child(5){
+  transition-delay:.25s;
+}
+
+.stagger-group.show > *:nth-child(6){
+  transition-delay:.3s;
+}
+
+.stagger-group.show > *:nth-child(7){
+  transition-delay:.35s;
+}
+
+.stagger-group.show > *:nth-child(8){
+  transition-delay:.4s;
+}
+
+.stagger-group.show > *:nth-child(9){
+  transition-delay:.45s;
+}
+
+.stagger-group.show > *:nth-child(10){
+  transition-delay:.5s;
+}
+
+
+/*==================================================
+HOVER TILT
+==================================================*/
+
+.hover-tilt{
+  transform-style:preserve-3d;
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+.hover-tilt:hover{
+  transform:
+    perspective(900px)
+    rotateX(3deg)
+    rotateY(-3deg)
+    translateY(-6px);
+}
+
+
+/*==================================================
+ICON ROTATE HOVER
+==================================================*/
+
+.icon-rotate-hover{
+  transition:transform .35s ease;
+}
+
+.icon-rotate-hover:hover{
+  transform:rotate(10deg) scale(1.08);
+}
+
+
+/*==================================================
+ARROW MOVE
+==================================================*/
+
+.arrow-move{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+
+.arrow-move::after{
+  content:"→";
+  transition:transform .3s ease;
+}
+
+.arrow-move:hover::after{
+  transform:translateX(5px);
+}
+
+
+/*==================================================
+SOFT BREATHE
+==================================================*/
+
+.soft-breathe{
+  animation:softBreathe 4s ease-in-out infinite;
+}
+
+@keyframes softBreathe{
+
+  0%,
+  100%{
+    transform:scale(1);
+    opacity:1;
+  }
+
+  50%{
+    transform:scale(1.02);
+    opacity:.92;
+  }
+
+}
+
+
+/*==================================================
+FLOATING BADGE
+==================================================*/
+
+.floating-badge{
+  animation:floatingBadge 3.2s ease-in-out infinite;
+}
+
+@keyframes floatingBadge{
+
+  0%,
+  100%{
+    transform:translateY(0) rotate(0);
+  }
+
+  50%{
+    transform:translateY(-7px) rotate(1deg);
+  }
+
+}
+
+
+/*==================================================
+BLINK STATUS
+==================================================*/
+
+.status-dot{
+  position:relative;
+}
+
+.status-dot::before{
+  content:"";
+  width:9px;
+  height:9px;
+  display:inline-block;
+  margin-right:8px;
+  border-radius:50%;
+  background:#22c55e;
+  box-shadow:0 0 0 rgba(34,197,94,.4);
+  animation:statusPulse 2s infinite;
+}
+
+@keyframes statusPulse{
+
+  0%{
+    box-shadow:0 0 0 0 rgba(34,197,94,.4);
+  }
+
+  70%{
+    box-shadow:0 0 0 10px rgba(34,197,94,0);
+  }
+
+  100%{
+    box-shadow:0 0 0 0 rgba(34,197,94,0);
+  }
+
+}
+
+
+/*==================================================
+MOBILE MOTION SAFETY
+==================================================*/
+
+@media(max-width:768px){
+
+  .hover-tilt:hover{
+    transform:translateY(-4px);
+  }
+
+  .float-animation{
+    animation-duration:5s;
+  }
+
+  .glow-animation{
+    animation-duration:3.5s;
+  }
+
+}
+
+
+/*==================================================
+REDUCED MOTION FINAL OVERRIDE
+==================================================*/
+
+@media(prefers-reduced-motion:reduce){
+
+  .page-enter,
+  .reveal-mask::before,
+  .clip-reveal,
+  .stagger-group > *,
+  .soft-breathe,
+  .floating-badge,
+  .status-dot::before{
+    animation:none !important;
+    transition:none !important;
+  }
+
+  .clip-reveal,
+  .stagger-group > *{
+    opacity:1;
+    transform:none;
+    clip-path:none;
+  }
+
+  .reveal-mask::before{
+    display:none;
+  }
+
+}
