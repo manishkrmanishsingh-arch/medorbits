@@ -1,0 +1,377 @@
+{
+  "metadata": {
+    "title": "MedOrbit Private and Deemed Medical Colleges",
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-27",
+    "recordCount": 10,
+    "category": "Private and Deemed Medical Colleges in India",
+    "disclaimer": "College details, recognition, fees, seats and admission rules may change. Verify all information through the institution, NMC, MCC and other relevant official authorities before publishing or counselling."
+  },
+
+  "colleges": [
+    {
+      "id": 101,
+      "group": "india-private-mbbs",
+      "displayOrder": 1,
+      "name": "Christian Medical College, Vellore",
+      "shortName": "CMC Vellore",
+      "slug": "cmc-vellore",
+      "country": "India",
+      "state": "Tamil Nadu",
+      "city": "Vellore",
+      "ownership": "Private Minority",
+      "category": "Medical",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh",
+        "Nursing",
+        "Allied Health Sciences"
+      ],
+      "primaryEntrance": "NEET UG / applicable postgraduate entrance",
+      "medium": "English",
+      "featured": true,
+      "popular": true,
+      "verified": true,
+      "officialWebsite": "https://www.cmch-vellore.edu/",
+      "admissionWebsite": "https://admissions.cmcvellore.ac.in/",
+      "image": "../assets/images/colleges/cmc-vellore.jpg",
+      "fallbackImage": "../assets/images/colleges/default.jpg",
+      "keywords": [
+        "CMC Vellore",
+        "MBBS",
+        "Tamil Nadu",
+        "private medical college",
+        "minority medical college"
+      ],
+      "status": "Active"
+    },
+
+    {
+      "id": 102,
+      "group": "india-private-mbbs",
+      "displayOrder": 2,
+      "name": "Kasturba Medical College, Manipal",
+      "shortName": "KMC Manipal",
+      "slug": "kmc-manipal",
+      "country": "India",
+      "state": "Karnataka",
+      "city": "Manipal",
+      "ownership": "Private Deemed University",
+      "category": "Medical",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / applicable entrance",
+      "medium": "English",
+      "featured": true,
+      "popular": true,
+      "verified": true,
+      "officialWebsite": "https://www.manipal.edu/kmc-manipal.html",
+      "image": "../assets/images/colleges/manipal.jpg",
+      "fallbackImage": "../assets/images/colleges/default.jpg",
+      "keywords": [
+        "KMC Manipal",
+        "Manipal medical college",
+        "MBBS Karnataka",
+        "deemed medical university"
+      ],
+      "status": "Active"
+    },
+
+    {
+      "id": 103,
+      "group": "india-private-mbbs",
+      "displayOrder": 3,
+      "name": "Kasturba Medical College, Mangalore",
+      "shortName": "KMC Mangalore",
+      "slug": "kmc-mangalore",
+      "country": "India",
+      "state": "Karnataka",
+      "city": "Mangaluru",
+      "ownership": "Private Deemed University",
+      "category": "Medical",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "Postgraduate Medical Courses"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / applicable entrance",
+      "medium": "English",
+      "featured": true,
+      "popular": true,
+      "verified": true,
+      "officialWebsite": "https://www.manipal.edu/kmc-mangalore.html",
+      "image": "../assets/images/colleges/manipal.jpg",
+      "fallbackImage": "../assets/images/colleges/default.jpg",
+      "keywords": [
+        "KMC Mangalore",
+        "KMC Mangaluru",
+        "MBBS Karnataka",
+        "Manipal Academy"
+      ],
+      "status": "Active"
+    },
+
+    {
+      "id": 104,
+      "group": "india-private-mbbs",
+      "displayOrder": 4,
+      "name": "Amrita School of Medicine, Kochi",
+      "shortName": "Amrita Kochi",
+      "slug": "amrita-school-of-medicine-kochi",
+      "country": "India",
+      "state": "Kerala",
+      "city": "Kochi",
+      "ownership": "Private Deemed University",
+      "category": "Medical",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / applicable entrance",
+      "medium": "English",
+      "featured": true,
+      "popular": true,
+      "verified": true,
+      "officialWebsite": "https://www.amrita.edu/school/medicine/kochi/",
+      "image": "../assets/images/colleges/default.jpg",
+      "fallbackImage": "../assets/images/colleges/default.jpg",
+      "keywords": [
+        "Amrita School of Medicine",
+        "Amrita Kochi",
+        "MBBS Kerala",
+        "deemed medical university"
+      ],
+      "status": "Active"
+    },
+
+    {
+      "id": 105,
+      "group": "india-private-mbbs",
+      "displayOrder": 5,
+      "name": "Sri Ramachandra Medical College and Research Institute",
+      "shortName": "SRMC Chennai",
+      "slug": "sri-ramachandra-medical-college",
+      "country": "India",
+      "state": "Tamil Nadu",
+      "city": "Chennai",
+      "ownership": "Private Deemed University",
+      "category": "Medical",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh",
+        "Allied Health Sciences"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / applicable entrance",
+      "medium": "English",
+      "featured": true,
+      "popular": true,
+      "verified": true,
+      "officialWebsite": "https://www.sriramachandra.edu.in/",
+      "image": "../assets/images/colleges/default.jpg",
+      "fallbackImage": "../assets/images/colleges/default.jpg",
+      "keywords": [
+        "Sri Ramachandra",
+        "SRMC Chennai",
+        "MBBS Chennai",
+        "deemed medical college"
+      ],
+      "status": "Active"
+    },
+
+    {
+      "id": 106,
+      "group": "india-private-mbbs",
+      "displayOrder": 6,
+      "name": "St. John's Medical College",
+      "shortName": "St. John's Bengaluru",
+      "slug": "st-johns-medical-college",
+      "country": "India",
+      "state": "Karnataka",
+      "city": "Bengaluru",
+      "ownership": "Private Minority",
+      "category": "Medical",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh",
+        "Nursing",
+        "Allied Health Sciences"
+      ],
+      "primaryEntrance": "NEET UG / applicable postgraduate entrance",
+      "medium": "English",
+      "featured": true,
+      "popular": true,
+      "verified": true,
+      "officialWebsite": "https://www.stjohns.in/",
+      "image": "../assets/images/colleges/default.jpg",
+      "fallbackImage": "../assets/images/colleges/default.jpg",
+      "keywords": [
+        "St Johns Medical College",
+        "MBBS Bengaluru",
+        "private minority medical college",
+        "Karnataka medical college"
+      ],
+      "status": "Active"
+    },
+
+    {
+      "id": 107,
+      "group": "india-private-mbbs",
+      "displayOrder": 7,
+      "name": "Hamdard Institute of Medical Sciences and Research",
+      "shortName": "HIMSR",
+      "slug": "himsr-new-delhi",
+      "country": "India",
+      "state": "Delhi",
+      "city": "New Delhi",
+      "ownership": "Private Deemed University",
+      "category": "Medical",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "Postgraduate Medical Courses"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / applicable entrance",
+      "medium": "English",
+      "featured": true,
+      "popular": true,
+      "verified": true,
+      "officialWebsite": "https://www.himsr.co.in/",
+      "image": "../assets/images/colleges/default.jpg",
+      "fallbackImage": "../assets/images/colleges/default.jpg",
+      "keywords": [
+        "HIMSR",
+        "Jamia Hamdard",
+        "MBBS Delhi",
+        "private medical college Delhi"
+      ],
+      "status": "Active"
+    },
+
+    {
+      "id": 108,
+      "group": "india-private-mbbs",
+      "displayOrder": 8,
+      "name": "JSS Medical College",
+      "shortName": "JSS Mysuru",
+      "slug": "jss-medical-college",
+      "country": "India",
+      "state": "Karnataka",
+      "city": "Mysuru",
+      "ownership": "Private Deemed University",
+      "category": "Medical",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / applicable entrance",
+      "medium": "English",
+      "featured": false,
+      "popular": true,
+      "verified": true,
+      "officialWebsite": "https://www.jssuni.edu.in/",
+      "image": "../assets/images/colleges/default.jpg",
+      "fallbackImage": "../assets/images/colleges/default.jpg",
+      "keywords": [
+        "JSS Medical College",
+        "JSS Mysore",
+        "MBBS Mysuru",
+        "deemed medical college Karnataka"
+      ],
+      "status": "Active"
+    },
+
+    {
+      "id": 109,
+      "group": "india-private-mbbs",
+      "displayOrder": 9,
+      "name": "Kalinga Institute of Medical Sciences",
+      "shortName": "KIMS Bhubaneswar",
+      "slug": "kims-bhubaneswar",
+      "country": "India",
+      "state": "Odisha",
+      "city": "Bhubaneswar",
+      "ownership": "Private Deemed University",
+      "category": "Medical",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / applicable entrance",
+      "medium": "English",
+      "featured": false,
+      "popular": true,
+      "verified": true,
+      "officialWebsite": "https://kims.kiit.ac.in/",
+      "image": "../assets/images/colleges/default.jpg",
+      "fallbackImage": "../assets/images/colleges/default.jpg",
+      "keywords": [
+        "KIMS Bhubaneswar",
+        "KIIT Medical College",
+        "MBBS Odisha",
+        "private medical college"
+      ],
+      "status": "Active"
+    },
+
+    {
+      "id": 110,
+      "group": "india-private-mbbs",
+      "displayOrder": 10,
+      "name": "SRM Medical College Hospital and Research Centre",
+      "shortName": "SRM Medical College",
+      "slug": "srm-medical-college",
+      "country": "India",
+      "state": "Tamil Nadu",
+      "city": "Kattankulathur",
+      "ownership": "Private Deemed University",
+      "category": "Medical",
+      "courses": [
+        "MBBS",
+        "MD",
+        "MS",
+        "DM",
+        "MCh"
+      ],
+      "primaryEntrance": "NEET UG / NEET PG / applicable entrance",
+      "medium": "English",
+      "featured": false,
+      "popular": true,
+      "verified": true,
+      "officialWebsite": "https://medical.srmist.edu.in/",
+      "image": "../assets/images/colleges/default.jpg",
+      "fallbackImage": "../assets/images/colleges/default.jpg",
+      "keywords": [
+        "SRM Medical College",
+        "SRM Chennai",
+        "MBBS Tamil Nadu",
+        "deemed medical university"
+      ],
+      "status": "Active"
+    }
+  ]
+}

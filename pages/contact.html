@@ -1,2095 +1,1329 @@
-Paste this complete code into:
-
-contact.html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-  >
-  <title>Contact Us | MedOrbit Foundation</title>
-  <meta
-    name="description"
-    content="Contact MedOrbit Foundation for admissions, courses, colleges, study abroad, jobs, recruitment, training and career counselling."
-  >
-  <meta
-    name="keywords"
-    content="MedOrbit Foundation contact, admission counselling, job consultancy, study abroad support, career counselling Noida"
-  >
-  <meta name="author" content="MedOrbit Foundation">
-  <meta name="theme-color" content="#0756a3">
-  <link
-    rel="canonical"
-    href="https://medorbits.in/contact.html"
-  >
-  <link rel="manifest" href="manifest.json">
-  <link
-    rel="apple-touch-icon"
-    href="assets/icons/icon-192.png"
-  >
-  <meta
-    property="og:title"
-    content="Contact MedOrbit Foundation"
-  >
-  <meta
-    property="og:description"
-    content="Speak with MedOrbit Foundation for education, admission, job and career guidance."
-  >
-  <meta property="og:type" content="website">
-  <meta
-    property="og:url"
-    content="https://medorbits.in/contact.html"
-  >
-  <meta
-    name="twitter:card"
-    content="summary_large_image"
-  >
-  <meta
-    name="twitter:title"
-    content="Contact MedOrbit Foundation"
-  >
-  <meta
-    name="twitter:description"
-    content="Contact MedOrbit Foundation for admissions, jobs, training and career support."
-  >
-  <style>
-    :root {
-      --primary: #0756a3;
-      --primary-dark: #043d77;
-      --primary-soft: #eaf3fc;
-      --secondary: #0ea5a4;
-      --accent: #ffb703;
-      --success: #15803d;
-      --danger: #dc2626;
-      --dark: #172033;
-      --text: #475569;
-      --muted: #7b8796;
-      --light: #f5f8fc;
-      --white: #ffffff;
-      --border: #dbe4ef;
-      --shadow:
-        0 14px 34px rgba(21, 47, 78, 0.12);
-      --shadow-large:
-        0 24px 60px rgba(21, 47, 78, 0.17);
-      --radius: 20px;
-      --radius-large: 28px;
-    }
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html {
-      scroll-behavior: smooth;
-      -webkit-text-size-adjust: 100%;
-    }
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--light);
-      color: var(--dark);
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-    body.menu-open {
-      overflow: hidden;
-    }
-    img {
-      display: block;
-      width: 100%;
-      max-width: 100%;
-      object-fit: cover;
-    }
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-    ul {
-      list-style: none;
-    }
-    button,
-    input,
-    select,
-    textarea {
-      font: inherit;
-    }
-    button {
-      cursor: pointer;
-    }
-    input,
-    select,
-    textarea {
-      -webkit-appearance: none;
-      appearance: none;
-    }
-    .container {
-      width: min(1180px, 92%);
-      margin: auto;
-   .section-heading h2 {
-      margin-bottom: 13px;
-      font-size: clamp(2rem, 4vw, 3rem);
-      line-height: 1.15;
-    }
 
-    .section-heading p {
-      color: var(--text);
-    }
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+>
+
+<title>
+Contact Us | MedOrbit Foundation
+</title>
+
+<meta
+name="description"
+content="Contact MedOrbit Foundation for admissions, study abroad, jobs, recruitment, career counselling and education guidance."
+>
+
+<meta
+name="keywords"
+content="MedOrbit contact, admission guidance, study abroad, jobs, career counselling, Noida"
+>
+
+<meta
+name="author"
+content="MedOrbit Foundation"
+>
+
+<meta
+name="theme-color"
+content="#0756a3"
+>
+
+<link
+rel="canonical"
+href="https://medorbits.in/pages/contact.html"
+>
+
+<link
+rel="stylesheet"
+href="../assets/css/style.css"
+>
+
+<link
+rel="stylesheet"
+href="../assets/css/premium.css"
+>
+
+<link
+rel="stylesheet"
+href="../assets/css/contact.css"
+>
+
+<link
+rel="stylesheet"
+href="../assets/css/responsive.css"
+>
 
-    .section-dark .section-heading span {
-      color: var(--accent);
-    }
-
-    .section-dark .section-heading p {
-      color: #c1ccda;
-    }
-
-    .btn {
-      min-height: 48px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 11px 20px;
-      border: 1px solid transparent;
-      border-radius: 12px;
-      font-weight: 800;
-      text-align: center;
-      transition:
-        transform 0.25s ease,
-        background 0.25s ease,
-        color 0.25s ease,
-        border-color 0.25s ease,
-        box-shadow 0.25s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-    }
-
-    .btn-primary {
-      color: var(--white);
-      background: var(--primary);
-      box-shadow:
-        0 10px 22px rgba(7, 86, 163, 0.22);
-    }
-
-    .btn-primary:hover {
-      background: var(--primary-dark);
-    }
-
-    .btn-secondary {
-      color: var(--white);
-      background: var(--secondary);
-    }
-
-    .btn-light {
-      color: var(--primary);
-      background: var(--white);
-    }
-
-    .btn-outline {
-      color: var(--white);
-      border-color: rgba(255, 255, 255, 0.65);
-      background: transparent;
-    }
-
-    .topbar {
-      color: var(--white);
-      background: var(--primary-dark);
-      font-size: 0.9rem;
-    }
-
-    .topbar-inner {
-      min-height: 42px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
-
-    .topbar-group {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-
-    .header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(255, 255, 255, 0.97);
-      border-bottom: 1px solid var(--border);
-      backdrop-filter: blur(12px);
-    }
-
-    .navbar {
-      min-height: 78px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .logo-icon {
-      width: 46px;
-      height: 46px;
-      display: grid;
-      place-items: center;
-      border-radius: 14px;
-      color: var(--white);
-      background:
-        linear-gradient(
-          135deg,
-          var(--primary),
-          var(--secondary)
-        );
-      font-size: 1.2rem;
-      font-weight: 900;
-      box-shadow:
-        0 10px 22px rgba(7, 86, 163, 0.22);
-    }
-
-    .logo-copy {
-      display: grid;
-      line-height: 1.05;
-    }
-
-    .logo-name {
-      color: var(--primary);
-      font-size: 1.55rem;
-      font-weight: 900;
-    }
-
-    .logo-name strong {
-      color: var(--dark);
-    }
-
-    .logo-copy small {
-      margin-top: 5px;
-      color: var(--muted);
-      font-size: 0.59rem;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .nav-links a {
-      color: var(--dark);
-      font-size: 0.93rem;
-      font-weight: 750;
-    }
-
-    .nav-links a:hover,
-    .nav-links a.active {
-      color: var(--primary);
-    }
-
-    .menu-toggle {
-      display: none;
-      width: 46px;
-      height: 46px;
-      border: 0;
-      border-radius: 12px;
-      color: var(--primary);
-      background: #eaf3fc;
-      font-size: 1.35rem;
-    }
-
-    .announcement {
-      padding: 11px 0;
-      color: #614c00;
-      background: #fff4cc;
-      text-align: center;
-      font-size: 0.9rem;
-      font-weight: 700;
-    }
-
-    .hero {
-      position: relative;
-      overflow: hidden;
-      color: var(--white);
-      background:
-        linear-gradient(
-          90deg,
-          rgba(4, 61, 119, 0.96),
-          rgba(7, 86, 163, 0.82)
-        ),
-        url("https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1800&q=80")
-        center/cover;
-    }
-
-    .hero-grid {
-      min-height: 570px;
-      padding: 76px 0;
-      display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: 44px;
-      align-items: center;
-    }
-
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 18px;
-      padding: 8px 14px;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.12);
-      font-size: 0.86rem;
-      font-weight: 800;
-    }
-
-    .hero h1 {
-      margin-bottom: 18px;
-      font-size: clamp(2.5rem, 5.5vw, 4.8rem);
-      line-height: 1.03;
-      letter-spacing: -0.04em;
-    }
-
-    .hero h1 span {
-      color: var(--accent);
-    }
-
-    .hero-copy p {
-      max-width: 660px;
-      color: rgba(255, 255, 255, 0.88);
-      font-size: clamp(1rem, 2vw, 1.15rem);
-    }
-
-    .hero-actions {
-      display: flex;
-      gap: 13px;
-      flex-wrap: wrap;
-      margin-top: 27px;
-    }
-
-    .hero-contact-list {
-      display: grid;
-      gap: 13px;
-      margin-top: 25px;
-    }
-
-    .hero-contact-item {
-      display: flex;
-      align-items: center;
-      gap: 11px;
-      color: rgba(255, 255, 255, 0.9);
-    }
-
-    .hero-contact-icon {
-      width: 36px;
-      height: 36px;
-      flex: 0 0 36px;
-      display: grid;
-      place-items: center;
-      border-radius: 11px;
-      background: rgba(255, 255, 255, 0.12);
-    }
-
-    .contact-panel {
-      padding: 28px;
-      border: 1px solid rgba(255, 255, 255, 0.22);
-      border-radius: var(--radius-large);
-      background: rgba(255, 255, 255, 0.13);
-      backdrop-filter: blur(13px);
-      box-shadow: var(--shadow-large);
-    }
-
-    .contact-panel h2 {
-      margin-bottom: 8px;
-      font-size: 1.55rem;
-    }
-
-    .contact-panel > p {
-      margin-bottom: 19px;
-      color: rgba(255, 255, 255, 0.82);
-    }
-
-    .form-grid {
-      display: grid;
-      gap: 14px;
-    }
-
-    .field {
-      display: grid;
-      gap: 7px;
-    }
-
-    .field label {
-      font-size: 0.88rem;
-      font-weight: 800;
-    }
-
-    .field input,
-    .field select,
-    .field textarea {
-      width: 100%;
-      min-height: 50px;
-      padding: 12px 14px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 11px;
-      outline: none;
-      color: var(--dark);
-      background: var(--white);
-    }
-
-    .field textarea {
-      min-height: 110px;
-      resize: vertical;
-    }
-
-    .contact-panel .btn {
-      width: 100%;
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .contact-card {
-      padding: 25px;
-      text-align: center;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      background: var(--white);
-      box-shadow: var(--shadow);
-      transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
-    }
-
-    .contact-card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow-large);
-    }
-
-    .contact-card-icon {
-      width: 58px;
-      height: 58px;
-      display: grid;
-      place-items: center;
-      margin: 0 auto 14px;
-      border-radius: 17px;
-      color: var(--primary);
-      background: #eaf3fc;
-      font-size: 1.5rem;
-    }
-
-    .contact-card h3 {
-      margin-bottom: 7px;
-      font-size: 1.12rem;
-    }
-
-    .contact-card p,
-    .contact-card a {
-      color: var(--text);
-      font-size: 0.92rem;
-    }
-
-    .contact-card a:hover {
-      color: var(--primary);
-    }
-
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .service-card {
-      padding: 23px;
-      border: 1px solid rgba(255, 255, 255, 0.13);
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.06);
-    }
-
-    .service-card span {
-      font-size: 1.9rem;
-    }
-
-    .service-card h3 {
-      margin: 12px 0 7px;
-      color: var(--white);
-    }
-
-    .service-card p {
-      color: #c1ccda;
-      font-size: 0.9rem;
-    }
-
-    .office-grid {
-      display: grid;
-      grid-template-columns: 0.95fr 1.05fr;
-      gap: 34px;
-      align-items: stretch;
-    }
-
-    .office-info,
-    .map-card {
-      min-height: 100%;
-      overflow: hidden;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-large);
-      background: var(--white);
-      box-shadow: var(--shadow);
-    }
-
-    .office-info {
-      padding: 31px;
-    }
-
-    .office-info h2 {
-      margin-bottom: 13px;
-      font-size: clamp(1.8rem, 4vw, 2.7rem);
-      line-height: 1.15;
-    }
-
-    .office-info > p {
-      margin-bottom: 22px;
-      color: var(--text);
-    }
-
-    .office-list {
-      display: grid;
-      gap: 14px;
-    }
-
-    .office-item {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-      padding: 14px;
-      border-radius: 14px;
-      background: var(--light);
-    }
-
-    .office-item-icon {
-      width: 40px;
-      height: 40px;
-      flex: 0 0 40px;
-      display: grid;
-      place-items: center;
-      border-radius: 12px;
-      color: var(--white);
-      background: var(--primary);
-    }
-
-    .office-item p,
-    .office-item a {
-      color: var(--text);
-      font-size: 0.93rem;
-    }
-
-    .map-card iframe {
-      width: 100%;
-      height: 100%;
-      min-height: 470px;
-      border: 0;
-    }
-
-    .hours-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .hours-card {
-      padding: 24px;
-      text-align: center;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      background: var(--white);
-      box-shadow: var(--shadow);
-    }
-
-    .hours-card span {
-      font-size: 2rem;
-    }
-
-    .hours-card h3 {
-      margin: 12px 0 6px;
-    }
-
-    .hours-card p {
-      color: var(--text);
-    }
-
-    .faq-list {
-      max-width: 900px;
-      margin: auto;
-      display: grid;
-      gap: 14px;
-    }
-
-    .faq-item {
-      overflow: hidden;
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      background: var(--white);
-    }
-
-    .faq-question {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      padding: 18px 20px;
-      border: 0;
-      color: var(--dark);
-      background: transparent;
-      text-align: left;
-      font-weight: 800;
-    }
-
-    .faq-answer {
-      display: none;
-      padding: 0 20px 19px;
-      color: var(--text);
-    }
-
-    .faq-item.active .faq-answer {
-      display: block;
-    }
-
-    .faq-icon {
-      color: var(--primary);
-      font-size: 1.25rem;
-    }
-
-    .cta {
-      color: var(--white);
-      background:
-        linear-gradient(
-          135deg,
-          var(--primary-dark),
-          var(--primary)
-        );
-    }
-
-    .cta-box {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 28px;
-    }
-
-    .cta h2 {
-      margin-bottom: 10px;
-      font-size: clamp(2rem, 4vw, 3rem);
-      line-height: 1.15;
-    }
-
-    .cta p {
-      max-width: 690px;
-      color: rgba(255, 255, 255, 0.84);
-    }
-
-    .notice {
-      padding: 18px;
-      border-left: 4px solid var(--accent);
-      border-radius: 0 12px 12px 0;
-      color: #664f00;
-      background: #fff8dd;
-      font-size: 0.92rem;
-    }
-
-    .footer {
-      padding: 62px 0 22px;
-      color: #dbe4ef;
-      background: #101827;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.35fr 1fr 1fr 1fr;
-      gap: 30px;
-    }
-
-    .footer h3 {
-      margin-bottom: 15px;
-      color: var(--white);
-    }
-
-    .footer p,
-    .footer a {
-      color: #aeb9c8;
-      font-size: 0.94rem;
-    }
-
-    .footer a:hover {
-      color: var(--white);
-    }
-
-    .footer-links {
-      display: grid;
-      gap: 9px;
-    }
-
-    .footer-bottom {
-      margin-top: 35px;
-      padding-top: 20px;
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      flex-wrap: wrap;
-      border-top: 1px solid rgba(255, 255, 255, 0.12);
-      color: #9da9b7;
-      font-size: 0.88rem;
-    }
-
-    .floating-buttons {
-      position: fixed;
-      right: 18px;
-      bottom: 18px;
-      z-index: 900;
-      display: grid;
-      gap: 11px;
-    }
-
-    .float-btn {
-      width: 52px;
-      height: 52px;
-      display: grid;
-      place-items: center;
-      border-radius: 50%;
-      color: var(--white);
-      font-size: 1.25rem;
-      box-shadow:
-        0 12px 28px rgba(0, 0, 0, 0.2);
-    }
-
-    .whatsapp {
-      background: #25d366;
-    }
-
-    .call {
-      background: var(--primary);
-    }
-
-    .back-to-top {
-      position: fixed;
-      right: 18px;
-      bottom: 142px;
-      z-index: 900;
-      width: 46px;
-      height: 46px;
-      display: none;
-      place-items: center;
-      border: 0;
-      border-radius: 50%;
-      color: var(--white);
-      background: var(--dark);
-      box-shadow:
-        0 10px 24px rgba(0, 0, 0, 0.2);
-    }
-
-    .back-to-top.show {
-      display: grid;
-    }
-
-    @media (max-width: 1050px) {
-      .nav-links {
-        position: fixed;
-        top: 78px;
-        left: 0;
-        right: 0;
-        max-height: calc(100vh - 78px);
-        overflow-y: auto;
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 24px 4%;
-        border-bottom: 1px solid var(--border);
-        background: var(--white);
-        box-shadow: var(--shadow);
-      }
-
-      .nav-links.active {
-        display: flex;
-      }
-
-      .menu-toggle {
-        display: block;
-      }
-
-      .nav-cta {
-        display: none;
-      }
-
-      .hero-grid,
-      .office-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .contact-grid,
-      .service-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .hours-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .footer-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .map-card iframe {
-        min-height: 380px;
-      }
-    }
-
-    @media (max-width: 720px) {
-      .container {
-        width: min(94%, 1180px);
-      }
-
-      .section {
-        padding: 60px 0;
-      }
-
-      .topbar-inner {
-        justify-content: center;
-        text-align: center;
-      }
-
-      .topbar-group {
-        justify-content: center;
-      }
-
-      .topbar-group span:first-child {
-        display: none;
-      }
-
-      .logo-copy small {
-        display: none;
-      }
-
-      .hero-grid {
-        min-height: auto;
-        padding: 58px 0;
-        gap: 30px;
-      }
-
-      .hero h1 {
-        font-size: clamp(2.3rem, 12vw, 3.5rem);
-      }
-
-      .hero-actions {
-        display: grid;
-      }
-
-      .hero-actions .btn {
-        width: 100%;
-      }
-
-      .contact-grid,
-      .service-grid,
-      .hours-grid,
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .cta-box {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .cta-box .btn {
-        width: 100%;
-      }
-
-      .footer-bottom {
-        flex-direction: column;
-      }
-
-      .map-card iframe {
-        min-height: 330px;
-      }
-    }
-
-    @media (max-width: 420px) {
-      .logo-name {
-        font-size: 1.34rem;
-      }
-
-      .logo-icon {
-        width: 40px;
-        height: 40px;
-      }
-
-      .contact-panel,
-      .office-info,
-      .contact-card {
-        padding: 20px;
-      }
-
-      .topbar-group {
-        flex-direction: column;
-        gap: 1px;
-        padding: 5px 0;
-      }
-
-      .floating-buttons {
-        right: 12px;
-        bottom: 12px;
-      }
-
-      .float-btn {
-        width: 48px;
-        height: 48px;
-      }
-
-      .back-to-top {
-        right: 13px;
-        bottom: 130px;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      *,
-      *::before,
-      *::after {
-        scroll-behavior: auto !important;
-        transition-duration: 0.01ms !important;
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-      }
-    }
-  </style>
 </head>
 
 <body>
 
-  <div class="topbar">
-    <div class="container topbar-inner">
+<div class="topbar">
 
-      <div class="topbar-group">
-        <span>
-          Education • Careers • Jobs • Training
-        </span>
+<div class="container topbar-inner">
 
-        <span>
-          📞 +91 9142102309
-        </span>
-      </div>
+<div class="topbar-group">
 
-      <a href="https://medorbits.in">
-        🌐 medorbits.in
-      </a>
+<span>
+Education • Careers • Admissions
+</span>
 
-    </div>
-  </div>
+<span>
+📞 +91 9142102309
+</span>
 
-  <header class="header">
-    <div class="container navbar">
+</div>
 
-      <a href="index.html" class="logo">
+<a href="https://medorbits.in">
 
-        <span class="logo-icon">
-          M
-        </span>
+🌐 medorbits.in
 
-        <span class="logo-copy">
+</a>
 
-          <span class="logo-name">
-            Med<strong>Orbit</strong>
-          </span>
+</div>
 
-          <small>
-            Foundation
-          </small>
+</div>
 
-        </span>
+<header class="header">
 
-      </a>
+<div class="container navbar">
 
-      <button
-        class="menu-toggle"
-        id="menuToggle"
-        aria-label="Open navigation menu"
-        aria-expanded="false"
-      >
-        ☰
-      </button>
+<a href="../index.html" class="logo">
 
-      <ul class="nav-links" id="navLinks">
+<span class="logo-icon">
+M
+</span>
 
-        <li><a href="index.html">Home</a></li>
+<span class="logo-copy">
 
-        <li><a href="about.html">About</a></li>
+<span class="logo-name">
 
-        <li><a href="services.html">Services</a></li>
+Med<strong>Orbit</strong>
 
-        <li><a href="courses.html">Courses</a></li>
+</span>
 
-        <li><a href="colleges.html">Colleges</a></li>
+<small>
 
-        <li><a href="jobs.html">Jobs</a></li>
+Foundation
 
-        <li>
-          <a href="contact.html" class="active">
-            Contact
-          </a>
-        </li>
+</small>
 
-      </ul>
+</span>
 
-      <a
-        class="btn btn-primary nav-cta"
-        href="https://wa.me/919142102309?text=Hello%20MedOrbit%20Foundation%2C%20I%20need%20guidance."
-      >
-        Contact Now
-      </a>
+</a>
 
-    </div>
-  </header>
+<button
+class="menu-toggle"
+id="menuToggle"
+>
 
-  <div class="announcement">
-    📞 Contact MedOrbit Foundation for education, admissions, jobs and career guidance.
-  </div>
+☰
 
-  <main>
+</button>
 
-    <section class="hero">
-      <div class="container hero-grid">
+<nav
+class="nav-links"
+id="navLinks"
+>
 
-        <div class="hero-copy">
+<a href="../index.html">
+Home
+</a>
 
-          <span class="hero-badge">
-            🤝 Speak With Our Team
-          </span>
+<a href="about.html">
+About
+</a>
 
-          <h1>
-            Let Us Help You
-            <span>Move Forward</span>
-          </h1>
-
-          <p>
-            Contact MedOrbit Foundation for course selection, college
-            admissions, study abroad, job support, recruitment, career
-            counselling and training services.
-          </p>
-
-          <div class="hero-actions">
+<a href="services.html">
+Services
+</a>
 
-            <a
-              class="btn btn-light"
-              href="tel:+919142102309"
-            >
-              ☎ Call Now
-            </a>
-
-            <a
-              class="btn btn-outline"
-              href="https://wa.me/919142102309?text=Hello%20MedOrbit%20Foundation%2C%20I%20need%20guidance."
-            >
-              💬 WhatsApp
-            </a>
-
-          </div>
+<a href="courses.html">
+Courses
+</a>
 
-          <div class="hero-contact-list">
-
-            <div class="hero-contact-item">
-              <span class="hero-contact-icon">📍</span>
+<a href="colleges.html">
+Colleges
+</a>
 
-              <span>
-                Wave Silver Tower, 7th Floor, Sector 18, Noida
-              </span>
-            </div>
-
-            <div class="hero-contact-item">
-              <span class="hero-contact-icon">📞</span>
+<a href="jobs.html">
+Jobs
+</a>
 
-              <a href="tel:+919142102309">
-                +91 9142102309
-              </a>
-            </div>
-
-            <div class="hero-contact-item">
-              <span class="hero-contact-icon">🌐</span>
+<a
+href="contact.html"
+class="active"
+>
+Contact
+</a>
 
-              <a href="https://medorbits.in">
-                medorbits.in
-              </a>
-            </div>
-
-          </div>
-
-        </div>
-
-        <form
-          class="contact-panel"
-          id="contactForm"
-        >
-
-          <h2>
-            Send Your Enquiry
-          </h2>
-
-          <p>
-            Fill in the details and continue securely through WhatsApp.
-          </p>
-
-          <div class="form-grid">
+</nav>
 
-            <div class="field">
-
-              <label for="name">
-                Full Name
-              </label>
+<a
+class="btn btn-primary nav-cta"
+href="https://wa.me/919142102309"
+>
 
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter your full name"
-                autocomplete="name"
-                required
-              >
+Contact Now
 
-            </div>
+</a>
 
-            <div class="field">
+</div>
 
-              <label for="phone">
-                Mobile Number
-              </label>
+</header>
 
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Enter mobile number"
-                inputmode="tel"
-                autocomplete="tel"
-                required
-              >
+<div class="announcement">
 
-            </div>
+📞 Contact our expert team for education, admission, jobs and study abroad guidance.
 
-            <div class="field">
+</div>
 
-              <label for="email">
-                Email Address
-              </label>
+<main>
 
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter email address"
-                autocomplete="email"
-              >
+<!--==================================================
+CONTACT HERO
+==================================================-->
 
-            </div>
+<section class="hero">
 
-            <div class="field">
+<div class="container hero-grid">
 
-              <label for="service">
-                Service Required
-              </label>
+<div class="hero-copy">
 
-              <select
-                id="service"
-                name="service"
-                required
-              >
+<span class="hero-badge">
+🤝 Contact MedOrbit Foundation
+</span>
 
-                <option value="">
-                  Select service
-                </option>
+<h1>
 
-                <option>
-                  Course and Career Guidance
-                </option>
+Let's Build Your
+<span>Future Together</span>
 
-                <option>
-                  College Admission
-                </option>
+</h1>
 
-                <option>
-                  MBBS in India
-                </option>
+<p>
 
-                <option>
-                  Study Abroad
-                </option>
+Whether you're looking for admissions, career counselling,
+study abroad opportunities, scholarships or recruitment
+support, our team is ready to assist you.
 
-                <option>
-                  Job Assistance
-                </option>
+</p>
 
-                <option>
-                  Recruitment Services
-                </option>
+<div class="hero-actions">
 
-                <option>
-                  Training and Skill Development
-                </option>
+<a
+href="tel:+919142102309"
+class="btn btn-light"
+>
 
-                <option>
-                  Scholarship Guidance
-                </option>
+📞 Call Now
 
-                <option>
-                  Other Requirement
-                </option>
+</a>
 
-              </select>
+<a
+href="https://wa.me/919142102309?text=Hello%20MedOrbit,%20I%20need%20guidance."
+class="btn btn-outline"
+target="_blank"
+>
 
-            </div>
+💬 WhatsApp
 
-            <div class="field">
+</a>
 
-              <label for="message">
-                Your Requirement
-              </label>
+</div>
 
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Tell us briefly how we can help"
-              ></textarea>
 
-            </div>
+<div class="hero-highlights">
 
-            <button
-              type="submit"
-              class="btn btn-light"
-            >
-              Send Enquiry on WhatsApp
-            </button>
+<div class="hero-item">
 
-          </div>
+<div class="hero-icon">
+🎓
+</div>
 
-        </form>
+<div>
 
-      </div>
-    </section>
+<strong>
+Education Guidance
+</strong>
 
-    <section class="section section-white">
-      <div class="container">
+<small>
+Courses • Colleges • Admissions
+</small>
 
-        <div class="section-heading">
+</div>
 
-          <span>
-            Contact Options
-          </span>
+</div>
 
-          <h2>
-            Choose the Best Way to Reach Us
-          </h2>
 
-          <p>
-            Our team supports students, candidates, parents, institutions
-            and employers.
-          </p>
+<div class="hero-item">
 
-        </div>
+<div class="hero-icon">
+🌍
+</div>
 
-        <div class="contact-grid">
+<div>
 
-          <article class="contact-card">
+<strong>
+Study Abroad
+</strong>
 
-            <div class="contact-card-icon">
-              ☎
-            </div>
+<small>
+Universities • Visa • Documentation
+</small>
 
-            <h3>
-              Call Us
-            </h3>
+</div>
 
-            <a href="tel:+919142102309">
-              +91 9142102309
-            </a>
+</div>
 
-          </article>
 
-          <article class="contact-card">
+<div class="hero-item">
 
-            <div class="contact-card-icon">
-              💬
-            </div>
+<div class="hero-icon">
+💼
+</div>
 
-            <h3>
-              WhatsApp
-            </h3>
+<div>
 
-            <a href="https://wa.me/919142102309">
-              Start a conversation
-            </a>
+<strong>
+Career Support
+</strong>
 
-          </article>
+<small>
+Jobs • Recruitment • Training
+</small>
 
-          <article class="contact-card">
+</div>
 
-            <div class="contact-card-icon">
-              🌐
-            </div>
+</div>
 
-            <h3>
-              Website
-            </h3>
 
-            <a href="https://medorbits.in">
-              medorbits.in
-            </a>
+<div class="hero-item">
 
-          </article>
+<div class="hero-icon">
+🏢
+</div>
 
-          <article class="contact-card">
+<div>
 
-            <div class="contact-card-icon">
-              📍
-            </div>
+<strong>
+Office
+</strong>
 
-            <h3>
-              Visit Office
-            </h3>
+<small>
+Sector 18, Noida
+</small>
 
-            <p>
-              Sector 18, Noida, Uttar Pradesh
-            </p>
-
-          </article>
-
-        </div>
+</div>
 
-      </div>
-    </section>
+</div>
 
-    <section class="section section-dark">
-      <div class="container">
+</div>
 
-        <div class="section-heading">
+</div>
 
-          <span>
-            Areas We Support
-          </span>
 
-          <h2>
-            One Contact for Multiple Services
-          </h2>
-
-          <p>
-            Choose the service area that matches your requirement.
-          </p>
-
-        </div>
-
-        <div class="service-grid">
-
-          <article class="service-card">
-            <span>🎓</span>
-            <h3>Education</h3>
-            <p>
-              Course selection, colleges, counselling and admission
-              support.
-            </p>
-          </article>
 
-          <article class="service-card">
-            <span>🌍</span>
-            <h3>Study Abroad</h3>
-            <p>
-              Country selection, applications, documents and travel
-              guidance.
-            </p>
-          </article>
-
-          <article class="service-card">
-            <span>💼</span>
-            <h3>Jobs</h3>
-            <p>
-              Job information and candidate support across multiple
-              sectors.
-            </p>
-          </article>
+<div class="contact-form-card">
 
-          <article class="service-card">
-            <span>🏢</span>
-            <h3>Recruitment</h3>
-            <p>
-              Candidate sourcing and recruitment assistance for
-              employers.
-            </p>
-          </article>
+<span class="form-tag">
 
-          <article class="service-card">
-            <span>🧭</span>
-            <h3>Career Counselling</h3>
-            <p>
-              Guidance based on qualification, interests and future
-              goals.
-            </p>
-          </article>
+Quick Enquiry
 
-          <article class="service-card">
-            <span>🛠️</span>
-            <h3>Training</h3>
-            <p>
-              Interview preparation, communication and employability
-              skills.
-            </p>
-          </article>
+</span>
 
-          <article class="service-card">
-            <span>🏆</span>
-            <h3>Scholarships</h3>
-            <p>
-              Information support for suitable scholarship
-              opportunities.
-            </p>
-          </article>
+<h2>
 
-          <article class="service-card">
-            <span>🤝</span>
-            <h3>Institutional Support</h3>
-            <p>
-              Collaboration opportunities with colleges, employers and
-              organisations.
-            </p>
-          </article>
+Request Guidance
 
-        </div>
+</h2>
 
-      </div>
-    </section>
+<p>
 
-    <section class="section">
-      <div class="container office-grid">
+Fill in your details and continue securely through WhatsApp.
 
-        <div class="office-info">
+</p>
 
-          <span
-            style="
-              color: var(--primary);
-              font-weight: 900;
-              text-transform: uppercase;
-              letter-spacing: 1px;
-              font-size: 0.82rem;
-            "
-          >
-            Noida Office
-          </span>
+<form id="contactForm">
 
-          <h2>
-            Visit MedOrbit Foundation
-          </h2>
+<div class="form-group">
 
-          <p>
-            Meet our team for education, career, job and consultancy
-            guidance. Prior appointment is recommended.
-          </p>
+<input
+type="text"
+id="name"
+placeholder="Full Name"
+required
+>
 
-          <div class="office-list">
+</div>
 
-            <div class="office-item">
 
-              <span class="office-item-icon">
-                📍
-              </span>
+<div class="form-group">
 
-              <div>
-                <strong>Office Address</strong>
+<input
+type="tel"
+id="phone"
+placeholder="Mobile Number"
+required
+>
 
-                <p>
-                  Wave Silver Tower, 7th Floor, Sector 18,
-                  Noida, Uttar Pradesh, India
-                </p>
-              </div>
+</div>
 
-            </div>
 
-            <div class="office-item">
+<div class="form-group">
 
-              <span class="office-item-icon">
-                📞
-              </span>
+<input
+type="email"
+id="email"
+placeholder="Email Address"
+>
 
-              <div>
-                <strong>Phone</strong>
+</div>
 
-                <p>
-                  <a href="tel:+919142102309">
-                    +91 9142102309
-                  </a>
-                </p>
-              </div>
 
-            </div>
+<div class="form-group">
 
-            <div class="office-item">
+<select id="service">
 
-              <span class="office-item-icon">
-                💬
-              </span>
+<option value="">
+Select Service
+</option>
 
-              <div>
-                <strong>WhatsApp</strong>
+<option>
+MBBS Admission
+</option>
 
-                <p>
-                  <a href="https://wa.me/919142102309">
-                    Message MedOrbit Foundation
-                  </a>
-                </p>
-              </div>
+<option>
+Study Abroad
+</option>
 
-            </div>
+<option>
+Career Counselling
+</option>
 
-            <div class="office-item">
+<option>
+Job Assistance
+</option>
 
-              <span class="office-item-icon">
-                🌐
-              </span>
+<option>
+Recruitment Services
+</option>
 
-              <div>
-                <strong>Website</strong>
+<option>
+Scholarship Guidance
+</option>
 
-                <p>
-                  <a href="https://medorbits.in">
-                    https://medorbits.in
-                  </a>
-                </p>
-              </div>
+<option>
+Training
+</option>
 
-            </div>
+<option>
+Other
+</option>
 
-          </div>
+</select>
 
-        </div>
+</div>
 
-        <div class="map-card">
 
-          <iframe
-            title="MedOrbit Foundation office location"
-            src="https://www.google.com/maps?q=Wave%20Silver%20Tower%20Sector%2018%20Noida&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen
-          ></iframe>
+<div class="form-group">
 
-        </div>
+<textarea
+id="message"
+placeholder="Write your requirement..."
+></textarea>
 
-      </div>
-    </section>
+</div>
 
-    <section class="section section-white">
-      <div class="container">
 
-        <div class="section-heading">
+<button
+type="submit"
+class="btn btn-primary submit-btn"
+>
 
-          <span>
-            Availability
-          </span>
+Send on WhatsApp
 
-          <h2>
-            Contact and Consultation Hours
-          </h2>
+</button>
 
-        </div>
+</form>
 
-        <div class="hours-grid">
+<div class="form-note">
 
-          <article class="hours-card">
-            <span>📅</span>
-            <h3>Monday to Saturday</h3>
-            <p>
-              10:00 AM – 7:00 PM
-            </p>
-          </article>
+🔒 Your information remains private.
 
-          <article class="hours-card">
-            <span>💬</span>
-            <h3>WhatsApp Support</h3>
-            <p>
-              Messages can be sent at any time
-            </p>
-          </article>
+</div>
 
-          <article class="hours-card">
-            <span>🤝</span>
-            <h3>Office Consultation</h3>
-            <p>
-              Appointment recommended
-            </p>
-          </article>
+</div>
 
-        </div>
+</div>
 
-      </div>
-    </section>
+</section>
+<!--==================================================
+CONTACT OPTIONS
+==================================================-->
 
-    <section class="section" id="faq">
-      <div class="container">
+<section class="section">
 
-        <div class="section-heading">
+<div class="container">
 
-          <span>
-            Frequently Asked Questions
-          </span>
+<div class="section-heading">
 
-          <h2>
-            Before You Contact Us
-          </h2>
+<span>Contact Options</span>
 
-        </div>
+<h2>Choose The Best Way To Reach Us</h2>
 
-        <div class="faq-list">
+<p>
+Connect instantly with our education and career experts.
+</p>
 
-          <article class="faq-item">
+</div>
 
-            <button
-              type="button"
-              class="faq-question"
-            >
-              What information should I provide for admission guidance?
-              <span class="faq-icon">+</span>
-            </button>
 
-            <div class="faq-answer">
-              Share your qualification, marks, entrance-exam score,
-              preferred course, location and approximate budget.
-            </div>
+<div class="contact-grid">
 
-          </article>
+<div class="contact-card">
 
-          <article class="faq-item">
+<div class="contact-icon">📞</div>
 
-            <button
-              type="button"
-              class="faq-question"
-            >
-              Can I contact MedOrbit for job assistance?
-              <span class="faq-icon">+</span>
-            </button>
+<h3>Call Us</h3>
 
-            <div class="faq-answer">
-              Yes. Candidates from 10th pass to postgraduate and
-              professional levels can submit their details for suitable
-              job information and assistance.
-            </div>
+<p>Speak directly with our counsellor.</p>
 
-          </article>
+<a href="tel:+919142102309" class="btn btn-primary">
+Call Now
+</a>
 
-          <article class="faq-item">
+</div>
 
-            <button
-              type="button"
-              class="faq-question"
-            >
-              Do I need an appointment before visiting the office?
-              <span class="faq-icon">+</span>
-            </button>
 
-            <div class="faq-answer">
-              Prior appointment is recommended so the relevant
-              counsellor or consultant can be available when you arrive.
-            </div>
+<div class="contact-card">
 
-          </article>
+<div class="contact-icon">💬</div>
 
-          <article class="faq-item">
+<h3>WhatsApp</h3>
 
-            <button
-              type="button"
-              class="faq-question"
-            >
-              Does MedOrbit guarantee admission or employment?
-              <span class="faq-icon">+</span>
-            </button>
+<p>Fast responses for admissions and careers.</p>
 
-            <div class="faq-answer">
-              No. Admission and employment depend on official eligibility,
-              available seats, employer requirements, documents and the
-              applicable selection process.
-            </div>
+<a
+href="https://wa.me/919142102309"
+target="_blank"
+class="btn btn-success">
 
-          </article>
+Chat Now
 
-          <article class="faq-item">
+</a>
 
-            <button
-              type="button"
-              class="faq-question"
-            >
-              How quickly will the team respond?
-              <span class="faq-icon">+</span>
-            </button>
+</div>
 
-            <div class="faq-answer">
-              Response times depend on working hours and enquiry volume.
-              For urgent guidance, call during office hours.
-            </div>
 
-          </article>
+<div class="contact-card">
 
-        </div>
+<div class="contact-icon">✉️</div>
 
-      </div>
-    </section>
+<h3>Email</h3>
 
-    <section class="section cta">
-      <div class="container cta-box">
+<p>
+info@medorbits.in
+</p>
 
-        <div>
+<a
+href="mailto:info@medorbits.in"
+class="btn btn-primary">
 
-          <h2>
-            Ready to Discuss Your Requirement?
-          </h2>
+Send Email
 
-          <p>
-            Connect with MedOrbit Foundation and share your education,
-            career, job, training or consultancy requirement.
-          </p>
+</a>
 
-        </div>
+</div>
 
-        <a
-          class="btn btn-light"
-          href="https://wa.me/919142102309?text=Hello%20MedOrbit%20Foundation%2C%20I%20would%20like%20to%20discuss%20my%20requirement."
-        >
-          Start WhatsApp Chat
-        </a>
 
-      </div>
-    </section>
+<div class="contact-card">
 
-    <section class="section section-white">
-      <div class="container">
+<div class="contact-icon">📍</div>
 
-        <div class="notice">
+<h3>Office</h3>
 
-          <strong>Important:</strong>
+<p>
+Wave Silver Tower<br>
+Sector 18, Noida
+</p>
 
-          MedOrbit Foundation provides information, counselling,
-          consultancy and assistance services. Admission, employment,
-          scholarship, visa and institutional decisions remain subject
-          to the relevant authority, institution or employer. Verify all
-          official details before applying or making any payment.
+<a
+href="#office"
+class="btn btn-primary">
 
-        </div>
+Visit Office
 
-      </div>
-    </section>
+</a>
 
-  </main>
+</div>
 
-  <footer class="footer">
-    <div class="container">
+</div>
 
-      <div class="footer-grid">
+</div>
 
-        <div>
+</section>
 
-          <h3>
-            MedOrbit Foundation
-          </h3>
 
-          <p>
-            Education, admissions, jobs, recruitment, training, career
-            counselling and study-abroad guidance.
-          </p>
 
-        </div>
+<!--==================================================
+OFFICE
+==================================================-->
 
-        <div>
+<section
+class="section section-white"
+id="office">
 
-          <h3>
-            Quick Links
-          </h3>
+<div class="container office-grid">
 
-          <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="courses.html">Courses</a>
-          </div>
+<div class="office-left">
 
-        </div>
+<span class="section-tag">
 
-        <div>
+Our Office
 
-          <h3>
-            Resources
-          </h3>
+</span>
 
-          <div class="footer-links">
-            <a href="colleges.html">Colleges</a>
-            <a href="admission-guide.html">Admission Guide</a>
-            <a href="jobs.html">Jobs</a>
-            <a href="brochure.html">Brochures</a>
-          </div>
+<h2>
 
-        </div>
+Visit MedOrbit Foundation
 
-        <div>
+</h2>
 
-          <h3>
-            Contact
-          </h3>
+<p>
 
-          <div class="footer-links">
+Meet our experts personally for admission guidance,
+career counselling, overseas education,
+recruitment and training.
 
-            <a href="tel:+919142102309">
-              +91 9142102309
-            </a>
+</p>
 
-            <a href="https://wa.me/919142102309">
-              WhatsApp Support
-            </a>
 
-            <a href="https://medorbits.in">
-              medorbits.in
-            </a>
+<div class="office-list">
 
-            <p>
-              Wave Silver Tower, 7th Floor, Sector 18,
-              Noida, Uttar Pradesh, India
-            </p>
+<div class="office-item">
 
-          </div>
+<div class="office-item-icon">
+📍
+</div>
 
-        </div>
+<div>
 
-      </div>
+<h4>
 
-      <div class="footer-bottom">
+Address
 
-        <span>
-          © <span id="year"></span> MedOrbit Foundation.
-          All rights reserved.
-        </span>
+</h4>
 
-        <span>
-          Verify official information before applying or paying.
-        </span>
+<p>
 
-      </div>
+Wave Silver Tower,
+7th Floor,
+Sector 18,
+Noida,
+Uttar Pradesh
 
-    </div>
-  </footer>
+</p>
 
-  <button
-    type="button"
-    class="back-to-top"
-    id="backToTop"
-    aria-label="Back to top"
-  >
-    ↑
-  </button>
+</div>
 
-  <div class="floating-buttons">
+</div>
 
-    <a
-      class="float-btn whatsapp"
-      href="https://wa.me/919142102309?text=Hello%20MedOrbit%20Foundation%2C%20I%20need%20guidance."
-      aria-label="Contact MedOrbit Foundation on WhatsApp"
-    >
-      💬
-    </a>
 
-    <a
-      class="float-btn call"
-      href="tel:+919142102309"
-      aria-label="Call MedOrbit Foundation"
-    >
-      ☎
-    </a>
+<div class="office-item">
 
-  </div>
+<div class="office-item-icon">
+📞
+</div>
 
-  <script>
-    const menuToggle =
-      document.getElementById("menuToggle");
+<div>
 
-    const navLinks =
-      document.getElementById("navLinks");
+<h4>
 
-    menuToggle.addEventListener("click", function () {
-      const isOpen =
-        navLinks.classList.toggle("active");
+Phone
 
-      document.body.classList.toggle(
-        "menu-open",
-        isOpen
-      );
+</h4>
 
-      menuToggle.textContent =
-        isOpen ? "✕" : "☰";
+<p>
 
-      menuToggle.setAttribute(
-        "aria-expanded",
-        String(isOpen)
-      );
++91 9142102309
 
-      menuToggle.setAttribute(
-        "aria-label",
-        isOpen
-          ? "Close navigation menu"
-          : "Open navigation menu"
-      );
-    });
+</p>
 
-    document
-      .querySelectorAll(".nav-links a")
-      .forEach(function (link) {
-        link.addEventListener("click", function () {
-          navLinks.classList.remove("active");
-          document.body.classList.remove("menu-open");
+</div>
 
-          menuToggle.textContent = "☰";
+</div>
 
-          menuToggle.setAttribute(
-            "aria-expanded",
-            "false"
-          );
-        });
-      });
-
-    document
-      .querySelectorAll(".faq-question")
-      .forEach(function (button) {
-        button.addEventListener("click", function () {
-          const item =
-            button.parentElement;
-
-          const icon =
-            button.querySelector(".faq-icon");
-
-          item.classList.toggle("active");
-
-          icon.textContent =
-            item.classList.contains("active")
-              ? "−"
-              : "+";
-        });
-      });
-
-    const contactForm =
-      document.getElementById("contactForm");
-
-    contactForm.addEventListener(
-      "submit",
-      function (event) {
-        event.preventDefault();
-
-        const name =
-          document
-            .getElementById("name")
-            .value
-            .trim();
-
-        const phone =
-          document
-            .getElementById("phone")
-            .value
-            .trim();
-
-        const email =
-          document
-            .getElementById("email")
-            .value
-            .trim();
-
-        const service =
-          document
-            .getElementById("service")
-            .value;
-
-        const message =
-          document
-            .getElementById("message")
-            .value
-            .trim();
-
-        const phonePattern =
-          /^[0-9+\-\s()]{8,15}$/;
-
-        if (!phonePattern.test(phone)) {
-          alert(
-            "Please enter a valid mobile number."
-          );
-
-          return;
-        }
-
-        const whatsappMessage =
-          "Hello MedOrbit Foundation,\n\n" +
-          "I would like to submit an enquiry.\n\n" +
-          "Name: " +
-          name +
-          "\n" +
-          "Mobile: " +
-          phone +
-          "\n" +
-          "Email: " +
-          (email || "Not provided") +
-          "\n" +
-          "Service Required: " +
-          service +
-          "\n" +
-          "Requirement: " +
-          (message || "Not provided");
-
-        const whatsappURL =
-          "https://wa.me/919142102309?text=" +
-          encodeURIComponent(whatsappMessage);
-
-        window.open(
-          whatsappURL,
-          "_blank",
-          "noopener,noreferrer"
-        );
-      }
-    );
-
-    const backToTop =
-      document.getElementById("backToTop");
-
-    window.addEventListener(
-      "scroll",
-      function () {
-        backToTop.classList.toggle(
-          "show",
-          window.scrollY > 450
-        );
-      }
-    );
-
-    backToTop.addEventListener(
-      "click",
-      function () {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"
-        });
-      }
-    );
-
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
-  </script>
+
+<div class="office-item">
+
+<div class="office-item-icon">
+💬
+</div>
+
+<div>
+
+<h4>
+
+WhatsApp
+
+</h4>
+
+<p>
+
+Available During Working Hours
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="office-item">
+
+<div class="office-item-icon">
+🕘
+</div>
+
+<div>
+
+<h4>
+
+Office Hours
+
+</h4>
+
+<p>
+
+Monday – Saturday
+
+10:00 AM – 7:00 PM
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="office-map">
+
+<iframe
+src="https://www.google.com/maps?q=Wave%20Silver%20Tower%20Sector%2018%20Noida&output=embed"
+loading="lazy"
+allowfullscreen>
+
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!--==================================================
+WORKING HOURS
+==================================================-->
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-heading">
+
+<span>Availability</span>
+
+<h2>We're Here To Help</h2>
+
+</div>
+
+<div class="hours-grid">
+
+<div class="hours-card">
+
+<div class="hours-icon">
+📅
+</div>
+
+<h3>
+
+Monday - Saturday
+
+</h3>
+
+<p>
+
+10:00 AM – 7:00 PM
+
+</p>
+
+</div>
+
+
+<div class="hours-card">
+
+<div class="hours-icon">
+💬
+</div>
+
+<h3>
+
+WhatsApp Support
+
+</h3>
+
+<p>
+
+Quick replies throughout the day.
+
+</p>
+
+</div>
+
+
+<div class="hours-card">
+
+<div class="hours-icon">
+🤝
+</div>
+
+<h3>
+
+Office Visit
+
+</h3>
+
+<p>
+
+Appointment Recommended
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!--==================================================
+FAQ
+==================================================-->
+
+<section class="section section-white" id="faq">
+
+<div class="container">
+
+<div class="section-heading">
+
+<span>Frequently Asked Questions</span>
+
+<h2>Answers Before You Contact Us</h2>
+
+<p>
+Some of the most common questions asked by students,
+parents and job seekers.
+</p>
+
+</div>
+
+<div class="faq-list">
+
+<details class="faq-item" open>
+
+<summary>
+How do I apply through MedOrbit?
+</summary>
+
+<p>
+Simply contact us through WhatsApp, phone or the enquiry form.
+Our counsellor will guide you according to your qualification,
+budget and career goals.
+</p>
+
+</details>
+
+
+<details class="faq-item">
+
+<summary>
+Do you provide MBBS admission guidance?
+</summary>
+
+<p>
+Yes. Guidance is available for India and selected international
+destinations depending upon eligibility and admission criteria.
+</p>
+
+</details>
+
+
+<details class="faq-item">
+
+<summary>
+Do you help with Study Abroad?
+</summary>
+
+<p>
+Yes. We assist with country selection, university selection,
+documentation and admission support.
+</p>
+
+</details>
+
+
+<details class="faq-item">
+
+<summary>
+Can I visit your office directly?
+</summary>
+
+<p>
+Yes. However, prior appointment is recommended for faster service.
+</p>
+
+</details>
+
+
+<details class="faq-item">
+
+<summary>
+Do you also provide Job Assistance?
+</summary>
+
+<p>
+Yes. We provide career guidance and employment assistance across
+multiple sectors depending upon eligibility and employer requirements.
+</p>
+
+</details>
+
+
+<details class="faq-item">
+
+<summary>
+Does MedOrbit guarantee admission or jobs?
+</summary>
+
+<p>
+No. Admissions and employment depend upon official eligibility,
+availability, documentation and the respective institution or employer.
+</p>
+
+</details>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!--==================================================
+FINAL CTA
+==================================================-->
+
+<section class="contact-cta">
+
+<div class="container">
+
+<div class="cta-box">
+
+<h2>
+
+Ready To Start Your Journey?
+
+</h2>
+
+<p>
+
+Whether you need admission guidance,
+career counselling,
+study abroad assistance,
+job support,
+or recruitment services,
+
+our experts are just one message away.
+
+</p>
+
+<div class="cta-buttons">
+
+<a
+href="https://wa.me/919142102309"
+target="_blank"
+class="btn btn-success">
+
+💬 WhatsApp
+
+</a>
+
+<a
+href="tel:+919142102309"
+class="btn btn-light">
+
+📞 Call Now
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!--==================================================
+DISCLAIMER
+==================================================-->
+
+<section class="section">
+
+<div class="container">
+
+<div class="notice">
+
+<strong>Important Notice</strong>
+
+<p>
+
+MedOrbit Foundation provides education guidance,
+career counselling,
+admission assistance,
+recruitment support,
+and consultancy services.
+
+Admissions,
+employment,
+scholarships,
+visas
+and institutional decisions are subject to the
+respective authorities,
+institutions,
+government regulations
+and employer requirements.
+
+Applicants should verify official information before
+making any payment or submitting documents.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!--==================================================
+FOOTER
+==================================================-->
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<div class="footer-logo">
+
+<span class="logo-icon">M</span>
+
+<h2>MedOrbit Foundation</h2>
+
+</div>
+
+<p>
+
+Empowering students through admissions,
+career guidance,
+study abroad assistance,
+recruitment support
+and educational consultancy.
+
+</p>
+
+</div>
+
+
+<div>
+
+<h3>Quick Links</h3>
+
+<ul class="footer-links">
+
+<li><a href="../index.html">Home</a></li>
+
+<li><a href="../about.html">About</a></li>
+
+<li><a href="../courses.html">Courses</a></li>
+
+<li><a href="../colleges.html">Colleges</a></li>
+
+<li><a href="../jobs.html">Jobs</a></li>
+
+<li><a href="../contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h3>Popular Services</h3>
+
+<ul class="footer-links">
+
+<li>MBBS Admission</li>
+
+<li>Study Abroad</li>
+
+<li>Career Counselling</li>
+
+<li>Recruitment</li>
+
+<li>Training</li>
+
+<li>Scholarships</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h3>Contact</h3>
+
+<ul class="footer-links">
+
+<li>📞 +91 9142102309</li>
+
+<li>🌐 www.medorbits.in</li>
+
+<li>✉ info@medorbits.in</li>
+
+<li>
+
+📍 Wave Silver Tower,
+7th Floor,
+Sector 18,
+Noida
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+<p>
+
+© <span id="year"></span>
+MedOrbit Foundation.
+All Rights Reserved.
+
+</p>
+
+<p>
+
+Designed with ❤️ by MedOrbit
+
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+
+
+<!--==================================================
+FLOATING BUTTONS
+==================================================-->
+
+<a
+
+href="https://wa.me/919142102309"
+
+target="_blank"
+
+class="floating-whatsapp"
+
+aria-label="WhatsApp">
+
+💬
+
+</a>
+
+
+<a
+
+href="tel:+919142102309"
+
+class="floating-call"
+
+aria-label="Call">
+
+📞
+
+</a>
+
+
+<button
+
+id="backToTop"
+
+class="back-top"
+
+aria-label="Back To Top">
+
+↑
+
+</button>
+
+
+
+<!--==================================================
+JAVASCRIPT
+==================================================-->
+
+<script>
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+
+
+
+
+const menuButton =
+document.getElementById("menuToggle");
+
+const nav =
+document.getElementById("navLinks");
+
+if(menuButton){
+
+menuButton.onclick=function(){
+
+nav.classList.toggle("active");
+
+};
+
+}
+
+
+
+
+
+const backTop =
+document.getElementById("backToTop");
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>350){
+
+backTop.classList.add("show");
+
+}else{
+
+backTop.classList.remove("show");
+
+}
+
+});
+
+backTop.onclick=()=>{
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+
+
+
+
+const form =
+document.getElementById("contactForm");
+
+if(form){
+
+form.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const name=document.getElementById("name").value;
+
+const phone=document.getElementById("phone").value;
+
+const email=document.getElementById("email").value;
+
+const service=document.getElementById("service").value;
+
+const message=document.getElementById("message").value;
+
+const text=
+
+`Hello MedOrbit Foundation,
+
+Name : ${name}
+
+Phone : ${phone}
+
+Email : ${email}
+
+Service : ${service}
+
+Requirement :
+
+${message}`;
+
+window.open(
+
+"https://wa.me/919142102309?text="+
+
+encodeURIComponent(text),
+
+"_blank"
+
+);
+
+});
+
+}
+
+</script>
 
 </body>
+
 </html>

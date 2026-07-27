@@ -1,0 +1,736 @@
+{
+  "metadata": {
+    "title": "MedOrbit Nepal Medical Universities",
+    "country": "Nepal",
+    "countryCode": "NP",
+    "category": "Study Abroad",
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-27",
+    "recordCount": 10,
+    "maintainedBy": "MedOrbit",
+    "website": "https://medorbits.in",
+    "status": "development",
+    "currency": "NPR",
+    "language": "English",
+    "disclaimer": "Students should verify NMC eligibility, Nepal Medical Council recognition, university recognition, tuition fees, hostel fees, admission rules and visa requirements before applying."
+  },
+
+  "universities": [
+
+  ]
+}
+{
+  "id": 3001,
+  "name": "B.P. Koirala Institute of Health Sciences",
+  "shortName": "BPKIHS",
+  "slug": "bp-koirala-institute-of-health-sciences",
+  "country": "Nepal",
+  "state": "Koshi Province",
+  "city": "Dharan",
+  "ownership": "Government",
+  "institutionType": "Medical University",
+  "courseCategory": "Medical",
+  "courses": [
+    "MBBS",
+    "BDS",
+    "BSc Nursing",
+    "MD",
+    "MS",
+    "DM",
+    "MCh",
+    "PhD"
+  ],
+  "entranceExams": [
+    "BPKIHS Entrance",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 1993,
+  "recognition": [
+    "Nepal Medical Council",
+    "NMC Eligible"
+  ],
+  "affiliation": "Autonomous Health Sciences University",
+  "duration": "5.5 Years",
+  "medium": "English",
+  "totalSeats": null,
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "hostel": "As applicable",
+    "mess": "As applicable",
+    "currency": "USD"
+  },
+  "officialWebsite": "https://www.bpkihs.edu",
+  "admissionWebsite": "https://www.bpkihs.edu",
+  "email": "",
+  "phone": "",
+  "address": "Dharan, Koshi Province, Nepal",
+  "coordinates": {
+    "latitude": 26.8147,
+    "longitude": 87.2792
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "brochure": "",
+  "prospectus": "",
+  "description": "B.P. Koirala Institute of Health Sciences is one of Nepal's premier medical universities offering MBBS, postgraduate and super-speciality medical education.",
+  "keywords": [
+    "BPKIHS",
+    "Nepal",
+    "MBBS",
+    "Study in Nepal",
+    "Medical University"
+  ],
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3002,
+  "name": "Kathmandu University School of Medical Sciences",
+  "shortName": "KUSMS",
+  "slug": "kathmandu-university-school-of-medical-sciences",
+  "country": "Nepal",
+  "state": "Bagmati Province",
+  "city": "Dhulikhel",
+  "ownership": "University",
+  "institutionType": "Medical University",
+  "courseCategory": "Medical",
+  "courses": [
+    "MBBS",
+    "BDS",
+    "BSc Nursing",
+    "BPT",
+    "BSc Medical Laboratory Technology",
+    "MD",
+    "MS",
+    "DM",
+    "MCh",
+    "PhD"
+  ],
+  "entranceExams": [
+    "MEC Entrance",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 1994,
+  "recognition": [
+    "Nepal Medical Council",
+    "NMC Eligible",
+    "WDOMS"
+  ],
+  "affiliation": "Kathmandu University",
+  "duration": "5.5 Years",
+  "medium": "English",
+  "totalSeats": 100,
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "hostel": "As applicable",
+    "mess": "As applicable",
+    "currency": "USD"
+  },
+  "officialWebsite": "https://kusms.edu.np",
+  "admissionWebsite": "https://kusms.edu.np",
+  "email": "info@kusms.edu.np",
+  "phone": "+977-11-490577",
+  "address": "Dhulikhel, Kavrepalanchok, Nepal",
+  "coordinates": {
+    "latitude": 27.6226,
+    "longitude": 85.5482
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "brochure": "",
+  "prospectus": "",
+  "description": "Kathmandu University School of Medical Sciences is one of Nepal's leading medical institutions, operating in collaboration with Dhulikhel Hospital and offering undergraduate, postgraduate and super-speciality medical education.",
+  "keywords": [
+    "KUSMS",
+    "Kathmandu University",
+    "Nepal",
+    "MBBS",
+    "Medical University",
+    "Dhulikhel"
+  ],
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3003,
+  "name": "Kathmandu Medical College",
+  "shortName": "KMC",
+  "slug": "kathmandu-medical-college",
+  "country": "Nepal",
+  "state": "Bagmati Province",
+  "city": "Kathmandu",
+  "ownership": "Private",
+  "institutionType": "Medical College",
+  "courseCategory": "Medical",
+  "courses": [
+    "MBBS",
+    "BDS",
+    "BSc Nursing",
+    "BNS",
+    "MSc Nursing",
+    "MD",
+    "MS",
+    "DM",
+    "MCh"
+  ],
+  "entranceExams": [
+    "MEC Entrance",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 1997,
+  "recognition": [
+    "Nepal Medical Council",
+    "Kathmandu University",
+    "NMC Eligible",
+    "WDOMS"
+  ],
+  "affiliation": "Kathmandu University",
+  "duration": "5.5 Years",
+  "medium": "English",
+  "totalSeats": 100,
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "hostel": "As applicable",
+    "mess": "As applicable",
+    "currency": "USD"
+  },
+  "officialWebsite": "https://www.kmc.edu.np",
+  "admissionWebsite": "https://www.kmc.edu.np",
+  "email": "",
+  "phone": "",
+  "address": "Sinamangal, Kathmandu, Nepal",
+  "coordinates": {
+    "latitude": 27.6966,
+    "longitude": 85.3524
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "brochure": "",
+  "prospectus": "",
+  "description": "Kathmandu Medical College is one of Nepal's leading private medical colleges affiliated with Kathmandu University, offering MBBS, BDS, Nursing and postgraduate medical programmes.",
+  "keywords": [
+    "Kathmandu Medical College",
+    "KMC",
+    "Nepal",
+    "MBBS",
+    "Kathmandu University"
+  ],
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3004,
+  "name": "Manipal College of Medical Sciences",
+  "shortName": "MCOMS",
+  "slug": "manipal-college-of-medical-sciences-pokhara",
+  "country": "Nepal",
+  "state": "Gandaki Province",
+  "city": "Pokhara",
+  "ownership": "Private",
+  "institutionType": "Medical College",
+  "courseCategory": "Medical",
+  "courses": [
+    "MBBS",
+    "BSc Nursing",
+    "MD",
+    "MS"
+  ],
+  "entranceExams": [
+    "MEC Entrance",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 1994,
+  "recognition": [
+    "Nepal Medical Council",
+    "Kathmandu University",
+    "NMC Eligible",
+    "WDOMS"
+  ],
+  "affiliation": "Kathmandu University",
+  "duration": "5.5 Years",
+  "medium": "English",
+  "totalSeats": 100,
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "hostel": "As applicable",
+    "mess": "As applicable",
+    "currency": "USD"
+  },
+  "officialWebsite": "https://mcoms.ku.edu.np",
+  "admissionWebsite": "https://mcoms.ku.edu.np",
+  "email": "",
+  "phone": "",
+  "address": "Deep Heights, Pokhara, Nepal",
+  "coordinates": {
+    "latitude": 28.2096,
+    "longitude": 83.9856
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "brochure": "",
+  "prospectus": "",
+  "description": "Manipal College of Medical Sciences is one of Nepal's oldest international medical colleges located in Pokhara and affiliated with Kathmandu University.",
+  "keywords": [
+    "MCOMS",
+    "Manipal Nepal",
+    "Pokhara",
+    "MBBS",
+    "Kathmandu University"
+  ],
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3005,
+  "name": "Nepal Medical College",
+  "shortName": "NMC",
+  "slug": "nepal-medical-college-kathmandu",
+  "country": "Nepal",
+  "state": "Bagmati Province",
+  "city": "Kathmandu",
+  "ownership": "Private",
+  "institutionType": "Medical College",
+  "courseCategory": "Medical",
+  "courses": [
+    "MBBS",
+    "BDS",
+    "BSc Nursing",
+    "MD",
+    "MS"
+  ],
+  "entranceExams": [
+    "MEC Entrance",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 1997,
+  "recognition": [
+    "Nepal Medical Council",
+    "Kathmandu University",
+    "NMC Eligible",
+    "WDOMS"
+  ],
+  "affiliation": "Kathmandu University",
+  "duration": "5.5 Years",
+  "medium": "English",
+  "totalSeats": 100,
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "hostel": "As applicable",
+    "mess": "As applicable",
+    "currency": "USD"
+  },
+  "officialWebsite": "https://www.nmcth.edu",
+  "admissionWebsite": "https://www.nmcth.edu",
+  "email": "",
+  "phone": "",
+  "address": "Jorpati, Kathmandu, Nepal",
+  "coordinates": {
+    "latitude": 27.7369,
+    "longitude": 85.3828
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "brochure": "",
+  "prospectus": "",
+  "description": "Nepal Medical College is a leading private medical institution affiliated with Kathmandu University offering MBBS and postgraduate medical programmes.",
+  "keywords": [
+    "Nepal Medical College",
+    "Kathmandu",
+    "MBBS",
+    "Nepal"
+  ],
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3006,
+  "name": "Chitwan Medical College",
+  "shortName": "CMC",
+  "slug": "chitwan-medical-college",
+  "country": "Nepal",
+  "state": "Bagmati Province",
+  "city": "Bharatpur",
+  "ownership": "Private",
+  "institutionType": "Medical College",
+  "courseCategory": "Medical",
+  "courses": [
+    "MBBS",
+    "BDS",
+    "BSc Nursing",
+    "MD",
+    "MS"
+  ],
+  "entranceExams": [
+    "MEC Entrance",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 2006,
+  "recognition": [
+    "Nepal Medical Council",
+    "Tribhuvan University",
+    "NMC Eligible",
+    "WDOMS"
+  ],
+  "affiliation": "Tribhuvan University",
+  "duration": "5.5 Years",
+  "medium": "English",
+  "totalSeats": 100,
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "hostel": "As applicable",
+    "mess": "As applicable",
+    "currency": "USD"
+  },
+  "officialWebsite": "https://cmc.edu.np",
+  "admissionWebsite": "https://cmc.edu.np",
+  "email": "",
+  "phone": "",
+  "address": "Bharatpur, Chitwan, Nepal",
+  "coordinates": {
+    "latitude": 27.6805,
+    "longitude": 84.4304
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "brochure": "",
+  "prospectus": "",
+  "description": "Chitwan Medical College is one of Nepal's leading private medical colleges with modern teaching hospital facilities and comprehensive healthcare programmes.",
+  "keywords": [
+    "Chitwan Medical College",
+    "CMC Nepal",
+    "MBBS",
+    "Nepal"
+  ],
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3007,
+  "name": "Universal College of Medical Sciences",
+  "shortName": "UCMS",
+  "slug": "universal-college-of-medical-sciences-bhairahawa",
+  "country": "Nepal",
+  "state": "Lumbini Province",
+  "city": "Bhairahawa",
+  "ownership": "Private",
+  "institutionType": "Medical College",
+  "courseCategory": "Medical",
+  "courses": [
+    "MBBS",
+    "BDS",
+    "BSc Nursing",
+    "MD",
+    "MS",
+    "MDS"
+  ],
+  "entranceExams": [
+    "MEC Entrance",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 1998,
+  "recognition": [
+    "Nepal Medical Council",
+    "Tribhuvan University",
+    "NMC Eligible",
+    "WDOMS"
+  ],
+  "affiliation": "Tribhuvan University",
+  "duration": "5.5 Years",
+  "medium": "English",
+  "totalSeats": 100,
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "hostel": "As applicable",
+    "mess": "As applicable",
+    "currency": "USD"
+  },
+  "officialWebsite": "https://ucms.edu.np",
+  "admissionWebsite": "https://ucms.edu.np",
+  "email": "info@ucms.edu.np",
+  "phone": "+977-71-506138",
+  "address": "Ranigaon, Bhairahawa, Rupandehi, Nepal",
+  "coordinates": {
+    "latitude": 27.5184,
+    "longitude": 83.4501
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "brochure": "",
+  "prospectus": "",
+  "description": "Universal College of Medical Sciences is a well-established medical college in Bhairahawa affiliated with Tribhuvan University offering MBBS, BDS and postgraduate programmes.",
+  "keywords": [
+    "UCMS",
+    "Universal College",
+    "Nepal",
+    "MBBS",
+    "Bhairahawa"
+  ],
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3008,
+  "name": "Nobel Medical College",
+  "shortName": "Nobel Medical College",
+  "slug": "nobel-medical-college-biratnagar",
+  "country": "Nepal",
+  "state": "Koshi Province",
+  "city": "Biratnagar",
+  "ownership": "Private",
+  "institutionType": "Medical College",
+  "courseCategory": "Medical",
+  "courses": [
+    "MBBS",
+    "BDS",
+    "BSc Nursing",
+    "MD",
+    "MS"
+  ],
+  "entranceExams": [
+    "MEC Entrance",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 2004,
+  "recognition": [
+    "Nepal Medical Council",
+    "Kathmandu University",
+    "NMC Eligible",
+    "WDOMS"
+  ],
+  "affiliation": "Kathmandu University",
+  "duration": "5.5 Years",
+  "medium": "English",
+  "totalSeats": 100,
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "hostel": "As applicable",
+    "mess": "As applicable",
+    "currency": "USD"
+  },
+  "officialWebsite": "https://www.nobelmedicalcollege.com.np",
+  "admissionWebsite": "https://www.nobelmedicalcollege.com.np",
+  "email": "",
+  "phone": "+977-21-465736",
+  "address": "Kanchanbari, Biratnagar, Morang, Nepal",
+  "coordinates": {
+    "latitude": 26.4837,
+    "longitude": 87.2817
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "brochure": "",
+  "prospectus": "",
+  "description": "Nobel Medical College is a major private medical institution in eastern Nepal affiliated with Kathmandu University.",
+  "keywords": [
+    "Nobel Medical College",
+    "Biratnagar",
+    "MBBS",
+    "Nepal"
+  ],
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3009,
+  "name": "National Medical College",
+  "shortName": "NMC Birgunj",
+  "slug": "national-medical-college-birgunj",
+  "country": "Nepal",
+  "state": "Madhesh Province",
+  "city": "Birgunj",
+  "ownership": "Private",
+  "institutionType": "Medical College",
+  "courseCategory": "Medical",
+  "courses": [
+    "MBBS",
+    "BDS",
+    "BSc Nursing",
+    "MD",
+    "MS"
+  ],
+  "entranceExams": [
+    "MEC Entrance",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 2001,
+  "recognition": [
+    "Nepal Medical Council",
+    "Tribhuvan University",
+    "NMC Eligible",
+    "WDOMS"
+  ],
+  "affiliation": "Tribhuvan University",
+  "duration": "5.5 Years",
+  "medium": "English",
+  "totalSeats": 100,
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "hostel": "As applicable",
+    "mess": "As applicable",
+    "currency": "USD"
+  },
+  "officialWebsite": "https://nmcbir.edu.np",
+  "admissionWebsite": "https://nmcbir.edu.np",
+  "email": "",
+  "phone": "",
+  "address": "Birgunj, Nepal",
+  "coordinates": {
+    "latitude": 27.0104,
+    "longitude": 84.8773
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "brochure": "",
+  "prospectus": "",
+  "description": "National Medical College is a private medical college in Birgunj affiliated with Tribhuvan University.",
+  "keywords": [
+    "National Medical College",
+    "Birgunj",
+    "Nepal",
+    "MBBS"
+  ],
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3010,
+  "name": "Janaki Medical College",
+  "shortName": "JMC",
+  "slug": "janaki-medical-college-janakpur",
+  "country": "Nepal",
+  "state": "Madhesh Province",
+  "city": "Janakpur",
+  "ownership": "Private",
+  "institutionType": "Medical College",
+  "courseCategory": "Medical",
+  "courses": [
+    "MBBS",
+    "BDS",
+    "BSc Nursing",
+    "MD",
+    "MS"
+  ],
+  "entranceExams": [
+    "MEC Entrance",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 2003,
+  "recognition": [
+    "Nepal Medical Council",
+    "Tribhuvan University",
+    "NMC Eligible",
+    "WDOMS"
+  ],
+  "affiliation": "Tribhuvan University",
+  "duration": "5.5 Years",
+  "medium": "English",
+  "totalSeats": 100,
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "hostel": "As applicable",
+    "mess": "As applicable",
+    "currency": "USD"
+  },
+  "officialWebsite": "https://janakimedicalcollege.edu.np",
+  "admissionWebsite": "https://janakimedicalcollege.edu.np",
+  "email": "info@janakimedicalcollege.edu.np",
+  "phone": "+977-9802308014",
+  "address": "Ramdaiya, Janakpur, Dhanusha, Nepal",
+  "coordinates": {
+    "latitude": 26.7288,
+    "longitude": 85.9263
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "brochure": "",
+  "prospectus": "",
+  "description": "Janaki Medical College is a private medical college in Janakpur affiliated with Tribhuvan University, offering MBBS and health sciences programmes.",
+  "keywords": [
+    "Janaki Medical College",
+    "Janakpur",
+    "Nepal",
+    "MBBS"
+  ],
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}

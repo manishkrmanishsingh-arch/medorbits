@@ -1,0 +1,547 @@
+{
+  "metadata": {
+    "title": "MedOrbit Kazakhstan Medical Universities",
+    "country": "Kazakhstan",
+    "countryCode": "KZ",
+    "category": "Study Abroad",
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-27",
+    "recordCount": 10,
+    "maintainedBy": "MedOrbit",
+    "website": "https://medorbits.in",
+    "status": "development",
+    "currency": "KZT",
+    "language": "English / Kazakh / Russian",
+    "disclaimer": "Students should verify NMC eligibility, WDOMS listing, accreditation, admission rules, tuition fees and visa requirements before applying."
+  },
+  "universities": [
+
+  ]
+}
+{
+  "id": 3031,
+  "name": "Asfendiyarov Kazakh National Medical University",
+  "shortName": "KazNMU",
+  "slug": "asfendiyarov-kazakh-national-medical-university",
+  "country": "Kazakhstan",
+  "state": "Almaty",
+  "city": "Almaty",
+  "ownership": "Government",
+  "institutionType": "National Medical University",
+  "courseCategory": "Medical",
+  "courses": [
+    "General Medicine",
+    "Dentistry",
+    "Pharmacy",
+    "Public Health",
+    "Nursing"
+  ],
+  "entranceExams": [
+    "University Admission",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 1930,
+  "recognition": [
+    "Ministry of Science and Higher Education of Kazakhstan",
+    "WDOMS",
+    "NMC Eligible"
+  ],
+  "duration": "6 Years",
+  "medium": "English",
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "currency": "KZT"
+  },
+  "officialWebsite": "https://kaznmu.edu.kz",
+  "admissionWebsite": "https://kaznmu.edu.kz",
+  "address": "94 Tole Bi Street, Almaty, Kazakhstan",
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3032,
+  "name": "Astana Medical University",
+  "shortName": "AMU",
+  "slug": "astana-medical-university",
+  "country": "Kazakhstan",
+  "state": "Astana",
+  "city": "Astana",
+  "ownership": "Government",
+  "institutionType": "Medical University",
+  "courseCategory": "Medical",
+  "courses": [
+    "General Medicine",
+    "Dentistry",
+    "Pharmacy",
+    "Nursing"
+  ],
+  "entranceExams": [
+    "University Admission",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 1964,
+  "recognition": [
+    "WDOMS",
+    "NMC Eligible"
+  ],
+  "duration": "6 Years",
+  "medium": "English",
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "currency": "KZT"
+  },
+  "officialWebsite": "https://amu.edu.kz",
+  "admissionWebsite": "https://amu.edu.kz",
+  "address": "49A Beibitshilik Street, Astana, Kazakhstan",
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3033,
+  "name": "Karaganda Medical University",
+  "shortName": "KMU",
+  "slug": "karaganda-medical-university",
+  "country": "Kazakhstan",
+  "state": "Karaganda",
+  "city": "Karaganda",
+  "ownership": "Government",
+  "institutionType": "Medical University",
+  "courseCategory": "Medical",
+  "courses": [
+    "General Medicine",
+    "Dentistry",
+    "Pharmacy",
+    "Nursing"
+  ],
+  "entranceExams": [
+    "University Admission",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 1950,
+  "recognition": [
+    "WDOMS",
+    "NMC Eligible"
+  ],
+  "duration": "6 Years",
+  "medium": "English",
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "currency": "KZT"
+  },
+  "officialWebsite": "https://qmu.edu.kz",
+  "address": "Karaganda, Kazakhstan",
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3034,
+  "name": "Medical University Semey",
+  "shortName": "MUS",
+  "slug": "medical-university-semey",
+  "country": "Kazakhstan",
+  "state": "Abai Region",
+  "city": "Semey",
+  "ownership": "Government",
+  "institutionType": "Medical University",
+  "courseCategory": "Medical",
+  "courses": [
+    "General Medicine",
+    "Dentistry",
+    "Pharmacy",
+    "Public Health",
+    "Nursing"
+  ],
+  "entranceExams": [
+    "University Admission",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 1953,
+  "recognition": [
+    "Ministry of Science and Higher Education of Kazakhstan",
+    "WDOMS",
+    "NMC Eligible"
+  ],
+  "duration": "6 Years",
+  "medium": "English",
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "currency": "KZT"
+  },
+  "officialWebsite": "https://smu.edu.kz",
+  "admissionWebsite": "https://smu.edu.kz",
+  "address": "Semey, Kazakhstan",
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+
+  "id": 3035,
+
+  "name": "West Kazakhstan Marat Ospanov Medical University",
+
+  "shortName": "WKMU",
+
+  "slug": "west-kazakhstan-marat-ospanov-medical-university",
+
+  "country": "Kazakhstan",
+
+  "state": "Aktobe Region",
+
+  "city": "Aktobe",
+
+  "ownership": "Government",
+
+  "institutionType": "Medical University",
+
+  "courseCategory": "Medical",
+
+  "courses": [
+
+    "General Medicine",
+
+    "Dentistry",
+
+    "Pharmacy",
+
+    "Nursing",
+
+    "Public Health"
+
+  ],
+
+  "entranceExams": [
+
+    "University Admission",
+
+    "NEET UG (Indian Applicants)"
+
+  ],
+
+  "established": 1957,
+
+  "recognition": [
+
+    "Ministry of Science and Higher Education of Kazakhstan",
+
+    "WDOMS",
+
+    "NMC Eligible"
+
+  ],
+
+  "duration": "6 Years",
+
+  "medium": "English",
+
+  "hostelAvailable": true,
+
+  "scholarshipAvailable": true,
+
+  "fees": {
+
+    "tuition": "As per university notification",
+
+    "currency": "KZT"
+
+  },
+
+  "officialWebsite": "https://zkmu.edu.kz/en/",
+
+  "admissionWebsite": "https://zkmu.edu.kz/en/",
+
+  "address": "68 Maresyev Street, Aktobe, Kazakhstan",
+
+  "images": {
+
+    "thumbnail": "../assets/images/colleges/default.jpg",
+
+    "cover": "../assets/images/colleges/default.jpg",
+
+    "gallery": []
+
+  },
+
+  "featured": true,
+
+  "popular": true,
+
+  "verified": true,
+
+  "admissionOpen": true,
+
+  "status": "Active"
+
+}
+{
+  "id": 3036,
+  "name": "South Kazakhstan Medical Academy",
+  "shortName": "SKMA",
+  "slug": "south-kazakhstan-medical-academy",
+  "country": "Kazakhstan",
+  "state": "Shymkent",
+  "city": "Shymkent",
+  "ownership": "Government",
+  "institutionType": "Medical Academy",
+  "courseCategory": "Medical",
+  "courses": [
+    "General Medicine",
+    "Dentistry",
+    "Pharmacy",
+    "Nursing",
+    "Public Health"
+  ],
+  "entranceExams": [
+    "University Admission",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 1979,
+  "recognition": [
+    "WDOMS",
+    "NMC Eligible"
+  ],
+  "duration": "6 Years",
+  "medium": "English",
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "currency": "KZT"
+  },
+  "officialWebsite": "https://skma.edu.kz",
+  "admissionWebsite": "https://skma.edu.kz",
+  "address": "Shymkent, Kazakhstan",
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3037,
+  "name": "International Medical School",
+  "shortName": "IMS UIB",
+  "slug": "international-medical-school-uib",
+  "country": "Kazakhstan",
+  "state": "Almaty",
+  "city": "Almaty",
+  "ownership": "Private",
+  "institutionType": "Medical School",
+  "courseCategory": "Medical",
+  "courses": [
+    "General Medicine",
+    "Dentistry"
+  ],
+  "entranceExams": [
+    "University Admission",
+    "NEET UG"
+  ],
+  "established": 1992,
+  "recognition": [
+    "WDOMS",
+    "NMC Eligible"
+  ],
+  "duration": "6 Years",
+  "medium": "English",
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "currency": "KZT"
+  },
+  "officialWebsite": "https://uib.kz",
+  "admissionWebsite": "https://uib.kz",
+  "address": "Almaty, Kazakhstan",
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3038,
+  "name": "Kazakh Russian Medical University",
+  "shortName": "KRMU",
+  "slug": "kazakh-russian-medical-university",
+  "country": "Kazakhstan",
+  "state": "Almaty",
+  "city": "Almaty",
+  "ownership": "Private",
+  "institutionType": "Medical University",
+  "courseCategory": "Medical",
+  "courses": [
+    "General Medicine",
+    "Dentistry",
+    "Pharmacy"
+  ],
+  "entranceExams": [
+    "University Admission",
+    "NEET UG"
+  ],
+  "established": 1992,
+  "recognition": [
+    "WDOMS",
+    "NMC Eligible"
+  ],
+  "duration": "6 Years",
+  "medium": "English",
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "currency": "KZT"
+  },
+  "officialWebsite": "https://medkrmu.kz",
+  "admissionWebsite": "https://medkrmu.kz",
+  "address": "Almaty, Kazakhstan",
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3039,
+  "name": "Caspian International School of Medicine",
+  "shortName": "CISM",
+  "slug": "caspian-international-school-of-medicine",
+  "country": "Kazakhstan",
+  "state": "Almaty",
+  "city": "Almaty",
+  "ownership": "Private",
+  "institutionType": "Medical School",
+  "courseCategory": "Medical",
+  "courses": [
+    "General Medicine"
+  ],
+  "entranceExams": [
+    "University Admission",
+    "NEET UG"
+  ],
+  "established": 1992,
+  "recognition": [
+    "WDOMS",
+    "NMC Eligible"
+  ],
+  "duration": "6 Years",
+  "medium": "English",
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "currency": "KZT"
+  },
+  "officialWebsite": "https://ciu.kz",
+  "admissionWebsite": "https://ciu.kz",
+  "address": "Almaty, Kazakhstan",
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3040,
+  "name": "Khoja Akhmet Yassawi International Kazakh-Turkish University",
+  "shortName": "IKTU",
+  "slug": "akhmet-yassawi-international-kazakh-turkish-university",
+  "country": "Kazakhstan",
+  "state": "Turkistan Region",
+  "city": "Turkistan",
+  "ownership": "Government",
+  "institutionType": "International University",
+  "courseCategory": "Medical",
+  "courses": [
+    "General Medicine",
+    "Dentistry"
+  ],
+  "entranceExams": [
+    "University Admission",
+    "NEET UG"
+  ],
+  "established": 1991,
+  "recognition": [
+    "WDOMS",
+    "NMC Eligible"
+  ],
+  "duration": "6 Years",
+  "medium": "English",
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "currency": "KZT"
+  },
+  "officialWebsite": "https://ayu.edu.kz",
+  "admissionWebsite": "https://ayu.edu.kz",
+  "address": "Turkistan, Kazakhstan",
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}

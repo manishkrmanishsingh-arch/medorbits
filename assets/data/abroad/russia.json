@@ -1,0 +1,578 @@
+{
+  "metadata": {
+    "title": "MedOrbit Russia Medical Universities",
+    "country": "Russia",
+    "countryCode": "RU",
+    "category": "Study Abroad",
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-27",
+    "recordCount": 10,
+    "maintainedBy": "MedOrbit",
+    "website": "https://medorbits.in",
+    "status": "development",
+    "currency": "RUB",
+    "language": "English / Russian",
+    "disclaimer": "Students should verify NMC eligibility, WDOMS listing, university recognition, admission requirements, language of instruction, licensing rules and visa regulations before applying."
+  },
+  "universities": [
+
+  ]
+}
+{
+  "id": 3011,
+  "name": "Kazan Federal University",
+  "shortName": "KFU",
+  "slug": "kazan-federal-university",
+  "country": "Russia",
+  "state": "Republic of Tatarstan",
+  "city": "Kazan",
+  "ownership": "Government",
+  "institutionType": "Federal University",
+  "courseCategory": "Medical",
+  "courses": [
+    "General Medicine (MBBS Equivalent)",
+    "Dentistry",
+    "Pharmacy",
+    "MD",
+    "PhD"
+  ],
+  "entranceExams": [
+    "University Entrance",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 1804,
+  "recognition": [
+    "Ministry of Science and Higher Education of Russia",
+    "WDOMS",
+    "NMC Eligible"
+  ],
+  "affiliation": "Federal University",
+  "duration": "6 Years",
+  "medium": "English",
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "hostel": "As applicable",
+    "mess": "As applicable",
+    "currency": "RUB"
+  },
+  "officialWebsite": "https://kpfu.ru/eng",
+  "admissionWebsite": "https://admissions.kpfu.ru",
+  "email": "",
+  "phone": "",
+  "address": "Kazan, Republic of Tatarstan, Russia",
+  "coordinates": {
+    "latitude": 55.7903,
+    "longitude": 49.1212
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "brochure": "",
+  "prospectus": "",
+  "description": "Kazan Federal University is one of Russia's oldest federal universities and is internationally known for its English-medium medical programme.",
+  "keywords": [
+    "KFU",
+    "Kazan",
+    "Russia",
+    "MBBS",
+    "Study in Russia"
+  ],
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+
+{
+  "id": 3012,
+  "name": "Sechenov First Moscow State Medical University",
+  "shortName": "Sechenov University",
+  "slug": "sechenov-university",
+  "country": "Russia",
+  "state": "Moscow",
+  "city": "Moscow",
+  "ownership": "Government",
+  "institutionType": "Medical University",
+  "courseCategory": "Medical",
+  "courses": [
+    "General Medicine (MBBS Equivalent)",
+    "Dentistry",
+    "Pharmacy",
+    "MD",
+    "PhD"
+  ],
+  "entranceExams": [
+    "University Entrance",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 1758,
+  "recognition": [
+    "Ministry of Science and Higher Education of Russia",
+    "WDOMS",
+    "NMC Eligible"
+  ],
+  "affiliation": "Federal Government",
+  "duration": "6 Years",
+  "medium": "English",
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "hostel": "As applicable",
+    "mess": "As applicable",
+    "currency": "RUB"
+  },
+  "officialWebsite": "https://www.sechenov.ru/eng",
+  "admissionWebsite": "https://www.sechenov.ru/eng",
+  "address": "Moscow, Russia",
+  "coordinates": {
+    "latitude": 55.7294,
+    "longitude": 37.5669
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "description": "Russia's oldest medical university and one of the country's premier medical institutions.",
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3013,
+  "name": "Pirogov Russian National Research Medical University",
+  "shortName": "Pirogov University",
+  "slug": "pirogov-russian-national-research-medical-university",
+  "country": "Russia",
+  "state": "Moscow",
+  "city": "Moscow",
+  "ownership": "Government",
+  "institutionType": "Medical University",
+  "courseCategory": "Medical",
+  "courses": [
+    "General Medicine (MBBS Equivalent)",
+    "Dentistry",
+    "Pharmacy",
+    "Paediatrics"
+  ],
+  "entranceExams": [
+    "University Entrance",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 1906,
+  "recognition": [
+    "WDOMS",
+    "NMC Eligible"
+  ],
+  "affiliation": "Federal Government",
+  "duration": "6 Years",
+  "medium": "English",
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "hostel": "As applicable",
+    "mess": "As applicable",
+    "currency": "RUB"
+  },
+  "officialWebsite": "https://rsmu.ru",
+  "admissionWebsite": "https://rsmu.ru",
+  "address": "Moscow, Russia",
+  "coordinates": {
+    "latitude": 55.6555,
+    "longitude": 37.5368
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "description": "One of Russia's leading medical universities for international students.",
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3014,
+  "name": "Bashkir State Medical University",
+  "shortName": "BSMU",
+  "slug": "bashkir-state-medical-university",
+  "country": "Russia",
+  "state": "Republic of Bashkortostan",
+  "city": "Ufa",
+  "ownership": "Government",
+  "institutionType": "Medical University",
+  "courseCategory": "Medical",
+  "courses": [
+    "General Medicine",
+    "Dentistry",
+    "Pharmacy",
+    "Paediatrics"
+  ],
+  "entranceExams": [
+    "University Entrance",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 1932,
+  "recognition": [
+    "WDOMS",
+    "NMC Eligible"
+  ],
+  "duration": "6 Years",
+  "medium": "English",
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "hostel": "As applicable",
+    "currency": "RUB"
+  },
+  "officialWebsite": "https://bashgmu.ru/en",
+  "address": "Ufa, Russia",
+  "coordinates": {
+    "latitude": 54.7348,
+    "longitude": 55.9578
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3015,
+  "name": "Orenburg State Medical University",
+  "shortName": "OrSMU",
+  "slug": "orenburg-state-medical-university",
+  "country": "Russia",
+  "state": "Orenburg Oblast",
+  "city": "Orenburg",
+  "ownership": "Government",
+  "institutionType": "Medical University",
+  "courseCategory": "Medical",
+  "courses": [
+    "General Medicine",
+    "Paediatrics",
+    "Dentistry",
+    "Pharmacy"
+  ],
+  "entranceExams": [
+    "University Entrance",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 1944,
+  "recognition": [
+    "WDOMS",
+    "NMC Eligible"
+  ],
+  "duration": "6 Years",
+  "medium": "English",
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "hostel": "As applicable",
+    "currency": "RUB"
+  },
+  "officialWebsite": "https://orgma.ru",
+  "address": "Orenburg, Russia",
+  "coordinates": {
+    "latitude": 51.7727,
+    "longitude": 55.0988
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3016,
+  "name": "V.I. Vernadsky Crimean Federal University",
+  "shortName": "CFU",
+  "slug": "crimean-federal-university",
+  "country": "Russia",
+  "state": "Republic of Crimea",
+  "city": "Simferopol",
+  "ownership": "Government",
+  "institutionType": "Federal University",
+  "courseCategory": "Medical",
+  "courses": [
+    "General Medicine",
+    "Dentistry",
+    "Pharmacy",
+    "Paediatrics"
+  ],
+  "entranceExams": [
+    "University Entrance",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 1918,
+  "recognition": [
+    "WDOMS",
+    "NMC Eligible"
+  ],
+  "duration": "6 Years",
+  "medium": "English",
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "hostel": "As applicable",
+    "currency": "RUB"
+  },
+  "officialWebsite": "https://cfuv.ru",
+  "admissionWebsite": "https://cfuv.ru",
+  "address": "Simferopol, Republic of Crimea",
+  "coordinates": {
+    "latitude": 44.9432,
+    "longitude": 34.1003
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "description": "Major federal university offering medical education in Simferopol.",
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3017,
+  "name": "Perm State Medical University",
+  "shortName": "PSMU",
+  "slug": "perm-state-medical-university",
+  "country": "Russia",
+  "state": "Perm Krai",
+  "city": "Perm",
+  "ownership": "Government",
+  "institutionType": "Medical University",
+  "courseCategory": "Medical",
+  "courses": [
+    "General Medicine",
+    "Dentistry",
+    "Pharmacy",
+    "Paediatrics"
+  ],
+  "entranceExams": [
+    "University Entrance",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 1916,
+  "recognition": [
+    "WDOMS",
+    "NMC Eligible"
+  ],
+  "duration": "6 Years",
+  "medium": "English",
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "hostel": "As applicable",
+    "currency": "RUB"
+  },
+  "officialWebsite": "https://psma.ru",
+  "admissionWebsite": "https://psma.ru",
+  "address": "Perm, Russia",
+  "coordinates": {
+    "latitude": 58.0105,
+    "longitude": 56.2502
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "description": "Historic government medical university in Perm.",
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3018,
+  "name": "Volgograd State Medical University",
+  "shortName": "VolgGMU",
+  "slug": "volgograd-state-medical-university",
+  "country": "Russia",
+  "state": "Volgograd Oblast",
+  "city": "Volgograd",
+  "ownership": "Government",
+  "institutionType": "Medical University",
+  "courseCategory": "Medical",
+  "courses": [
+    "General Medicine",
+    "Dentistry",
+    "Pharmacy",
+    "Paediatrics"
+  ],
+  "entranceExams": [
+    "University Entrance",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 1935,
+  "recognition": [
+    "WDOMS",
+    "NMC Eligible"
+  ],
+  "duration": "6 Years",
+  "medium": "English",
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "hostel": "As applicable",
+    "currency": "RUB"
+  },
+  "officialWebsite": "https://volgmed.ru",
+  "admissionWebsite": "https://volgmed.ru",
+  "address": "Volgograd, Russia",
+  "coordinates": {
+    "latitude": 48.708,
+    "longitude": 44.5133
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "description": "One of Russia's established government medical universities for international students.",
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3019,
+  "name": "Kursk State Medical University",
+  "shortName": "KSMU",
+  "slug": "kursk-state-medical-university",
+  "country": "Russia",
+  "state": "Kursk Oblast",
+  "city": "Kursk",
+  "ownership": "Government",
+  "institutionType": "Medical University",
+  "courseCategory": "Medical",
+  "courses": [
+    "General Medicine",
+    "Dentistry",
+    "Pharmacy",
+    "Paediatrics"
+  ],
+  "entranceExams": [
+    "University Entrance",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 1935,
+  "recognition": [
+    "WDOMS",
+    "NMC Eligible"
+  ],
+  "duration": "6 Years",
+  "medium": "English",
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "hostel": "As applicable",
+    "currency": "RUB"
+  },
+  "officialWebsite": "https://kurskmed.com",
+  "admissionWebsite": "https://kurskmed.com",
+  "address": "Kursk, Russia",
+  "coordinates": {
+    "latitude": 51.7304,
+    "longitude": 36.1926
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "description": "Government medical university offering English-medium medical education.",
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 3020,
+  "name": "Peoples' Friendship University of Russia",
+  "shortName": "RUDN University",
+  "slug": "rudn-university",
+  "country": "Russia",
+  "state": "Moscow",
+  "city": "Moscow",
+  "ownership": "Government",
+  "institutionType": "Federal University",
+  "courseCategory": "Medical",
+  "courses": [
+    "General Medicine",
+    "Dentistry",
+    "Pharmacy",
+    "Nursing"
+  ],
+  "entranceExams": [
+    "University Entrance",
+    "NEET UG (Indian Applicants)"
+  ],
+  "established": 1960,
+  "recognition": [
+    "WDOMS",
+    "NMC Eligible"
+  ],
+  "duration": "6 Years",
+  "medium": "English",
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuition": "As per university notification",
+    "hostel": "As applicable",
+    "currency": "RUB"
+  },
+  "officialWebsite": "https://www.rudn.ru/en",
+  "admissionWebsite": "https://www.rudn.ru/en",
+  "address": "Moscow, Russia",
+  "coordinates": {
+    "latitude": 55.6528,
+    "longitude": 37.4976
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "description": "Internationally recognized federal university with a large international student community and English-medium medical programmes.",
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}

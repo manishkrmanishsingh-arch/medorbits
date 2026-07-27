@@ -1,0 +1,408 @@
+{
+  "metadata": {
+    "project": "MedOrbit",
+    "title": "MedOrbit College Database",
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-27",
+    "status": "development",
+    "maintainedBy": "MedOrbit",
+    "website": "https://medorbits.in",
+    "totalDatasets": 17,
+    "searchEnabled": true,
+    "filterEnabled": true,
+    "apiReady": true,
+    "cmsReady": true,
+    "mobileAppReady": true,
+    "disclaimer": "College details, fees, seats, recognition, admission rules and availability may change. Verify all information through the relevant institution, regulator, counselling authority or official website before publishing, counselling or accepting payment."
+  },
+
+  "supportedCategories": [
+    {
+      "id": "government",
+      "name": "Government Colleges",
+      "icon": "🏛️",
+      "file": "government.json",
+      "enabled": true
+    },
+    {
+      "id": "private",
+      "name": "Private Colleges",
+      "icon": "🏫",
+      "file": "private.json",
+      "enabled": true
+    },
+    {
+      "id": "deemed",
+      "name": "Deemed Universities",
+      "icon": "🎓",
+      "file": "deemed.json",
+      "enabled": true
+    },
+    {
+      "id": "abroad",
+      "name": "International Universities",
+      "icon": "🌍",
+      "file": "abroad.json",
+      "enabled": true
+    },
+    {
+      "id": "dental",
+      "name": "Dental Colleges",
+      "icon": "🦷",
+      "file": "dental.json",
+      "enabled": true
+    },
+    {
+      "id": "ayush",
+      "name": "AYUSH Colleges",
+      "icon": "🌿",
+      "file": "ayush.json",
+      "enabled": true
+    },
+    {
+      "id": "nursing",
+      "name": "Nursing Colleges",
+      "icon": "👩‍⚕️",
+      "file": "nursing.json",
+      "enabled": true
+    },
+    {
+      "id": "pharmacy",
+      "name": "Pharmacy Colleges",
+      "icon": "💊",
+      "file": "pharmacy.json",
+      "enabled": true
+    },
+    {
+      "id": "paramedical",
+      "name": "Paramedical and Allied Health Colleges",
+      "icon": "🔬",
+      "file": "paramedical.json",
+      "enabled": true
+    },
+    {
+      "id": "engineering",
+      "name": "Engineering Colleges",
+      "icon": "⚙️",
+      "file": "engineering.json",
+      "enabled": true
+    },
+    {
+      "id": "management",
+      "name": "Management Colleges",
+      "icon": "📊",
+      "file": "management.json",
+      "enabled": true
+    },
+    {
+      "id": "law",
+      "name": "Law Colleges",
+      "icon": "⚖️",
+      "file": "law.json",
+      "enabled": true
+    },
+    {
+      "id": "agriculture",
+      "name": "Agriculture Colleges",
+      "icon": "🌾",
+      "file": "agriculture.json",
+      "enabled": true
+    },
+    {
+      "id": "aviation",
+      "name": "Aviation Institutes",
+      "icon": "✈️",
+      "file": "aviation.json",
+      "enabled": true
+    },
+    {
+      "id": "hotel-management",
+      "name": "Hotel Management Colleges",
+      "icon": "🏨",
+      "file": "hotel-management.json",
+      "enabled": true
+    },
+    {
+      "id": "design",
+      "name": "Design Institutes",
+      "icon": "🎨",
+      "file": "design.json",
+      "enabled": true
+    },
+    {
+      "id": "iti-polytechnic",
+      "name": "ITI and Polytechnic Institutes",
+      "icon": "🛠️",
+      "file": "iti-polytechnic.json",
+      "enabled": true
+    }
+  ],
+
+  "supportedCourses": {
+    "medical": [
+      "MBBS",
+      "MD",
+      "MS",
+      "DM",
+      "MCh"
+    ],
+
+    "dental": [
+      "BDS",
+      "MDS"
+    ],
+
+    "ayush": [
+      "BAMS",
+      "BHMS",
+      "BUMS",
+      "BSMS",
+      "BNYS"
+    ],
+
+    "nursing": [
+      "ANM",
+      "GNM",
+      "B.Sc Nursing",
+      "Post Basic B.Sc Nursing",
+      "M.Sc Nursing"
+    ],
+
+    "pharmacy": [
+      "D.Pharm",
+      "B.Pharm",
+      "M.Pharm",
+      "Pharm.D"
+    ],
+
+    "alliedHealth": [
+      "BPT",
+      "MPT",
+      "BOT",
+      "BMLT",
+      "BMRIT",
+      "Optometry",
+      "Dialysis Technology",
+      "Operation Theatre Technology",
+      "Radiology",
+      "Emergency Medical Technology",
+      "Cardiac Care Technology"
+    ],
+
+    "engineering": [
+      "Diploma Engineering",
+      "B.Tech",
+      "B.E.",
+      "M.Tech"
+    ],
+
+    "computerAndIT": [
+      "BCA",
+      "MCA",
+      "B.Sc Computer Science",
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Data Science",
+      "Cyber Security",
+      "Cloud Computing"
+    ],
+
+    "management": [
+      "BBA",
+      "MBA",
+      "PGDM"
+    ],
+
+    "law": [
+      "LLB",
+      "BA LLB",
+      "BBA LLB",
+      "B.Com LLB",
+      "LLM"
+    ],
+
+    "agriculture": [
+      "B.Sc Agriculture",
+      "M.Sc Agriculture",
+      "Horticulture",
+      "Forestry",
+      "Fisheries",
+      "Food Technology"
+    ],
+
+    "aviation": [
+      "Commercial Pilot Training",
+      "Cabin Crew",
+      "Airport Management",
+      "Ground Staff",
+      "Aircraft Maintenance Engineering"
+    ],
+
+    "hotelManagement": [
+      "BHM",
+      "B.Sc Hospitality",
+      "Diploma in Hotel Management",
+      "Culinary Arts",
+      "Tourism Management"
+    ],
+
+    "design": [
+      "Fashion Design",
+      "Interior Design",
+      "Graphic Design",
+      "Animation",
+      "UI/UX Design"
+    ],
+
+    "itiAndPolytechnic": [
+      "ITI Electrician",
+      "ITI Fitter",
+      "ITI Welder",
+      "ITI Mechanic",
+      "Polytechnic Diploma"
+    ]
+  },
+
+  "supportedOwnership": [
+    "Government",
+    "Government Autonomous",
+    "Private",
+    "Private Minority",
+    "Private University",
+    "Deemed University",
+    "Public University",
+    "International Public",
+    "International Private"
+  ],
+
+  "supportedCountries": [
+    "India",
+    "Nepal",
+    "Russia",
+    "Georgia",
+    "Kazakhstan",
+    "Uzbekistan",
+    "Kyrgyzstan",
+    "Bangladesh",
+    "Armenia",
+    "Belarus",
+    "Philippines",
+    "United Kingdom",
+    "United States",
+    "Canada",
+    "Australia",
+    "Germany",
+    "Poland",
+    "Ireland",
+    "Italy",
+    "France",
+    "Hungary",
+    "Romania",
+    "Turkey",
+    "United Arab Emirates",
+    "Singapore",
+    "Malaysia"
+  ],
+
+  "filters": {
+    "country": true,
+    "state": true,
+    "city": true,
+    "ownership": true,
+    "courseCategory": true,
+    "course": true,
+    "entranceExam": true,
+    "hostelAvailable": true,
+    "scholarshipAvailable": true,
+    "featured": true,
+    "admissionOpen": true
+  },
+
+  "datasets": [
+    {
+      "name": "Government Colleges",
+      "path": "../assets/data/government.json",
+      "enabled": true
+    },
+    {
+      "name": "Private Colleges",
+      "path": "../assets/data/private.json",
+      "enabled": true
+    },
+    {
+      "name": "Deemed Universities",
+      "path": "../assets/data/deemed.json",
+      "enabled": true
+    },
+    {
+      "name": "International Universities",
+      "path": "../assets/data/abroad.json",
+      "enabled": true
+    },
+    {
+      "name": "Dental Colleges",
+      "path": "../assets/data/dental.json",
+      "enabled": true
+    },
+    {
+      "name": "AYUSH Colleges",
+      "path": "../assets/data/ayush.json",
+      "enabled": true
+    },
+    {
+      "name": "Nursing Colleges",
+      "path": "../assets/data/nursing.json",
+      "enabled": true
+    },
+    {
+      "name": "Pharmacy Colleges",
+      "path": "../assets/data/pharmacy.json",
+      "enabled": true
+    },
+    {
+      "name": "Paramedical Colleges",
+      "path": "../assets/data/paramedical.json",
+      "enabled": true
+    },
+    {
+      "name": "Engineering Colleges",
+      "path": "../assets/data/engineering.json",
+      "enabled": true
+    },
+    {
+      "name": "Management Colleges",
+      "path": "../assets/data/management.json",
+      "enabled": true
+    },
+    {
+      "name": "Law Colleges",
+      "path": "../assets/data/law.json",
+      "enabled": true
+    },
+    {
+      "name": "Agriculture Colleges",
+      "path": "../assets/data/agriculture.json",
+      "enabled": true
+    },
+    {
+      "name": "Aviation Institutes",
+      "path": "../assets/data/aviation.json",
+      "enabled": true
+    },
+    {
+      "name": "Hotel Management Colleges",
+      "path": "../assets/data/hotel-management.json",
+      "enabled": true
+    },
+    {
+      "name": "Design Institutes",
+      "path": "../assets/data/design.json",
+      "enabled": true
+    },
+    {
+      "name": "ITI and Polytechnic Institutes",
+      "path": "../assets/data/iti-polytechnic.json",
+      "enabled": true
+    }
+  ]
+}

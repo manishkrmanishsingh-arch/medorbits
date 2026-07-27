@@ -1,0 +1,701 @@
+{
+  "metadata": {
+    "title": "MedOrbit Government Medical Colleges",
+    "category": "Government Medical Colleges",
+    "version": "1.0.0",
+    "lastUpdated": "2026-07-27",
+    "country": "India",
+    "recordCount": 0,
+    "status": "development",
+    "maintainedBy": "MedOrbit",
+    "website": "https://medorbits.in",
+    "searchEnabled": true,
+    "filterEnabled": true,
+    "apiReady": true,
+    "cmsReady": true,
+    "mobileAppReady": true,
+    "disclaimer": "Verify fees, seats, recognition, counselling rules and admission details from the official authority before applying."
+  },
+
+  "colleges": [
+
+{
+  "id": 1001,
+  "name": "Maulana Azad Medical College",
+  "shortName": "MAMC",
+  "slug": "maulana-azad-medical-college-delhi",
+  "country": "India",
+  "state": "Delhi",
+  "city": "New Delhi",
+  "ownership": "Government",
+  "institutionType": "Medical College",
+  "courseCategory": "Medical",
+  "courses": [
+    "MBBS",
+    "MD",
+    "MS",
+    "DM",
+    "MCh"
+  ],
+  "entranceExams": [
+    "NEET UG",
+    "NEET PG"
+  ],
+  "established": 1958,
+  "recognition": [
+    "NMC",
+    "Delhi University"
+  ],
+  "affiliation": "University of Delhi",
+  "duration": "5.5 Years",
+  "medium": "English",
+  "totalSeats": 250,
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuitionAnnual": "As per Government norms",
+    "hostelAnnual": "As applicable",
+    "messAnnual": "As applicable",
+    "otherCharges": "As notified by the institution",
+    "currency": "INR"
+  },
+  "officialWebsite": "https://mamc.delhi.gov.in",
+  "admissionWebsite": "https://mcc.nic.in",
+  "email": "",
+  "phone": "",
+  "address": "Bahadur Shah Zafar Marg, New Delhi, Delhi 110002",
+  "coordinates": {
+    "latitude": 28.6398,
+    "longitude": 77.2408
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/mamc.jpg",
+    "cover": "../assets/images/colleges/mamc.jpg",
+    "gallery": [
+      "../assets/images/colleges/mamc-1.jpg",
+      "../assets/images/colleges/mamc-2.jpg"
+    ]
+  },
+  "brochure": "",
+  "prospectus": "",
+  "description": "One of India's premier government medical colleges offering undergraduate and postgraduate medical education with associated teaching hospitals.",
+  "keywords": [
+    "MAMC",
+    "Delhi",
+    "Government Medical College",
+    "MBBS",
+    "NEET"
+  ],
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+  ]
+}
+
+{
+  "id": 1002,
+  "name": "Vardhman Mahavir Medical College and Safdarjung Hospital",
+  "shortName": "VMMC",
+  "slug": "vmmc-new-delhi",
+  "country": "India",
+  "state": "Delhi",
+  "city": "New Delhi",
+  "ownership": "Government",
+  "institutionType": "Medical College",
+  "courseCategory": "Medical",
+  "courses": [
+    "MBBS",
+    "MD",
+    "MS",
+    "DM",
+    "MCh"
+  ],
+  "entranceExams": [
+    "NEET UG",
+    "NEET PG",
+    "NEET SS"
+  ],
+  "established": 2001,
+  "recognition": [
+    "NMC"
+  ],
+  "affiliation": "Guru Gobind Singh Indraprastha University",
+  "duration": "5.5 Years",
+  "medium": "English",
+  "totalSeats": 170,
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuitionAnnual": "As per Government norms",
+    "hostelAnnual": "As applicable",
+    "messAnnual": "As applicable",
+    "otherCharges": "As notified by the institution",
+    "currency": "INR"
+  },
+  "officialWebsite": "https://www.vmmc-sjh.mohfw.gov.in",
+  "admissionWebsite": "https://mcc.nic.in",
+  "email": "",
+  "phone": "+91-11-26165060",
+  "address": "Safdarjung Hospital Campus, Ansari Nagar West, New Delhi 110029",
+  "coordinates": {
+    "latitude": 28.5674,
+    "longitude": 77.2091
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "brochure": "",
+  "prospectus": "",
+  "description": "Government medical college established in 2001 and attached to Safdarjung Hospital, one of India's largest tertiary care teaching hospitals.",
+  "keywords": [
+    "VMMC",
+    "Safdarjung Hospital",
+    "Delhi",
+    "Government Medical College",
+    "MBBS"
+  ],
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+
+{
+  "id": 1003,
+  "name": "Lady Hardinge Medical College",
+  "shortName": "LHMC",
+  "slug": "lady-hardinge-medical-college-delhi",
+  "country": "India",
+  "state": "Delhi",
+  "city": "New Delhi",
+  "ownership": "Government",
+  "institutionType": "Medical College",
+  "courseCategory": "Medical",
+  "courses": [
+    "MBBS",
+    "MD",
+    "MS",
+    "DM",
+    "MCh"
+  ],
+  "entranceExams": [
+    "NEET UG",
+    "NEET PG",
+    "NEET SS"
+  ],
+  "established": 1916,
+  "recognition": [
+    "NMC"
+  ],
+  "affiliation": "University of Delhi",
+  "duration": "5.5 Years",
+  "medium": "English",
+  "totalSeats": 240,
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuitionAnnual": "As per Government norms",
+    "hostelAnnual": "As applicable",
+    "messAnnual": "As applicable",
+    "otherCharges": "As notified by the institution",
+    "currency": "INR"
+  },
+  "officialWebsite": "https://lhmc-hosp.gov.in",
+  "admissionWebsite": "https://mcc.nic.in",
+  "email": "",
+  "phone": "",
+  "address": "Shaheed Bhagat Singh Marg, Connaught Place, New Delhi 110001",
+  "coordinates": {
+    "latitude": 28.6333,
+    "longitude": 77.2106
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "brochure": "",
+  "prospectus": "",
+  "description": "Lady Hardinge Medical College is one of India's oldest and most prestigious government medical colleges, offering undergraduate and postgraduate medical education.",
+  "keywords": [
+    "LHMC",
+    "Lady Hardinge Medical College",
+    "Delhi",
+    "Government Medical College",
+    "MBBS"
+  ],
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+
+{
+  "id": 1004,
+  "name": "University College of Medical Sciences",
+  "shortName": "UCMS",
+  "slug": "university-college-of-medical-sciences-delhi",
+  "country": "India",
+  "state": "Delhi",
+  "city": "New Delhi",
+  "ownership": "Government",
+  "institutionType": "Medical College",
+  "courseCategory": "Medical",
+  "courses": [
+    "MBBS",
+    "MD",
+    "MS",
+    "DM",
+    "MCh",
+    "PhD"
+  ],
+  "entranceExams": [
+    "NEET UG",
+    "NEET PG",
+    "NEET SS"
+  ],
+  "established": 1971,
+  "recognition": [
+    "NMC"
+  ],
+  "affiliation": "University of Delhi",
+  "duration": "5.5 Years",
+  "medium": "English",
+  "totalSeats": 170,
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuitionAnnual": "As per Government norms",
+    "hostelAnnual": "As applicable",
+    "messAnnual": "As applicable",
+    "otherCharges": "As notified by the institution",
+    "currency": "INR"
+  },
+  "officialWebsite": "https://www.ucms.ac.in",
+  "admissionWebsite": "https://mcc.nic.in",
+  "email": "",
+  "phone": "+91-11-22582106",
+  "address": "GTB Enclave, Dilshad Garden, Delhi 110095",
+  "coordinates": {
+    "latitude": 28.6847,
+    "longitude": 77.3154
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "brochure": "",
+  "prospectus": "",
+  "description": "University College of Medical Sciences (UCMS) is a constituent college of the University of Delhi and is associated with Guru Teg Bahadur Hospital. It offers undergraduate, postgraduate and doctoral medical education.",
+  "keywords": [
+    "UCMS",
+    "University College of Medical Sciences",
+    "Delhi",
+    "GTB Hospital",
+    "MBBS"
+  ],
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 1005,
+  "name": "Atal Bihari Vajpayee Institute of Medical Sciences",
+  "shortName": "ABVIMS",
+  "slug": "abvims-delhi",
+  "country": "India",
+  "state": "Delhi",
+  "city": "New Delhi",
+  "ownership": "Government",
+  "institutionType": "Medical College",
+  "courseCategory": "Medical",
+  "courses": ["MBBS","MD","MS"],
+  "entranceExams": ["NEET UG","NEET PG"],
+  "established": 2019,
+  "recognition": ["NMC"],
+  "affiliation": "Guru Gobind Singh Indraprastha University",
+  "duration": "5.5 Years",
+  "medium": "English",
+  "totalSeats": 100,
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuitionAnnual": "As per Government norms",
+    "hostelAnnual": "As applicable",
+    "messAnnual": "As applicable",
+    "otherCharges": "As notified by the institution",
+    "currency": "INR"
+  },
+  "officialWebsite": "https://www.abvims.edu.in",
+  "admissionWebsite": "https://mcc.nic.in",
+  "email": "",
+  "phone": "",
+  "address": "Dr. Ram Manohar Lohia Hospital Campus, New Delhi",
+  "coordinates": {
+    "latitude": 28.6267,
+    "longitude": 77.2098
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "brochure": "",
+  "prospectus": "",
+  "description": "Government medical college attached to Dr. Ram Manohar Lohia Hospital.",
+  "keywords": ["ABVIMS","Delhi","Government Medical College","MBBS"],
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 1006,
+  "name": "Dr. Baba Saheb Ambedkar Medical College and Hospital",
+  "shortName": "BSAMCH",
+  "slug": "bsamch-delhi",
+  "country": "India",
+  "state": "Delhi",
+  "city": "New Delhi",
+  "ownership": "Government",
+  "institutionType": "Medical College",
+  "courseCategory": "Medical",
+  "courses": ["MBBS","MD","MS"],
+  "entranceExams": ["NEET UG","NEET PG"],
+  "established": 2016,
+  "recognition": ["NMC"],
+  "affiliation": "Guru Gobind Singh Indraprastha University",
+  "duration": "5.5 Years",
+  "medium": "English",
+  "totalSeats": 125,
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuitionAnnual": "As per Government norms",
+    "hostelAnnual": "As applicable",
+    "messAnnual": "As applicable",
+    "otherCharges": "As notified by the institution",
+    "currency": "INR"
+  },
+  "officialWebsite": "https://bsamch.ac.in",
+  "admissionWebsite": "https://mcc.nic.in",
+  "email": "",
+  "phone": "",
+  "address": "Sector-6, Rohini, Delhi",
+  "coordinates": {
+    "latitude": 28.7278,
+    "longitude": 77.1115
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "brochure": "",
+  "prospectus": "",
+  "description": "Government medical college located in Rohini, Delhi.",
+  "keywords": ["BSAMCH","Delhi","Government Medical College","MBBS"],
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 1007,
+  "name": "King George's Medical University",
+  "shortName": "KGMU",
+  "slug": "kgmu-lucknow",
+  "country": "India",
+  "state": "Uttar Pradesh",
+  "city": "Lucknow",
+  "ownership": "Government",
+  "institutionType": "Medical University",
+  "courseCategory": "Medical",
+  "courses": [
+    "MBBS",
+    "BDS",
+    "MD",
+    "MS",
+    "DM",
+    "MCh",
+    "MDS",
+    "PhD"
+  ],
+  "entranceExams": [
+    "NEET UG",
+    "NEET PG",
+    "NEET MDS",
+    "NEET SS"
+  ],
+  "established": 1905,
+  "recognition": ["NMC"],
+  "affiliation": "State Medical University",
+  "duration": "5.5 Years",
+  "medium": "English",
+  "totalSeats": 250,
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuitionAnnual": "As per Government norms",
+    "hostelAnnual": "As applicable",
+    "messAnnual": "As applicable",
+    "otherCharges": "As notified by the institution",
+    "currency": "INR"
+  },
+  "officialWebsite": "https://www.kgmu.org",
+  "admissionWebsite": "https://mcc.nic.in",
+  "email": "",
+  "phone": "",
+  "address": "Shah Mina Road, Chowk, Lucknow, Uttar Pradesh",
+  "coordinates": {
+    "latitude": 26.8702,
+    "longitude": 80.9158
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/kgmu.jpg",
+    "cover": "../assets/images/colleges/kgmu.jpg",
+    "gallery": []
+  },
+  "brochure": "",
+  "prospectus": "",
+  "description": "One of India's oldest and most prestigious government medical universities.",
+  "keywords": ["KGMU","Lucknow","Government Medical University","MBBS"],
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 1008,
+  "name": "Institute of Medical Sciences, Banaras Hindu University",
+  "shortName": "IMS BHU",
+  "slug": "ims-bhu-varanasi",
+  "country": "India",
+  "state": "Uttar Pradesh",
+  "city": "Varanasi",
+  "ownership": "Government",
+  "institutionType": "Medical Institute",
+  "courseCategory": "Medical",
+  "courses": [
+    "MBBS",
+    "BDS",
+    "MD",
+    "MS",
+    "DM",
+    "MCh",
+    "MDS",
+    "PhD"
+  ],
+  "entranceExams": [
+    "NEET UG",
+    "NEET PG",
+    "NEET MDS",
+    "NEET SS"
+  ],
+  "established": 1960,
+  "recognition": [
+    "NMC"
+  ],
+  "affiliation": "Banaras Hindu University",
+  "duration": "5.5 Years",
+  "medium": "English",
+  "totalSeats": 100,
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuitionAnnual": "As per Government norms",
+    "hostelAnnual": "As applicable",
+    "messAnnual": "As applicable",
+    "otherCharges": "As notified by the institution",
+    "currency": "INR"
+  },
+  "officialWebsite": "https://www.bhu.ac.in",
+  "admissionWebsite": "https://mcc.nic.in",
+  "email": "",
+  "phone": "",
+  "address": "Banaras Hindu University, Varanasi, Uttar Pradesh 221005",
+  "coordinates": {
+    "latitude": 25.2677,
+    "longitude": 82.9913
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/bhu.jpg",
+    "cover": "../assets/images/colleges/bhu.jpg",
+    "gallery": []
+  },
+  "brochure": "",
+  "prospectus": "",
+  "description": "Institute of Medical Sciences, BHU is one of India's premier government medical institutions offering undergraduate, postgraduate and super-speciality medical education.",
+  "keywords": [
+    "IMS BHU",
+    "Banaras Hindu University",
+    "Varanasi",
+    "Government Medical College",
+    "MBBS"
+  ],
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+
+{
+  "id": 1009,
+  "name": "Jawaharlal Institute of Postgraduate Medical Education and Research",
+  "shortName": "JIPMER",
+  "slug": "jipmer-puducherry",
+  "country": "India",
+  "state": "Puducherry",
+  "city": "Puducherry",
+  "ownership": "Government",
+  "institutionType": "Institute of National Importance",
+  "courseCategory": "Medical",
+  "courses": [
+    "MBBS",
+    "BSc Nursing",
+    "Allied Health Sciences",
+    "MD",
+    "MS",
+    "DM",
+    "MCh",
+    "PhD"
+  ],
+  "entranceExams": [
+    "NEET UG",
+    "INI-CET",
+    "NEET SS"
+  ],
+  "established": 1956,
+  "recognition": [
+    "NMC",
+    "Institute of National Importance"
+  ],
+  "affiliation": "Ministry of Health and Family Welfare",
+  "duration": "5.5 Years",
+  "medium": "English",
+  "totalSeats": 200,
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuitionAnnual": "As per Government norms",
+    "hostelAnnual": "As applicable",
+    "messAnnual": "As applicable",
+    "otherCharges": "As notified by the institution",
+    "currency": "INR"
+  },
+  "officialWebsite": "https://jipmer.edu.in",
+  "admissionWebsite": "https://www.aiimsexams.ac.in",
+  "email": "",
+  "phone": "",
+  "address": "Dhanvantari Nagar, Puducherry 605006",
+  "coordinates": {
+    "latitude": 11.9416,
+    "longitude": 79.8007
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/jipmer.jpg",
+    "cover": "../assets/images/colleges/jipmer.jpg",
+    "gallery": []
+  },
+  "brochure": "",
+  "prospectus": "",
+  "description": "JIPMER is an Institution of National Importance under the Ministry of Health and Family Welfare offering medical, nursing and allied health programmes with undergraduate to super-speciality training.",
+  "keywords": [
+    "JIPMER",
+    "Puducherry",
+    "Institute of National Importance",
+    "MBBS"
+  ],
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
+{
+  "id": 1010,
+  "name": "Postgraduate Institute of Medical Education and Research",
+  "shortName": "PGIMER",
+  "slug": "pgimer-chandigarh",
+  "country": "India",
+  "state": "Chandigarh",
+  "city": "Chandigarh",
+  "ownership": "Government",
+  "institutionType": "Institute of National Importance",
+  "courseCategory": "Medical",
+  "courses": [
+    "MBBS",
+    "BSc Nursing",
+    "Allied Health Sciences",
+    "MD",
+    "MS",
+    "DM",
+    "MCh",
+    "PhD"
+  ],
+  "entranceExams": [
+    "NEET UG",
+    "INI-CET",
+    "NEET SS"
+  ],
+  "established": 1962,
+  "recognition": [
+    "NMC",
+    "Institute of National Importance"
+  ],
+  "affiliation": "Ministry of Health and Family Welfare",
+  "duration": "5.5 Years",
+  "medium": "English",
+  "totalSeats": 100,
+  "hostelAvailable": true,
+  "scholarshipAvailable": true,
+  "fees": {
+    "tuitionAnnual": "As per Government norms",
+    "hostelAnnual": "As applicable",
+    "messAnnual": "As applicable",
+    "otherCharges": "As notified by the institution",
+    "currency": "INR"
+  },
+  "officialWebsite": "https://pgimer.edu.in",
+  "admissionWebsite": "https://www.aiimsexams.ac.in",
+  "email": "",
+  "phone": "",
+  "address": "Sector 12, Chandigarh 160012",
+  "coordinates": {
+    "latitude": 30.7649,
+    "longitude": 76.7754
+  },
+  "images": {
+    "thumbnail": "../assets/images/colleges/default.jpg",
+    "cover": "../assets/images/colleges/default.jpg",
+    "gallery": []
+  },
+  "brochure": "",
+  "prospectus": "",
+  "description": "PGIMER Chandigarh is one of India's leading government medical institutes for postgraduate, super-speciality and research education.",
+  "keywords": [
+    "PGIMER",
+    "Chandigarh",
+    "Government Medical Institute",
+    "Medical Education"
+  ],
+  "featured": true,
+  "popular": true,
+  "verified": true,
+  "admissionOpen": true,
+  "status": "Active"
+}
