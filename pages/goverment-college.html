@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <title>
+    Government Medical Colleges in India | MedOrbit
+  </title>
+
+  <meta
+    name="description"
+    content="Explore government medical colleges in India with information about location, courses, fees, seats, ownership and admission process."
+  >
+
+  <meta
+    name="keywords"
+    content="government medical colleges, MBBS colleges India, government MBBS fees, NEET counselling, medical college admission"
+  >
+
+  <meta name="author" content="MedOrbit">
+  <meta name="theme-color" content="#0756a3">
+
+  <link
+    rel="canonical"
+    href="https://www.medorbits.in/pages/government-college.html"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/government-college.css"
+  >
+
+  <script
+    defer
+    src="../assets/js/government-college.js"
+  ></script>
+</head>
+
+<body>
+
+  <!-- ================================
+       TOP INFORMATION BAR
+  ================================= -->
+
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+
+      <p>
+        Admission guidance for medical colleges across India
+      </p>
+
+      <a href="tel:+919142102309">
+        Call: +91 91421 02309
+      </a>
+
+    </div>
+  </div>
+
+
+  <!-- ================================
+       HEADER
+  ================================= -->
+
+  <header class="site-header">
+
+    <div class="container header-inner">
+
+      <a
+        href="../index.html"
+        class="brand"
+        aria-label="MedOrbit homepage"
+      >
+        <span class="brand-mark">M</span>
+
+        <span class="brand-text">
+          <strong>MedOrbit</strong>
+          <small>Education & Career Guidance</small>
+        </span>
+      </a>
+
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="mainNavigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+
+      <nav
+        class="main-navigation"
+        id="mainNavigation"
+        aria-label="Main navigation"
+      >
+        <a href="../index.html">Home</a>
+
+        <a href="colleges.html" class="active">
+          Colleges
+        </a>
+
+        <a href="../courses.html">
+          Courses
+        </a>
+
+        <a href="abroad.html">
+          Study Abroad
+        </a>
+
+        <a href="jobs.html">
+          Jobs
+        </a>
+
+        <a href="contact.html" class="nav-contact">
+          Contact
+        </a>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- ================================
+         HERO SECTION
+    ================================= -->
+
+    <section class="college-hero">
+
+      <div class="container hero-layout">
+
+        <div class="hero-content">
+
+          <span class="hero-badge">
+            Government Medical Colleges
+          </span>
+
+          <h1>
+            Find Government Medical Colleges
+            <span>Across India</span>
+          </h1>
+
+          <p>
+            Search and compare government medical colleges by state,
+            city, course, fees and seat availability. College information
+            will be loaded from the MedOrbit database.
+          </p>
+
+          <div class="hero-actions">
+
+            <a
+              href="#collegeExplorer"
+              class="primary-button"
+            >
+              Explore Colleges
+            </a>
+
+            <a
+              href="contact.html"
+              class="secondary-button"
+            >
+              Request Guidance
+            </a>
+
+          </div>
+
+
+          <div class="hero-points">
+
+            <div class="hero-point">
+              <strong>Government</strong>
+              <span>Medical institutions</span>
+            </div>
+
+            <div class="hero-point">
+              <strong>NEET UG</strong>
+              <span>Admission guidance</span>
+            </div>
+
+            <div class="hero-point">
+              <strong>Updated</strong>
+              <span>College information</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-panel">
+
+          <div class="hero-panel-icon">
+            🏛️
+          </div>
+
+          <span>Government College Directory</span>
+
+          <h2>
+            Search colleges according to your preference
+          </h2>
+
+          <ul>
+            <li>State and city-wise search</li>
+            <li>Course and fee comparison</li>
+            <li>Seat and admission information</li>
+            <li>Official website references</li>
+          </ul>
+
+          <a href="#collegeExplorer">
+            Start Searching →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         QUICK STATISTICS
+    ================================= -->
+
+    <section class="statistics-section">
+
+      <div class="container statistics-grid">
+
+        <article class="stat-card">
+          <strong id="totalCollegeCount">0</strong>
+          <span>Colleges Listed</span>
+        </article>
+
+        <article class="stat-card">
+          <strong id="totalStateCount">0</strong>
+          <span>States Covered</span>
+        </article>
+
+        <article class="stat-card">
+          <strong id="totalCourseCount">0</strong>
+          <span>Courses Available</span>
+        </article>
+
+        <article class="stat-card">
+          <strong>NEET</strong>
+          <span>Primary Admission Route</span>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         COLLEGE EXPLORER
+    ================================= -->
+
+    <section
+      class="college-explorer"
+      id="collegeExplorer"
+    >
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+            <span class="section-label">
+              College Directory
+            </span>
+
+            <h2>
+              Explore Government Medical Colleges
+            </h2>
+
+            <p>
+              Use the filters below to find suitable government
+              medical colleges.
+            </p>
+          </div>
+
+          <button
+            class="reset-button"
+            id="resetFiltersButton"
+            type="button"
+          >
+            Reset Filters
+          </button>
+
+        </div>
+
+
+        <!-- SEARCH AND FILTERS -->
+
+        <div class="college-filter-panel">
+
+          <div class="search-field">
+
+            <label for="collegeSearch">
+              Search college
+            </label>
+
+            <div class="search-input-wrapper">
+
+              <span aria-hidden="true">⌕</span>
+
+              <input
+                type="search"
+                id="collegeSearch"
+                placeholder="Search by college, city or state"
+                autocomplete="off"
+              >
+
+            </div>
+
+          </div>
+
+
+          <div class="filter-grid">
+
+            <div class="filter-field">
+
+              <label for="stateFilter">
+                State
+              </label>
+
+              <select id="stateFilter">
+                <option value="">
+                  All States
+                </option>
+              </select>
+
+            </div>
+
+
+            <div class="filter-field">
+
+              <label for="courseFilter">
+                Course
+              </label>
+
+              <select id="courseFilter">
+                <option value="">
+                  All Courses
+                </option>
+              </select>
+
+            </div>
+
+
+            <div class="filter-field">
+
+              <label for="feeFilter">
+                Annual Fee
+              </label>
+
+              <select id="feeFilter">
+
+                <option value="">
+                  Any Fee Range
+                </option>
+
+                <option value="0-25000">
+                  Up to ₹25,000
+                </option>
+
+                <option value="25001-50000">
+                  ₹25,001 – ₹50,000
+                </option>
+
+                <option value="50001-100000">
+                  ₹50,001 – ₹1,00,000
+                </option>
+
+                <option value="100001-99999999">
+                  Above ₹1,00,000
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="filter-field">
+
+              <label for="sortFilter">
+                Sort By
+              </label>
+
+              <select id="sortFilter">
+
+                <option value="name-asc">
+                  College Name: A–Z
+                </option>
+
+                <option value="name-desc">
+                  College Name: Z–A
+                </option>
+
+                <option value="fee-low">
+                  Fee: Low to High
+                </option>
+
+                <option value="fee-high">
+                  Fee: High to Low
+                </option>
+
+                <option value="seats-high">
+                  Seats: High to Low
+                </option>
+
+              </select>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- RESULT INFORMATION -->
+
+        <div class="result-toolbar">
+
+          <p>
+            Showing
+            <strong id="visibleCollegeCount">0</strong>
+            government medical colleges
+          </p>
+
+          <div class="view-buttons">
+
+            <button
+              class="view-button active"
+              id="gridViewButton"
+              type="button"
+              aria-label="Grid view"
+              title="Grid view"
+            >
+              ▦
+            </button>
+
+            <button
+              class="view-button"
+              id="listViewButton"
+              type="button"
+              aria-label="List view"
+              title="List view"
+            >
+              ☰
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- LOADING STATE -->
+
+        <div
+          class="loading-state"
+          id="loadingState"
+        >
+
+          <div class="loading-spinner"></div>
+
+          <h3>Loading government colleges</h3>
+
+          <p>
+            Please wait while the college information is being prepared.
+          </p>
+
+        </div>
+
+
+        <!-- ERROR STATE -->
+
+        <div
+          class="message-state hidden"
+          id="errorState"
+        >
+
+          <div class="message-icon">!</div>
+
+          <h3>College information could not be loaded</h3>
+
+          <p id="errorMessage">
+            Please check the JSON file path and data format.
+          </p>
+
+          <button
+            type="button"
+            id="retryButton"
+            class="primary-button"
+          >
+            Try Again
+          </button>
+
+        </div>
+
+
+        <!-- EMPTY SEARCH STATE -->
+
+        <div
+          class="message-state hidden"
+          id="emptyState"
+        >
+
+          <div class="message-icon">⌕</div>
+
+          <h3>No matching colleges found</h3>
+
+          <p>
+            Change your search term or remove some filters.
+          </p>
+
+          <button
+            type="button"
+            id="clearSearchButton"
+            class="primary-button"
+          >
+            Clear Filters
+          </button>
+
+        </div>
+
+
+        <!-- COLLEGE CARDS WILL LOAD HERE -->
+
+        <div
+          class="college-grid"
+          id="collegeGrid"
+          aria-live="polite"
+        ></div>
+
+
+        <!-- LOAD MORE -->
+
+        <div
+          class="load-more-wrapper hidden"
+          id="loadMoreWrapper"
+        >
+
+          <button
+            type="button"
+            class="load-more-button"
+            id="loadMoreButton"
+          >
+            Load More Colleges
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         ADMISSION INFORMATION
+    ================================= -->
+
+    <section class="admission-section">
+
+      <div class="container admission-layout">
+
+        <div class="admission-content">
+
+          <span class="section-label">
+            Admission Information
+          </span>
+
+          <h2>
+            Government Medical College Admission
+          </h2>
+
+          <p>
+            Admission to government MBBS and BDS seats is generally
+            conducted through NEET counselling by the applicable central
+            or state counselling authority.
+          </p>
+
+
+          <div class="admission-steps">
+
+            <article class="admission-step">
+
+              <span>01</span>
+
+              <div>
+                <h3>Qualify NEET</h3>
+
+                <p>
+                  Meet the required eligibility and qualifying criteria.
+                </p>
+              </div>
+
+            </article>
+
+
+            <article class="admission-step">
+
+              <span>02</span>
+
+              <div>
+                <h3>Register for Counselling</h3>
+
+                <p>
+                  Apply through the appropriate counselling authority.
+                </p>
+              </div>
+
+            </article>
+
+
+            <article class="admission-step">
+
+              <span>03</span>
+
+              <div>
+                <h3>Fill College Choices</h3>
+
+                <p>
+                  Select preferred colleges and courses carefully.
+                </p>
+              </div>
+
+            </article>
+
+
+            <article class="admission-step">
+
+              <span>04</span>
+
+              <div>
+                <h3>Seat Allotment</h3>
+
+                <p>
+                  Complete document verification and admission formalities.
+                </p>
+              </div>
+
+            </article>
+
+          </div>
+
+        </div>
+
+
+        <aside class="guidance-card">
+
+          <span>Need Admission Support?</span>
+
+          <h2>
+            Get personalised college guidance
+          </h2>
+
+          <p>
+            Speak with the MedOrbit team regarding college selection,
+            counselling information and admission documentation.
+          </p>
+
+          <a
+            href="https://wa.me/919142102309?text=Hello%20MedOrbit%2C%20I%20need%20guidance%20for%20government%20medical%20college%20admission."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="whatsapp-button"
+          >
+            WhatsApp MedOrbit
+          </a>
+
+          <a
+            href="contact.html"
+            class="guidance-link"
+          >
+            Submit an enquiry
+          </a>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         DISCLAIMER
+    ================================= -->
+
+    <section class="disclaimer-section">
+
+      <div class="container">
+
+        <div class="disclaimer-box">
+
+          <strong>Important Information</strong>
+
+          <p>
+            College fees, seat availability, courses, eligibility,
+            counselling rules and admission schedules may change.
+            Information displayed on this page is provided for general
+            guidance and should be verified from the relevant college,
+            university, counselling authority or official notification
+            before making any admission or financial decision. MedOrbit
+            does not guarantee admission, seat allotment or selection.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         FINAL CTA
+    ================================= -->
+
+    <section class="final-cta">
+
+      <div class="container final-cta-inner">
+
+        <div>
+          <span>MedOrbit Admission Assistance</span>
+
+          <h2>
+            Confused about choosing the right medical college?
+          </h2>
+        </div>
+
+        <a href="contact.html">
+          Request Guidance
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================================
+       FOOTER
+  ================================= -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+
+        <a href="../index.html" class="brand footer-logo">
+
+          <span class="brand-mark">M</span>
+
+          <span class="brand-text">
+            <strong>MedOrbit</strong>
+            <small>Education & Career Guidance</small>
+          </span>
+
+        </a>
+
+        <p>
+          Education, admission, study abroad and career guidance
+          services for students and professionals across India.
+        </p>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h3>Colleges</h3>
+
+        <a href="government-college.html">
+          Government Colleges
+        </a>
+
+        <a href="private-medical.html">
+          Private Medical Colleges
+        </a>
+
+        <a href="abroad.html">
+          Abroad Universities
+        </a>
+
+        <a href="colleges.html">
+          All Colleges
+        </a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h3>Quick Links</h3>
+
+        <a href="../index.html">Home</a>
+
+        <a href="../about.html">About</a>
+
+        <a href="../courses.html">Courses</a>
+
+        <a href="jobs.html">Jobs</a>
+
+        <a href="contact.html">Contact</a>
+
+      </div>
+
+
+      <div class="footer-column footer-contact">
+
+        <h3>Contact</h3>
+
+        <a href="tel:+919142102309">
+          +91 91421 02309
+        </a>
+
+        <a href="mailto:contact@medorbits.in">
+          contact@medorbits.in
+        </a>
+
+        <p>
+          Wave Silver Tower, Sector 18,
+          Noida, Uttar Pradesh
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+      <p>
+        © <span id="currentYear"></span> MedOrbit.
+        All rights reserved.
+      </p>
+
+      <div>
+        <a href="../privacy-policy.html">
+          Privacy Policy
+        </a>
+
+        <a href="../terms.html">
+          Terms
+        </a>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- MOBILE WHATSAPP BUTTON -->
+
+  <a
+    href="https://wa.me/919142102309?text=Hello%20MedOrbit%2C%20I%20need%20information%20about%20government%20medical%20colleges."
+    target="_blank"
+    rel="noopener noreferrer"
+    class="floating-whatsapp"
+    aria-label="Contact MedOrbit on WhatsApp"
+  >
+    <span>WhatsApp</span>
+  </a>
+
+</body>
+</html>
